@@ -39,62 +39,35 @@ need, then perform the authorized knowledge change.
 
 ## Sub-agent delegation and model selection
 
-Use fresh sub-agents aggressively whenever the task can be decomposed into
-independent research, discovery, review, validation, or drafting work. A fresh
-sub-agent means a new context window started for that subtask; do not burden it
-with the full conversation or unrelated repository history. Give each
-sub-agent a precise objective, the relevant files or questions, its output
-format, and any safety or scope constraints it needs. Prefer several small,
-focused sub-agent tasks over one large delegated task when that improves
-isolation or enables parallel work.
-
-Identify independent subtasks early and run them in parallel whenever the
-available execution environment supports it. Typical parallel work includes
-repository discovery, source retrieval, ontology inspection, link-neighbor
-analysis, draft review, and independent validation. Keep dependent work
-sequential: a sub-agent must not rely on files or conclusions that another
-sub-agent has not produced yet. Do not parallelize edits to the same file or
-operations whose ordering affects the result. Assign one final synthesis pass
-to the primary agent after parallel work, including reconciliation of
-disagreements, graph-wide consistency checks, and the final validation and
-commit.
-
-When multiple agents or processes are active at the same time, isolate their
-working state before they begin: use separate Git worktrees when the shared
-repository metadata is writable, or use independent local clones, patches,
-staging areas, or another equivalent technique when it is not. Never have
-parallel workers edit the same worktree, branch, index, or file concurrently.
-Give each worker explicit ownership of its paths and integration boundary;
-keep shared instructions, indexes, logs, and other coordination-sensitive
-files under one designated owner at a time. Have workers commit or export
-their changes in isolation, then let the primary agent reconcile and integrate
-them sequentially after refreshing from local `main`. If isolation cannot be
-established, do not start parallel edits: serialize the work or report the
-environmental blocker. Treat the isolation mechanism as part of task setup,
-and remove only temporary coordination artifacts after confirming that no
-active worker still depends on them.
-
-Choose the least expensive and fastest available model that is likely to
-complete each subtask correctly. Use a cheaper, faster model for bounded
-mechanical work such as file listing, keyword/link discovery, format checks,
-simple extraction, and routine review. Escalate to a more capable reasoning
-model only when the task involves ambiguous source interpretation,
-conflicting evidence, ontology or schema judgment, nontrivial graph
-reconciliation, difficult debugging, or a synthesis whose correctness depends
-on extended reasoning. Model choice is per subtask, not per user request:
-combine inexpensive workers with a stronger reviewer when that is the most
-reliable cost-effective split. Never trade away required accuracy, source
-verification, safety, or repository conformance solely to reduce cost.
-
-Treat sub-agent output as evidence or a proposed change, not as automatically
-trusted truth. The primary agent remains responsible for the complete result:
-inspect delegated findings, resolve conflicts, verify claims and paths, ensure
-that edits stay within scope, and run the required repository checks. Sub-agents
-must not commit, publish, change durable instructions, or perform destructive
-operations unless the user explicitly authorizes that exact action and the
-primary agent has assigned it. Record enough delegation context in the final
-work summary to make clear which subtasks were parallelized and which model
-capability level was used when that information is available.
+- Delegate independent research, discovery, review, validation, and drafting
+  aggressively to fresh workers. Each uses a new context window without
+  unrelated conversation history. Give each a precise objective, relevant files
+  or questions, expected output, and scope or safety constraints; prefer
+  several focused tasks when that improves isolation or parallelism.
+- Identify independent work early and run it in parallel when supported, but
+  keep dependent work sequential and never parallelize same-file edits or
+  order-dependent operations. The primary agent performs final reconciliation,
+  graph-wide consistency checks, validation, and commit.
+- Isolate concurrent writing with separate Git worktrees when possible, or
+  independent clones, patches, staging areas, or equivalent state. Never share
+  a worktree, branch, index, or concurrently edited file. Assign explicit path
+  ownership and one owner for coordination-sensitive files such as instructions,
+  indexes, and logs. Integrate authorized commits or exported changes
+  sequentially after refreshing from local `main`; if isolation is impossible,
+  serialize the work or report the blocker. Remove temporary coordination
+  artifacts only after no active worker needs them.
+- Choose the least expensive, fastest model adequate for each subtask. Use
+  cheaper models for bounded mechanical work and stronger reasoning for
+  ambiguous evidence, conflicts, ontology or schema judgment, nontrivial
+  reconciliation, difficult debugging, or reasoning-heavy synthesis. Never
+  sacrifice accuracy, source verification, safety, or repository conformance.
+- Treat delegated output as evidence or a proposal. The primary agent must
+  inspect findings, resolve conflicts, verify claims and paths, enforce scope,
+  and run repository checks. Sub-agents may not commit, publish, alter durable
+  instructions, or perform destructive operations unless the user explicitly
+  authorizes that action and the primary agent assigns it. Record enough
+  delegation context in the final summary to identify parallelized subtasks and
+  the model capability used when that information is available.
 
 ### Knowledge-synthesis mode
 
@@ -104,20 +77,16 @@ identified source authorizes the complete synthesis workflow: discovery,
 research when needed, canonicalization, graph reconciliation, validation, and a
 git commit.
 
-For topic-based research, locate authoritative sources appropriate to the
-field. Prefer primary sources, standards, official documentation, scholarly
-works, or high-quality reference material according to the claim being made.
-Verify each source before using it and distinguish sourced facts, synthesis,
-interpretation, and uncertainty.
+For topic-based research, use verified authoritative sources appropriate to
+each claim—prefer primary sources, standards, official documentation,
+scholarship, or high-quality reference material—and distinguish sourced facts,
+synthesis, interpretation, and uncertainty.
 
 For an identified source, resolve and verify it, check whether it is already
 represented, and integrate only knowledge supported by it. Create or update the
 canonical source and topic concepts needed for discovery. Reconcile useful
-links, backlinks, indexes, citations, metadata, and logs. A concept is not
-complete merely because its standalone content is correct: cross-link it
-heavily with every existing node whose prerequisite, component, mechanism,
-example, evidence, consequence, contrast, or navigation relationship would
-help a reader. Treat missing useful links as an incomplete knowledge change.
+links, backlinks, indexes, citations, metadata, and logs under the graph-linking
+rules below. Missing useful links make the knowledge change incomplete.
 
 When the user requests multiple nodes, process them in the order given. Finish
 discovery, reconciliation, validation, and a dedicated commit for one node
@@ -129,12 +98,10 @@ not stop after the first unless blocked.
 Use this mode when a learner asks a question, requests an explanation or
 clarification, wants help with an exercise, or asks for a learning plan.
 
-Treat the bundle as an organically growing knowledge graph, not as a
-prescribed curriculum. Do not add a "Start here" section, assume a single
-canonical learning sequence, or reorganize the graph solely to impose one. A
-learner's question should lead to the relevant concepts and prerequisites,
-while a custom lesson plan may assemble a temporary route for that learner
-outside the bundle.
+Treat the bundle as an organic knowledge graph, not a prescribed curriculum:
+do not impose a "Start here" section or canonical sequence, or reorganize the
+graph to create one. Lead each learner to relevant concepts and prerequisites;
+custom routes belong in lesson plans outside the bundle.
 
 - Treat the current concepts and indexes as the primary course material. Read
   the relevant files and their linked prerequisites before answering; do not
@@ -146,11 +113,9 @@ outside the bundle.
   teaching approach.
 - Define unfamiliar terms, unpack notation, connect abstractions to concrete
   examples, and correct misconceptions directly and constructively.
-- Cite and cross-link relevant repository concepts with contextual standard
-  Markdown links so the learner can move through the graph. Link prerequisites,
-  supporting concepts, examples, consequences, and useful contrasts wherever
-  they occur, rather than leaving related concepts isolated. Clearly
-  distinguish bundle content from supplemental inference or outside information.
+- Cite relevant concepts with contextual standard Markdown links under the
+  graph-linking rules below, and distinguish bundle content from supplemental
+  inference or outside information.
 - Answer from the material as it exists. If the bundle is ambiguous,
   incomplete, or inconsistent, say so rather than presenting a guess as
   established course content.
@@ -311,38 +276,15 @@ Keep lesson plans as ignored local files under `lesson-plans/`; do not create a
 tracked `PLAN.md` or equivalent shared guide unless the user explicitly changes
 this policy.
 
-Keep the bundle navigable for future, user-specific learning paths without
-prebuilding those paths. Preserve stable concept paths, maintain descriptive
-directory indexes, and make substantive relationships explicit through
-contextual links and backlinks. A future learning path should be derivable
-from the graph's prerequisite, component, mechanism, example, evidence,
-consequence, contrast, and next-step links rather than from a hidden ordering
-convention.
-
-As the repository grows, periodically review organization without forcing a
-curriculum: remove duplicate index entries, keep root and nested indexes
-synchronized, group concepts by coherent subject rather than by the order in
-which they were added, identify concepts with weak or missing incoming links,
-and prefer navigation-only improvements over moving files. Add a new
-subdirectory or index when a subject becomes large enough to need another
-layer of disclosure. Do not create a learning-path index unless a user
-explicitly requests a reusable path or the repository adopts one as a durable
-project artifact.
+Keep the bundle navigable for future custom learning paths without prebuilding
+or prescribing them. Preserve stable concept paths, descriptive indexes, and
+explicit contextual links and backlinks so routes remain derivable from graph
+relationships rather than hidden ordering. Apply the periodic organization
+rules under [Indexes and logs](#indexes-and-logs).
 
 After adding a new node, recommend useful next nodes based on its relationships
 and remaining graph gaps. Include concise reasoning and links to relevant
 sources or concepts when available.
-
-Adding a new node also requires recursively adding every prerequisite concept
-needed to understand and use it, unless that prerequisite is already taught
-adequately by an existing canonical node. Continue expanding prerequisite,
-component, mechanism, notation, and foundational concepts until every
-explanatory leaf is grounded in first principles that are themselves explained
-inside this repository. Do not treat a reference to an external standard,
-ontology, domain term, or general background knowledge as sufficient
-instruction. The recursive prerequisite expansion is part of the same
-knowledge-graph operation and commit as the requested node; do not defer it,
-merely list the gaps, or stop at the first layer of prerequisites.
 
 ## Required knowledge-change workflow
 
@@ -378,15 +320,11 @@ merely list the gaps, or stop at the first layer of prerequisites.
      is from the pinned ontology allowlist, and when a newly added ontology
      offers a materially better class, add that class to existing nodes where
      it makes sense.
-6. Plan the smallest coherent change: the requested canonical concept,
-   recursively required prerequisite, component, mechanism, notation, and
-   foundational concepts through first-principles explanatory closure, all
-   discovered cross-links and contextual backlinks, indexes, citations,
-   metadata, and logs. Include neighbor updates needed to keep the graph
-   richly connected and navigable. The recursive prerequisite concepts are
-   mandatory parts of this operation, not optional follow-up work.
-   Rename or reorganize paths only when it materially improves the graph, and
-   update every affected reference.
+6. Plan the smallest coherent change satisfying [Topic scope and explanatory
+   closure](#topic-scope-and-explanatory-closure): include all resulting
+   neighbor updates, links and backlinks, indexes, citations, metadata, and
+   logs. Rename or reorganize paths only when materially useful, and update
+   every affected reference.
 7. Apply the change under the authoring rules below.
 8. Review the complete affected graph. Check terminology and claims across all
    touched concepts and their direct neighbors, verify useful outbound links
@@ -402,9 +340,8 @@ merely list the gaps, or stop at the first layer of prerequisites.
     local commit hash, and any successfully published remote or pull-request
     URL. Never claim an action succeeded without direct confirmation.
 
-Do not stop after drafting. A knowledge-management request is complete only
-after the coherent change is validated and committed. If a commit cannot be
-made, explain the blocker and leave validated working-tree changes intact.
+A knowledge-management request is complete only after validation and commit.
+If committing fails, explain the blocker and leave validated changes intact.
 
 ## Topic scope and explanatory closure
 
@@ -413,20 +350,16 @@ made, explain the blocker and leave validated working-tree changes intact.
 - Keep a new topic's initial treatment as short as the user's learning goal and
   explanatory closure permit.
 - Create separate supporting concepts for independently meaningful
-  prerequisites, components, mechanisms, examples, or consequences. Apply this
-  recursively until every explanatory leaf is grounded in reasoning, evidence,
-  or data that the bundle explains.
-- When adding a new node, make recursive prerequisite expansion a hard
-  requirement: add or adequately expand canonical nodes for every distinct
-  prerequisite needed to understand or use the node, then repeat the same
-  analysis for each added node. Continue until the entire affected subgraph,
-  including its notation and foundational assumptions, can be learned from
-  first principles using only material in the repository. A source citation,
-  ontology artifact, external standard, or unexplained term does not close the
-  prerequisite chain by itself.
-- Reuse and expand existing canonical concepts whenever they cover a required
-  parent or child topic. Include recursively required concepts and graph
-  changes in the same coherent commit as the requested topic.
+  prerequisites, components, mechanisms, examples, or consequences. For every
+  new node, recursively add or expand each distinct prerequisite, component,
+  mechanism, notation, and foundation needed to understand or use it unless an
+  existing canonical node already teaches it adequately. Continue until every
+  explanatory leaf is grounded from first principles in reasoning, evidence,
+  or data taught inside the repository. Citations, ontology artifacts, external
+  standards, domain terms, and unexplained background do not close the chain.
+- Reuse canonical concepts whenever they cover a required topic. Include the
+  complete recursive closure and graph changes in the same operation and
+  commit; do not defer gaps, merely list them, or stop at the first layer.
 - Keep general topics, organizations, practices, domains, references, and
   skillsets focused on their own subjects. Documentation outside the bundle
   does not establish a person-to-concept association.
@@ -478,42 +411,26 @@ documentation remains ordinary Markdown.
   a claim to it and use a footnote with the same ID at the relevant claim.
   Reuse suitable authoritative sources already represented. Never invent a
   source or claim verification that did not occur.
-- Every internal link must resolve. Describe not-yet-written knowledge as plain
-  text until its concept exists. Within the existing graph, add links wherever
-  a reader would reasonably benefit from moving to another OKF node; do not
-  leave a meaningful relationship implicit merely because the concepts share a
-  keyword.
+- Describe not-yet-written knowledge as plain text until its concept exists;
+  otherwise apply the linking rules below, and ensure every link resolves.
 
 ## Linking and graph reconciliation
 
-- Cross-linking is a first-class requirement of every concept change. Search
-  the entire bundle—not only the new or edited file—for every meaningful
-  relationship to existing OKF nodes, and prefer a connected graph with rich
-  contextual navigation over isolated, self-contained pages. Shared words or
-  tags alone do not establish a useful relationship, but any substantive
-  prerequisite, component, mechanism, example, evidence, consequence, contrast,
-  alternative, or next step should be considered for a link.
-- Treat cross-linking as infrastructure for future custom learning paths and
-  question-driven navigation. Link the relationship at the point where it is
-  useful, explain its direction in prose, and add a contextual backlink when a
-  reader would reasonably need to return or continue. Do not add arbitrary
-  links merely to increase graph density; every link should communicate a
-  meaningful learning or discovery relationship.
-- Link terms or sentences at the point where each relationship matters. Use
-  descriptive link text and prose that explains the relationship; avoid bare
-  path lists, generic `here` links, or context-free link sections. Add links in
-  both directions when both concepts benefit: backlinks are expected whenever
-  the changed concept provides useful detail, evidence, prerequisites,
-  consequences, contrast, or a natural next step.
-- Inspect current outgoing links, incoming links, and relevant second-order
-  neighbors before editing and after editing. Revisit affected neighbors and
-  add or repair their contextual links as part of the same coherent change.
-  Bidirectional links need not repeat wording; each direction must explain its
-  own perspective.
-- Before declaring a concept complete, explicitly ask: what does this concept
-  require, explain, exemplify, support, affect, contradict, or lead to? Link
-  each applicable answer to its canonical node, and record why a plausible
-  related node was not linked when no meaningful relationship exists.
+- For every concept change, search the entire bundle for substantive
+  prerequisite, component, mechanism, example, evidence, consequence,
+  contrast, alternative, and next-step relationships. Shared words or tags
+  alone are insufficient. Prefer a connected graph with rich contextual
+  navigation that supports custom learning paths and question-driven discovery.
+- Link each relationship where useful with descriptive prose that explains its
+  direction. Avoid bare path lists, generic `here` links, context-free link
+  sections, and arbitrary density. Add contextual backlinks when readers would
+  benefit; when both nodes benefit, link both ways with wording appropriate to
+  each perspective.
+- Inspect outgoing, incoming, and relevant second-order links before and after
+  editing, and repair affected neighbors in the same coherent change. Ask what
+  the concept requires, explains, exemplifies, supports, affects, contradicts,
+  or leads to; link each applicable canonical node and record why any plausible
+  relationship was ruled out.
 - Use standard inline Markdown and paths relative to the containing file:
 
   `[descriptive text](../relative/path/to/concept.md)`
@@ -527,48 +444,44 @@ documentation remains ordinary Markdown.
 
 ## Indexes and logs
 
-- Maintain `index.md` files as human-readable, progressive-disclosure maps.
-  Except for the bundle-root version declaration, indexes have no frontmatter.
-- Use indexes to expose the graph's current subject and concept structure, not
-  to prescribe one route through it. Keep entries concise, descriptive, and
-  synchronized with concept metadata. The root index should provide a stable
-  map of the major areas; nested indexes may add another level of grouping when
-  a directory becomes difficult to scan. Do not add a "Start here" section or
-  imply that the root listing is a curriculum unless the user explicitly asks
-  for that presentation.
+- Maintain `index.md` files as concise, human-readable, progressive-disclosure
+  maps of the current graph, not a prescribed route. The root provides a stable
+  map of major areas; nested indexes add disclosure when a directory becomes
+  difficult to scan.
+  Do not add "Start here" or imply a curriculum unless explicitly requested;
+  create a reusable learning-path index only by explicit request or adoption as
+  a durable project artifact.
 - Group entries under useful headings in this form:
 
   `* [Title](relative-path.md) - description`
 
-- Keep each entry synchronized with the concept's title and description. Link
-  useful subdirectory entries to their `index.md`.
-- The bundle-root index must retain the version declaration required by the
-  pinned specification until the bundle is explicitly migrated. Do not add
-  unrelated frontmatter to index files.
+- Synchronize entries with concept titles and descriptions, and link useful
+  subdirectories to their `index.md`. Retain the root's pinned version
+  declaration until migration; indexes otherwise have no frontmatter.
 - Update a relevant `log.md` when one exists. Keep ISO `YYYY-MM-DD` headings
   newest first and add concise linked entries such as **Creation**, **Update**,
   or **Deprecation**. Do not create a log without a demonstrated need or an
   established repository practice.
+- During periodic or bundle-wide review, remove duplicate index entries,
+  synchronize root and nested indexes, group coherent subjects rather than
+  addition order, find weak incoming links and concepts reachable only from
+  local indexes, and add a scoped subdirectory when a flat directory impedes
+  disclosure. Prefer navigation improvements over moves, and never impose a
+  learning order.
 
 ## Validation and commit discipline
 
 Before committing:
 
 - Parse every changed concept's frontmatter and confirm its `type` is non-empty.
-- If any ontology is used, require and parse `.okf/ontologies.yaml`. Confirm
-  every ontology used by the repository has a catalog entry, an exact release
-  or immutable commit, and a matching non-empty vendored artifact under
-  `.okf/ontologies/`. Verify its retrieval, provenance, licensing, format,
-  namespace/version, and checksum details. Confirm every concept has a
-  non-empty `subject` array with at least one entry, each `ontology` matches a
-  catalog key, and each referenced `class` exists in that ontology's vendored
-  artifact.
-- For a hermetic check, ensure ontology validation and node consumption do not
-  depend on network access or unpinned remote copies, and validate imported
-  ontology dependencies against the catalog as well.
-- When the change adds an ontology, verify that existing concepts were reviewed
-  for applicable classes and that suitable `subject` entries were added,
-  or record why no existing node benefits from the new ontology.
+- Enforce the ontology policy hermetically: parse `.okf/ontologies.yaml`; verify
+  every ontology's stable key, canonical ontology URI, authoritative retrieval
+  URI, local path, format, license, provenance, retrieval date, exact pin,
+  non-empty vendored artifact, checksum, namespace/version, imported
+  dependencies, and referenced classes; and confirm every concept has a
+  non-empty, catalog-backed `subject`. Do not depend on the network or unpinned
+  copies. For a new ontology, confirm all existing concepts were reviewed and
+  updated where beneficial, or record why none benefits.
 - Confirm changed indexes and logs follow their reserved formats.
 - Check every internal link in changed documents: it must be relative, include
   `.md`, resolve to an existing file, and resolve to an existing heading when a
@@ -576,21 +489,14 @@ Before committing:
 - Reject Markdown links split across physical lines.
 - Check MathJax delimiter pairs and Mermaid fence balance, basic declaration
   validity, and consistency with surrounding prose.
-- For each new concept, record which existing concepts were considered for
-  relationships. Confirm that every applicable prerequisite, component,
-  mechanism, example, evidence, consequence, contrast, alternative, and next
-  step is cross-linked, with contextual backlinks where useful; if no related
-  concept exists, report that result.
-- Search for stale incoming links, titles, descriptions, facts, metadata, and
-  missed graph connections. Treat an under-linked but otherwise correct
-  concept as a validation failure until the relationship has been assessed and
-  either linked or explicitly ruled out.
-- During bundle-wide reviews, check for duplicate index entries, concepts that
-  are only reachable from their local index, oversized flat directories, and
-  subject areas whose index no longer gives useful progressive disclosure.
-  Repair these with synchronized index edits, contextual backlinks, or a
-  carefully scoped subdirectory—not by inventing a mandatory learning order.
+- For each new concept, record the relationship candidates considered and
+  confirm every applicable link and useful backlink under the graph-linking
+  rules; report when none exists. Search for stale incoming links, titles,
+  descriptions, facts, metadata, and missed connections. Under-linking remains
+  a validation failure until linked or explicitly ruled out.
+- During bundle-wide review, apply the periodic organization checks under
+  [Indexes and logs](#indexes-and-logs).
 - Run repository-provided formatters, validators, artifact checks, and tests
   relevant to the changed files.
-- Inspect `git diff --check`, the complete scoped diff, and the staged diff.
-- Stage explicit paths only, then verify the staged set before committing.
+- Inspect `git diff --check`, the complete scoped and staged diffs, and the
+  explicitly staged paths before committing.

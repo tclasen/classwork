@@ -1,101 +1,60 @@
 # AI Education and Knowledge Graph Template
 
-This repository is a domain-neutral starting point for an AI-assisted learning
-environment and an evidence-based knowledge graph. It uses the repository-pinned
-[Open Knowledge Format (OKF) v0.2 specification](./.okf/SPEC.md) to keep concepts,
-relationships, sources, and navigation portable and reviewable.
+This domain-neutral repository supports AI-assisted learning and an
+evidence-based knowledge graph under the repository-pinned
+[Open Knowledge Format (OKF) v0.2 specification](./.okf/SPEC.md), keeping its
+concepts, relationships, sources, and navigation portable and reviewable.
 
-The template supports two complementary activities:
+It supports two complementary activities:
 
-- **AI-driven education:** explain material, diagnose prerequisite gaps, create
-  adaptive lessons, and guide learners through exercises.
+- **AI-driven education:** explain material, identify prerequisite gaps, create
+  adaptive lessons, and guide exercises.
 - **Knowledge graph synthesis:** research, create, connect, reconcile, and
   validate canonical concepts from trustworthy sources.
 
-The template does not prescribe a subject, curriculum, learner level, or source
-type. Define those constraints when adapting it to a project.
+The template prescribes no subject, curriculum, learner level, or source type;
+define them when adapting it.
 
 ## Repository model
 
-Once initialized, everything beneath `bundle/` belongs to the OKF knowledge
-bundle and its concept namespace. Files outside `bundle/` support the repository
-but are not concepts.
+After initialization, `bundle/` is the complete OKF bundle and concept
+namespace; everything outside it supports the repository.
 
 | Path | Purpose |
 | --- | --- |
-| `.okf/SPEC.md` | Repository-pinned OKF specification |
-| `AGENTS.md` | Durable instructions for teaching and graph synthesis |
+| `.okf/SPEC.md` | Pinned OKF specification |
+| `AGENTS.md` | Durable teaching and graph-synthesis instructions |
 | `bundle/` | Canonical concepts, indexes, logs, and source artifacts |
-| `bundle/index.md` | Version declaration and top-level knowledge map |
-| `lesson-plans/` | Local, learner-specific plans that remain outside the bundle |
+| `bundle/index.md` | OKF version declaration and top-level map |
+| `lesson-plans/` | Local learner-specific plans outside the bundle |
 
-This starter may be copied before `bundle/` and `lesson-plans/` exist. The first
-knowledge-building or lesson-planning request can initialize the required
-directories according to [the agent instructions](./AGENTS.md).
+If `bundle/` or `lesson-plans/` is absent, the first graph or lesson request may
+initialize it according to [the agent instructions](./AGENTS.md).
 
-## Adapt the template
+## Adapt and use
 
-Before building a substantial graph, describe the project in this README:
+Before building a substantial graph, replace the generic title and define the
+domain or program, scope and exclusions, learner audiences, source standards,
+review roles, publication process, and verified setup or validation commands.
+Keep workflow rules in `AGENTS.md`; keep this README about what the repository
+teaches and how people use it.
 
-1. Replace this generic title with the knowledge domain or learning program.
-2. State the intended scope, exclusions, and primary learner audiences.
-3. Record any required source standards, review roles, or publication process.
-4. Add project-specific setup and validation commands only after they exist.
+Open the root as an Obsidian vault to browse indexes, links, and backlinks, or
+with an AI coding or research agent to learn from or extend the bundle. No
+special command syntax is required. Include the subject, goal, current
+understanding, source constraints, and available time when relevant. Shared
+knowledge belongs in `bundle/`; learner-specific plans belong in
+`lesson-plans/` as Obsidian-friendly Markdown.
 
-Keep workflow rules in `AGENTS.md`; keep this README focused on what the
-particular repository teaches and how people use it.
-
-## Use the repository
-
-Open the repository root as an Obsidian vault to browse concept indexes, links,
-and backlinks. Open the same root with an AI coding or research agent to learn
-from the bundle or request a knowledge change. No special command syntax is
-required. Include the subject, goal, current understanding, source constraints,
-and time available whenever they affect the result.
-
-Lesson plans are saved as local, Obsidian-friendly Markdown under
-`lesson-plans/`. Canonical shared knowledge belongs under `bundle/` and follows
-the pinned OKF specification.
-
-Review committed knowledge changes with:
-
-```sh
-git show --stat
-git show
-```
-
-If the project stores large source files, configure Git LFS for the relevant
-paths before adding them. Do not copy template commands for storage, validation,
-or publication until the repository actually provides those facilities.
+Review committed changes with `git show --stat` and `git show`. Configure Git
+LFS only for relevant large-file paths before adding them, and do not copy
+storage, validation, or publication commands until the repository provides
+those facilities.
 
 ## Example prompts
 
-### Initialize a subject
-
-```text
-Initialize the knowledge graph for [subject], aimed at [learner audience].
-```
-
-### Build a lesson plan
-
-```text
-Create a [duration] lesson plan that helps me learn [topic] from my current level.
-```
-
-### Explain existing material
-
-```text
-Explain [concept] using the bundle's prerequisites and give me a short check for understanding.
-```
-
-### Synthesize knowledge
-
-```text
-Expand the graph to cover [topic], using authoritative sources and connecting it to existing concepts.
-```
-
-### Integrate a source
-
-```text
-Incorporate the useful knowledge from [citation, DOI, or URL] into the graph.
-```
+- **Initialize:** `Initialize the knowledge graph for [subject], aimed at [learner audience].`
+- **Lesson plan:** `Create a [duration] lesson plan that helps me learn [topic] from my current level.`
+- **Explain:** `Explain [concept] using the bundle's prerequisites and give me a short check for understanding.`
+- **Synthesize:** `Expand the graph to cover [topic], using authoritative sources and connecting it to existing concepts.`
+- **Integrate a source:** `Incorporate useful knowledge from [citation, DOI, or URL] into the graph.`
