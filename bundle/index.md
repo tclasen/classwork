@@ -10,3 +10,4 @@ okf_version: "0.2"
 * [Information systems](information-systems/index.md) - Provenance models and trust judgments for information.
 * [Education](education/index.md) - Competencies, prior knowledge, and prerequisite structures.
 * [Ethics](ethics/index.md) - Agency, moral judgment, and responsibility.
+* [Software engineering](software-engineering/index.md) - Dependencies, version constraints, and compatibility.
