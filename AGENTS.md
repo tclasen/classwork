@@ -158,6 +158,27 @@ for the current task. Never edit an LFS pointer as though it were the underlying
 file. Do not invent clone, storage, backup, or publication procedures that the
 repository has not configured.
 
+## Ontology policy
+
+Every ontology used anywhere in the repository—including bundle metadata,
+concept text, code, configuration, validation, and documentation—must be
+listed in the repository's ontology allowlist and lock file at
+`.okf/ontologies.yaml`. Each entry must identify the ontology's canonical URI,
+exact release or commit, retrieval URI, license or provenance, and an immutable
+checksum when one is available. A URI or ontology name is not approved merely
+because it is well known; do not use an ontology until its pinned allowlist
+entry is present. Keep the allowlist outside `bundle/`, because it is repository
+configuration rather than bundle knowledge.
+
+When an existing whitelisted ontology does not provide a suitable semantic
+term, research authoritative candidate ontologies and propose the smallest
+appropriate addition, documenting the fit, licensing, version, provenance, and
+tradeoffs before using it. Do not invent ontology identifiers or silently
+substitute a vaguely related class. After a new ontology is approved and added,
+inspect every existing concept and apply its classes, properties, or other
+terms where they materially improve semantic accuracy; update affected
+concepts, indexes, validation, and the allowlist in the same coherent change.
+
 ## Obsidian and portable Markdown
 
 Treat the repository root as an Obsidian vault. Optimize changes for reading,
@@ -239,6 +260,10 @@ sources or concepts when available.
      provenance, and meaningful nuance.
    - Reconcile affected concepts when the intended truth is clear. Otherwise,
      record uncertainty or ask the user when the choice is consequential.
+   - Review each affected concept's `ontological_references`. Confirm that
+     every term is from the pinned ontology allowlist, and when a newly added
+     ontology offers a materially better class or property, add that reference
+     to existing nodes where it makes sense.
 6. Plan the smallest coherent change: canonical concepts, supporting concepts,
    all discovered cross-links and contextual backlinks, indexes, citations,
    metadata, and logs. Include neighbor updates needed to keep the graph
@@ -303,6 +328,22 @@ documentation remains ordinary Markdown.
   `verified[].by`. Update `generated` only for a meaningful concept change and
   use an ISO 8601 timestamp with an explicit timezone in `generated.at`.
 - Preserve unknown frontmatter keys.
+- Every concept must have at least one `ontological_references` entry. Each
+  entry must identify a term URI from a whitelisted, pinned ontology in
+  `.okf/ontologies.yaml` and should include the ontology key and human-readable
+  label, for example:
+
+  ```yaml
+  ontological_references:
+    - ontology: example-ontology
+      term: https://example.org/ontology/RelevantClass
+      label: Relevant class
+  ```
+
+  A reference may target an ontology class, property, or individual and is a
+  semantic mapping, not a provenance citation. Do not create or update a node
+  without a suitable reference: research and propose a new ontology under the
+  ontology policy when the allowlisted ontologies are insufficient.
 - Use structural Markdown and only headings that serve the concept.
 - Record provenance in `sources`. Give a source an `id` when the body attributes
   a claim to it and use a footnote with the same ID at the relevant claim.
@@ -372,6 +413,14 @@ documentation remains ordinary Markdown.
 Before committing:
 
 - Parse every changed concept's frontmatter and confirm its `type` is non-empty.
+- Parse `.okf/ontologies.yaml` when present. Confirm every ontology used by the
+  repository is allowlisted, pinned to an exact release or immutable commit,
+  and accompanied by its retrieval, provenance, licensing, and integrity
+  details. Confirm every concept has at least one `ontological_references`
+  entry and that each referenced term belongs to a whitelisted ontology.
+- When the change adds an ontology, verify that existing concepts were reviewed
+  for applicable classes or properties and that suitable references were added,
+  or record why no existing node benefits from the new ontology.
 - Confirm changed indexes and logs follow their reserved formats.
 - Check every internal link in changed documents: it must be relative, include
   `.md`, resolve to an existing file, and resolve to an existing heading when a
