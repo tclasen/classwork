@@ -83,6 +83,12 @@ authorization policy. Revocation, rotation, phishing resistance, strong
 authentication, and protection of recovery paths are lifecycle concerns rather
 than one-time configuration tasks.
 
+Shared event records also need this identity and authorization foundation: a
+product-provenance system must be able to distinguish which party or system
+asserted an event and control who may append, correct, or read sensitive
+details. See [product provenance](../supply-chains/product-provenance.md) for
+the supply-chain application.
+
 # Security boundaries and common errors
 
 - Treating a username, an authentication result, and an authorization grant
