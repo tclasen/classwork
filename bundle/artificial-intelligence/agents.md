@@ -14,7 +14,7 @@ status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
 sources:
   - id: react-paper
-    resource: https://arxiv.org/abs/2210.03629
+    resource: ../references/react-2023.md
     title: "ReAct: Synergizing Reasoning and Acting in Language Models"
     author: "yao-et-al/2023"
 ---
@@ -38,8 +38,9 @@ flowchart LR
 ```
 
 The loop may include planning, tool calls, memory, verification, retries, and
-human approval. ReAct is one research pattern that interleaves language-model
-reasoning with task-specific actions and external observations.[^react-paper]
+human approval. [ReAct](../references/react-2023.md) is one research pattern
+that interleaves language-model reasoning with task-specific actions and
+external observations.[^react-paper]
 The pattern makes clear that an agent is larger than its model: it also needs
 an environment, an action interface, an objective, and controls.
 

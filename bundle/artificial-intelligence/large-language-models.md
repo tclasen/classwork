@@ -15,7 +15,7 @@ sources:
     title: Google Machine Learning Glossary
     author: "google/developers"
   - id: transformer-paper
-    resource: https://arxiv.org/abs/1706.03762
+    resource: ../references/attention-is-all-you-need.md
     title: Attention Is All You Need
     author: "vaswani-et-al/2017"
     last_modified: 2017-06-12
@@ -39,9 +39,8 @@ provenance and supporting [claims, evidence, and inference](../foundations/claim
 # Training and architecture
 
 Many modern LLMs use the Transformer architecture, which applies attention to
-relate positions in a sequence and supports parallel training; the original
-Transformer paper introduced an architecture based solely on attention rather
-than recurrence or convolution.[^transformer-paper] Common stages include
+relate positions in a sequence and supports parallel training; [the original Transformer paper](../references/attention-is-all-you-need.md) introduced an architecture based solely on attention rather than recurrence or convolution.[^transformer-paper]
+Common stages include
 pretraining on broad text, followed by optional instruction tuning,
 fine-tuning, or preference optimization. These stages change behavior but do
 not remove the need for evaluation in the deployment context.
