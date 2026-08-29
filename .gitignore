@@ -1,0 +1,23 @@
+# Obsidian vault state and local workspace artifacts
+.obsidian/
+.trash/
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+
+# Windows metadata
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux desktop metadata
+.directory
