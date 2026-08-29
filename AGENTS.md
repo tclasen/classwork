@@ -37,6 +37,50 @@ Infer one or both modes from the user's request; no special command is needed.
 If a request combines them, teach first when that helps establish the learner's
 need, then perform the authorized knowledge change.
 
+## Sub-agent delegation and model selection
+
+Use fresh sub-agents aggressively whenever the task can be decomposed into
+independent research, discovery, review, validation, or drafting work. A fresh
+sub-agent means a new context window started for that subtask; do not burden it
+with the full conversation or unrelated repository history. Give each
+sub-agent a precise objective, the relevant files or questions, its output
+format, and any safety or scope constraints it needs. Prefer several small,
+focused sub-agent tasks over one large delegated task when that improves
+isolation or enables parallel work.
+
+Identify independent subtasks early and run them in parallel whenever the
+available execution environment supports it. Typical parallel work includes
+repository discovery, source retrieval, ontology inspection, link-neighbor
+analysis, draft review, and independent validation. Keep dependent work
+sequential: a sub-agent must not rely on files or conclusions that another
+sub-agent has not produced yet. Do not parallelize edits to the same file or
+operations whose ordering affects the result. Assign one final synthesis pass
+to the primary agent after parallel work, including reconciliation of
+disagreements, graph-wide consistency checks, and the final validation and
+commit.
+
+Choose the least expensive and fastest available model that is likely to
+complete each subtask correctly. Use a cheaper, faster model for bounded
+mechanical work such as file listing, keyword/link discovery, format checks,
+simple extraction, and routine review. Escalate to a more capable reasoning
+model only when the task involves ambiguous source interpretation,
+conflicting evidence, ontology or schema judgment, nontrivial graph
+reconciliation, difficult debugging, or a synthesis whose correctness depends
+on extended reasoning. Model choice is per subtask, not per user request:
+combine inexpensive workers with a stronger reviewer when that is the most
+reliable cost-effective split. Never trade away required accuracy, source
+verification, safety, or repository conformance solely to reduce cost.
+
+Treat sub-agent output as evidence or a proposed change, not as automatically
+trusted truth. The primary agent remains responsible for the complete result:
+inspect delegated findings, resolve conflicts, verify claims and paths, ensure
+that edits stay within scope, and run the required repository checks. Sub-agents
+must not commit, publish, change durable instructions, or perform destructive
+operations unless the user explicitly authorizes that exact action and the
+primary agent has assigned it. Record enough delegation context in the final
+work summary to make clear which subtasks were parallelized and which model
+capability level was used when that information is available.
+
 ### Knowledge-synthesis mode
 
 Use this mode when the user asks to add, correct, expand, revise, reorganize, or
