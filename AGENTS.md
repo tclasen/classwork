@@ -260,10 +260,10 @@ sources or concepts when available.
      provenance, and meaningful nuance.
    - Reconcile affected concepts when the intended truth is clear. Otherwise,
      record uncertainty or ask the user when the choice is consequential.
-   - Review each affected concept's `ontological_references`. Confirm that
-     every term is from the pinned ontology allowlist, and when a newly added
-     ontology offers a materially better class or property, add that reference
-     to existing nodes where it makes sense.
+   - Review each affected concept's `subject` field. Confirm that every class
+     is from the pinned ontology allowlist, and when a newly added ontology
+     offers a materially better class, add that class to existing nodes where
+     it makes sense.
 6. Plan the smallest coherent change: canonical concepts, supporting concepts,
    all discovered cross-links and contextual backlinks, indexes, citations,
    metadata, and logs. Include neighbor updates needed to keep the graph
@@ -328,21 +328,22 @@ documentation remains ordinary Markdown.
   `verified[].by`. Update `generated` only for a meaningful concept change and
   use an ISO 8601 timestamp with an explicit timezone in `generated.at`.
 - Preserve unknown frontmatter keys.
-- Every concept must have at least one `ontological_references` entry. Each
-  entry must identify a term URI from a whitelisted, pinned ontology in
-  `.okf/ontologies.yaml` and should include the ontology key and human-readable
-  label, for example:
+- Every concept must have a non-empty `subject` array containing at least one
+  ontology class. Each entry must identify a class URI from a whitelisted,
+  pinned ontology in `.okf/ontologies.yaml` and should include the ontology key
+  and human-readable label, for example:
 
   ```yaml
-  ontological_references:
+  subject:
     - ontology: example-ontology
-      term: https://example.org/ontology/RelevantClass
+      class: https://example.org/ontology/RelevantClass
       label: Relevant class
   ```
 
-  A reference may target an ontology class, property, or individual and is a
-  semantic mapping, not a provenance citation. Do not create or update a node
-  without a suitable reference: research and propose a new ontology under the
+  `subject` is a repository-defined OKF extension: it is an array of ontology
+  classes that semantically classify the concept, not a provenance citation.
+  Do not modify `.okf/SPEC.md` to define it. Do not create or update a node
+  without a suitable class: research and propose a new ontology under the
   ontology policy when the allowlisted ontologies are insufficient.
 - Use structural Markdown and only headings that serve the concept.
 - Record provenance in `sources`. Give a source an `id` when the body attributes
@@ -416,8 +417,8 @@ Before committing:
 - Parse `.okf/ontologies.yaml` when present. Confirm every ontology used by the
   repository is allowlisted, pinned to an exact release or immutable commit,
   and accompanied by its retrieval, provenance, licensing, and integrity
-  details. Confirm every concept has at least one `ontological_references`
-  entry and that each referenced term belongs to a whitelisted ontology.
+  details. Confirm every concept has a non-empty `subject` array with at least
+  one entry and that each referenced class belongs to a whitelisted ontology.
 - When the change adds an ontology, verify that existing concepts were reviewed
   for applicable classes or properties and that suitable references were added,
   or record why no existing node benefits from the new ontology.
