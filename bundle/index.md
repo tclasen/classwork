@@ -15,3 +15,4 @@ okf_version: "0.2"
 * [Software engineering](software-engineering/index.md) - Dependencies, version constraints, and compatibility.
 * [Assurance](assurance/index.md) - Claims, arguments, evidence, assumptions, and review for auditable system judgments.
 * [Reasoning](reasoning/index.md) - Arguments, validity, evidence, and rebuttal.
+* [Artificial intelligence](artificial-intelligence/index.md) - Artificial intelligence, machine learning, language models, and goal-directed agents.

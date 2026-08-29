@@ -40,6 +40,9 @@ activity generates an output entity.
 
 This vocabulary supports [information, data, and records](information-data-and-records.md),
 [systems, processes, and boundaries](systems-processes-and-boundaries.md), and
-[time, identity, and relationships](time-identity-and-relationships.md).
+[time, identity, and relationships](time-identity-and-relationships.md). It also
+provides the foundation for distinguishing an [AI agent](../artificial-intelligence/agents.md)
+from the [AI system](../artificial-intelligence/artificial-intelligence.md) and
+the activities it performs.
 
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

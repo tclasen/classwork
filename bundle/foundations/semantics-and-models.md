@@ -35,5 +35,8 @@ depends on interpreting representations consistently.
 
 The repository's ontology catalog and vendored artifacts are models used to
 classify concepts; they do not replace explanations of the concepts themselves.
+This distinction is essential when interpreting a [machine-learning model](../artificial-intelligence/machine-learning.md)
+or the generated text of a [large language model](../artificial-intelligence/large-language-models.md):
+neither representation is identical to the subject or truth it is used to describe.
 
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).
