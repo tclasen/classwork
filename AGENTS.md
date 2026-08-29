@@ -162,22 +162,41 @@ repository has not configured.
 
 Every ontology used anywhere in the repository—including bundle metadata,
 concept text, code, configuration, validation, and documentation—must be
-listed in the repository's ontology allowlist and lock file at
-`.okf/ontologies.yaml`. Each entry must identify the ontology's canonical URI,
-exact release or commit, retrieval URI, license or provenance, and an immutable
-checksum when one is available. A URI or ontology name is not approved merely
-because it is well known; do not use an ontology until its pinned allowlist
-entry is present. Keep the allowlist outside `bundle/`, because it is repository
-configuration rather than bundle knowledge.
+listed in the repository's ontology catalog and lock file at
+`.okf/ontologies.yaml`, and its exact ontology artifact must be vendored under
+`.okf/ontologies/`. The catalog is repository configuration, not bundle
+knowledge, so keep both paths outside `bundle/`. A URI or ontology name is not
+approved merely because it is well known; do not use an ontology until its
+catalog entry and local artifact are present.
+
+Curate each catalog entry with a stable key, canonical ontology URI, exact
+release or commit, authoritative retrieval URI, local artifact path, artifact
+format, license, provenance, retrieval date, and SHA-256 (or stronger)
+checksum. Pin the ontology document itself, not only a website or moving
+download URL. Verify the downloaded content is the expected ontology file, is
+non-empty, matches the recorded checksum, declares the expected namespace and
+version when available, and contains every class used by the repository. Keep
+ontology artifacts immutable; a new release or materially different artifact
+gets a new pinned entry and path. Vendor imported ontologies or dependencies as
+separate catalog entries too, unless the curated artifact is demonstrably
+self-contained. Use Git LFS for large ontology artifacts when the repository's
+rules require it.
+
+Ontology curation is a research and review step: prefer authoritative
+publishers, inspect the license and redistribution terms, compare candidate
+versions, record why the ontology fits the repository's subject, and retain
+the evidence used to select the pin. Runtime validation and node consumption
+must resolve ontology terms from the vendored artifacts and catalog; they must
+not require network access or silently fetch a newer ontology.
 
 When an existing whitelisted ontology does not provide a suitable semantic
 term, research authoritative candidate ontologies and propose the smallest
 appropriate addition, documenting the fit, licensing, version, provenance, and
 tradeoffs before using it. Do not invent ontology identifiers or silently
 substitute a vaguely related class. After a new ontology is approved and added,
-inspect every existing concept and apply its classes, properties, or other
-terms where they materially improve semantic accuracy; update affected
-concepts, indexes, validation, and the allowlist in the same coherent change.
+vendor and pin its artifact, inspect every existing concept, and apply its
+classes where they materially improve semantic accuracy; update affected
+concepts, indexes, validation, and the catalog in the same coherent change.
 
 ## Obsidian and portable Markdown
 
@@ -342,6 +361,9 @@ documentation remains ordinary Markdown.
 
   `subject` is a repository-defined OKF extension: it is an array of ontology
   classes that semantically classify the concept, not a provenance citation.
+  The `ontology` value must exactly match a catalog key, and the `class` value
+  must be the canonical URI of a class present in that ontology's vendored
+  artifact. The optional `label` is for readers and must not replace the URI.
   Do not modify `.okf/SPEC.md` to define it. Do not create or update a node
   without a suitable class: research and propose a new ontology under the
   ontology policy when the allowlisted ontologies are insufficient.
@@ -414,13 +436,19 @@ documentation remains ordinary Markdown.
 Before committing:
 
 - Parse every changed concept's frontmatter and confirm its `type` is non-empty.
-- Parse `.okf/ontologies.yaml` when present. Confirm every ontology used by the
-  repository is allowlisted, pinned to an exact release or immutable commit,
-  and accompanied by its retrieval, provenance, licensing, and integrity
-  details. Confirm every concept has a non-empty `subject` array with at least
-  one entry and that each referenced class belongs to a whitelisted ontology.
+- If any ontology is used, require and parse `.okf/ontologies.yaml`. Confirm
+  every ontology used by the repository has a catalog entry, an exact release
+  or immutable commit, and a matching non-empty vendored artifact under
+  `.okf/ontologies/`. Verify its retrieval, provenance, licensing, format,
+  namespace/version, and checksum details. Confirm every concept has a
+  non-empty `subject` array with at least one entry, each `ontology` matches a
+  catalog key, and each referenced `class` exists in that ontology's vendored
+  artifact.
+- For a hermetic check, ensure ontology validation and node consumption do not
+  depend on network access or unpinned remote copies, and validate imported
+  ontology dependencies against the catalog as well.
 - When the change adds an ontology, verify that existing concepts were reviewed
-  for applicable classes or properties and that suitable references were added,
+  for applicable classes and that suitable `subject` entries were added,
   or record why no existing node benefits from the new ontology.
 - Confirm changed indexes and logs follow their reserved formats.
 - Check every internal link in changed documents: it must be relative, include
