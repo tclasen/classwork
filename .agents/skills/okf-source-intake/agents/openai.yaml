@@ -1,0 +1,4 @@
+interface:
+  display_name: "OKF Source Intake"
+  short_description: "Verify and integrate authoritative sources"
+  default_prompt: "Use $okf-source-intake to verify and integrate this source into the bundle."

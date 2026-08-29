@@ -1,0 +1,4 @@
+interface:
+  display_name: "OKF Ontology Curation"
+  short_description: "Pin and validate repository ontologies"
+  default_prompt: "Use $okf-ontology-curation to evaluate and pin an ontology for this repository."

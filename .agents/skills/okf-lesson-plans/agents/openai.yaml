@@ -1,0 +1,4 @@
+interface:
+  display_name: "OKF Lesson Plans"
+  short_description: "Create bundle-grounded local lesson plans"
+  default_prompt: "Use $okf-lesson-plans to create a personalized lesson plan from the bundle."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "OKF Teaching"
+  short_description: "Teach from canonical OKF bundle concepts"
+  default_prompt: "Use $okf-teaching to explain this topic from the repository's knowledge graph."
