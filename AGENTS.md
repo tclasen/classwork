@@ -55,8 +55,10 @@ For an identified source, resolve and verify it, check whether it is already
 represented, and integrate only knowledge supported by it. Create or update the
 canonical source and topic concepts needed for discovery. Reconcile useful
 links, backlinks, indexes, citations, metadata, and logs. A concept is not
-complete merely because its standalone content is correct; it must be connected
-wherever the relationship materially improves understanding or navigation.
+complete merely because its standalone content is correct: cross-link it
+heavily with every existing node whose prerequisite, component, mechanism,
+example, evidence, consequence, contrast, or navigation relationship would
+help a reader. Treat missing useful links as an incomplete knowledge change.
 
 When the user requests multiple nodes, process them in the order given. Finish
 discovery, reconciliation, validation, and a dedicated commit for one node
@@ -78,9 +80,11 @@ clarification, wants help with an exercise, or asks for a learning plan.
   teaching approach.
 - Define unfamiliar terms, unpack notation, connect abstractions to concrete
   examples, and correct misconceptions directly and constructively.
-- Cite relevant repository concepts with contextual standard Markdown links so
-  the learner can continue reading. Clearly distinguish bundle content from
-  supplemental inference or outside information.
+- Cite and cross-link relevant repository concepts with contextual standard
+  Markdown links so the learner can move through the graph. Link prerequisites,
+  supporting concepts, examples, consequences, and useful contrasts wherever
+  they occur, rather than leaving related concepts isolated. Clearly
+  distinguish bundle content from supplemental inference or outside information.
 - Answer from the material as it exists. If the bundle is ambiguous,
   incomplete, or inconsistent, say so rather than presenting a guess as
   established course content.
@@ -236,13 +240,16 @@ sources or concepts when available.
    - Reconcile affected concepts when the intended truth is clear. Otherwise,
      record uncertainty or ask the user when the choice is consequential.
 6. Plan the smallest coherent change: canonical concepts, supporting concepts,
-   relationships, contextual backlinks, indexes, citations, metadata, and logs.
+   all discovered cross-links and contextual backlinks, indexes, citations,
+   metadata, and logs. Include neighbor updates needed to keep the graph
+   richly connected and navigable.
    Rename or reorganize paths only when it materially improves the graph, and
    update every affected reference.
 7. Apply the change under the authoring rules below.
 8. Review the complete affected graph. Check terminology and claims across all
-   touched concepts and their direct neighbors, then perform a second
-   bundle-wide link-discovery pass.
+   touched concepts and their direct neighbors, verify useful outbound links
+   and contextual backlinks in both directions, then perform a second
+   bundle-wide link-discovery pass for missed connections.
 9. Run OKF and repository-specific validation. Fix failures caused by the
    change.
 10. Stage explicit paths only. Verify the staged set contains the whole coherent
@@ -302,20 +309,35 @@ documentation remains ordinary Markdown.
   Reuse suitable authoritative sources already represented. Never invent a
   source or claim verification that did not occur.
 - Every internal link must resolve. Describe not-yet-written knowledge as plain
-  text until its concept exists.
+  text until its concept exists. Within the existing graph, add links wherever
+  a reader would reasonably benefit from moving to another OKF node; do not
+  leave a meaningful relationship implicit merely because the concepts share a
+  keyword.
 
 ## Linking and graph reconciliation
 
-- Search the entire bundle for meaningful links whenever adding or changing a
-  concept. Shared words or tags alone do not establish a useful relationship.
-- Link terms or sentences at the point where a relationship matters. Use
+- Cross-linking is a first-class requirement of every concept change. Search
+  the entire bundle—not only the new or edited file—for every meaningful
+  relationship to existing OKF nodes, and prefer a connected graph with rich
+  contextual navigation over isolated, self-contained pages. Shared words or
+  tags alone do not establish a useful relationship, but any substantive
+  prerequisite, component, mechanism, example, evidence, consequence, contrast,
+  alternative, or next step should be considered for a link.
+- Link terms or sentences at the point where each relationship matters. Use
   descriptive link text and prose that explains the relationship; avoid bare
-  path lists, generic `here` links, or context-free link sections.
-- Add contextual backlinks when the changed concept provides useful detail,
-  evidence, prerequisites, consequences, contrast, or a natural next step.
+  path lists, generic `here` links, or context-free link sections. Add links in
+  both directions when both concepts benefit: backlinks are expected whenever
+  the changed concept provides useful detail, evidence, prerequisites,
+  consequences, contrast, or a natural next step.
 - Inspect current outgoing links, incoming links, and relevant second-order
-  neighbors. Bidirectional links need not repeat wording; each direction should
-  explain its own perspective.
+  neighbors before editing and after editing. Revisit affected neighbors and
+  add or repair their contextual links as part of the same coherent change.
+  Bidirectional links need not repeat wording; each direction must explain its
+  own perspective.
+- Before declaring a concept complete, explicitly ask: what does this concept
+  require, explain, exemplify, support, affect, contradict, or lead to? Link
+  each applicable answer to its canonical node, and record why a plausible
+  related node was not linked when no meaningful relationship exists.
 - Use standard inline Markdown and paths relative to the containing file:
 
   `[descriptive text](../relative/path/to/concept.md)`
@@ -358,10 +380,14 @@ Before committing:
 - Check MathJax delimiter pairs and Mermaid fence balance, basic declaration
   validity, and consistency with surrounding prose.
 - For each new concept, record which existing concepts were considered for
-  relationships. Confirm useful outbound links and contextual backlinks; if no
-  related concept exists, report that result.
+  relationships. Confirm that every applicable prerequisite, component,
+  mechanism, example, evidence, consequence, contrast, alternative, and next
+  step is cross-linked, with contextual backlinks where useful; if no related
+  concept exists, report that result.
 - Search for stale incoming links, titles, descriptions, facts, metadata, and
-  missed graph connections.
+  missed graph connections. Treat an under-linked but otherwise correct
+  concept as a validation failure until the relationship has been assessed and
+  either linked or explicitly ruled out.
 - Run repository-provided formatters, validators, artifact checks, and tests
   relevant to the changed files.
 - Inspect `git diff --check`, the complete scoped diff, and the staged diff.
