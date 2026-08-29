@@ -11,6 +11,7 @@
 * [Reproducible builds and software provenance](reproducible-builds-and-provenance.md) - Making build inputs and processes inspectable so artifacts can be reproduced, traced, and verified.
 * [Configuration and environment parity](configuration-and-environment-parity.md) - Separating deploy-specific configuration from code and reducing avoidable differences between development, test, and production.
 * [Observability and operational readiness](observability-and-operational-readiness.md) - Designing software to emit actionable evidence and preparing teams and procedures to operate it safely.
+* [Performance and capacity engineering](performance-and-capacity-engineering.md) - Defining performance needs, measuring behavior under realistic load, and adapting software and resources as demand changes.
 * [Packages, interfaces, and environments](packages-interfaces-and-environments.md) - Components that interact through contracts within a build or runtime environment.
 * [Version resolution and locks](version-resolution-and-locks.md) - Selecting a concrete dependency graph from constraints and recording it for repeatable use.
 * [Software dependency and compatibility](software-dependency-and-compatibility.md) - Managing required components, version constraints, resolution, and runtime compatibility.
