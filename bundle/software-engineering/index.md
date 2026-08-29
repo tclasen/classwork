@@ -15,6 +15,7 @@
 * [Incident response and blameless postmortems](incident-response-and-blameless-postmortems.md) - Responding to service-impacting events and converting evidence about failure into concrete system improvements.
 * [Maintainable code and refactoring](maintainable-code-and-refactoring.md) - Keeping software understandable and adaptable by controlling complexity and changing structure without changing intended behavior.
 * [Architecture documentation and decisions](architecture-documentation-and-decisions.md) - Recording system structure, important constraints, trade-offs, and decisions so architecture remains understandable and reviewable.
+* [Software delivery metrics and feedback](software-delivery-metrics-and-feedback.md) - Using outcome-oriented delivery and reliability measures to find constraints and guide continuous improvement.
 * [Packages, interfaces, and environments](packages-interfaces-and-environments.md) - Components that interact through contracts within a build or runtime environment.
 * [Version resolution and locks](version-resolution-and-locks.md) - Selecting a concrete dependency graph from constraints and recording it for repeatable use.
 * [Software dependency and compatibility](software-dependency-and-compatibility.md) - Managing required components, version constraints, resolution, and runtime compatibility.
