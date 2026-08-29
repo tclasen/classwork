@@ -59,6 +59,21 @@ to the primary agent after parallel work, including reconciliation of
 disagreements, graph-wide consistency checks, and the final validation and
 commit.
 
+When multiple agents or processes are active at the same time, isolate their
+working state before they begin: use separate Git worktrees when the shared
+repository metadata is writable, or use independent local clones, patches,
+staging areas, or another equivalent technique when it is not. Never have
+parallel workers edit the same worktree, branch, index, or file concurrently.
+Give each worker explicit ownership of its paths and integration boundary;
+keep shared instructions, indexes, logs, and other coordination-sensitive
+files under one designated owner at a time. Have workers commit or export
+their changes in isolation, then let the primary agent reconcile and integrate
+them sequentially after refreshing from local `main`. If isolation cannot be
+established, do not start parallel edits: serialize the work or report the
+environmental blocker. Treat the isolation mechanism as part of task setup,
+and remove only temporary coordination artifacts after confirming that no
+active worker still depends on them.
+
 Choose the least expensive and fastest available model that is likely to
 complete each subtask correctly. Use a cheaper, faster model for bounded
 mechanical work such as file listing, keyword/link discovery, format checks,
