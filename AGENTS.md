@@ -249,6 +249,17 @@ After adding a new node, recommend useful next nodes based on its relationships
 and remaining graph gaps. Include concise reasoning and links to relevant
 sources or concepts when available.
 
+Adding a new node also requires recursively adding every prerequisite concept
+needed to understand and use it, unless that prerequisite is already taught
+adequately by an existing canonical node. Continue expanding prerequisite,
+component, mechanism, notation, and foundational concepts until every
+explanatory leaf is grounded in first principles that are themselves explained
+inside this repository. Do not treat a reference to an external standard,
+ontology, domain term, or general background knowledge as sufficient
+instruction. The recursive prerequisite expansion is part of the same
+knowledge-graph operation and commit as the requested node; do not defer it,
+merely list the gaps, or stop at the first layer of prerequisites.
+
 ## Required knowledge-change workflow
 
 1. Use local `main` as the source of truth. Check it out before a change and
@@ -283,10 +294,13 @@ sources or concepts when available.
      is from the pinned ontology allowlist, and when a newly added ontology
      offers a materially better class, add that class to existing nodes where
      it makes sense.
-6. Plan the smallest coherent change: canonical concepts, supporting concepts,
-   all discovered cross-links and contextual backlinks, indexes, citations,
+6. Plan the smallest coherent change: the requested canonical concept,
+   recursively required prerequisite, component, mechanism, notation, and
+   foundational concepts through first-principles explanatory closure, all
+   discovered cross-links and contextual backlinks, indexes, citations,
    metadata, and logs. Include neighbor updates needed to keep the graph
-   richly connected and navigable.
+   richly connected and navigable. The recursive prerequisite concepts are
+   mandatory parts of this operation, not optional follow-up work.
    Rename or reorganize paths only when it materially improves the graph, and
    update every affected reference.
 7. Apply the change under the authoring rules below.
@@ -318,6 +332,14 @@ made, explain the blocker and leave validated working-tree changes intact.
   prerequisites, components, mechanisms, examples, or consequences. Apply this
   recursively until every explanatory leaf is grounded in reasoning, evidence,
   or data that the bundle explains.
+- When adding a new node, make recursive prerequisite expansion a hard
+  requirement: add or adequately expand canonical nodes for every distinct
+  prerequisite needed to understand or use the node, then repeat the same
+  analysis for each added node. Continue until the entire affected subgraph,
+  including its notation and foundational assumptions, can be learned from
+  first principles using only material in the repository. A source citation,
+  ontology artifact, external standard, or unexplained term does not close the
+  prerequisite chain by itself.
 - Reuse and expand existing canonical concepts whenever they cover a required
   parent or child topic. Include recursively required concepts and graph
   changes in the same coherent commit as the requested topic.

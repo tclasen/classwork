@@ -28,6 +28,12 @@ A **prerequisite** is a prior concept, skill, language, or disposition that
 materially enables a later competency. A prerequisite graph is a model of
 dependencies, not a claim that all learning is strictly linear.
 
+To read this graph, use [logic, graphs, and dependencies](../foundations/logic-graphs-and-dependencies.md),
+[causation and dependency](../foundations/causation-and-dependency.md), and
+[learning, assessment, and transfer](../foundations/learning-assessment-and-transfer.md).
+
+The terminal boundary for recursive expansion is stated in [first-principles scope for this bundle](../foundations/first-principles-scope.md).
+
 ```mermaid
 flowchart LR
     K[Prior knowledge] --> S[Foundational skill]

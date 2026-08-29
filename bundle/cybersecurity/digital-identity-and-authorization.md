@@ -50,6 +50,14 @@ may do*. NIST's zero-trust model treats subject and device authentication and
 authorization as discrete functions before a session to an enterprise
 resource is established.[^nist-zero-trust]
 
+These distinctions depend on [entities, activities, and agents](../foundations/entities-activities-and-agents.md),
+[time, identity, and relationships](../foundations/time-identity-and-relationships.md),
+[actions, policies, and permissions](../foundations/actions-policies-and-permissions.md),
+and [security properties and integrity](../foundations/security-properties-and-integrity.md).
+
+The identity-binding mechanism is developed in [identity binding and authentication](identity-binding-and-authentication.md),
+and the policy mechanism in [access policy and enforcement](access-policy-and-enforcement.md).
+
 # Access-control flow
 
 ```mermaid

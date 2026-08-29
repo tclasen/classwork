@@ -36,6 +36,14 @@ contextual judgment that weighs provenance alongside source competence,
 independence, integrity, recency, completeness, and the consequences of being
 wrong.
 
+The basic vocabulary is introduced in [entities, activities, and agents](../foundations/entities-activities-and-agents.md),
+[information, data, and records](../foundations/information-data-and-records.md),
+[time, identity, and relationships](../foundations/time-identity-and-relationships.md),
+and [risk and decision](../foundations/risk-and-decision.md).
+
+The operational traceability pattern is illustrated by [traceability events
+and custody](../supply-chains/traceability-events-and-custody.md).
+
 ```mermaid
 flowchart LR
     A[Agent] --> P[Activity]

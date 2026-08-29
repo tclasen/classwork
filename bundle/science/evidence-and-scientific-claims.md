@@ -32,6 +32,15 @@ connects evidence to a conclusion. A claim is not made certain merely by
 having data: measurement validity, study design, analysis choices, alternative
 explanations, and uncertainty determine how strongly the evidence supports it.
 
+Begin with [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md),
+[measurement and uncertainty](../foundations/measurement-and-uncertainty.md),
+[information, data, and records](../foundations/information-data-and-records.md),
+and [semantics and models](../foundations/semantics-and-models.md).
+
+For the method and quantitative prerequisites, follow [observation, measurement,
+and study design](observation-measurement-and-study-design.md) and [probability
+and statistical inference](probability-and-statistical-inference.md).
+
 ```mermaid
 flowchart LR
     Q[Question] --> D[Design and measurement]

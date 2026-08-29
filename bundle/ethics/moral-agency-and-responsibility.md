@@ -27,6 +27,14 @@ was exercised under the right conditions. Responsibility is not identical to
 causal authorship: causing an event does not by itself show that an agent was
 free, informed, competent, or blameworthy.[^sep-moral-responsibility]
 
+The analysis presupposes [entities, activities, and agents](../foundations/entities-activities-and-agents.md),
+[causation and dependency](../foundations/causation-and-dependency.md),
+[claims, evidence, and inference](../foundations/claims-evidence-and-inference.md),
+and [roles, authority, and organizations](../foundations/roles-authority-and-organizations.md).
+
+The ethical vocabulary of norms, reasons, agency, and control is introduced in
+[norms, agency, and control](norms-agency-and-control.md).
+
 ```mermaid
 flowchart LR
     C[Capacity to understand and choose] --> K[Knowledge and control in context]

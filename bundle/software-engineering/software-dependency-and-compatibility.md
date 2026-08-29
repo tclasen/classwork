@@ -34,6 +34,14 @@ allowed versions, relevant environment markers or platform constraints, and
 whether the dependency is needed at runtime, build time, or only for
 development.
 
+The general ideas are grounded in [systems, processes, and boundaries](../foundations/systems-processes-and-boundaries.md),
+[logic, graphs, and dependencies](../foundations/logic-graphs-and-dependencies.md),
+[time, identity, and relationships](../foundations/time-identity-and-relationships.md),
+and [information, data, and records](../foundations/information-data-and-records.md).
+
+The component-level vocabulary is developed in [packages, interfaces, and
+environments](packages-interfaces-and-environments.md).
+
 ```mermaid
 flowchart LR
     P[Application] --> A[Direct dependency A]
