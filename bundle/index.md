@@ -9,3 +9,4 @@ okf_version: "0.2"
 * [Science](science/index.md) - Evidence, inference, and scientific claims.
 * [Information systems](information-systems/index.md) - Provenance models and trust judgments for information.
 * [Education](education/index.md) - Competencies, prior knowledge, and prerequisite structures.
+* [Ethics](ethics/index.md) - Agency, moral judgment, and responsibility.
