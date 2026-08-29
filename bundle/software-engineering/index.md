@@ -17,6 +17,7 @@
 * [Architecture documentation and decisions](architecture-documentation-and-decisions.md) - Recording system structure, important constraints, trade-offs, and decisions so architecture remains understandable and reviewable.
 * [Software delivery metrics and feedback](software-delivery-metrics-and-feedback.md) - Using outcome-oriented delivery and reliability measures to find constraints and guide continuous improvement.
 * [API and interface design](api-and-interface-design.md) - Designing explicit, discoverable, evolvable contracts between software components and their users.
+* [Accessibility as an engineering requirement](accessibility-as-an-engineering-requirement.md) - Designing, implementing, and testing software so people with diverse abilities can use it effectively.
 * [Packages, interfaces, and environments](packages-interfaces-and-environments.md) - Components that interact through contracts within a build or runtime environment.
 * [Version resolution and locks](version-resolution-and-locks.md) - Selecting a concrete dependency graph from constraints and recording it for repeatable use.
 * [Software dependency and compatibility](software-dependency-and-compatibility.md) - Managing required components, version constraints, resolution, and runtime compatibility.
