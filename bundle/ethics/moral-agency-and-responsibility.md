@@ -3,6 +3,10 @@ type: Ethics Concept
 title: Moral agency and responsibility
 description: The capacities and conditions relevant to holding an agent responsible for action.
 tags: [ethics, moral-agency, responsibility, accountability, autonomy]
+subject:
+  - ontology: prov-o
+    class: http://www.w3.org/ns/prov#Agent
+    label: Agent
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
 sources:

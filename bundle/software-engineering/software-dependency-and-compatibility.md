@@ -3,6 +3,13 @@ type: Software Engineering Concept
 title: Software dependency and compatibility
 description: Managing required components, version constraints, resolution, and runtime compatibility.
 tags: [software-engineering, dependencies, compatibility, versioning, packaging]
+subject:
+  - ontology: spdx-3.0.1
+    class: https://spdx.org/rdf/3.0.1/terms/Software/Package
+    label: Package
+  - ontology: prov-o
+    class: http://www.w3.org/ns/prov#Entity
+    label: Entity
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
 sources:

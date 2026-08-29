@@ -3,6 +3,13 @@ type: Education Concept
 title: Competency and prerequisite structure
 description: Organizing what a learner can do and the knowledge or skills needed to progress.
 tags: [education, competency, prerequisites, curriculum, learning]
+subject:
+  - ontology: ctdlasn-20260626
+    class: https://purl.org/ctdlasn/terms/Competency
+    label: Competency
+  - ontology: ctdlasn-20260626
+    class: https://purl.org/ctdlasn/terms/CompetencyFramework
+    label: Competency Framework
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
 sources:

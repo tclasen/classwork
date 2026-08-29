@@ -3,6 +3,16 @@ type: Information Systems Concept
 title: Information provenance and trust
 description: Records of how information was produced, changed, and delivered, used to assess trust.
 tags: [information-systems, provenance, trust, lineage, metadata]
+subject:
+  - ontology: prov-o
+    class: http://www.w3.org/ns/prov#Entity
+    label: Entity
+  - ontology: prov-o
+    class: http://www.w3.org/ns/prov#Activity
+    label: Activity
+  - ontology: prov-o
+    class: http://www.w3.org/ns/prov#Agent
+    label: Agent
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
 sources:
