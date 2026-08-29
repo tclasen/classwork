@@ -129,6 +129,13 @@ not stop after the first unless blocked.
 Use this mode when a learner asks a question, requests an explanation or
 clarification, wants help with an exercise, or asks for a learning plan.
 
+Treat the bundle as an organically growing knowledge graph, not as a
+prescribed curriculum. Do not add a "Start here" section, assume a single
+canonical learning sequence, or reorganize the graph solely to impose one. A
+learner's question should lead to the relevant concepts and prerequisites,
+while a custom lesson plan may assemble a temporary route for that learner
+outside the bundle.
+
 - Treat the current concepts and indexes as the primary course material. Read
   the relevant files and their linked prerequisites before answering; do not
   rely on filenames, search snippets, or general memory when the bundle can
@@ -304,6 +311,24 @@ Keep lesson plans as ignored local files under `lesson-plans/`; do not create a
 tracked `PLAN.md` or equivalent shared guide unless the user explicitly changes
 this policy.
 
+Keep the bundle navigable for future, user-specific learning paths without
+prebuilding those paths. Preserve stable concept paths, maintain descriptive
+directory indexes, and make substantive relationships explicit through
+contextual links and backlinks. A future learning path should be derivable
+from the graph's prerequisite, component, mechanism, example, evidence,
+consequence, contrast, and next-step links rather than from a hidden ordering
+convention.
+
+As the repository grows, periodically review organization without forcing a
+curriculum: remove duplicate index entries, keep root and nested indexes
+synchronized, group concepts by coherent subject rather than by the order in
+which they were added, identify concepts with weak or missing incoming links,
+and prefer navigation-only improvements over moving files. Add a new
+subdirectory or index when a subject becomes large enough to need another
+layer of disclosure. Do not create a learning-path index unless a user
+explicitly requests a reusable path or the repository adopts one as a durable
+project artifact.
+
 After adding a new node, recommend useful next nodes based on its relationships
 and remaining graph gaps. Include concise reasoning and links to relevant
 sources or concepts when available.
@@ -468,6 +493,12 @@ documentation remains ordinary Markdown.
   tags alone do not establish a useful relationship, but any substantive
   prerequisite, component, mechanism, example, evidence, consequence, contrast,
   alternative, or next step should be considered for a link.
+- Treat cross-linking as infrastructure for future custom learning paths and
+  question-driven navigation. Link the relationship at the point where it is
+  useful, explain its direction in prose, and add a contextual backlink when a
+  reader would reasonably need to return or continue. Do not add arbitrary
+  links merely to increase graph density; every link should communicate a
+  meaningful learning or discovery relationship.
 - Link terms or sentences at the point where each relationship matters. Use
   descriptive link text and prose that explains the relationship; avoid bare
   path lists, generic `here` links, or context-free link sections. Add links in
@@ -498,6 +529,13 @@ documentation remains ordinary Markdown.
 
 - Maintain `index.md` files as human-readable, progressive-disclosure maps.
   Except for the bundle-root version declaration, indexes have no frontmatter.
+- Use indexes to expose the graph's current subject and concept structure, not
+  to prescribe one route through it. Keep entries concise, descriptive, and
+  synchronized with concept metadata. The root index should provide a stable
+  map of the major areas; nested indexes may add another level of grouping when
+  a directory becomes difficult to scan. Do not add a "Start here" section or
+  imply that the root listing is a curriculum unless the user explicitly asks
+  for that presentation.
 - Group entries under useful headings in this form:
 
   `* [Title](relative-path.md) - description`
@@ -547,6 +585,11 @@ Before committing:
   missed graph connections. Treat an under-linked but otherwise correct
   concept as a validation failure until the relationship has been assessed and
   either linked or explicitly ruled out.
+- During bundle-wide reviews, check for duplicate index entries, concepts that
+  are only reachable from their local index, oversized flat directories, and
+  subject areas whose index no longer gives useful progressive disclosure.
+  Repair these with synchronized index edits, contextual backlinks, or a
+  carefully scoped subdirectory—not by inventing a mandatory learning order.
 - Run repository-provided formatters, validators, artifact checks, and tests
   relevant to the changed files.
 - Inspect `git diff --check`, the complete scoped diff, and the staged diff.
