@@ -7,6 +7,7 @@
 * [Continuous integration](continuous-integration.md) - Frequently integrating small changes into a shared mainline and automatically building and testing each integration.
 * [Continuous delivery and safe releases](continuous-delivery-and-safe-releases.md) - Keeping software in a releasable state and using automated, observable, reversible paths to production.
 * [Secure software development](secure-software-development.md) - Integrating security ownership, risk reduction, verification, and vulnerability response throughout the software lifecycle.
+* [Threat modeling](threat-modeling.md) - Repeatedly modeling a system from an adversary's perspective to identify, prioritize, and mitigate security threats.
 * [Packages, interfaces, and environments](packages-interfaces-and-environments.md) - Components that interact through contracts within a build or runtime environment.
 * [Version resolution and locks](version-resolution-and-locks.md) - Selecting a concrete dependency graph from constraints and recording it for repeatable use.
 * [Software dependency and compatibility](software-dependency-and-compatibility.md) - Managing required components, version constraints, resolution, and runtime compatibility.
