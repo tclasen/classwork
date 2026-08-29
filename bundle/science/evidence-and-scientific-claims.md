@@ -70,4 +70,8 @@ arrives. Provenance records such as [product provenance](../supply-chains/produc
 can be inputs to science, but a chain of custody alone does not establish a
 scientific conclusion.
 
+The claim–argument–evidence structure of an [assurance case](../assurance/assurance-case.md)
+provides a practical way to expose the reasoning, assumptions, and limits
+between a system claim and the evidence offered for it.
+
 [^nas-reproducibility]: National Academies, [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303).

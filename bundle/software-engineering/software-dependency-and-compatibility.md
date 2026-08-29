@@ -78,5 +78,10 @@ but they do not prove that a package is safe or that its publisher's claims are
 true. Verify artifacts and exercise the resulting system in the target
 environment.
 
+For a system-level [assurance case](../assurance/assurance-case.md), the
+resolved dependency graph, artifact hashes, tests, and target-environment
+results can support claims about the specific software release rather than a
+generic claim about a package.
+
 [^semver]: [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html).
 [^python-dependency-specifiers]: Python Packaging Authority, [Dependency specifiers](https://packaging.python.org/en/latest/specifications/dependency-specifiers/).

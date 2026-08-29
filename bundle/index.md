@@ -11,3 +11,4 @@ okf_version: "0.2"
 * [Education](education/index.md) - Competencies, prior knowledge, and prerequisite structures.
 * [Ethics](ethics/index.md) - Agency, moral judgment, and responsibility.
 * [Software engineering](software-engineering/index.md) - Dependencies, version constraints, and compatibility.
+* [Assurance](assurance/index.md) - Claims, arguments, evidence, assumptions, and review for auditable system judgments.

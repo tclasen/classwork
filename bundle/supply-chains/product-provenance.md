@@ -88,5 +88,10 @@ checks, and a stated decision rule. Different parties may also have legitimate
 reasons to redact commercial or personal information, so “complete” means
 complete for the declared purpose and access scope.[^iso-22005]
 
+When a provenance record supports a safety, authenticity, or compliance
+decision, an [assurance case](../assurance/assurance-case.md) can connect the
+event evidence to the decision claim and make gaps, assumptions, and review
+criteria explicit.
+
 [^gs1-epcis]: GS1, [EPCIS 2.0.1 Standard](https://ref.gs1.org/standards/epcis/2.0.1/).
 [^iso-22005]: ISO, [ISO 22005:2007 Traceability in the feed and food chain](https://www.iso.org/standard/36297.html).

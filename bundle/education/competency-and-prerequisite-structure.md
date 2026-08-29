@@ -65,4 +65,8 @@ to the canonical concept rather than creating duplicate “easy” versions. In
 this bundle, the graph can support a lesson plan for [evidence and scientific claims](../science/evidence-and-scientific-claims.md) by exposing missing
 concepts before asking a learner to evaluate a study.
 
+Constructing an [assurance case](../assurance/assurance-case.md) is a useful
+applied competency because it requires a learner to define a claim, select
+evidence, justify the inference, and state uncertainty.
+
 [^how-people-learn-ii]: National Academies, [How People Learn II: Learners, Contexts, and Cultures](https://www.nationalacademies.org/read/24783/chapter/2).

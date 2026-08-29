@@ -69,4 +69,8 @@ surface uncertainty and competing derivations, not collapse them into a single
 unexplained trust label. Provenance is most useful when it supports a concrete
 decision such as accepting, rejecting, reproducing, or investigating a claim.
 
+An [assurance case](../assurance/assurance-case.md) uses provenance as part of
+the evidence and argument for a bounded system claim; provenance alone does
+not establish that the claim follows.
+
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

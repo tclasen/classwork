@@ -119,6 +119,11 @@ resources and threats being addressed. NIST SP 800-63-4 focuses on identity
 proofing, authentication, and federation; it does not by itself define every
 application's authorization policy.[^nist-digital-identity]
 
+An [assurance case](../assurance/assurance-case.md) can use identity and
+authorization records as evidence for claims about who performed an action,
+who could approve it, and whether the relevant control operated in the stated
+context.
+
 [^nist-digital-identity]: NIST, [SP 800-63-4 Digital Identity Guidelines](https://doi.org/10.6028/NIST.SP.800-63-4).
 [^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).
 [^oauth-rfc]: IETF, [RFC 6749: The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749).

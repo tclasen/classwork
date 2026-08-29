@@ -61,4 +61,8 @@ itself. Automated systems may distribute causal contribution across designers,
 deployers, operators, and institutions; preserving human review and clear
 decision rights helps prevent responsibility gaps.
 
+An [assurance case](../assurance/assurance-case.md) can make the evidence,
+assumptions, and decision criteria behind a system judgment reviewable, but it
+does not replace the contextual judgment needed to assign moral responsibility.
+
 [^sep-moral-responsibility]: Stanford Encyclopedia of Philosophy, [Moral Responsibility](https://plato.stanford.edu/entries/moral-responsibility/).
