@@ -1,7 +1,7 @@
 # Foundations
 
 * [First-principles scope for this bundle](first-principles-scope.md) - The terminal vocabulary and learning boundary used to make the repository recursively teachable.
-* [Entities, activities, and agents](entities-activities-and-agents.md) - The basic kinds of things, happenings, and actors used to describe a domain.
+* [Entities, activities, and agents](entities-activities-and-agents.md) - The basic things, happenings, and actors used to describe provenance and change.
 * [Information, data, and records](information-data-and-records.md) - Representations that can be stored, interpreted, transformed, and checked.
 * [Claims, evidence, and inference](claims-evidence-and-inference.md) - Propositions, supporting observations, and reasoning from support to conclusion.
 * [Measurement and uncertainty](measurement-and-uncertainty.md) - Assigning observations values while accounting for limitations and variation.

@@ -5,8 +5,8 @@ description: Goal-directed systems that observe context, select actions, and act
 tags: [artificial-intelligence, agents, agency, planning, tools, autonomy]
 subject:
   - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Agent
-    label: Agent
+    class: http://www.w3.org/ns/prov#SoftwareAgent
+    label: Software Agent
   - ontology: prov-o
     class: http://www.w3.org/ns/prov#Activity
     label: Activity

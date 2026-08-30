@@ -27,12 +27,12 @@ the model's parameters or structure using examples and an objective; inference
 applies the trained model to an input it did not necessarily see during
 training.[^google-what-is-ml]
 
-The central distinction is between the **training process** and the **trained
-model**. Data, labels or feedback, a model family, a loss or reward, and an
-optimization procedure participate in training. The resulting model is a
-representation that maps inputs to outputs under an operating context. Its
-performance on held-out or newly encountered data is evidence about
-generalization, not a guarantee of correctness.
+The central distinction is between the [model training](model-training.md)
+activity and the trained model. Data, labels or feedback, a model family, a
+loss or reward, and an optimization procedure participate in training. The
+resulting model is a representation that maps inputs to outputs under an
+operating context. Its performance on held-out or newly encountered data is
+evidence about generalization, not a guarantee of correctness.
 
 # Main learning settings
 
