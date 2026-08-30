@@ -34,8 +34,9 @@ end-to-end tests for critical user journeys.[^google-testing-enough]
 
 Use a layered portfolio: fast unit tests for local logic, integration tests
 for real boundaries and contracts, end-to-end tests for critical workflows,
-and targeted performance, security, accessibility, compatibility, or recovery
-tests where the risk warrants them. Test both expected behavior and important
+and targeted [performance](performance-and-capacity-engineering.md), security,
+[accessibility](accessibility-as-an-engineering-requirement.md), compatibility,
+or recovery tests where the risk warrants them. Test both expected behavior and important
 failure modes. Prefer deterministic, isolated tests with clear names and
 useful assertions.
 
@@ -51,8 +52,7 @@ risk.
 
 Run the appropriate fast checks with each change and reserve slower suites for
 the stages where their feedback is still useful. Relate test results to [requirements engineering and acceptance](requirements-engineering-and-acceptance.md),
-and make them available to [code review](code-review.md) and continuous
-integration.
+and make them available to [code review](code-review.md) and [continuous integration](continuous-integration.md).
 
 [^google-testing-enough]: Google, [How Much Testing is Enough?](https://testing.googleblog.com/2021/06/how-much-testing-is-enough.html).
 [^google-good-test]: Google, [What Makes a Good Test?](https://testing.googleblog.com/2014/03/testing-on-toilet-what-makes-good-test.html).
