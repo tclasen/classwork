@@ -21,10 +21,6 @@ sources:
     resource: https://slsa.dev/spec/v1.2/provenance
     title: SLSA v1.2, Build provenance
     author: "slsa/community"
-  - id: nist-supply-chain
-    resource: https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-supply-chain-security-guidance-14
-    title: NIST Software Supply Chain Security Guidance
-    author: "nist"
 ---
 
 # Make the build an inspectable transformation

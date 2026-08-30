@@ -47,7 +47,7 @@ the later work of understanding every contributing factor.
 Write a postmortem for significant user-visible degradation, data loss,
 emergency intervention, or another pre-defined trigger. Explain impact,
 detection, timeline, contributing conditions, what went well, what did not,
-and concrete action items with owners and verifiable completion criteria.
+and concrete action items with owners and verifiable completion criteria.[^google-sre-workbook-postmortem]
 Google SRE defines blamelessness as examining system and process conditions
 without indicting people who acted with the information available at the
 time.[^google-sre-postmortem] A blameless process is not consequence-free:
@@ -60,4 +60,5 @@ feedback loops, and sharing lessons across teams as part of operational
 excellence.[^aws-operational-excellence]
 
 [^google-sre-postmortem]: Google SRE, [Postmortem Culture](https://sre.google/sre-book/postmortem-culture/).
+[^google-sre-workbook-postmortem]: Google SRE Workbook, Postmortem Culture: Learning from Failure.
 [^aws-operational-excellence]: AWS, [Evolve](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/evolve.html).

@@ -31,7 +31,7 @@ sources:
 # Build for questions you will need to answer
 
 Observability is the ability to understand a system's internal state from
-externally emitted evidence, including when the failure is novel. Instrument
+externally emitted evidence, including when the failure is novel.[^opentelemetry-primer] Instrument
 important user journeys, boundaries, dependencies, and resources so an
 operator can answer what happened, who was affected, why it happened, and
 whether a mitigation worked. OpenTelemetry organizes common telemetry as
@@ -71,3 +71,4 @@ blameless postmortems, and performance and capacity engineering.
 
 [^opentelemetry-signals]: OpenTelemetry, [Signals](https://opentelemetry.io/docs/concepts/signals/).
 [^google-reliability]: Google Cloud, [Well-Architected Framework: Reliability pillar](https://docs.cloud.google.com/architecture/framework/reliability).
+[^opentelemetry-primer]: OpenTelemetry, [Observability primer](https://opentelemetry.io/docs/concepts/observability-primer/).

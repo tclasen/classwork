@@ -13,10 +13,6 @@ subject:
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
 sources:
-  - id: twelve-factor
-    resource: https://www.12factor.net/
-    title: The Twelve-Factor App
-    author: "twelve-factor-community"
   - id: twelve-factor-config
     resource: https://www.12factor.net/config
     title: The Twelve-Factor App, Config

@@ -21,10 +21,6 @@ sources:
     resource: https://testing.googleblog.com/2014/03/testing-on-toilet-what-makes-good-test.html
     title: Google Testing Blog, What Makes a Good Test?
     author: "google/testing-blog"
-  - id: istqb-ctfl-4
-    resource: https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf
-    title: ISTQB Certified Tester Foundation Level Syllabus v4.0.1
-    author: "istqb/ctfl-4.0.1"
 ---
 
 # Test the risks that matter

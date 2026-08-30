@@ -44,16 +44,18 @@ behavioral change with the change itself.
 # Make change safe to reverse
 
 Design deployments and data migrations so that a bad change can be detected
-and reversed or contained. A reversible change may use a rollback, feature
+and reversed or contained.[^aws-small-reversible] A reversible change may use a rollback, feature
 flag, compatibility window, progressive rollout, or forward fix; the right
 mechanism depends on state and failure mode. Version control does not make a
 change reversible if external side effects or irreversible data mutations are
 left unplanned.
 
 Branches and pull requests provide isolation and discussion, while commits
-provide durable snapshots. Automated checks should run before integration, and
+provide durable snapshots.[^github-writing-code] Automated checks should run before integration, and
 the repository should record enough context to reproduce what was reviewed.
 This practice is the change-management foundation for code review, continuous
 integration, and safe continuous delivery.
 
 [^google-small-cls]: Google, [Small CLs](https://google.github.io/eng-practices/review/developer/small-cls.html).
+[^github-writing-code]: GitHub Docs, Writing code for a project.
+[^aws-small-reversible]: AWS Well-Architected Framework, Design for operations.

@@ -17,10 +17,6 @@ sources:
     resource: https://www.w3.org/TR/WCAG22/
     title: W3C Web Content Accessibility Guidelines 2.2
     author: "w3c/wai"
-  - id: wcag-overview
-    resource: https://www.w3.org/WAI/standards-guidelines/wcag/
-    title: W3C WCAG overview
-    author: "w3c/wai"
 ---
 
 # Make access part of quality

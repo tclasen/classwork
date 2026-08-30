@@ -21,10 +21,6 @@ sources:
     resource: https://google.github.io/styleguide/go/guide.html
     title: Google Go Style Guide
     author: "google/styleguide"
-  - id: fowler-refactoring
-    resource: https://martinfowler.com/ieeeSoftware/beforeClarity.pdf
-    title: "Martin Fowler, Refactoring: Improving the Design of Existing Code"
-    author: "martin-fowler"
 ---
 
 # Optimize for understanding
