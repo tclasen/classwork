@@ -87,7 +87,8 @@ flowchart LR
 
 The architecture does not determine the training data, objective, decoding
 policy, or deployment quality. [Model training](model-training.md) explains how
-parameters are adjusted, and [model inference](model-inference.md) explains
+parameters are adjusted; for differentiable attention computations, [gradients and backpropagation](gradients-and-backpropagation.md) explains how sensitivity
+can flow through those layers. [Model inference](model-inference.md) explains
 what it means to run a trained model on an input. [Large language models](large-language-models.md)
 are one important family that commonly uses Transformer architectures, but a
 Transformer is not itself synonymous with an LLM.

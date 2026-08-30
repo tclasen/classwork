@@ -48,6 +48,8 @@ A typical evaluation design separates examples into roles:
 * **Training data** are used by [model training](model-training.md) and its
   [optimization and parameter updates](optimization-and-parameter-updates.md)
   to adjust parameters against a [training objective and signal](training-objectives-and-signals.md).
+  In differentiable models, [gradients and backpropagation](gradients-and-backpropagation.md)
+  supplies the local sensitivity used by that adjustment.
 * **Validation data** are held apart from parameter fitting and used to choose
   settings, compare model variants, or decide when to stop training.
 * **Test data** are held back until choices are substantially complete and are

@@ -29,6 +29,10 @@ have been adjusted for a task.[^google-what-is-ml] The data and objective define
 what the activity is trying to learn; they do not by themselves establish that
 the resulting model is correct or useful.
 
+For differentiable models, [gradients and backpropagation](gradients-and-backpropagation.md)
+connect the forward computation and training objective to the parameter updates
+used during this activity.
+
 Training produces a model artifact that can later be used for [model inference](model-inference.md):
 applying the adjusted model to an input to obtain a prediction or generated
 output. Separating the training activity from the trained model makes it

@@ -9,6 +9,7 @@
 * [Model training](model-training.md) - Adjusting a model using data and an objective so it performs a task under a stated evaluation procedure.
 * [Training objectives and signals](training-objectives-and-signals.md) - Criteria and feedback values that specify what a machine-learning training activity should improve.
 * [Optimization and parameter updates](optimization-and-parameter-updates.md) - Adjusting a model's parameters to improve a training objective while respecting computational and evaluation limits.
+* [Gradients and backpropagation](gradients-and-backpropagation.md) - Computing objective sensitivity through a model's operations so training can update its parameters.
 * [Generalization and model evaluation](generalization-and-model-evaluation.md) - Assessing how well a trained model performs beyond its training examples under stated data, metrics, and uncertainty.
 * [Model inference](model-inference.md) - Applying a trained model to an input in context to produce a prediction or generated output.
 * [Embeddings and vector representations](embeddings-and-vector-representations.md) - Learned or constructed numerical representations that place data in a task-shaped vector space for computation and comparison.
