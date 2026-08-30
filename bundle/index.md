@@ -15,4 +15,4 @@ okf_version: "0.2"
 * [Software engineering](software-engineering/index.md) - Dependencies, version constraints, and compatibility.
 * [Assurance](assurance/index.md) - Claims, arguments, evidence, assumptions, and review for auditable system judgments.
 * [Artificial intelligence](artificial-intelligence/index.md) - Artificial intelligence, machine learning, language models, and goal-directed agents.
-* [Research papers](references/index.md) - Canonical records for research papers cited by the knowledge graph.
+* [References](references/index.md) - Canonical records for research papers, standards, and guidance cited by the knowledge graph.

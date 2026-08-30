@@ -22,6 +22,7 @@ sources:
     last_modified: 2023-01-26
   - id: nist-ai-600-1
     resource: ../references/nist-ai-600-1.pdf
+    canonical_reference: ../references/nist-ai-600-1.md
     canonical_url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
     title: "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile"
     author: "nist/ai-600-1"
@@ -44,9 +45,9 @@ together. A model score is therefore one evidence entity in a larger evaluation
 activity, not a complete judgment about the system or its effects.
 
 NIST AI RMF 1.0 organizes risk management into Govern, Map, Measure, and Manage;
-the Generative AI Profile applies that framing to generative-AI lifecycle risks
-and trustworthiness considerations.[^nist-ai-rmf-1-0][^nist-ai-600-1] The profile
-is available as the [local NIST AI 600-1 PDF](../references/nist-ai-600-1.pdf)
+the [canonical NIST AI 600-1 reference](../references/nist-ai-600-1.md) applies
+that framing to generative-AI lifecycle risks and trustworthiness
+considerations.[^nist-ai-rmf-1-0][^nist-ai-600-1] The profile is available as the [local NIST AI 600-1 PDF](../references/nist-ai-600-1.pdf)
 and from its [canonical NIST PDF URL](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf).
 
 ## Dimensions and affected groups
@@ -135,4 +136,4 @@ users, environment, stakes, or controls, and preserve routes for affected people
 to question, correct, appeal, or obtain remedy where appropriate.
 
 [^nist-ai-rmf-1-0]: NIST, [Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://doi.org/10.6028/NIST.AI.100-1).
-[^nist-ai-600-1]: NIST, [Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf); repository artifact: [NIST AI 600-1 PDF](../references/nist-ai-600-1.pdf).
+[^nist-ai-600-1]: NIST, [Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf); canonical reference: [NIST AI 600-1](../references/nist-ai-600-1.md); repository artifact: [NIST AI 600-1 PDF](../references/nist-ai-600-1.pdf).
