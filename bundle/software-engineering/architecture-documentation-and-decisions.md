@@ -56,7 +56,9 @@ recommends.[^google-review-looking]
 
 AWS frames architecture as a set of trade-offs across operational excellence,
 security, reliability, performance, cost, and sustainability rather than a
-single universal design.[^aws-on-architecture] Connect decisions to
+single universal design.[^aws-on-architecture] For domain boundaries and
+models that keep architecture aligned with problem meaning, see
+[domain-driven design](domain-driven-design.md). Connect decisions to
 [requirements engineering and acceptance](requirements-engineering-and-acceptance.md),
 [threat modeling](threat-modeling.md), and [observability and operational readiness](observability-and-operational-readiness.md).
 

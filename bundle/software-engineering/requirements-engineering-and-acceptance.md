@@ -46,6 +46,9 @@ and [requirements, risk, and review](../assurance/requirements-risk-and-review.m
 
 Requirements are hypotheses about value and behavior, not proof that a system
 will work. Revisit them when evidence, users, constraints, or risks change.
+When the requirements contain substantial domain rules, [domain-driven design](domain-driven-design.md)
+offers a collaborative way to make their meanings and boundaries explicit in
+the software model.
 
 ```mermaid
 flowchart LR

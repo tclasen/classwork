@@ -35,3 +35,6 @@ classify concepts; they do not replace explanations of the concepts themselves.
 This distinction is essential when interpreting a [machine-learning model](../artificial-intelligence/machine-learning.md)
 or the generated text of a [large language model](../artificial-intelligence/large-language-models.md):
 neither representation is identical to the subject or truth it is used to describe.
+[Domain-driven design](../software-engineering/domain-driven-design.md) applies
+the same discipline of meaning-in-context to software domains, where a bounded
+context protects a model's language from incompatible interpretations.
