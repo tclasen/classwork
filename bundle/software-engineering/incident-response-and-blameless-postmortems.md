@@ -53,9 +53,10 @@ without indicting people who acted with the information available at the
 time.[^google-sre-postmortem] A blameless process is not consequence-free:
 teams remain accountable for completing improvements.
 
-Feed lessons into [observability and operational readiness](observability-and-operational-readiness.md),
-[safe releases](continuous-delivery-and-safe-releases.md), capacity plans,
-tests, threat models, and design. AWS recommends post-incident analysis,
+Postmortem lessons should feed [observability and operational readiness](observability-and-operational-readiness.md),
+[safe releases](continuous-delivery-and-safe-releases.md), [performance and capacity engineering](performance-and-capacity-engineering.md),
+[automated testing and test strategy](automated-testing-and-test-strategy.md), [threat modeling](threat-modeling.md),
+and [architecture documentation and decisions](architecture-documentation-and-decisions.md). AWS recommends post-incident analysis,
 feedback loops, and sharing lessons across teams as part of operational
 excellence.[^aws-operational-excellence]
 
