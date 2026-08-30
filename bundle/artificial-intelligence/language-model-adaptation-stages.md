@@ -47,6 +47,8 @@ The stages are not interchangeable: each supplies different information about
 the behavior desired from the model, and each supports only the evaluations
 that were actually performed.
 
+The canonical bibliographic records for the primary sources are [InstructGPT (2022)](../references/instructgpt-2022.md) and [Direct Preference Optimization (2023)](../references/dpo-2023.md).
+
 ## Broad unsupervised pretraining
 
 The starting point is a large-scale unsupervised language model. DPO describes
