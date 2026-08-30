@@ -9,7 +9,7 @@
 * [Model training](model-training.md) - Adjusting a model using data and an objective so it performs a task under a stated evaluation procedure.
 * [Training objectives and signals](training-objectives-and-signals.md) - Criteria and feedback values that specify what a machine-learning training activity should improve.
 * [Optimization and parameter updates](optimization-and-parameter-updates.md) - Adjusting a model's parameters to improve a training objective while respecting computational and evaluation limits.
-* [Gradients and backpropagation](gradients-and-backpropagation.md) - Computing objective sensitivity through a model's operations so training can update its parameters.
+* [Gradients and backpropagation](gradients-and-backpropagation.md) - Computing how a training objective changes with model parameters so an optimization procedure can update them.
 * [Generalization and model evaluation](generalization-and-model-evaluation.md) - Assessing how well a trained model performs beyond its training examples under stated data, metrics, and uncertainty.
 * [Prediction tasks and model metrics](prediction-tasks-and-model-metrics.md) - Relating prediction targets and decision outputs to task-specific metrics, thresholds, ranking, calibration, and bounded evaluation claims.
 * [Model inference](model-inference.md) - Applying a trained model to an input in context to produce a prediction or generated output.
@@ -24,12 +24,12 @@
 
 ## Retrieval and context
 
-* [Retrieval and external context](retrieval-and-external-context.md) - Selecting, ranking, and supplying external information to models and agents while preserving context, memory, and provenance boundaries.
+* [Retrieval and external context](retrieval-and-external-context.md) - Selecting, ranking, and supplying external information to a model or agent while preserving context limits, memory boundaries, and provenance.
 
 ## Adaptation and alignment
 
-* [Language-model adaptation stages](language-model-adaptation-stages.md) - Comparing unsupervised pretraining, supervised instruction tuning, and preference-based adaptation under bounded evaluation conditions.
-* [Preference learning and reward modeling](preference-learning-and-reward-modeling.md) - Turning comparative judgments into proxy rewards or direct preference objectives while preserving disagreement and generalization limits.
+* [Language-model adaptation stages](language-model-adaptation-stages.md) - Comparing broad unsupervised pretraining with supervised and preference-based procedures that change a language model's behavior under bounded evaluation conditions.
+* [Preference learning and reward modeling](preference-learning-and-reward-modeling.md) - Turning comparative judgments about model outputs into preference-based training signals, reward models, or direct objectives with explicit limits.
 
 ## Agents
 
@@ -39,7 +39,7 @@
 ## Evaluation
 
 * [AI system evaluation and risk management](ai-system-evaluation-and-risk-management.md) - Evaluating AI systems in context and managing risks across their lifecycle.
-* [Responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md) - Evaluating trustworthiness, affected-party impacts, and residual risk in a stated context.
+* [Responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md) - Evaluating AI trustworthiness, affected-party impacts, and residual risk in a stated context.
 
 ## Sources
 
