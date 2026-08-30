@@ -22,7 +22,7 @@ subject:
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T19:45:00-07:00" }
 sources:
-  - id: nist-ai-600-1-record
+  - id: nist-ai-600-1
     resource: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
     canonical_url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
     title: "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile"
