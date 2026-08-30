@@ -38,8 +38,9 @@ team's product, delivery, or risk process.[^nist-ssdf]
 Make security an owned product-quality outcome, not a late gate delegated to
 one specialist. Identify security requirements and abuse cases, use safe
 defaults and well-understood components, constrain trust boundaries, validate
-inputs, protect secrets, review high-risk changes, and test security controls.
-Select controls proportional to the threat, data, users, and consequences.
+inputs, protect secrets, review high-risk changes, and [test security controls](automated-testing-and-test-strategy.md)
+as a risk-targeted application of test strategy. Select controls proportional
+to the threat, data, users, and consequences.
 
 # Manage the lifecycle after release
 

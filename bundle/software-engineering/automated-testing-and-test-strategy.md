@@ -34,11 +34,16 @@ end-to-end tests for critical user journeys.[^google-testing-enough]
 
 Use a layered portfolio: fast unit tests for local logic, integration tests
 for real boundaries and contracts, end-to-end tests for critical workflows,
-and targeted [performance](performance-and-capacity-engineering.md), security,
+and targeted [performance](performance-and-capacity-engineering.md), [security testing](secure-software-development.md),
 [accessibility](accessibility-as-an-engineering-requirement.md), compatibility,
 or recovery tests where the risk warrants them. Test both expected behavior and important
 failure modes. Prefer deterministic, isolated tests with clear names and
 useful assertions.
+
+Security-control testing is a risk-targeted application of this test strategy
+within [secure software development](secure-software-development.md): prioritize
+the controls whose failure would matter most for the system's threats, data,
+users, and consequences.
 
 # Keep tests trustworthy
 
