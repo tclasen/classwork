@@ -45,8 +45,9 @@ fine-tuning, or preference optimization. These stages change behavior but do
 not remove the need for evaluation in the deployment context.
 
 LLMs are a specialized family within [machine learning](machine-learning.md)
-and one possible component of [AI agents](agents.md). An LLM by itself maps
-contexts to generated outputs; it does not automatically have tools, durable
+and one possible component of [AI agents](agents.md). At runtime, an LLM uses
+[model inference](model-inference.md) to map a supplied context to generated
+outputs; it does not automatically have tools, durable
 memory, authority, or a reliable goal-management loop.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

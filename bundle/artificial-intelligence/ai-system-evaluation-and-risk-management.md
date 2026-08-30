@@ -60,7 +60,10 @@ claim about an AI system, the argument connecting evidence to that claim,
 assumptions, rebuttals, and review limits. Evaluation does not prove that an
 AI system is universally safe or correct; it supports a context-bound decision
 whose confidence depends on coverage, uncertainty, independence, and the
-freshness of the evidence. Responses may include changing the system,
+freshness of the evidence. For runtime behavior and failures, pair this
+evaluation with [observability and operational readiness](../software-engineering/observability-and-operational-readiness.md),
+which makes system state and operational response evidence inspectable. Responses
+may include changing the system,
 restricting its use, adding human review, monitoring for drift, or accepting a
 documented residual risk through [risk and decision](../foundations/risk-and-decision.md).
 

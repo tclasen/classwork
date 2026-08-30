@@ -28,7 +28,7 @@ parameters or structure have been adjusted for a task.[^google-what-is-ml]
 The data and objective define what the activity is trying to learn; they do
 not by themselves establish that the resulting model is correct or useful.
 
-Training produces a model artifact that can later be used for **inference**:
+Training produces a model artifact that can later be used for [model inference](model-inference.md):
 applying the adjusted model to an input to obtain a prediction or generated
 output. Separating the training activity from the trained model makes it
 possible to record the data, code, configuration, and evaluation conditions

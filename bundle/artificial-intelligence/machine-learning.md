@@ -31,7 +31,8 @@ The central distinction is between the [model training](model-training.md)
 activity and the trained model. Data, labels or feedback, a model family, a
 loss or reward, and an optimization procedure participate in training. The
 resulting model is a representation that maps inputs to outputs under an
-operating context. Its performance on held-out or newly encountered data is
+operating context through [model inference](model-inference.md). Its
+performance on held-out or newly encountered data is
 evidence about generalization, not a guarantee of correctness.
 
 # Main learning settings
