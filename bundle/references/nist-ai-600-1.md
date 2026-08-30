@@ -38,6 +38,8 @@ Intelligence Profile* is NIST AI 600-1, published in July 2024. It is a
 cross-sectoral profile for applying the [AI Risk Management Framework (AI RMF 1.0)](https://doi.org/10.6028/NIST.AI.100-1) to generative-AI risks and
 lifecycle activities.[^nist-ai-600-1]
 
+This bundle applies the profile through [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md), using lifecycle-risk framing, affected groups, trustworthiness dimensions, evidence, and residual-risk decisions.
+
 The complete source is preserved as the local [NIST AI 600-1 PDF](nist-ai-600-1.pdf).
 Its recorded integrity facts are 1,174,643 bytes and SHA-256
 `6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a`.
