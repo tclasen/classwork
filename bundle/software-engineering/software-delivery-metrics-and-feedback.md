@@ -54,8 +54,7 @@ Reliability targets should reflect user experience and be connected to
 observation, response, recovery, and learning.[^google-reliability]
 
 Use this practice to tune [continuous integration](continuous-integration.md),
-[safe releases](continuous-delivery-and-safe-releases.md), [incident response
-and blameless postmortems](incident-response-and-blameless-postmortems.md),
+[safe releases](continuous-delivery-and-safe-releases.md), [incident response and blameless postmortems](incident-response-and-blameless-postmortems.md),
 and [performance and capacity engineering](performance-and-capacity-engineering.md).
 
 [^dora-2021]: DORA, [Accelerate State of DevOps Report 2021](https://dora.dev/research/2021/dora-report/).

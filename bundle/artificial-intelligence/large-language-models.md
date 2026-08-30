@@ -32,8 +32,7 @@ conditional estimates until a stopping condition is reached.[^google-ml-glossary
 The word *large* is relative to the model family and task; it does not by
 itself establish accuracy, knowledge, reasoning, or consciousness. A model can
 produce fluent text while being wrong, uncertain, biased by its data, or
-sensitive to wording. Treat an output as a generated [information, data, and
-record](../foundations/information-data-and-records.md), then check its
+sensitive to wording. Treat an output as a generated [information, data, and record](../foundations/information-data-and-records.md), then check its
 provenance and supporting [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md).
 
 # Training and architecture

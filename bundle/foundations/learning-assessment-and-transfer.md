@@ -32,8 +32,7 @@ uncertainty; “not yet demonstrated” is not identical to “does not know.”
 tests whether the learner can recognize and use the underlying structure rather
 than merely repeat a memorized surface pattern.[^how-people-learn-ii]
 
-This foundation explains the learning role of [competency and prerequisite
-structure](../education/competency-and-prerequisite-structure.md). Its
+This foundation explains the learning role of [competency and prerequisite structure](../education/competency-and-prerequisite-structure.md). Its
 assessment evidence differs from [scientific evidence](claims-evidence-and-inference.md),
 which supports claims about a subject rather than judgments about a learner.
 

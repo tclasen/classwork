@@ -54,8 +54,7 @@ coverage as a signal to find gaps, not as a substitute for reasoning about
 risk.
 
 Run the appropriate fast checks with each change and reserve slower suites for
-the stages where their feedback is still useful. Relate test results to
-[requirements engineering and acceptance](requirements-engineering-and-acceptance.md),
+the stages where their feedback is still useful. Relate test results to [requirements engineering and acceptance](requirements-engineering-and-acceptance.md),
 and make them available to [code review](code-review.md) and continuous
 integration.
 

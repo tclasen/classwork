@@ -34,8 +34,6 @@ which package versions are acceptable; it does not prove that every matching
 version works. A resolver selects a graph satisfying all constraints, and a
 lock records one selected graph for repeatability.[^python-dependency-specifiers]
 
-The general dependency structure is defined in [logic, graphs, and
-dependencies](../foundations/logic-graphs-and-dependencies.md) and [systems,
-processes, and boundaries](../foundations/systems-processes-and-boundaries.md).
+The general dependency structure is defined in [logic, graphs, and dependencies](../foundations/logic-graphs-and-dependencies.md) and [systems, processes, and boundaries](../foundations/systems-processes-and-boundaries.md). [API and interface design](api-and-interface-design.md) applies these contract ideas to public and inter-component interfaces; [configuration and environment parity](configuration-and-environment-parity.md) applies them to runtime conditions.
 
 [^python-dependency-specifiers]: Python Packaging Authority, [Dependency specifiers](https://packaging.python.org/en/latest/specifications/dependency-specifiers/).

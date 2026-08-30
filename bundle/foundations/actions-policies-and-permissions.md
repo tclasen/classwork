@@ -36,8 +36,7 @@ allow an action that policy does not authorize.
 To evaluate an access decision, identify the agent, action, target, relevant
 context, applicable policy, and enforcement point. This distinction is the
 foundation for [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)
-and for recording who could perform an activity in [moral agency and
-responsibility](../ethics/moral-agency-and-responsibility.md). An [AI agent](../artificial-intelligence/agents.md)
+and for recording who could perform an activity in [moral agency and responsibility](../ethics/moral-agency-and-responsibility.md). An [AI agent](../artificial-intelligence/agents.md)
 must be constrained by these same authorization boundaries; producing a plan
 does not itself grant permission to execute it.
 

@@ -35,7 +35,6 @@ identified entities, activities, or agents, such as used, generated, owned,
 caused, depends on, or supports.
 
 Reliable histories therefore need identifiers, timestamps, scope, and an
-explicit account of change. These distinctions support [information,
-data, and records](information-data-and-records.md) and [product provenance](../supply-chains/product-provenance.md).
+explicit account of change. These distinctions support [information, data, and records](information-data-and-records.md) and [product provenance](../supply-chains/product-provenance.md).
 
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

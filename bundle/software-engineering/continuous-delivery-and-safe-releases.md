@@ -55,10 +55,9 @@ management trio that limits exposure to bad changes.[^google-sre-change-manageme
 GitHub describes CI/CD workflows as building and testing pull requests, then
 deploying merged changes; AWS similarly recommends small changes, safe
 deployment strategies, automated testing, and rollback.[^github-actions]
-[^aws-operational-excellence] Pair release automation with [continuous
-integration](continuous-integration.md), [observability and operational
-readiness](observability-and-operational-readiness.md), and [version control
-and small reversible changes](version-control-and-small-reversible-changes.md).
+[^aws-operational-excellence] Pair release automation with [continuous integration](continuous-integration.md),
+[observability and operational readiness](observability-and-operational-readiness.md),
+and [version control and small reversible changes](version-control-and-small-reversible-changes.md).
 
 [^google-sre-change-management]: Google SRE, [Introduction](https://sre.google/sre-book/introduction/).
 [^github-actions]: GitHub, [Understanding GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions).

@@ -41,17 +41,14 @@ and carrying out actions in an environment.
 An AI system includes more than a model: its data, objective, interface,
 runtime, users, operators, and surrounding environment can all affect its
 behavior. Use [systems, processes, and boundaries](../foundations/systems-processes-and-boundaries.md)
-to state what is inside the system and what remains external. Use [semantics
-and models](../foundations/semantics-and-models.md) to distinguish a model's
-representation from the world it represents, and [claims, evidence, and
-inference](../foundations/claims-evidence-and-inference.md) to separate an
+to state what is inside the system and what remains external. Use [semantics and models](../foundations/semantics-and-models.md) to distinguish a model's
+representation from the world it represents, and [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md) to separate an
 output from a justified conclusion about its correctness.
 
 AI outputs should be evaluated for the task, context, uncertainty, failure
 modes, and consequences that matter. [Information provenance and trust](../information-systems/information-provenance-and-trust.md)
 helps trace inputs and transformations; [assurance cases](../assurance/assurance-case.md)
-help organize bounded claims and evidence; and [actions, policies, and
-permissions](../foundations/actions-policies-and-permissions.md) constrain
+help organize bounded claims and evidence; and [actions, policies, and permissions](../foundations/actions-policies-and-permissions.md) constrain
 what an AI-enabled system may do.
 
 [^oecd-ai-definition]: OECD, [Explanatory memorandum on the updated OECD definition of an AI system](https://oecd.ai/en/ai-publications/explanatory-memorandum-on-the-updated-oecd-definition-of-an-ai-system).

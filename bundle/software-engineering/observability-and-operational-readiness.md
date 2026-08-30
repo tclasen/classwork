@@ -56,8 +56,7 @@ recommends observability, automated recovery, recovery testing, and
 postmortems.[^google-reliability]
 
 Operational readiness is a property of the system and its surrounding team,
-not a monitoring dashboard added after deployment. Connect it to [safe
-releases](continuous-delivery-and-safe-releases.md), incident response,
+not a monitoring dashboard added after deployment. Connect it to [safe releases](continuous-delivery-and-safe-releases.md), incident response,
 blameless postmortems, and performance and capacity engineering.
 
 [^opentelemetry-signals]: OpenTelemetry, [Signals](https://opentelemetry.io/docs/concepts/signals/).

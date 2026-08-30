@@ -32,8 +32,7 @@ sources:
 Track source, configuration, infrastructure, and documentation in a shared
 revision-control system. A commit should describe a coherent change and leave
 the repository in a usable state. Clear history supports review, rollback,
-blameless investigation, release reconstruction, and [information provenance
-and trust](../information-systems/information-provenance-and-trust.md).
+blameless investigation, release reconstruction, and [information provenance and trust](../information-systems/information-provenance-and-trust.md).
 
 Prefer one self-contained change over a large batch of unrelated work. Google
 Engineering Practices reports that small changes are easier to review, less

@@ -58,8 +58,7 @@ AWS frames architecture as a set of trade-offs across operational excellence,
 security, reliability, performance, cost, and sustainability rather than a
 single universal design.[^aws-on-architecture] Connect decisions to
 [requirements engineering and acceptance](requirements-engineering-and-acceptance.md),
-[threat modeling](threat-modeling.md), and [observability and operational
-readiness](observability-and-operational-readiness.md).
+[threat modeling](threat-modeling.md), and [observability and operational readiness](observability-and-operational-readiness.md).
 
 [^google-well-architected]: Google Cloud, [Well-Architected Framework](https://docs.cloud.google.com/architecture/framework).
 [^aws-on-architecture]: AWS, [On architecture](https://docs.aws.amazon.com/wellarchitected/latest/framework/on-architecture.html).

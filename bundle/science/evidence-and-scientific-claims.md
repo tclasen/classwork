@@ -37,9 +37,7 @@ Begin with [claims, evidence, and inference](../foundations/claims-evidence-and-
 [information, data, and records](../foundations/information-data-and-records.md),
 and [semantics and models](../foundations/semantics-and-models.md).
 
-For the method and quantitative prerequisites, follow [observation, measurement,
-and study design](observation-measurement-and-study-design.md) and [probability
-and statistical inference](probability-and-statistical-inference.md).
+For the method and quantitative prerequisites, follow [observation, measurement, and study design](observation-measurement-and-study-design.md) and [probability and statistical inference](probability-and-statistical-inference.md).
 
 ```mermaid
 flowchart LR

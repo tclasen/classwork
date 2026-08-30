@@ -35,6 +35,8 @@ defines the reasoning that connects evidence to a decision.
 
 An [assurance case](assurance-case.md) keeps the claim, assumptions, evidence,
 argument, limits, and review outcome visible rather than reducing them to a
-label.[^iso-assurance-case]
+label.[^iso-assurance-case] In software work, [requirements engineering and acceptance](../software-engineering/requirements-engineering-and-acceptance.md)
+turns stakeholder needs into traceable acceptance evidence, while [automated testing and test strategy](../software-engineering/automated-testing-and-test-strategy.md)
+provides one important class of verification evidence.
 
 [^iso-assurance-case]: ISO/IEC/IEEE, [15026-2:2022 Systems and software engineering — Assurance case](https://www.iso.org/obp/ui?_escaped_fragment_=iso:std:iso-iec-ieee:15026:-2:ed-2:v1:en).

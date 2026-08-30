@@ -46,8 +46,7 @@ failure signal are the enabling conditions. GitHub describes CI as frequent
 commits combined with continuous build and test checks that detect errors
 sooner and reduce merge-debugging effort.[^github-ci]
 
-CI provides evidence for [code review](code-review.md) and [automated testing
-and test strategy](automated-testing-and-test-strategy.md), but passing CI is
+CI provides evidence for [code review](code-review.md) and [automated testing and test strategy](automated-testing-and-test-strategy.md), but passing CI is
 not proof that untested requirements, production behavior, or operational
 risks are safe.
 

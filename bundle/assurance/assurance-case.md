@@ -50,11 +50,7 @@ identity assertion, or review is not self-interpreting. State what property is
 being assured, which evidence bears on it, why the evidence is sufficient for
 the stated context, and what would weaken or rebut the conclusion.[^nist-assurance-case]
 
-This reasoning uses the foundational distinctions among [claims, evidence, and
-inference](../foundations/claims-evidence-and-inference.md), [systems,
-processes, and boundaries](../foundations/systems-processes-and-boundaries.md),
-[risk and decision](../foundations/risk-and-decision.md), and [roles, authority,
-and organizations](../foundations/roles-authority-and-organizations.md).
+This reasoning uses the foundational distinctions among [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md), [systems, processes, and boundaries](../foundations/systems-processes-and-boundaries.md), [risk and decision](../foundations/risk-and-decision.md), and [roles, authority, and organizations](../foundations/roles-authority-and-organizations.md).
 
 For the applied reasoning step, see [argument validity and rebuttal](../reasoning/argument-validity-and-rebuttal.md).
 

@@ -39,5 +39,8 @@ describes what is protected.
 
 This foundation is necessary for [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)
 and for trustworthy [product provenance](../supply-chains/product-provenance.md).
+It grounds [secure software development](../software-engineering/secure-software-development.md)
+and [threat modeling](../software-engineering/threat-modeling.md), which apply
+these properties to software design and lifecycle decisions.
 
 [^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

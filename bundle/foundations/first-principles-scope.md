@@ -31,6 +31,5 @@ algorithm, or domain term does not count as an explanation.
 The closure is therefore **recursive and operational**: it is complete for the
 subjects represented by this repository when every specialized term is defined,
 linked to its prerequisites, and supported by a worked explanation or example
-where application would otherwise remain ambiguous. [Learning, assessment, and
-transfer](learning-assessment-and-transfer.md) provides the criterion for
+where application would otherwise remain ambiguous. [Learning, assessment, and transfer](learning-assessment-and-transfer.md) provides the criterion for
 deciding whether an explanation is usable rather than merely recognizable.

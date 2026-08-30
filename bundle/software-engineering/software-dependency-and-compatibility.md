@@ -39,8 +39,7 @@ The general ideas are grounded in [systems, processes, and boundaries](../founda
 [time, identity, and relationships](../foundations/time-identity-and-relationships.md),
 and [information, data, and records](../foundations/information-data-and-records.md).
 
-The component-level vocabulary is developed in [packages, interfaces, and
-environments](packages-interfaces-and-environments.md).
+The component-level vocabulary is developed in [packages, interfaces, and environments](packages-interfaces-and-environments.md).
 
 ```mermaid
 flowchart LR
@@ -84,7 +83,9 @@ compatibility from binary, behavioral, data, and operational compatibility.
 Dependency metadata and lock files are provenance evidence for [information provenance and trust](../information-systems/information-provenance-and-trust.md),
 but they do not prove that a package is safe or that its publisher's claims are
 true. Verify artifacts and exercise the resulting system in the target
-environment.
+environment. [Secure software development](secure-software-development.md)
+adds lifecycle controls for vulnerable dependencies, while [reproducible builds and software provenance](reproducible-builds-and-provenance.md) helps verify
+which inputs produced the shipped artifact.
 
 For a system-level [assurance case](../assurance/assurance-case.md), the
 resolved dependency graph, artifact hashes, tests, and target-environment

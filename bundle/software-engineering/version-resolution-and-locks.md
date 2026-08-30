@@ -38,6 +38,10 @@ but does not prove that a package is safe, compatible, or available forever.
 Semantic Versioning communicates intended compatibility through version numbers,
 but concrete combinations still need testing.[^semver]
 
+For stronger artifact-level reproducibility, pair locks with [reproducible builds and software provenance](reproducible-builds-and-provenance.md). Resolve
+and test the concrete graph in [continuous integration](continuous-integration.md)
+before promoting it through a release.
+
 [Packages, interfaces, and environments](packages-interfaces-and-environments.md)
 defines the components and assumptions; [software dependency and compatibility](software-dependency-and-compatibility.md)
 applies them to maintenance.

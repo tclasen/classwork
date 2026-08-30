@@ -31,8 +31,7 @@ interventions, comparisons, outcomes, exclusions, and analysis.
 Operational definitions make an abstract property observable, but they can
 capture only some aspects of it. Instruments and procedures introduce limits;
 calibration, controls, repeated observations, and recorded conditions help
-separate the subject from the measurement process. [Measurement and
-uncertainty](../foundations/measurement-and-uncertainty.md) explains value and
+separate the subject from the measurement process. [Measurement and uncertainty](../foundations/measurement-and-uncertainty.md) explains value and
 limitation, while [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md)
 explains why the result matters to a claim.
 

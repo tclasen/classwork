@@ -39,8 +39,7 @@ Its basic vocabulary comes from [entities, activities, and agents](../foundation
 [information, data, and records](../foundations/information-data-and-records.md),
 and [security properties and integrity](../foundations/security-properties-and-integrity.md).
 
-The event and custody mechanism is developed in [traceability events and
-custody](traceability-events-and-custody.md).
+The event and custody mechanism is developed in [traceability events and custody](traceability-events-and-custody.md).
 
 Provenance is not the same as a marketing story or a single “made in” field.
 It is a chain of claims whose usefulness depends on stable identifiers,

@@ -41,8 +41,7 @@ The basic vocabulary is introduced in [entities, activities, and agents](../foun
 [time, identity, and relationships](../foundations/time-identity-and-relationships.md),
 and [risk and decision](../foundations/risk-and-decision.md).
 
-The operational traceability pattern is illustrated by [traceability events
-and custody](../supply-chains/traceability-events-and-custody.md).
+The operational traceability pattern is illustrated by [traceability events and custody](../supply-chains/traceability-events-and-custody.md).
 
 ```mermaid
 flowchart LR
@@ -79,6 +78,7 @@ decision such as accepting, rejecting, reproducing, or investigating a claim.
 
 An [assurance case](../assurance/assurance-case.md) uses provenance as part of
 the evidence and argument for a bounded system claim; provenance alone does
-not establish that the claim follows.
+not establish that the claim follows. [Reproducible builds and software provenance](../software-engineering/reproducible-builds-and-provenance.md)
+applies this distinction to software artifacts and build processes.
 
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

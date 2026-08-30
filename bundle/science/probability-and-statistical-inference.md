@@ -31,8 +31,7 @@ sample, while an estimate uses it to say something about a target quantity.
 An interval or test result is conditional evidence, not a guarantee. Its
 interpretation depends on the sampling process, model, assumptions, analysis
 choices, and question. **Statistical significance** is not the same as effect
-size, practical importance, or truth. [Observation, measurement, and study
-design](observation-measurement-and-study-design.md) supplies the data
+size, practical importance, or truth. [Observation, measurement, and study design](observation-measurement-and-study-design.md) supplies the data
 collection path; [evidence and scientific claims](evidence-and-scientific-claims.md)
 supplies the broader limits on inference.
 

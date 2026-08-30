@@ -36,8 +36,7 @@ outcomes, criteria, and what uncertainty remains. It should distinguish “not
 observed” from “does not exist.”
 
 This foundation supports [information provenance and trust](../information-systems/information-provenance-and-trust.md),
-[assurance cases](../assurance/assurance-case.md), [digital identity and
-authorization](../cybersecurity/digital-identity-and-authorization.md), and
+[assurance cases](../assurance/assurance-case.md), [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md), and
 [moral agency and responsibility](../ethics/moral-agency-and-responsibility.md).
 
 [^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

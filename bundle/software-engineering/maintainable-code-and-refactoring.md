@@ -23,7 +23,7 @@ sources:
     author: "google/styleguide"
   - id: fowler-refactoring
     resource: https://martinfowler.com/ieeeSoftware/beforeClarity.pdf
-    title: Martin Fowler, Refactoring: Improving the Design of Existing Code
+    title: "Martin Fowler, Refactoring: Improving the Design of Existing Code"
     author: "martin-fowler"
 ---
 
@@ -55,9 +55,7 @@ test code itself.[^google-review-looking]
 Refactoring is a risk-managed investment, not an excuse to rewrite without
 learning. Link it to a concrete maintenance, correctness, performance,
 security, or delivery problem and measure whether the change helped. This
-practice supports [code review](code-review.md), [automated testing and test
-strategy](automated-testing-and-test-strategy.md), and [version control and
-small reversible changes](version-control-and-small-reversible-changes.md).
+practice supports [code review](code-review.md), [automated testing and test strategy](automated-testing-and-test-strategy.md), and [version control and small reversible changes](version-control-and-small-reversible-changes.md).
 
 [^google-review-looking]: Google, [What to look for in a code review](https://google.github.io/eng-practices/review/reviewer/looking-for.html).
 [^google-go-guide]: Google, [Go Style Guide](https://google.github.io/styleguide/go/guide.html).

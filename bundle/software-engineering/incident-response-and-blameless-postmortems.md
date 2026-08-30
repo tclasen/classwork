@@ -19,7 +19,7 @@ sources:
     author: "google/sre-book"
   - id: google-sre-workbook-postmortem
     resource: https://sre.google/workbook/postmortem-culture/
-    title: Google SRE Workbook, Postmortem Culture: Learning from Failure
+    title: "Google SRE Workbook, Postmortem Culture: Learning from Failure"
     author: "google/sre-workbook"
   - id: aws-operational-excellence
     resource: https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/evolve.html

@@ -34,8 +34,7 @@ based on attention mechanisms rather than recurrence or convolution. Its
 attention-based design supports more parallel computation during training and
 was evaluated on machine translation and constituency parsing tasks.[^transformer-paper]
 
-The paper provides the architectural foundation referenced by [large language
-models](../artificial-intelligence/large-language-models.md). It does not by
+The paper provides the architectural foundation referenced by [large language models](../artificial-intelligence/large-language-models.md). It does not by
 itself define a large language model, guarantee generated-output quality, or
 establish that every later Transformer use has the same training procedure.
 
