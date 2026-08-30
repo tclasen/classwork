@@ -108,6 +108,9 @@ will have the predicted outcome, and a ranking score is not evidence that the
 top item is objectively best. [Claims, evidence, and inference](../foundations/claims-evidence-and-inference.md)
 helps state the bounded claim supported by an evaluation result; [AI system evaluation and risk management](ai-system-evaluation-and-risk-management.md)
 extends that claim to the complete deployment context and its consequences.
+The responsible-AI extension is [responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md),
+which asks how task performance, subgroup effects, privacy, and downstream
+consequences should inform a context-bound judgment.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).
 [^google-ml-metrics]: Google for Developers, [Machine Learning Glossary: Metrics](https://developers.google.com/machine-learning/glossary/metrics).

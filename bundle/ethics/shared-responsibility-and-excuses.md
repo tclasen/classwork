@@ -34,5 +34,8 @@ blame.[^sep-moral-responsibility]
 vocabulary; [roles, authority, and organizations](../foundations/roles-authority-and-organizations.md)
 and [information provenance and trust](../information-systems/information-provenance-and-trust.md)
 provide technical context without collapsing it into moral judgment.
+The AI-specific application is [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md),
+which uses impact evidence to identify distributed duties, control, remedy, and
+unresolved responsibility gaps.
 
 [^sep-moral-responsibility]: Stanford Encyclopedia of Philosophy, [Moral Responsibility](https://plato.stanford.edu/entries/moral-responsibility/).

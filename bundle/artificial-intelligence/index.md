@@ -38,6 +38,7 @@
 ## Evaluation
 
 * [AI system evaluation and risk management](ai-system-evaluation-and-risk-management.md) - Evaluating AI systems in context and managing risks across their lifecycle.
+* [Responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md) - Evaluating trustworthiness, affected-party impacts, and residual risk in a stated context.
 
 ## Sources
 

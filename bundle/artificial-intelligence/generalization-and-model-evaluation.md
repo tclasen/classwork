@@ -125,6 +125,8 @@ choices that must be represented in the evaluation conditions.
 [Language-model adaptation stages](language-model-adaptation-stages.md) gives a
 language-model example of the same boundary: reported improvements remain
 tied to the prompts, tasks, comparisons, and populations actually evaluated.
+For the broader impacts of those results on affected groups, privacy, security,
+and accountability, continue to [responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md).
 
 [^google-what-is-ml]: Google for Developers, [What is Machine Learning?](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml).
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

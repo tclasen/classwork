@@ -67,5 +67,7 @@ which makes system state and operational response evidence inspectable. Response
 may include changing the system,
 restricting its use, adding human review, monitoring for drift, or accepting a
 documented residual risk through [risk and decision](../foundations/risk-and-decision.md).
+For the trustworthiness dimensions, affected groups, and impact-assessment
+questions that make this contextual evaluation concrete, see [responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md).
 
 [^nist-ai-rmf-1-0]: NIST, [Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://doi.org/10.6028/NIST.AI.100-1).

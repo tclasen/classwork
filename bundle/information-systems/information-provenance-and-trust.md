@@ -86,5 +86,8 @@ applies this distinction to software artifacts and build processes.
 applies it to indexed sources, request-scoped retrieved records, and agent
 memory, where provenance helps a consumer distinguish origin from a model's
 generated interpretation.
+For AI impact evaluation, [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md)
+uses the same lineage to identify which data, version, evaluator, and operating
+conditions support a claim about affected groups or harms.
 
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

@@ -72,5 +72,8 @@ decision rights helps prevent responsibility gaps.
 An [assurance case](../assurance/assurance-case.md) can make the evidence,
 assumptions, and decision criteria behind a system judgment reviewable, but it
 does not replace the contextual judgment needed to assign moral responsibility.
+That judgment is part of [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md),
+which connects affected-party impacts and accountability records to, but does
+not collapse them into, a moral verdict.
 
 [^sep-moral-responsibility]: Stanford Encyclopedia of Philosophy, [Moral Responsibility](https://plato.stanford.edu/entries/moral-responsibility/).

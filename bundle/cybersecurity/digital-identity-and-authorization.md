@@ -133,6 +133,9 @@ tool request becomes an external action. An [assurance case](../assurance/assura
 authorization records as evidence for claims about who performed an action,
 who could approve it, and whether the relevant control operated in the stated
 context.
+In [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md),
+these controls bound access to sensitive evaluation data and clarify who may
+approve, change, or remedy a consequential deployment decision.
 
 [^nist-digital-identity]: NIST, [SP 800-63-4 Digital Identity Guidelines](https://doi.org/10.6028/NIST.SP.800-63-4).
 [^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

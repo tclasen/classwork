@@ -42,5 +42,8 @@ and for trustworthy [product provenance](../supply-chains/product-provenance.md)
 It grounds [secure software development](../software-engineering/secure-software-development.md)
 and [threat modeling](../software-engineering/threat-modeling.md), which apply
 these properties to software design and lifecycle decisions.
+In AI evaluation, [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md)
+uses these properties to assess confidentiality, integrity, authenticity,
+availability, resilience, and the protection of evaluation evidence.
 
 [^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

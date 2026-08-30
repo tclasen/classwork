@@ -88,6 +88,9 @@ template with mastery.
 An assurance case is not proof that a system is risk-free. It is a reviewable,
 context-bound justification whose confidence depends on evidence quality,
 argument validity, coverage, independence, and the freshness of the case.
+For an AI-specific application, [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md)
+organizes trustworthiness dimensions, affected-party impacts, and residual
+risk as claims and evidence that can enter such a case.
 The SEI describes the same claim–argument–evidence structure for security
 assurance and emphasizes that evidence must apply to the released system and
 the practices actually performed.[^sei-arguing-security]
