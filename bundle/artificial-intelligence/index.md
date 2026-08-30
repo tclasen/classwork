@@ -22,6 +22,10 @@
 * [Language-model decoding](language-model-decoding.md) - Selecting and stopping generated token sequences from a language model's conditional predictions.
 * [Transformer attention architecture](transformer-attention-architecture.md) - A layered sequence-model architecture that relates positions with attention and preserves order with positional information.
 
+## Retrieval and context
+
+* [Retrieval and external context](retrieval-and-external-context.md) - Selecting, ranking, and supplying external information to models and agents while preserving context, memory, and provenance boundaries.
+
 ## Adaptation and alignment
 
 * [Language-model adaptation stages](language-model-adaptation-stages.md) - Comparing unsupervised pretraining, supervised instruction tuning, and preference-based adaptation under bounded evaluation conditions.

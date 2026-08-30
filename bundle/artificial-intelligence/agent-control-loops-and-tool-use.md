@@ -96,6 +96,9 @@ focuses on its repeatable control mechanism. An LLM may be one component, and
 tools may include retrieval, computation, APIs, or actuators. The loop should
 therefore preserve the distinction between a model's generated proposal, an
 authorized activity, an observed result, and a justified final claim.
+[Retrieval and external context](retrieval-and-external-context.md) explains
+the indexing, ranking, context, memory, and provenance boundaries when one of
+those tools retrieves information.
 
 In a learning system, the [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
 adds a longer-horizon relationship between observed transitions, rewards, and

@@ -54,6 +54,9 @@ Connect interface design to [packages, interfaces, and environments](packages-in
 [software dependency and compatibility](software-dependency-and-compatibility.md),
 [requirements engineering and acceptance](requirements-engineering-and-acceptance.md),
 and [architecture documentation and decisions](architecture-documentation-and-decisions.md).
+[Retrieval and external context](../artificial-intelligence/retrieval-and-external-context.md)
+is a concrete example of an interface whose query, result, permission, freshness,
+and failure contracts affect model and agent behavior.
 
 [^google-api-design]: Google Cloud, [API design guide](https://docs.cloud.google.com/apis/design).
 [^google-api-naming]: Google Cloud, [Naming conventions](https://cloud.google.com/apis/design/naming_convention).

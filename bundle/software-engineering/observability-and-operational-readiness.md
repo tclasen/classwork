@@ -58,6 +58,9 @@ postmortems.[^google-reliability]
 For an [agent control loop](../artificial-intelligence/agent-control-loops-and-tool-use.md),
 signals should make plans, tool calls, approvals, observations, retries, and
 stops inspectable without exposing unnecessary sensitive content.
+[Retrieval and external context](../artificial-intelligence/retrieval-and-external-context.md)
+extends this concern to index freshness, query quality, returned sources,
+context size, citations, and memory access.
 
 Operational readiness is a property of the system and its surrounding team,
 not a monitoring dashboard added after deployment. Connect it to [safe releases](continuous-delivery-and-safe-releases.md), incident response,

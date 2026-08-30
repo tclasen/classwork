@@ -82,5 +82,9 @@ verification result as a connected runtime history. An [assurance case](../assur
 the evidence and argument for a bounded system claim; provenance alone does
 not establish that the claim follows. [Reproducible builds and software provenance](../software-engineering/reproducible-builds-and-provenance.md)
 applies this distinction to software artifacts and build processes.
+[Retrieval and external context](../artificial-intelligence/retrieval-and-external-context.md)
+applies it to indexed sources, request-scoped retrieved records, and agent
+memory, where provenance helps a consumer distinguish origin from a model's
+generated interpretation.
 
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

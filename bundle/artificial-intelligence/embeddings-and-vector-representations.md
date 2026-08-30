@@ -95,6 +95,9 @@ that produces representation entities. Common patterns include:
 4. **Use the result:** supply vectors to [model inference](model-inference.md),
    compare them, cluster them, retrieve neighbors, or combine them with other
    features.
+   [Retrieval and external context](retrieval-and-external-context.md) describes
+   how an index can use such vectors to generate and rank candidates while
+   retaining the source records and their provenance.
 
 The procedure may be trained separately or as part of a larger neural network.
 The embedding dimension is a design choice or learned setting, and the

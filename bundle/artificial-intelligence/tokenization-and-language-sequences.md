@@ -57,6 +57,9 @@ step extends the sequence until a stopping condition, length limit, or
 application boundary is reached. The context window limits how much sequence
 information the model can use in one computation, and the application may add
 instructions, retrieved records, or other data to that context.
+[Retrieval and external context](retrieval-and-external-context.md) explains
+how those records are selected and why supplied context is not the same as
+learned model parameters or durable agent memory.
 
 ```mermaid
 flowchart LR

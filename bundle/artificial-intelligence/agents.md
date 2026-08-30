@@ -44,6 +44,9 @@ that interleaves language-model reasoning with task-specific actions and
 external observations.[^react-paper]
 The pattern makes clear that an agent is larger than its model: it also needs
 an environment, an action interface, an objective, and controls.
+[Retrieval and external context](retrieval-and-external-context.md) distinguishes
+the model's learned parameters from request-scoped retrieved records and
+durable memory that the agent may maintain.
 
 When the agent learns from outcome feedback across repeated interactions, the
 [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)

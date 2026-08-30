@@ -37,7 +37,9 @@ reading, or state supplied by an application. The output may be a probability,
 label, numerical estimate, generated sequence, or action recommendation. The
 context includes the model and version, preprocessing, available additional
 data or tools, configuration, user and environment, and the task for which the
-output will be used.
+output will be used. [Retrieval and external context](retrieval-and-external-context.md)
+describes how an application may select additional records for this context
+without changing the trained model artifact.
 
 ```mermaid
 flowchart LR

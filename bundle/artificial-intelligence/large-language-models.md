@@ -49,7 +49,10 @@ LLMs are a specialized family within [machine learning](machine-learning.md)
 and one possible component of [AI agents](agents.md). At runtime, an LLM uses
 [model inference](model-inference.md) to map a supplied context to generated
 outputs; [tokenization and language sequences](tokenization-and-language-sequences.md) explains how that context is represented as ordered tokens. It does not automatically have tools, durable
-memory, authority, or a reliable goal-management loop.
+memory, authority, or a reliable goal-management loop. An application may use
+[retrieval and external context](retrieval-and-external-context.md) to supply
+request-scoped source material, but that material remains distinct from the
+LLM's learned parameters.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).
 [^transformer-paper]: Vaswani et al., [Attention Is All You Need](https://arxiv.org/abs/1706.03762).
