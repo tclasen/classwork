@@ -31,7 +31,10 @@ the scope, terms, units, relationships, assumptions, and intended use. Two
 records can look alike while having different meanings, or differ in form while
 expressing the same meaning. [Information, data, and records](information-data-and-records.md)
 provides the representation layer, while [claims, evidence, and inference](claims-evidence-and-inference.md)
-depends on interpreting representations consistently.
+depends on interpreting representations consistently. The geometry of an
+[embedding and vector representation](../artificial-intelligence/embeddings-and-vector-representations.md)
+can encode task-useful similarity without fixing a universal semantics for its
+coordinates or proving that nearby items share every meaning.
 
 The repository's ontology catalog and vendored artifacts are models used to
 classify concepts; they do not replace explanations of the concepts themselves.

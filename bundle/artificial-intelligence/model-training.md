@@ -53,6 +53,9 @@ explains how held-out or newly encountered data provide evidence about
 generalization, while [measurement and uncertainty](../foundations/measurement-and-uncertainty.md)
 helps interpret that evidence. [Information, data, and records](../foundations/information-data-and-records.md)
 helps describe the inputs and resulting artifact, and [semantics and models](../foundations/semantics-and-models.md) explains why a fitted model is a representation rather than the thing it represents.
+[Embeddings and vector representations](embeddings-and-vector-representations.md)
+describes one important class of learned representations that training can
+construct and optimize for a task.
 [Machine learning](machine-learning.md) is the broader family of methods in which
 this activity occurs; [large language models](large-language-models.md) are one kind of trained model.
 

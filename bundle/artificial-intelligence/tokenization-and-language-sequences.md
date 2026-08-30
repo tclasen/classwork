@@ -35,7 +35,9 @@ turning token identifiers back into text; it cannot recover distinctions that
 were discarded or never represented. This is an application of
 [information, data, and records](../foundations/information-data-and-records.md):
 the representation has a form and an interpretation supplied by its model
-context.
+context. A model may next map token identifiers into [embeddings and vector representations](embeddings-and-vector-representations.md), which provide
+numeric inputs for learned transformations without becoming the language or
+meaning themselves.
 
 # Context and next-token targets
 

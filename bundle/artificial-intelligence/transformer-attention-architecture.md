@@ -29,7 +29,10 @@ an `Activity`. The original Transformer replaced recurrence and convolution in
 its sequence-transduction design with attention-based computation, enabling
 more parallel computation during training.[^transformer-paper] For language
 models, [tokenization and language sequences](tokenization-and-language-sequences.md)
-defines the ordered token representations that enter this architecture.
+defines the ordered token representations that enter this architecture. Those
+token representations are commonly converted into [embeddings and vector representations](embeddings-and-vector-representations.md) before attention
+layers transform them; the resulting vectors remain model-dependent
+representations rather than self-interpreting meanings.
 
 ## Attention relates positions
 

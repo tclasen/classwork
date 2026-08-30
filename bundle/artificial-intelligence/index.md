@@ -10,6 +10,7 @@
 * [Optimization and parameter updates](optimization-and-parameter-updates.md) - Adjusting a model's parameters to improve a training objective while respecting computational and evaluation limits.
 * [Generalization and model evaluation](generalization-and-model-evaluation.md) - Assessing how well a trained model performs beyond its training examples under stated data, metrics, and uncertainty.
 * [Model inference](model-inference.md) - Applying a trained model to an input in context to produce a prediction or generated output.
+* [Embeddings and vector representations](embeddings-and-vector-representations.md) - Learned or constructed numerical representations that place data in a task-shaped vector space for computation and comparison.
 
 ## Language models
 

@@ -77,7 +77,9 @@ perform inference by estimating and generating token sequences from a supplied
 context; [tokenization and language sequences](tokenization-and-language-sequences.md)
 explains how that context is represented as ordered tokens. When that model uses a Transformer, its attention layers relate the
 input positions and produce the contextual representations used by the output
-head; see the [Transformer attention architecture](transformer-attention-architecture.md).
+head; see the [Transformer attention architecture](transformer-attention-architecture.md)
+and [embeddings and vector representations](embeddings-and-vector-representations.md)
+for the vector representations those computations consume and produce.
 An [AI agent](agents.md) may call a model repeatedly as one part of a larger
 [agent control loop](agent-control-loops-and-tool-use.md).
 
