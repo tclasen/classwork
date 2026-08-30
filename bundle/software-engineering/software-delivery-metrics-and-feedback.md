@@ -43,6 +43,8 @@ with its own context rather than treating a benchmark as a universal target.
 Do not use metrics to rank individuals; that invites gaming and destroys the
 signal needed for learning.
 
+This practice depends on [measurement and uncertainty](../foundations/measurement-and-uncertainty.md): a delivery metric is an observation made through a defined method, so its limitations, variation, and missing data affect what conclusions it can support. Metrics become useful through [risk and decision](../foundations/risk-and-decision.md), because teams use criteria, thresholds, and expected consequences to decide which constraint to address and which trade-offs are acceptable. The review-and-change cycle is also [learning, assessment, and transfer](../foundations/learning-assessment-and-transfer.md): teams assess evidence of performance, learn from the result, and test whether the improved practice transfers to a different context rather than merely repeating a local routine.
+
 # Turn measurement into improvement
 
 Review metrics with the people who do the work, inspect representative cases,
