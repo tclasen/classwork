@@ -54,8 +54,10 @@ feedback can change the policy over many decisions.
 In language-model adaptation, [language-model adaptation stages](language-model-adaptation-stages.md)
 describes RLHF as one application of this feedback procedure: preference
 judgments are transformed into rewards that guide reinforcement-learning
-updates. Direct Preference Optimization (DPO) is a distinct preference-based
-adaptation method, so it is not a required reinforcement-learning stage.
+updates. [Preference learning and reward modeling](preference-learning-and-reward-modeling.md)
+explains the intermediate reward-model proxy and the distinction from DPO.
+Direct Preference Optimization (DPO) is a distinct preference-based adaptation
+method, so it is not a required reinforcement-learning stage.
 
 ## Transitions and return
 

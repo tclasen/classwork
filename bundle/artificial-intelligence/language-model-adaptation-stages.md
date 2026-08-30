@@ -86,7 +86,10 @@ feedback (RLHF).[^instructgpt-arxiv] The ranking data express relative
 preference between candidate outputs rather than a single authored answer for
 each prompt. In the procedure described by InstructGPT, a reward model is fit
 to reflect those preferences and reinforcement learning then fine-tunes the
-language model against the estimated reward.[^dpo-neurips]
+language model against the estimated reward.[^dpo-neurips] [Preference learning
+and reward modeling](preference-learning-and-reward-modeling.md) explains how
+those judgments become a proxy reward and how RLHF differs from direct
+preference optimization.
 
 DPO describes a different way to use the same broad kind of preference data.
 Its parameterization maps the reward-model problem to a direct preference
@@ -153,10 +156,10 @@ extends the boundary from a model to its operating system and context.
 how demonstrations, rankings, losses, rewards, or other feedback become
 signals for training. [Machine-learning paradigms](learning-paradigms.md)
 provides the broader distinction between self-supervised, supervised, and
-reinforcement-based sources of signal. Detailed reward-model or preference
-optimization mathematics is outside this concept because the cited abstracts
-are sufficient for the stage comparison but do not require a separate
-canonical node here.
+reinforcement-based sources of signal. Detailed preference mechanics are
+developed in [preference learning and reward modeling](preference-learning-and-reward-modeling.md),
+while this concept keeps the broader stage comparison and its evaluation
+boundaries.
 
 [^instructgpt-arxiv]: Ouyang et al., [Training language models to follow instructions with human feedback, arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
 [^instructgpt-neurips]: Ouyang et al., [Training language models to follow instructions with human feedback, NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract.html).

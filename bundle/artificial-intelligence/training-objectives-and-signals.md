@@ -66,6 +66,8 @@ optimizer changes parameters, while the loss or reward indicates the
 direction and degree of improvement.
 [Language-model adaptation stages](language-model-adaptation-stages.md)
 compares how demonstrations and preference rankings provide different signals
-for changing an existing language model.
+for changing an existing language model. [Preference learning and reward
+modeling](preference-learning-and-reward-modeling.md) explains how pairwise
+judgments become a proxy reward or a direct preference objective.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

@@ -29,6 +29,7 @@
 ## Adaptation and alignment
 
 * [Language-model adaptation stages](language-model-adaptation-stages.md) - Comparing unsupervised pretraining, supervised instruction tuning, and preference-based adaptation under bounded evaluation conditions.
+* [Preference learning and reward modeling](preference-learning-and-reward-modeling.md) - Turning comparative judgments into proxy rewards or direct preference objectives while preserving disagreement and generalization limits.
 
 ## Agents
 

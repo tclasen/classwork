@@ -125,6 +125,9 @@ choices that must be represented in the evaluation conditions.
 [Language-model adaptation stages](language-model-adaptation-stages.md) gives a
 language-model example of the same boundary: reported improvements remain
 tied to the prompts, tasks, comparisons, and populations actually evaluated.
+[Preference learning and reward modeling](preference-learning-and-reward-modeling.md)
+adds the specific limits of annotator disagreement, reward misspecification,
+and preference-signal transfer.
 For the broader impacts of those results on affected groups, privacy, security,
 and accountability, continue to [responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md).
 
