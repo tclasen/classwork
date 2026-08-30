@@ -94,7 +94,11 @@ objective, allowing a single stage of policy training framed as a
 classification problem on human preference data. The paper reports that this
 removes the need to fit a separate reward model or sample from the language
 model during fine-tuning.[^dpo-arxiv] DPO is therefore one preference-based
-adaptation method, not a required stage in every language-model pipeline.
+adaptation method, not a required stage in every language-model pipeline. In
+contrast, the RLHF procedure described above uses a [reinforcement-learning
+feedback loop](reinforcement-learning-feedback-loop.md) to update the
+language model against preference-derived rewards; DPO does not require that
+reinforcement-learning stage.
 
 ## What changes, and what does not
 

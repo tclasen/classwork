@@ -51,6 +51,12 @@ the acting system; the policy is the behavior-selection rule it uses. The
 covers general runtime controls, while this concept focuses on how interaction
 feedback can change the policy over many decisions.
 
+In language-model adaptation, [language-model adaptation stages](language-model-adaptation-stages.md)
+describes RLHF as one application of this feedback procedure: preference
+judgments are transformed into rewards that guide reinforcement-learning
+updates. Direct Preference Optimization (DPO) is a distinct preference-based
+adaptation method, so it is not a required reinforcement-learning stage.
+
 ## Transitions and return
 
 One interaction step has a **transition** from a current situation to a later
