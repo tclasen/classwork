@@ -66,6 +66,9 @@ guarantee of truth: failures can reveal errors, hidden conditions, or a claim
 whose scope was overstated, while successful repetition increases but does
 not eliminate uncertainty.
 
+For the distinction's fuller treatment and its role in testing claims, see
+[replication and reproducibility](replication-and-reproducibility.md).
+
 # Evaluating a claim
 
 Ask what would count as evidence against the claim, whether the methods could
