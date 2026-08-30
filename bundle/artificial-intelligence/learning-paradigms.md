@@ -95,6 +95,9 @@ The learned model is an entity produced by the training activity, while each
 paradigm is a description of how that activity obtains and interprets its
 inputs and feedback. [Model inference](model-inference.md) is a later activity
 that applies the resulting model; it is not another learning paradigm.
+[Language-model adaptation stages](language-model-adaptation-stages.md) applies
+this distinction to a sequence of broad unsupervised pretraining, supervised
+instruction tuning, and preference-based adaptation.
 
 [^google-what-is-ml]: Google for Developers, [What is Machine Learning?](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml).
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

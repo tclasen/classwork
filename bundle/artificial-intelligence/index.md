@@ -20,6 +20,10 @@
 * [Language-model decoding](language-model-decoding.md) - Selecting and stopping generated token sequences from a language model's conditional predictions.
 * [Transformer attention architecture](transformer-attention-architecture.md) - A layered sequence-model architecture that relates positions with attention and preserves order with positional information.
 
+## Adaptation and alignment
+
+* [Language-model adaptation stages](language-model-adaptation-stages.md) - Comparing unsupervised pretraining, supervised instruction tuning, and preference-based adaptation under bounded evaluation conditions.
+
 ## Agents
 
 * [Agents](agents.md) - Goal-directed systems that observe context, select actions, and act within an environment under constraints.

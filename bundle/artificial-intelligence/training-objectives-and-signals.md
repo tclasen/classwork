@@ -61,5 +61,8 @@ task into a learnable procedure. [Model training](model-training.md) combines
 the signal with data, a model family, and [optimization and parameter updates](optimization-and-parameter-updates.md); the
 optimizer changes parameters, while the loss or reward indicates the
 direction and degree of improvement.
+[Language-model adaptation stages](language-model-adaptation-stages.md)
+compares how demonstrations and preference rankings provide different signals
+for changing an existing language model.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

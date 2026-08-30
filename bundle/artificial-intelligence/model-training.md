@@ -58,6 +58,9 @@ describes one important class of learned representations that training can
 construct and optimize for a task.
 [Machine learning](machine-learning.md) is the broader family of methods in which
 this activity occurs; [large language models](large-language-models.md) are one kind of trained model.
+[Language-model adaptation stages](language-model-adaptation-stages.md) shows
+how later training activities can change an existing language model using
+demonstrations or preference feedback.
 
 For sequence models, the learned architecture is a [Transformer attention
 architecture](transformer-attention-architecture.md), whose layered attention

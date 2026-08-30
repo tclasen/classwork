@@ -118,6 +118,9 @@ change. For a policy learned through interaction, the
 [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
 identifies the transition distribution, delayed outcomes, and exploration
 choices that must be represented in the evaluation conditions.
+[Language-model adaptation stages](language-model-adaptation-stages.md) gives a
+language-model example of the same boundary: reported improvements remain
+tied to the prompts, tasks, comparisons, and populations actually evaluated.
 
 [^google-what-is-ml]: Google for Developers, [What is Machine Learning?](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml).
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).
