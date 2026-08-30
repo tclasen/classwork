@@ -65,7 +65,7 @@ model is uncertain or biased, a dependency is unavailable, or the output is
 misinterpreted or misused. A technically successful run therefore does not
 prove a correct result. [Generalization and model evaluation](generalization-and-model-evaluation.md)
 explains how to evaluate outputs against the intended task and context using
-suitable test data, metrics, and uncertainty. Use operational observations,
+suitable test data, [prediction tasks and model metrics](prediction-tasks-and-model-metrics.md), and uncertainty. Use operational observations,
 and human or domain review where needed. [AI system evaluation and risk management](ai-system-evaluation-and-risk-management.md)
 explains why this evidence must cover the complete operating system and its
 consequences; [observability and operational readiness](../software-engineering/observability-and-operational-readiness.md)

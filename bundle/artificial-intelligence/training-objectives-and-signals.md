@@ -46,6 +46,9 @@ or failing under changed conditions. [Generalization and model evaluation](gener
 explains how to compare results on held-out or newly encountered data, and
 interpret those measurements with
 [measurement and uncertainty](../foundations/measurement-and-uncertainty.md).
+[Prediction tasks and model metrics](prediction-tasks-and-model-metrics.md)
+connects the training signal to the target, output type, and evaluation metric
+used for the task.
 
 ```mermaid
 flowchart LR

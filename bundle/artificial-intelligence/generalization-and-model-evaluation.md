@@ -65,7 +65,9 @@ future population.
 
 ## Metrics and uncertainty
 
-Choose metrics that represent the task and its costs. Depending on the task,
+Choose metrics that represent the task and its costs. [Prediction tasks and model metrics](prediction-tasks-and-model-metrics.md)
+explains how targets, thresholds, ranking, calibration, and task-specific
+metrics relate. Depending on the task,
 these may measure error, ranking, calibration, coverage, latency, resource
 use, or the quality and safety of generated outputs. A single aggregate metric
 can hide subgroup failures, rare events, threshold trade-offs, or harms caused
