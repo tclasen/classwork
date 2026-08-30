@@ -27,7 +27,9 @@ for a task, an output sequence or other prediction. The architecture is an
 artifact (an `Entity`); running its attention and transformation operations is
 an `Activity`. The original Transformer replaced recurrence and convolution in
 its sequence-transduction design with attention-based computation, enabling
-more parallel computation during training.[^transformer-paper]
+more parallel computation during training.[^transformer-paper] For language
+models, [tokenization and language sequences](tokenization-and-language-sequences.md)
+defines the ordered token representations that enter this architecture.
 
 ## Attention relates positions
 

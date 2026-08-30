@@ -74,7 +74,8 @@ helps make runtime failures and behavior inspectable.
 [Machine learning](machine-learning.md) describes the broader family in which
 training and inference occur. [Large language models](large-language-models.md)
 perform inference by estimating and generating token sequences from a supplied
-context. When that model uses a Transformer, its attention layers relate the
+context; [tokenization and language sequences](tokenization-and-language-sequences.md)
+explains how that context is represented as ordered tokens. When that model uses a Transformer, its attention layers relate the
 input positions and produce the contextual representations used by the output
 head; see the [Transformer attention architecture](transformer-attention-architecture.md).
 An [AI agent](agents.md) may call a model repeatedly as one part of a larger

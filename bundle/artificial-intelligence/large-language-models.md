@@ -37,7 +37,7 @@ provenance and supporting [claims, evidence, and inference](../foundations/claim
 
 # Training and architecture
 
-Many modern LLMs use the [Transformer attention architecture](transformer-attention-architecture.md), which relates positions in a sequence while preserving positional information and supports parallel training; [the original Transformer paper](../references/attention-is-all-you-need.md) introduced an architecture based solely on attention rather than recurrence or convolution.[^transformer-paper]
+Many modern LLMs use the [Transformer attention architecture](transformer-attention-architecture.md), which relates positions in a sequence while preserving positional information and supports parallel training; [the original Transformer paper](../references/attention-is-all-you-need.md) introduced an architecture based solely on attention rather than recurrence or convolution.[^transformer-paper] The [tokenization and language sequences](tokenization-and-language-sequences.md) concept explains how text becomes the ordered token representation that these architectures process.
 Common stages include self-supervised [pretraining](learning-paradigms.md) on
 broad text, followed by optional instruction tuning,
 fine-tuning, or preference optimization. These stages change behavior but do
@@ -46,7 +46,7 @@ not remove the need for evaluation in the deployment context.
 LLMs are a specialized family within [machine learning](machine-learning.md)
 and one possible component of [AI agents](agents.md). At runtime, an LLM uses
 [model inference](model-inference.md) to map a supplied context to generated
-outputs; it does not automatically have tools, durable
+outputs; [tokenization and language sequences](tokenization-and-language-sequences.md) explains how that context is represented as ordered tokens. It does not automatically have tools, durable
 memory, authority, or a reliable goal-management loop.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).
