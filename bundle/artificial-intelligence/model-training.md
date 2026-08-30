@@ -23,10 +23,11 @@ sources:
 # From data to a trained model
 
 **Model training** is the activity of using examples or feedback, a model
-family, an objective, and an optimization procedure to produce a model whose
-parameters or structure have been adjusted for a task.[^google-what-is-ml]
-The data and objective define what the activity is trying to learn; they do
-not by themselves establish that the resulting model is correct or useful.
+family, a [training objective and signal](training-objectives-and-signals.md),
+and an optimization procedure to produce a model whose parameters or structure
+have been adjusted for a task.[^google-what-is-ml] The data and objective define
+what the activity is trying to learn; they do not by themselves establish that
+the resulting model is correct or useful.
 
 Training produces a model artifact that can later be used for [model inference](model-inference.md):
 applying the adjusted model to an input to obtain a prediction or generated
@@ -39,7 +40,7 @@ training signal is obtained.
 ```mermaid
 flowchart LR
     D[Data or feedback] --> T[Training activity]
-    O[Objective] --> T
+    O[Objective and signal] --> T
     M[Model family] --> T
     T --> A[Trained model artifact]
     A --> I[Inference on an input]
