@@ -38,7 +38,7 @@ so A depends on C through that path. Graphs can branch, converge, contain
 cycles, or offer alternative paths; they need not be a single sequence.
 
 This vocabulary explains the bundle's links and the prerequisite structure in
-[competency and prerequisite structure](learning-assessment-and-transfer.md).
+[competency and prerequisite structure](../education/competency-and-prerequisite-structure.md).
 It also supports [software dependency and compatibility](../software-engineering/software-dependency-and-compatibility.md)
 and provenance graphs built from [entities, activities, and agents](entities-activities-and-agents.md).
 
