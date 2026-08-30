@@ -37,8 +37,8 @@ possible policy: an organization may still require an explicit approval or
 scheduled window before production.
 
 Use a single promoted artifact where practical, separate build from release
-configuration, and make the release observable. A release should have clear
-ownership, prerequisites, acceptance signals, and a documented recovery path.
+configuration, and make the release observable. Use [software delivery metrics and feedback](software-delivery-metrics-and-feedback.md) to interpret release health and guide improvement. A release should have clear ownership,
+prerequisites, acceptance signals, and a documented recovery path.
 Do not treat automation as safety by itself; inspect permissions, secrets,
 dependencies, environment differences, and the consequences of partial
 failure.
