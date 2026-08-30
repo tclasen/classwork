@@ -26,7 +26,9 @@ sources:
 specified actions on a resource. A **token** is a representation of that grant
 or authorization result. Its scope, audience, issuer, lifetime, and revocation
 state limit what the holder may do; possession of a token is not the same as
-the resource owner's complete identity.
+the resource owner's complete identity. The broader [digital identity and authorization](digital-identity-and-authorization.md) concept explains how
+identity evidence and policy establish the context in which this bounded grant
+is accepted.
 
 In OAuth, a resource owner authorizes a client through an authorization server,
 which issues an access token for a resource server. The resource server must

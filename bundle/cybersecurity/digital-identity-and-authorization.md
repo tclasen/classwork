@@ -92,7 +92,10 @@ authorization. A resource owner authorizes a client through an authorization
 server; the server issues an access token with a scope and lifetime; and the
 client presents that token to a resource server. The client does not need the
 resource owner's password, and the token represents limited access rather than
-the owner's complete identity.[^oauth-rfc]
+the owner's complete identity.[^oauth-rfc] See [tokens and delegation](tokens-and-delegation.md)
+for the token-level representation of delegated authority under bounded scope,
+audience, and lifetime; presenting such a token supplies evidence for
+authorization rather than replacing the authorization decision.
 
 Tokens are not automatically trustworthy merely because they exist. The
 resource server must validate their issuer, audience, integrity or
