@@ -38,7 +38,8 @@ flowchart LR
 ```
 
 The loop may include planning, tool calls, memory, verification, retries, and
-human approval. [ReAct](../references/react-2023.md) is one research pattern
+human approval. [Agent control loops and tool use](agent-control-loops-and-tool-use.md)
+develops these transitions and their controls. [ReAct](../references/react-2023.md) is one research pattern
 that interleaves language-model reasoning with task-specific actions and
 external observations.[^react-paper]
 The pattern makes clear that an agent is larger than its model: it also needs

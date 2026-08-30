@@ -24,6 +24,10 @@ to measure or communicate progress toward that objective. The objective and
 signal are information entities that guide an activity; they are not the
 parameter-update procedure itself.
 
+The [machine-learning paradigms](learning-paradigms.md) classify training by
+where this signal comes from: a supplied target, structure in inputs, a target
+derived from the input, or feedback from interaction.
+
 In common forms, a **loss** is a numerical measure of undesirable discrepancy
 between a model's output and a target, so training seeks to minimize it. A
 **reward** is feedback about the value of an outcome, so reinforcement learning

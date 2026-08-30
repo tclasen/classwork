@@ -74,7 +74,10 @@ helps make runtime failures and behavior inspectable.
 [Machine learning](machine-learning.md) describes the broader family in which
 training and inference occur. [Large language models](large-language-models.md)
 perform inference by estimating and generating token sequences from a supplied
-context, while an [AI agent](agents.md) may call a model repeatedly as one part
-of a larger action loop.
+context. When that model uses a Transformer, its attention layers relate the
+input positions and produce the contextual representations used by the output
+head; see the [Transformer attention architecture](transformer-attention-architecture.md).
+An [AI agent](agents.md) may call a model repeatedly as one part of a larger
+[agent control loop](agent-control-loops-and-tool-use.md).
 
 [^google-what-is-ml]: Google for Developers, [What is Machine Learning?](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml).

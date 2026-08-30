@@ -55,6 +55,10 @@ reliability work into scoping, observation, response, and learning, and
 recommends observability, automated recovery, recovery testing, and
 postmortems.[^google-reliability]
 
+For an [agent control loop](../artificial-intelligence/agent-control-loops-and-tool-use.md),
+signals should make plans, tool calls, approvals, observations, retries, and
+stops inspectable without exposing unnecessary sensitive content.
+
 Operational readiness is a property of the system and its surrounding team,
 not a monitoring dashboard added after deployment. Connect it to [safe releases](continuous-delivery-and-safe-releases.md), incident response,
 blameless postmortems, and performance and capacity engineering.

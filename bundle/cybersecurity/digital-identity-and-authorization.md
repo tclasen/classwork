@@ -127,7 +127,9 @@ resources and threats being addressed. NIST SP 800-63-4 focuses on identity
 proofing, authentication, and federation; it does not by itself define every
 application's authorization policy.[^nist-digital-identity]
 
-An [assurance case](../assurance/assurance-case.md) can use identity and
+An [agent control loop](../artificial-intelligence/agent-control-loops-and-tool-use.md)
+must apply these identity and authorization checks before a model-generated
+tool request becomes an external action. An [assurance case](../assurance/assurance-case.md) can use identity and
 authorization records as evidence for claims about who performed an action,
 who could approve it, and whether the relevant control operated in the stated
 context.

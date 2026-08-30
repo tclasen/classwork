@@ -56,4 +56,9 @@ helps describe the inputs and resulting artifact, and [semantics and models](../
 [Machine learning](machine-learning.md) is the broader family of methods in which
 this activity occurs; [large language models](large-language-models.md) are one kind of trained model.
 
+For sequence models, the learned architecture is a [Transformer attention
+architecture](transformer-attention-architecture.md), whose layered attention
+operations transform contextual representations during training and later
+inference.
+
 [^google-what-is-ml]: Google for Developers, [What is Machine Learning?](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml).

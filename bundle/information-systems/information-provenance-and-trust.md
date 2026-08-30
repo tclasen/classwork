@@ -76,7 +76,9 @@ surface uncertainty and competing derivations, not collapse them into a single
 unexplained trust label. Provenance is most useful when it supports a concrete
 decision such as accepting, rejecting, reproducing, or investigating a claim.
 
-An [assurance case](../assurance/assurance-case.md) uses provenance as part of
+An [agent control loop](../artificial-intelligence/agent-control-loops-and-tool-use.md)
+can record each plan, authorization decision, tool activity, observation, and
+verification result as a connected runtime history. An [assurance case](../assurance/assurance-case.md) uses provenance as part of
 the evidence and argument for a bounded system claim; provenance alone does
 not establish that the claim follows. [Reproducible builds and software provenance](../software-engineering/reproducible-builds-and-provenance.md)
 applies this distinction to software artifacts and build processes.

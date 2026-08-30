@@ -39,6 +39,10 @@ a guarantee that the model is correct.[^google-what-is-ml]
 
 ## Data splits and overfitting
 
+The [machine-learning paradigms](learning-paradigms.md) determine what counts
+as a target or feedback during training, so evaluation must test the behavior
+that the selected paradigm was intended to improve.
+
 A typical evaluation design separates examples into roles:
 
 * **Training data** are used by [model training](model-training.md) and its

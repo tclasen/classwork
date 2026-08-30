@@ -37,10 +37,9 @@ provenance and supporting [claims, evidence, and inference](../foundations/claim
 
 # Training and architecture
 
-Many modern LLMs use the Transformer architecture, which applies attention to
-relate positions in a sequence and supports parallel training; [the original Transformer paper](../references/attention-is-all-you-need.md) introduced an architecture based solely on attention rather than recurrence or convolution.[^transformer-paper]
-Common stages include
-pretraining on broad text, followed by optional instruction tuning,
+Many modern LLMs use the [Transformer attention architecture](transformer-attention-architecture.md), which relates positions in a sequence while preserving positional information and supports parallel training; [the original Transformer paper](../references/attention-is-all-you-need.md) introduced an architecture based solely on attention rather than recurrence or convolution.[^transformer-paper]
+Common stages include self-supervised [pretraining](learning-paradigms.md) on
+broad text, followed by optional instruction tuning,
 fine-tuning, or preference optimization. These stages change behavior but do
 not remove the need for evaluation in the deployment context.
 

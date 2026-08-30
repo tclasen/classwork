@@ -38,10 +38,10 @@ evidence about generalization, not a guarantee of correctness.
 
 # Main learning settings
 
-* **Supervised learning** learns from examples paired with target labels.
-* **Unsupervised learning** identifies structure in data without supplied target labels.
-* **Reinforcement learning** updates behavior from interaction and feedback about outcomes.
-* **Self-supervised learning** constructs training signals from the data itself; it is important in language-model pretraining.
+The four common [machine-learning paradigms](learning-paradigms.md) differ
+primarily in how the training signal is obtained: supplied targets, structure
+in unlabeled inputs, targets derived from the inputs themselves, or feedback
+from interaction. They can be combined across stages of one system.
 
 ML is a major approach within [artificial intelligence](artificial-intelligence.md),
 but AI is broader than ML. A model's quality depends on the data and task

@@ -35,7 +35,9 @@ a plan, while actions can retrieve observations from an external knowledge
 source or environment. The paper evaluates this pattern on question
 answering, fact verification, and interactive decision-making tasks.[^react-paper]
 
-The paper supports the [agents](../artificial-intelligence/agents.md) concept:
+The paper supports the [agents](../artificial-intelligence/agents.md) concept
+and the more specific [agent control loops and tool use](../artificial-intelligence/agent-control-loops-and-tool-use.md)
+concept:
 an agent is not only a language model, but also an objective, environment,
 action interface, and controls. ReAct is one design pattern within that larger
 system boundary, not a guarantee of safe or reliable autonomy.

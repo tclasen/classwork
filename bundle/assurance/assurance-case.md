@@ -68,7 +68,9 @@ For the applied reasoning step, see [argument validity and rebuttal](../reasonin
    helps identify changes to the shipped artifact, while [product provenance](../supply-chains/product-provenance.md)
    provides an event-oriented pattern for tracing physical or digital objects.
 
-Security and access claims also depend on knowing which subject acted and who
+An [agent control loop](../artificial-intelligence/agent-control-loops-and-tool-use.md)
+can supply reviewable evidence about proposed actions, approvals, tool traces,
+observations, verification, and bounded retries. Security and access claims also depend on knowing which subject acted and who
 could perform or approve an activity; [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)
 provides those controls. A case may support an ethical or organizational
 decision, but it does not mechanically settle responsibility: [moral agency and responsibility](../ethics/moral-agency-and-responsibility.md)
