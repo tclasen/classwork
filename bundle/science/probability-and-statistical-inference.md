@@ -35,4 +35,9 @@ size, practical importance, or truth. [Observation, measurement, and study desig
 collection path; [evidence and scientific claims](evidence-and-scientific-claims.md)
 supplies the broader limits on inference.
 
+These distinctions also apply when a language model assigns probabilities to
+possible continuations. [Language-model decoding](../artificial-intelligence/language-model-decoding.md)
+uses those model-relative estimates to select generated tokens, but a likely
+continuation is not thereby a true or independently supported claim.
+
 [^nas-reproducibility]: National Academies, [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303).

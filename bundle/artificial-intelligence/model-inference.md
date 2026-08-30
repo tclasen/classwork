@@ -80,6 +80,8 @@ input positions and produce the contextual representations used by the output
 head; see the [Transformer attention architecture](transformer-attention-architecture.md)
 and [embeddings and vector representations](embeddings-and-vector-representations.md)
 for the vector representations those computations consume and produce.
+For language generation, [language-model decoding](language-model-decoding.md)
+specifies how those estimates become selected tokens and when generation stops.
 An [AI agent](agents.md) may call a model repeatedly as one part of a larger
 [agent control loop](agent-control-loops-and-tool-use.md).
 

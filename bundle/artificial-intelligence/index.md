@@ -16,6 +16,7 @@
 
 * [Large language models](large-language-models.md) - Machine-learning models trained on large text corpora to estimate and generate sequences of language tokens.
 * [Tokenization and language sequences](tokenization-and-language-sequences.md) - Representing language as vocabulary items arranged in sequences so a language model can condition and decode predictions.
+* [Language-model decoding](language-model-decoding.md) - Selecting and stopping generated token sequences from a language model's conditional predictions.
 * [Transformer attention architecture](transformer-attention-architecture.md) - A layered sequence-model architecture that relates positions with attention and preserves order with positional information.
 
 ## Agents

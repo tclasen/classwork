@@ -51,8 +51,8 @@ relative model scores or probabilities; it is not a guarantee that the most
 likely token is true or appropriate.
 
 At inference time, [model inference](model-inference.md) supplies a context,
-the model estimates a next-token distribution, and a decoding rule selects a
-token or otherwise constructs an output from those estimates. Repeating this
+the model estimates a next-token distribution, and [language-model decoding](language-model-decoding.md)
+selects a token or otherwise constructs an output from those estimates. Repeating this
 step extends the sequence until a stopping condition, length limit, or
 application boundary is reached. The context window limits how much sequence
 information the model can use in one computation, and the application may add

@@ -26,8 +26,8 @@ sources:
 A **large language model (LLM)** is a machine-learning model with many learned
 parameters trained on large collections of text or text-like sequences. It
 represents patterns in language and, given a context, estimates a distribution
-over possible next tokens. Generation repeatedly selects tokens from those
-conditional estimates until a stopping condition is reached.[^google-ml-glossary]
+over possible next tokens. Generation repeatedly uses [language-model decoding](language-model-decoding.md)
+to select tokens from those conditional estimates until a stopping condition is reached.[^google-ml-glossary]
 
 The word *large* is relative to the model family and task; it does not by
 itself establish accuracy, knowledge, reasoning, or consciousness. A model can
