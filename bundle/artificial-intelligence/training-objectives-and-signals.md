@@ -34,8 +34,9 @@ uses it.[^google-ml-glossary]
 
 The signal is only a proxy for the intended task. A model can improve its
 training loss or reward while learning a shortcut, overfitting its examples,
-or failing under changed conditions. Compare results on held-out or newly
-encountered data, and interpret those measurements with
+or failing under changed conditions. [Generalization and model evaluation](generalization-and-model-evaluation.md)
+explains how to compare results on held-out or newly encountered data, and
+interpret those measurements with
 [measurement and uncertainty](../foundations/measurement-and-uncertainty.md).
 
 ```mermaid

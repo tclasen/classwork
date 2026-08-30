@@ -46,7 +46,8 @@ responses, monitoring, and improvement.
 
 # Evidence and decisions
 
-Evaluation evidence can include test results, representative observations,
+Evaluation evidence can include [model-level generalization and evaluation](generalization-and-model-evaluation.md)
+results, representative observations,
 monitoring records, user feedback, incident reports, and documentation of
 assumptions or limitations. Evidence is not self-interpreting: use [claims,
 evidence, and inference](../foundations/claims-evidence-and-inference.md) and

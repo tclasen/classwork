@@ -48,8 +48,9 @@ flowchart LR
 ```
 
 Training quality must be judged against the intended task and a stated
-evaluation procedure. Held-out or newly encountered data provide evidence
-about generalization, while [measurement and uncertainty](../foundations/measurement-and-uncertainty.md)
+evaluation procedure. [Generalization and model evaluation](generalization-and-model-evaluation.md)
+explains how held-out or newly encountered data provide evidence about
+generalization, while [measurement and uncertainty](../foundations/measurement-and-uncertainty.md)
 helps interpret that evidence. [Information, data, and records](../foundations/information-data-and-records.md)
 helps describe the inputs and resulting artifact, and [semantics and models](../foundations/semantics-and-models.md) explains why a fitted model is a representation rather than the thing it represents.
 [Machine learning](machine-learning.md) is the broader family of methods in which
