@@ -32,6 +32,10 @@ happened during that interval; it does not establish that nothing happened.
 Coverage should include the backward path to sources and the forward path to
 recipients where the decision requires both.[^iso-22005]
 
+Together, stable identifiers and sufficiently complete event coverage are
+prerequisites for [product provenance](product-provenance.md): they make the
+history joinable and complete enough for its declared purpose.
+
 [Traceability events and custody](traceability-events-and-custody.md) supplies
 the event structure, while [risk and decision](../foundations/risk-and-decision.md)
 helps determine what coverage is sufficient for the purpose.
