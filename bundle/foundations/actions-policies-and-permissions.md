@@ -33,6 +33,11 @@ conditions and prescribes, permits, requires, or forbids behavior. A
 and duration. Permission is narrower than capability: a system may technically
 allow an action that policy does not authorize.
 
+This distinction also bounds a learned policy: the
+[reinforcement-learning feedback loop](../artificial-intelligence/reinforcement-learning-feedback-loop.md)
+may propose an action from experience, but authorization must still be checked
+before that action is executed.
+
 To evaluate an access decision, identify the agent, action, target, relevant
 context, applicable policy, and enforcement point. This distinction is the
 foundation for [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)

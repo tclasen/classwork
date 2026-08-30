@@ -35,6 +35,11 @@ defensible decision states the alternatives, assumptions, evidence, possible
 outcomes, criteria, and what uncertainty remains. It should distinguish “not
 observed” from “does not exist.”
 
+In the [reinforcement-learning feedback loop](../artificial-intelligence/reinforcement-learning-feedback-loop.md),
+the policy selects among actions under an objective, while exploration,
+discounting, and delayed consequences make the relevant criteria and risks
+explicit rather than implicit.
+
 This foundation supports [information provenance and trust](../information-systems/information-provenance-and-trust.md),
 [assurance cases](../assurance/assurance-case.md), [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md), and
 [moral agency and responsibility](../ethics/moral-agency-and-responsibility.md).

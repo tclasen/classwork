@@ -97,4 +97,9 @@ tools may include retrieval, computation, APIs, or actuators. The loop should
 therefore preserve the distinction between a model's generated proposal, an
 authorized activity, an observed result, and a justified final claim.
 
+In a learning system, the [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
+adds a longer-horizon relationship between observed transitions, rewards, and
+changes to a policy. Runtime authorization and verification still constrain
+which proposed actions may actually be executed.
+
 [^react-paper]: Yao et al., [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629).

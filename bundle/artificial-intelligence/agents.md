@@ -45,6 +45,11 @@ external observations.[^react-paper]
 The pattern makes clear that an agent is larger than its model: it also needs
 an environment, an action interface, an objective, and controls.
 
+When the agent learns from outcome feedback across repeated interactions, the
+[reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
+describes the policy, reward, return, and delayed-credit relationships that
+extend this runtime action loop.
+
 # Boundaries and responsibility
 
 An [LLM](large-language-models.md) can propose text, plans, or tool arguments

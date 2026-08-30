@@ -54,7 +54,9 @@ paradigm.[^google-what-is-ml]
   agent selects actions, receives observations and feedback such as rewards,
   and updates behavior toward better expected outcomes over time. The reward
   is not necessarily an immediate label for the correct action, so credit may
-  need to be assigned across a sequence of decisions.
+  need to be assigned across a sequence of decisions. The
+  [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
+  explains these transitions, returns, and delayed credit more precisely.
 
 These categories can overlap in a system or project. A language model may
 first use self-supervised pretraining and later use supervised examples or

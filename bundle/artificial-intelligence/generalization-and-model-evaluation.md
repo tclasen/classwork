@@ -114,7 +114,10 @@ The evaluation activity produces evidence entities such as metric results,
 error analyses, and test reports. Those entities are inputs to an assurance
 decision, not substitutes for defining the claim, assumptions, and acceptable
 risk. Re-evaluate when the model, data, task, environment, or decision stakes
-change.
+change. For a policy learned through interaction, the
+[reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
+identifies the transition distribution, delayed outcomes, and exploration
+choices that must be represented in the evaluation conditions.
 
 [^google-what-is-ml]: Google for Developers, [What is Machine Learning?](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml).
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

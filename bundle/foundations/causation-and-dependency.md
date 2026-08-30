@@ -37,4 +37,9 @@ about process, not automatically proof of causal sufficiency.
 These distinctions prevent a prerequisite graph from treating every useful
 relationship as a necessary cause. They support [claims, evidence, and inference](claims-evidence-and-inference.md), [systems, processes, and boundaries](systems-processes-and-boundaries.md), and [software dependency and compatibility](../software-engineering/software-dependency-and-compatibility.md).
 
+They also qualify interpretation of rewards: in the
+[reinforcement-learning feedback loop](../artificial-intelligence/reinforcement-learning-feedback-loop.md),
+an action followed by a reward is an observed transition, not by itself proof
+that the action caused the outcome.
+
 [^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).

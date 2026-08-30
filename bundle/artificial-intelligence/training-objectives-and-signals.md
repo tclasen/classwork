@@ -36,6 +36,10 @@ written with opposite signs—for example, minimizing negative reward—so the
 important distinction is what the value means and how the training procedure
 uses it.[^google-ml-glossary]
 
+For reinforcement learning, the [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
+shows how rewards arrive through transitions and may be attributed across a
+sequence rather than to one isolated action.
+
 The signal is only a proxy for the intended task. A model can improve its
 training loss or reward while learning a shortcut, overfitting its examples,
 or failing under changed conditions. [Generalization and model evaluation](generalization-and-model-evaluation.md)
