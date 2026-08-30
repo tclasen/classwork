@@ -50,7 +50,7 @@ flowchart LR
 
 [Machine learning](machine-learning.md) uses objectives and signals to turn a
 task into a learnable procedure. [Model training](model-training.md) combines
-the signal with data, a model family, and an optimization procedure; the
+the signal with data, a model family, and [optimization and parameter updates](optimization-and-parameter-updates.md); the
 optimizer changes parameters, while the loss or reward indicates the
 direction and degree of improvement.
 

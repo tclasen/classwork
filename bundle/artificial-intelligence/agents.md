@@ -50,7 +50,8 @@ An [LLM](large-language-models.md) can propose text, plans, or tool arguments
 inside an agent, but the agent's runtime must validate inputs and outputs,
 enforce [actions, policies, and permissions](../foundations/actions-policies-and-permissions.md),
 and limit side effects. A proposed action is not an authorized action. Use
-[digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)
+[model inference](model-inference.md) to describe each model call as an
+input-to-output activity, and use [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)
 to bind actions to a principal and [information provenance and trust](../information-systems/information-provenance-and-trust.md)
 to record what the agent observed and changed.
 

@@ -24,7 +24,7 @@ sources:
 
 **Model training** is the activity of using examples or feedback, a model
 family, a [training objective and signal](training-objectives-and-signals.md),
-and an optimization procedure to produce a model whose parameters or structure
+and an [optimization procedure](optimization-and-parameter-updates.md) to produce a model whose parameters or structure
 have been adjusted for a task.[^google-what-is-ml] The data and objective define
 what the activity is trying to learn; they do not by themselves establish that
 the resulting model is correct or useful.
