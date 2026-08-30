@@ -26,7 +26,7 @@ An **observation** is information obtained by attending to or recording a
 subject. A **measurement** uses an operational procedure or instrument to
 assign a value to a property under stated conditions. A **study design** is a
 plan specifying the question, population or system, observations or
-interventions, comparisons, outcomes, exclusions, and analysis.
+interventions, comparisons, outcomes, exclusions, and analysis.[^nas-reproducibility]
 
 Operational definitions make an abstract property observable, but they can
 capture only some aspects of it. Instruments and procedures introduce limits;

@@ -12,12 +12,6 @@ subject:
     label: Evidence
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
-sources:
-  - id: nist-zero-trust
-    resource: https://doi.org/10.6028/NIST.SP.800-207
-    title: NIST SP 800-207 Zero Trust Architecture
-    author: "nist/SP-800-207"
-    last_modified: 2020-08-11
 ---
 
 # Evaluating possible outcomes
@@ -46,5 +40,3 @@ This foundation supports [information provenance and trust](../information-syste
 It is applied to affected groups and trustworthiness trade-offs in
 [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md),
 where evidence informs risk treatment, correction, restriction, or redress.
-
-[^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

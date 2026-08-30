@@ -12,12 +12,6 @@ subject:
     label: Evidence
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
-sources:
-  - id: nas-reproducibility
-    resource: https://doi.org/10.17226/25303
-    title: Reproducibility and Replicability in Science
-    author: "national-academies/2019"
-    last_modified: 2019-05-07
 ---
 
 # Models and explanations
@@ -37,5 +31,3 @@ independent evidence help distinguish alternatives.
 [Causation and dependency](../foundations/causation-and-dependency.md) gives
 the general distinction; [observation, measurement, and study design](observation-measurement-and-study-design.md)
 shows how a design produces evidence.
-
-[^nas-reproducibility]: National Academies, [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303).

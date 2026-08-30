@@ -12,12 +12,6 @@ subject:
     label: Activity
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
-sources:
-  - id: nas-reproducibility
-    resource: https://doi.org/10.17226/25303
-    title: Reproducibility and Replicability in Science
-    author: "national-academies/2019"
-    last_modified: 2019-05-07
 ---
 
 # From observation to value
@@ -37,5 +31,3 @@ to the intended quantity, and neither should be claimed without justification.
 Measurement is an [activity that produces an entity](entities-activities-and-agents.md).
 Its result becomes [evidence](claims-evidence-and-inference.md) only relative
 to a question or claim.
-
-[^nas-reproducibility]: National Academies, [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303).

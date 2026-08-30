@@ -32,7 +32,7 @@ times or in different records denote the same subject. Identifiers can be
 duplicated, changed, scoped differently, or assigned to representations rather
 than the underlying thing. A **relationship** is a stated connection between
 identified entities, activities, or agents, such as used, generated, owned,
-caused, depends on, or supports.
+caused, depends on, or supports.[^w3c-prov-dm]
 
 Reliable histories therefore need identifiers, timestamps, scope, and an
 explicit account of change. These distinctions support [information, data, and records](information-data-and-records.md) and [product provenance](../supply-chains/product-provenance.md).

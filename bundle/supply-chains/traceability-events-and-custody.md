@@ -24,7 +24,7 @@ sources:
 
 A traceability event records what happened to an identified item, lot,
 container, or digital representation, including relevant time, location,
-business step, disposition, responsible party, inputs, and outputs. A custody
+business step, disposition, responsible party, inputs, and outputs.[^gs1-epcis] A custody
 change records a transfer of control or possession; it is not necessarily a
 transfer of ownership. A transformation relates consumed inputs to produced
 outputs.

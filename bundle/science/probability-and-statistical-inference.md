@@ -12,12 +12,6 @@ subject:
     label: Entity
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
-sources:
-  - id: nas-reproducibility
-    resource: https://doi.org/10.17226/25303
-    title: Reproducibility and Replicability in Science
-    author: "national-academies/2019"
-    last_modified: 2019-05-07
 ---
 
 # Variation and samples
@@ -39,5 +33,3 @@ These distinctions also apply when a language model assigns probabilities to
 possible continuations. [Language-model decoding](../artificial-intelligence/language-model-decoding.md)
 uses those model-relative estimates to select generated tokens, but a likely
 continuation is not thereby a true or independently supported claim.
-
-[^nas-reproducibility]: National Academies, [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303).

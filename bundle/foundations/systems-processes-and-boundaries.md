@@ -32,7 +32,7 @@ constraints.
 
 A system description is incomplete unless it identifies its purpose and scope.
 The same object can be an internal component in one model and an external
-dependency in another. Inputs and outputs are [entities, activities, and agents](entities-activities-and-agents.md), and their meanings depend on
+dependency in another. Inputs and outputs are [entities, activities, and agents](entities-activities-and-agents.md),[^w3c-prov-dm] and their meanings depend on
 [semantics and models](semantics-and-models.md).
 
 This foundation is used by [software dependency and compatibility](../software-engineering/software-dependency-and-compatibility.md)

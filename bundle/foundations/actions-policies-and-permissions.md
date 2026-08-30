@@ -39,10 +39,10 @@ may propose an action from experience, but authorization must still be checked
 before that action is executed.
 
 To evaluate an access decision, identify the agent, action, target, relevant
-context, applicable policy, and enforcement point. This distinction is the
+context, applicable policy, and enforcement point.[^nist-zero-trust] This distinction is the
 foundation for [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md)
 and for recording who could perform an activity in [moral agency and responsibility](../ethics/moral-agency-and-responsibility.md). An [AI agent](../artificial-intelligence/agents.md)
 must be constrained by these same authorization boundaries; producing a plan
 does not itself grant permission to execute it.
 
-[^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).
+[^nist-zero-trust]: NIST, [NIST SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

@@ -28,7 +28,7 @@ judgment must state which considerations govern and why.
 **Agency** concerns an agent's capacity to understand reasons, deliberate, and
 guide conduct. **Control** concerns the practical ability to affect what occurs
 under the relevant conditions. Identity or causal contribution alone does not
-settle moral responsibility. [Roles, authority, and organizations](../foundations/roles-authority-and-organizations.md)
+settle moral responsibility.[^sep-moral-responsibility] [Roles, authority, and organizations](../foundations/roles-authority-and-organizations.md)
 separates assigned role from actual control, while [risk and decision](../foundations/risk-and-decision.md)
 explains context-sensitive evaluation.
 

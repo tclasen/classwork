@@ -12,12 +12,6 @@ subject:
     label: Entity
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
-sources:
-  - id: nas-reproducibility
-    resource: https://doi.org/10.17226/25303
-    title: Reproducibility and Replicability in Science
-    author: "national-academies/2019"
-    last_modified: 2019-05-07
 ---
 
 # Reasoning from support
@@ -37,5 +31,3 @@ used to interpret it.
 
 This foundation is expanded in [evidence and scientific claims](../science/evidence-and-scientific-claims.md)
 and applied to [assurance cases](../assurance/assurance-case.md).
-
-[^nas-reproducibility]: National Academies, [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303).

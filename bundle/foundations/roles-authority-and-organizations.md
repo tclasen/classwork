@@ -30,7 +30,7 @@ agent caused an outcome.
 A **decision right** specifies who may make or approve a decision. Delegating a
 role or permission can distribute practical control without erasing the
 original organization's duties. Records should distinguish the person or
-system that acted, the role under which it acted, and the authority relied on.
+system that acted, the role under which it acted, and the authority relied on.[^w3c-prov-dm]
 
 This foundation supports [digital identity and authorization](../cybersecurity/digital-identity-and-authorization.md),
 [moral agency and responsibility](../ethics/moral-agency-and-responsibility.md),

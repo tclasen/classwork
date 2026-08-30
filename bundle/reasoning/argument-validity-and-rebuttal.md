@@ -32,6 +32,6 @@ or missing premise that weakens the conclusion. Review therefore asks whether
 the premises are relevant, sufficient, independent where needed, and applicable
 to the stated scope. [Claims, evidence, and inference](../foundations/claims-evidence-and-inference.md)
 supplies the basic vocabulary; an [assurance case](../assurance/assurance-case.md)
-applies it to auditable system judgments.
+applies it to auditable system judgments.[^nist-assurance-case]
 
 [^nist-assurance-case]: NIST, [CSRC Glossary: assurance case](https://csrc.nist.gov/glossary/term/assurance_case).

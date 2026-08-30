@@ -9,17 +9,6 @@ subject:
     label: Entity
 status: stable
 generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
-sources:
-  - id: w3c-prov-dm
-    resource: https://www.w3.org/TR/prov-dm/
-    title: W3C PROV-DM Provenance Data Model
-    author: "w3c/PROV-DM"
-    last_modified: 2013-04-30
-  - id: semver
-    resource: https://semver.org/spec/v2.0.0.html
-    title: Semantic Versioning 2.0.0
-    author: "semver/2.0.0"
-    last_modified: 2013-06-20
 ---
 
 # Statements and structure
@@ -41,6 +30,3 @@ This vocabulary explains the bundle's links and the prerequisite structure in
 [competency and prerequisite structure](../education/competency-and-prerequisite-structure.md).
 It also supports [software dependency and compatibility](../software-engineering/software-dependency-and-compatibility.md)
 and provenance graphs built from [entities, activities, and agents](entities-activities-and-agents.md).
-
-[^w3c-prov-dm]: W3C, [PROV-DM: The PROV Data Model](https://www.w3.org/TR/prov-dm/).
-[^semver]: [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html).

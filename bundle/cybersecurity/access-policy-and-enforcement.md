@@ -25,7 +25,7 @@ sources:
 An access policy evaluates a subject, requested action, target resource, and
 context against rules. A **permission** is an allowed operation in that stated
 scope; a **decision** is the result, such as permit or deny; and **enforcement**
-applies the result at the resource boundary. The decision and enforcement
+applies the result at the resource boundary.[^nist-zero-trust] The decision and enforcement
 points may be separate, but the resource must receive enough context to apply
 the intended scope and lifetime.
 
@@ -36,4 +36,4 @@ additional context. [Actions, policies, and permissions](../foundations/actions-
 defines the general vocabulary; [identity binding and authentication](identity-binding-and-authentication.md)
 defines the identity input.
 
-[^nist-zero-trust]: NIST, [SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).
+[^nist-zero-trust]: NIST, [NIST SP 800-207 Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207).

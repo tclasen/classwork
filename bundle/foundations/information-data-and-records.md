@@ -33,7 +33,7 @@ meaning, lose detail, or introduce error, so [claims, evidence, and inference](c
 must distinguish what a record contains from what a reader concludes.
 
 Records are [entities, activities, and agents](entities-activities-and-agents.md)
-when modeled for provenance. [Semantics and models](semantics-and-models.md)
+when modeled for provenance.[^w3c-prov-dm] [Semantics and models](semantics-and-models.md)
 explains how a representation acquires shared meaning. Training and evaluation
 data are central inputs to [machine learning](../artificial-intelligence/machine-learning.md),
 and text data is a particularly important input to [large language models](../artificial-intelligence/large-language-models.md).

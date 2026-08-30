@@ -21,7 +21,7 @@ sources:
 
 An **identifier** is a name or value used to refer to a subject within a
 scope. **Identity binding** connects that identifier and its attributes to a
-real-world or digital subject through an enrollment or proofing process. A
+real-world or digital subject through an enrollment or proofing process.[^nist-digital-identity] A
 **credential** is evidence or a data object used in that relationship. An
 **authenticator** is something the subject controls and can present to support
 an authentication event.
@@ -34,4 +34,4 @@ domains with a trust relationship. [Time, identity, and relationships](../founda
 explains reference and scope, while [digital identity and authorization](digital-identity-and-authorization.md)
 explains the downstream access decision.
 
-[^nist-digital-identity]: NIST, [SP 800-63-4 Digital Identity Guidelines](https://doi.org/10.6028/NIST.SP.800-63-4).
+[^nist-digital-identity]: NIST, [NIST SP 800-63-4 Digital Identity Guidelines](https://doi.org/10.6028/NIST.SP.800-63-4).

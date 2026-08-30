@@ -27,7 +27,7 @@ sources:
 
 # From ranges to a concrete graph
 
-A version constraint describes a set of acceptable versions. A **resolver**
+A version constraint describes a set of acceptable versions.[^python-dependency-specifiers] A **resolver**
 selects one version for each required package while satisfying direct and
 transitive constraints and environment conditions. Resolution can fail when
 constraints conflict or can produce different valid choices at different times.

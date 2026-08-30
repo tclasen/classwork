@@ -32,7 +32,7 @@ it. A **constraint** limits which outcomes or actions are possible. A
 **prerequisite** is a condition that must be satisfied for a specified task or
 competency, while a **dependency** is a broader requirement relationship. A
 record of derivation describes how information was produced; it is evidence
-about process, not automatically proof of causal sufficiency.
+about process, not automatically proof of causal sufficiency.[^w3c-prov-dm]
 
 These distinctions prevent a prerequisite graph from treating every useful
 relationship as a necessary cause. They support [claims, evidence, and inference](claims-evidence-and-inference.md), [systems, processes, and boundaries](systems-processes-and-boundaries.md), and [software dependency and compatibility](../software-engineering/software-dependency-and-compatibility.md).
