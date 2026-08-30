@@ -49,7 +49,9 @@ evidence. Explain why a requested change matters, distinguish required fixes
 from optional polish, and comment on the code rather than the person.[^google-review-comments]
 Reviewers should resolve disagreements through shared reasoning and preserve
 forward progress; the standard is continuous improvement, not an impossible
-claim of flawless code.[^google-review-standard]
+claim of flawless code.[^google-review-standard] Reviewing complexity and
+unclear structure early also protects [maintainable code and refactoring](maintainable-code-and-refactoring.md)
+by keeping future changes easier to understand and adapt.
 
 Pair review with [version control and small reversible changes](version-control-and-small-reversible-changes.md)
 and [requirements engineering and acceptance](requirements-engineering-and-acceptance.md).
