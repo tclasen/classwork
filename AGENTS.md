@@ -92,12 +92,17 @@ During the pass, look for justified opportunities to expand missing essential
 knowledge, remove duplication or stale graph connections, improve individual
 node prose and metadata, reconcile ontology and provenance metadata, and
 reorganize indexes or directories to improve progressive disclosure and reduce
-complexity. Apply only changes supported by repository evidence and the
-relevant skill; do not invent curriculum, weaken ontology classifications,
-silently add sources, or turn lesson plans into bundle concepts. If no change
-is justified, report the audit findings and validation performed. For a looping
-request, repeat the audit after each completed change and stop when the stated
-maintenance objective is met or no actionable, in-scope improvement remains.
+complexity. Check both local consistency among each affected node and its
+neighbors and global consistency across the complete repository, including
+cross-links, indexes, metadata, ontology use, sources, ignored artifacts, and
+all other applicable invariants. Confirm that every action and resulting state
+follows all specified repository rules and skill procedures. Apply only changes
+supported by repository evidence and the relevant skill; do not invent
+curriculum, weaken ontology classifications, silently add sources, or turn
+lesson plans into bundle concepts. If no change is justified, report the audit
+findings and validation performed. For a looping request, repeat the audit
+after each completed change and stop when the stated maintenance objective is
+met or no actionable, in-scope improvement remains.
 
 For combined teaching and knowledge work, teach first when that clarifies the
 learner's need. For an identified source, perform source intake before

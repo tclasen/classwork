@@ -29,7 +29,10 @@ procedure.
   duplicate links, improve node content and metadata, reconcile indexes and
   structure, and reduce progressive-disclosure complexity. Coordinate with all
   other available skills and apply their scopes before declaring the pass
-  complete; do not make unsupported speculative changes.
+  complete. Verify both local consistency among affected concepts and their
+  neighbors and global consistency across the full repository, including all
+  applicable invariants and specified rules; do not make unsupported
+  speculative changes.
 
 ## Prepare and discover
 
