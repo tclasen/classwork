@@ -22,3 +22,19 @@
 * [Version resolution and locks](version-resolution-and-locks.md) - Selecting a concrete dependency graph from constraints and recording it for repeatable use.
 * [Software dependency and compatibility](software-dependency-and-compatibility.md) - Managing required components, version constraints, resolution, and runtime compatibility.
 * [Domain-driven design](domain-driven-design.md) - Shaping software models and boundaries around the domain knowledge that gives a system its purpose and behavior.
+* [Domain model](domain-model.md) - A selective model of domain concepts, relationships, rules, and behavior that guides software design.
+* [Ubiquitous language](ubiquitous-language.md) - A shared domain vocabulary whose meanings remain consistent across conversation, documentation, tests, and code.
+* [Subdomain](subdomain.md) - A meaningful part of a broader problem domain with a distinct purpose, capability, or set of rules.
+* [Bounded context](bounded-context.md) - An explicit boundary within which a domain model and its language have consistent meaning.
+* [Context map](context-map.md) - A documented view of relationships and integration arrangements between bounded contexts.
+* [Shared kernel](shared-kernel.md) - A deliberately shared subset of a model or codebase maintained jointly by bounded contexts.
+* [Published language](published-language.md) - A well-defined shared language or exchange model used to communicate across bounded-context boundaries.
+* [Conformist integration](conformist-integration.md) - An integration arrangement in which a downstream context adopts an upstream model rather than translating it.
+* [Anti-corruption layer](anti-corruption-layer.md) - A translation boundary that protects one domain model from an external model's concepts and constraints.
+* [Entities](entities.md) - Domain objects whose identity persists across changes and distinguishes them from other objects.
+* [Value objects](value-objects.md) - Immutable domain objects defined by their attributes rather than by persistent identity.
+* [Aggregate](aggregate.md) - A consistency boundary that groups related domain objects and protects their invariants.
+* [Aggregate root](aggregate-root.md) - The identity-bearing entry point through which external code accesses and changes an aggregate.
+* [Domain services](domain-services.md) - Stateless domain operations not naturally owned by one entity or value object.
+* [Domain events](domain-events.md) - Records of significant domain occurrences that allow other parts of a model to react to a completed change.
+* [Repositories](repositories.md) - Domain-oriented abstractions for retrieving and persisting aggregates without exposing storage details.

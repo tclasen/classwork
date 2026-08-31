@@ -23,10 +23,10 @@ sources:
 
 **Domain-driven design (DDD)** is a software design approach for managing
 complexity by making the problem domain and its important rules explicit in a
-model, then aligning the design and implementation with that model. Developers
-and domain experts explore the model together and refine a **ubiquitous
-language**: terms whose meanings are shared in conversation, documentation,
-tests, and code.[^domain-language-reference]
+[domain model](domain-model.md), then aligning the design and implementation with that model. Developers
+and domain experts explore the model together and refine a [ubiquitous
+language](ubiquitous-language.md): terms whose meanings are shared in conversation,
+documentation, tests, and code.[^domain-language-reference]
 
 DDD is a way of making design decisions, not a framework or a requirement to
 use microservices. Its value depends on a domain with meaningful behavior and
@@ -35,15 +35,18 @@ ceremony without improving understanding.
 
 # Set boundaries before patterns
 
-Strategic design looks at the whole problem space. A **subdomain** is a
-meaningful area of the business or problem space; a **bounded context** is a
+Strategic design looks at the whole problem space. A [subdomain](subdomain.md) is a
+meaningful area of the business or problem space; a [bounded context](bounded-context.md) is a
 part of a system within which a particular model and language are consistent.
 The same word can legitimately mean different things in different bounded
 contexts. A **context map** records how contexts relate, such as through a
 shared kernel, published language, conformist integration, or an
 anti-corruption layer that translates between models. These boundaries make
 semantic disagreement visible instead of allowing one supposedly universal
-model to accumulate incompatible meanings.
+model to accumulate incompatible meanings. A [context map](context-map.md) makes
+those relationships explicit; its common relationships include a [shared kernel](shared-kernel.md),
+[published language](published-language.md), [conformist integration](conformist-integration.md),
+and [anti-corruption layer](anti-corruption-layer.md).
 
 Strategic choices should follow real business capability, model differences,
 team ownership, integration constraints, and expected change. A bounded
@@ -54,15 +57,15 @@ boundary and the deployment boundary are related decisions, not synonyms.
 
 Tactical design gives domain rules precise homes:
 
-- **Entities** have identity that persists across changes, while **value
-  objects** are defined by their attributes and are usually immutable.
-- An **aggregate** is a consistency boundary with an aggregate root through
+- [Entities](entities.md) have identity that persists across changes, while [value
+  objects](value-objects.md) are defined by their attributes and are usually immutable.
+- An [aggregate](aggregate.md) is a consistency boundary with an [aggregate root](aggregate-root.md) through
   which outside code coordinates changes. Its invariants should be enforced at
   that boundary, keeping transactions and concurrency decisions explicit.
-- **Domain services** express meaningful domain operations that do not fit one
-  entity or value object. **Domain events** record important occurrences so
+- [Domain services](domain-services.md) express meaningful domain operations that do not fit one
+  entity or value object. [Domain events](domain-events.md) record important occurrences so
   other parts of the model can react without hiding the causal change.
-- **Repositories** provide a domain-oriented way to retrieve and persist
+- [Repositories](repositories.md) provide a domain-oriented way to retrieve and persist
   aggregates; they should not turn the domain model into a thin wrapper around
   a particular database.
 
