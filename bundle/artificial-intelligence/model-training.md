@@ -4,11 +4,11 @@ title: Model training
 description: Adjusting a model using data and an objective so it performs a task under a stated evaluation procedure.
 tags: [artificial-intelligence, machine-learning, model-training, optimization, evaluation]
 subject:
-  - ontology: mls-1.0
-    class: http://www.w3.org/ns/mls#Process
-    label: Machine-learning process
+  - ontology: obi-2026-07-27
+    class: http://purl.obolibrary.org/obo/OBI_0002587
+    label: Machine learning
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:39:23-07:00" }
 sources:
   - id: google-what-is-ml
     resource: https://developers.google.com/machine-learning/intro-to-ml/what-is-ml

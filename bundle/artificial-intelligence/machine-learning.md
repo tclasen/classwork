@@ -4,11 +4,11 @@ title: Machine learning
 description: Training models from data so they can produce useful predictions or generated outputs on new inputs.
 tags: [artificial-intelligence, machine-learning, ML, data, models, training]
 subject:
-  - ontology: mls-1.0
-    class: http://www.w3.org/ns/mls#Process
-    label: Machine-learning process
+  - ontology: obi-2026-07-27
+    class: http://purl.obolibrary.org/obo/OBI_0002587
+    label: Machine learning
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:39:23-07:00" }
 sources:
   - id: google-what-is-ml
     resource: https://developers.google.com/machine-learning/intro-to-ml/what-is-ml
