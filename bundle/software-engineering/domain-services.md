@@ -8,12 +8,12 @@ subject:
     class: "http://www.w3.org/ns/prov#Activity"
     label: Activity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
 sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf", title: "Domain-Driven Design Reference", author: "eric-evans/domain-language" }]
 ---
 
 # Place cross-object behavior
 
-A [domain service](domain-driven-design.md) expresses a meaningful domain operation that does not naturally belong to one [entity](entities.md) or [value object](value-objects.md). It should remain focused on domain meaning rather than becoming a general-purpose utility or a home for infrastructure concerns.[^source]
+A domain service expresses a meaningful domain operation that does not naturally belong to one [entity](entities.md) or [value object](value-objects.md). It should remain focused on domain meaning rather than becoming a general-purpose utility or a home for infrastructure concerns.[^source]
 
 [^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

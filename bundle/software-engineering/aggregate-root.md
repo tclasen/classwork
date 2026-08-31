@@ -8,12 +8,12 @@ subject:
     class: "http://www.w3.org/ns/prov#Entity"
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
 sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf", title: "Domain-Driven Design Reference", author: "eric-evans/domain-language" }]
 ---
 
 # Enter an aggregate
 
-An [aggregate root](domain-driven-design.md) is the designated [entity](entities.md) through which outside code references and changes an [aggregate](aggregate.md). It enforces the aggregate's invariants and controls access to internal objects, so callers do not bypass its consistency boundary.[^source]
+An aggregate root is the designated [entity](entities.md) through which outside code references and changes an [aggregate](aggregate.md). It enforces the aggregate's invariants and controls access to internal objects, so callers do not bypass its consistency boundary.[^source]
 
 [^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

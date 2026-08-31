@@ -71,6 +71,17 @@ These patterns are options for preserving model integrity, not a mandatory
 checklist. Keep technical concerns at explicit boundaries and let the model
 expose the behavior and invariants that matter to the domain.
 
+## Worked order example
+
+Suppose an Ordering context must ensure an order cannot be confirmed without a
+shipping address. The [aggregate root](aggregate-root.md) enforces that
+invariant using an address [value object](value-objects.md); a [repository](repositories.md)
+loads and saves the aggregate, while a [domain service](domain-services.md)
+calculates a cross-order promotion. After confirmation, a [domain event](domain-events.md)
+can notify Billing through a [published language](published-language.md). If
+Billing uses different terms, the context boundary can translate them with an
+[anti-corruption layer](anti-corruption-layer.md), as recorded in a [context map](context-map.md).
+
 ```mermaid
 flowchart LR
     E[Domain experts and engineers] --> L[Ubiquitous language]

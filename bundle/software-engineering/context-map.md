@@ -8,12 +8,12 @@ subject:
     class: "http://www.w3.org/ns/prov#Entity"
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
 sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf", title: "Domain-Driven Design Reference", author: "eric-evans/domain-language" }]
 ---
 
 # Map context relationships
 
-A [context map](domain-driven-design.md) records how [bounded contexts](bounded-context.md) relate, including ownership, data or messages crossing a boundary, and translation or coordination. Common arrangements include a [shared kernel](shared-kernel.md), [published language](published-language.md), [conformist integration](conformist-integration.md), and [anti-corruption layer](anti-corruption-layer.md).[^source]
+A context map records how [bounded contexts](bounded-context.md) relate, including ownership, data or messages crossing a boundary, and translation or coordination. Common arrangements include a [shared kernel](shared-kernel.md), [published language](published-language.md), [conformist integration](conformist-integration.md), and [anti-corruption layer](anti-corruption-layer.md).[^source]
 
 [^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
