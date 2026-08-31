@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Retrieve aggregates by domain meaning
 
-A repository provides a domain-oriented way to retrieve and persist [aggregates](aggregate.md). Its interface expresses the model's needs while infrastructure supplies the storage implementation. A repository should not reduce the domain model to a thin wrapper around a particular database or leak persistence concerns into invariant enforcement.[^domain-language-reference]
+In [Domain-driven design](domain-driven-design.md), a repository provides a domain-oriented way to retrieve and persist [aggregates](aggregate.md). Its interface expresses the model's needs while infrastructure supplies the storage implementation. A repository should not reduce the domain model to a thin wrapper around a particular database or leak persistence concerns into invariant enforcement.[^domain-language-reference]
 
 [^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

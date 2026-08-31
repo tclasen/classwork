@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Map context relationships
 
-A context map records how [bounded contexts](bounded-context.md) relate, including ownership, data or messages crossing a boundary, and translation or coordination. Common arrangements include a [shared kernel](shared-kernel.md), [published language](published-language.md), [conformist integration](conformist-integration.md), and [anti-corruption layer](anti-corruption-layer.md).[^domain-language-reference]
+In [Domain-driven design](domain-driven-design.md), a context map records how [bounded contexts](bounded-context.md) relate, including ownership, data or messages crossing a boundary, and translation or coordination. Common arrangements include a [shared kernel](shared-kernel.md), [published language](published-language.md), [conformist integration](conformist-integration.md), and [anti-corruption layer](anti-corruption-layer.md).[^domain-language-reference]
 
 [^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Protect invariants
 
-An aggregate is a cluster of [entities](entities.md) and [value objects](value-objects.md) treated as one consistency boundary. Outside code coordinates changes through its [aggregate root](aggregate-root.md), while the aggregate protects invariants and makes transaction and concurrency choices explicit. Aggregates should be sized around consistency needs, not merely object containment.[^domain-language-reference]
+An aggregate is a cluster of [entities](entities.md) and [value objects](value-objects.md) treated as one consistency boundary. In [Domain-driven design](domain-driven-design.md), outside code coordinates changes through its [aggregate root](aggregate-root.md), while the aggregate protects invariants and makes transaction and concurrency choices explicit. Aggregates should be sized around consistency needs, not merely object containment.[^domain-language-reference]
 
 [^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

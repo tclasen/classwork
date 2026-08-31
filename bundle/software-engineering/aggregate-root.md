@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Enter an aggregate
 
-An aggregate root is the designated [entity](entities.md) through which outside code references and changes an [aggregate](aggregate.md). It enforces the aggregate's invariants and controls access to internal objects, so callers do not bypass its consistency boundary.[^domain-language-reference]
+An aggregate root is the designated [entity](entities.md) through which outside code references and changes an [aggregate](aggregate.md). In [Domain-driven design](domain-driven-design.md), it enforces the aggregate's invariants and controls access to internal objects, so callers do not bypass its consistency boundary.[^domain-language-reference]
 
 [^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
