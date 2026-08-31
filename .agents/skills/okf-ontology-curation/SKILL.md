@@ -19,6 +19,11 @@ in `AGENTS.md`.
   until its catalog entry and local artifact are present and verified.
 - Runtime validation and node consumption must resolve from the catalog and
   vendored artifacts without network access or silent upgrades.
+- In an explicit maintenance or looping audit, inspect ontology catalog entries,
+  vendored artifacts, checksums, namespaces, dependencies, and every concept
+  subject for drift or weak semantic fit. Repair only verified, in-scope
+  defects; a genuinely missing suitable class still requires the approval
+  workflow below.
 - A class selected for a node's `subject` must be an authoritative,
   industry-standard reference with strong semantic fit to the node. Reject
   broad generic fallbacks such as `activity`, `event`, or `process` when they

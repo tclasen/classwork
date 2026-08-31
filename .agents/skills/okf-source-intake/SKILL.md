@@ -11,6 +11,12 @@ repository locations. Obey the durable policy in `AGENTS.md`.
 
 ## Resolve and assess the source
 
+For an explicit maintenance or looping audit, also inspect represented sources
+and stored artifacts for stale editions, missing provenance, licensing or
+integrity gaps, misplaced temporary material, and citations that no longer
+resolve. Integrate a correction only when the exact source can be verified;
+otherwise record the unresolved candidate for review.
+
 1. Resolve the exact source, edition, version, or release intended by the user.
    Verify its publisher, authorship when applicable, publication context,
    canonical URI, and integrity. Never treat an error page, login response,

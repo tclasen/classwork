@@ -74,6 +74,31 @@ authorization or relax repository invariants.
 - Use [`$okf-lesson-plans`](.agents/skills/okf-lesson-plans/SKILL.md) when creating or revising a saved lesson plan, learning route, schedule, exercise sequence, or checkpoint set.
 - Use [`$okf-source-intake`](.agents/skills/okf-source-intake/SKILL.md) when resolving, verifying, assessing, storing, or integrating an identified publication, dataset, standard, specification, documentation set, audiovisual work, archival record, or other source artifact.
 
+### Maintenance-loop trigger
+
+When the user explicitly requests maintenance, housekeeping, an audit, a
+cleanup pass, or an ongoing `/goal` or other looping maintenance activity,
+treat the request as authorization for a broad repository-health review. Read
+all available project skills before acting and use each skill as an audit lens
+within its scope: graph synthesis for concepts, links, indexes, logs, and
+structure; ontology curation for catalog, artifact, and subject integrity;
+source intake for source, provenance, licensing, and stored-artifact hygiene;
+teaching for explanatory closure and prerequisite gaps; and lesson plans for
+keeping learner artifacts separate, ignored, and properly grounded. Use the
+same discovery, terminology-closure, validation, explicit-staging, and commit
+discipline required for ordinary knowledge work.
+
+During the pass, look for justified opportunities to expand missing essential
+knowledge, remove duplication or stale graph connections, improve individual
+node prose and metadata, reconcile ontology and provenance metadata, and
+reorganize indexes or directories to improve progressive disclosure and reduce
+complexity. Apply only changes supported by repository evidence and the
+relevant skill; do not invent curriculum, weaken ontology classifications,
+silently add sources, or turn lesson plans into bundle concepts. If no change
+is justified, report the audit findings and validation performed. For a looping
+request, repeat the audit after each completed change and stop when the stated
+maintenance objective is met or no actionable, in-scope improvement remains.
+
 For combined teaching and knowledge work, teach first when that clarifies the
 learner's need. For an identified source, perform source intake before
 knowledge synthesis. Invoke ontology curation if synthesis cannot assign a

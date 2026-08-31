@@ -11,6 +11,12 @@ to establish the learner's goal or baseline.
 
 ## Create a plan
 
+In an explicit maintenance or looping audit, inspect `lesson-plans/` only as a
+boundary and grounding check: keep plans ignored and uncommitted, ensure their
+links still resolve to adequately taught bundle concepts, and identify missing
+shared material for `$okf-knowledge-synthesis`. Do not reorganize learner
+routes into the shared graph.
+
 1. Infer the learner's goal, available time, background, constraints, and
    desired outcome. Ask a concise question only if a missing detail would
    materially change the plan.

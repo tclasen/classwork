@@ -11,6 +11,12 @@ policy in `AGENTS.md`.
 
 ## Teach from the graph
 
+In an explicit maintenance or looping audit, use the teaching lens to inspect
+whether concepts explain their required prerequisites, mechanisms, notation,
+and examples clearly enough for their intended audience. Flag or repair an
+essential explanatory gap through `$okf-knowledge-synthesis`; do not add
+teaching-only duplicates or impose a canonical learning route.
+
 1. Read the relevant indexes, canonical concepts, linked prerequisites, and
    directly related concepts before answering. Do not rely on filenames,
    snippets, or general memory when the bundle supplies the material.

@@ -23,6 +23,13 @@ procedure.
   another collaboration model.
 - Never create a concept about a person or people unless the user explicitly
   requests or authorizes it.
+- For an explicit maintenance, housekeeping, audit, or looping `/goal` request,
+  act as the coordinating graph-maintenance skill: inspect for justified
+  opportunities to add missing essential concepts, repair or remove stale and
+  duplicate links, improve node content and metadata, reconcile indexes and
+  structure, and reduce progressive-disclosure complexity. Coordinate with all
+  other available skills and apply their scopes before declaring the pass
+  complete; do not make unsupported speculative changes.
 
 ## Prepare and discover
 
