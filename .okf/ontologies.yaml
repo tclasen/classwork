@@ -72,7 +72,7 @@ ontologies:
   mls-1.0:
     uri: http://www.w3.org/ns/mls#
     release: 1.0 (2016-03 ontology; master commit 4e1d90292509ed2a2ec52efc955e40e17fa92281)
-    retrieval_uri: https://raw.githubusercontent.com/ML-Schema/core/master/MLSchema.ttl
+    retrieval_uri: https://raw.githubusercontent.com/ML-Schema/core/4e1d90292509ed2a2ec52efc955e40e17fa92281/MLSchema.ttl
     local_path: .okf/ontologies/mls-1.0.ttl
     format: turtle
     license: Creative Commons Attribution 4.0 International
