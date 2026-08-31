@@ -84,7 +84,7 @@ helps distinguish the observed score from the bounded claim it supports.[^google
 
 ## Distribution shift and evaluation limits
 
-**Distribution shift** is a change between the conditions represented by the
+[Distribution shift](distribution-shift.md) is a change between the conditions represented by the
 evaluation data and the conditions in which the model is used. It can affect
 inputs, target frequencies, relationships between inputs and targets, users,
 interfaces, or the consequences of errors. Monitoring new observations and

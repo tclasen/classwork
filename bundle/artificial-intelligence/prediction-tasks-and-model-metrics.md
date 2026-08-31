@@ -61,10 +61,11 @@ evaluation choice rather than a fact discovered automatically by training.[^goog
 Metrics calculated at one fixed threshold, including accuracy, precision, and
 recall, can therefore change when the threshold changes.[^google-classification-metrics]
 
-**Calibration** concerns whether confidence values correspond to observed
+[Model calibration](calibration.md) concerns whether confidence values correspond to observed
 frequencies in a stated population. For example, among cases assigned a
 confidence near $0.8$, a calibrated system would be correct about $80\%$ of
-the time for the defined event and conditions. Calibration is different from
+the time for the defined event and conditions. The dedicated [model calibration](calibration.md)
+concept explains the population and outcome-window conditions. Calibration is different from
 discrimination: a model can rank positives above negatives well while its
 confidence values are systematically too high or too low.
 

@@ -12,6 +12,8 @@
 * [Gradients and backpropagation](gradients-and-backpropagation.md) - Computing how a training objective changes with model parameters so an optimization procedure can update them.
 * [Generalization and model evaluation](generalization-and-model-evaluation.md) - Assessing how well a trained model performs beyond its training examples under stated data, metrics, and uncertainty.
 * [Prediction tasks and model metrics](prediction-tasks-and-model-metrics.md) - Relating prediction targets and decision outputs to task-specific metrics, thresholds, ranking, calibration, and bounded evaluation claims.
+* [Model calibration](calibration.md) - Assessing whether a model's confidence values correspond to observed outcome frequencies for a defined population and event.
+* [Distribution shift](distribution-shift.md) - A change between the conditions represented by evaluation data and the conditions in which a model is used.
 * [Model inference](model-inference.md) - Applying a trained model to an input in context to produce a prediction or generated output.
 * [Embeddings and vector representations](embeddings-and-vector-representations.md) - Learned or constructed numerical representations that place data in a task-shaped vector space for computation and comparison.
 

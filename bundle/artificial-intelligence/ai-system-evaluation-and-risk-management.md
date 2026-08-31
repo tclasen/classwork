@@ -46,7 +46,7 @@ responses, monitoring, and improvement.
 
 # Evidence and decisions
 
-Evaluation evidence can include [model-level generalization and evaluation](generalization-and-model-evaluation.md)
+Evaluation evidence can include [model-level generalization and evaluation](generalization-and-model-evaluation.md), including checks for [distribution shift](distribution-shift.md),
 results, representative observations,
 monitoring records, user feedback, incident reports, and documentation of
 assumptions or limitations. Evidence is not self-interpreting: use [claims,
