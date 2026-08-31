@@ -8,7 +8,7 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T13:51:23-07:00" }
 ---
 
 # What closure means here
@@ -21,7 +21,8 @@ foundations of mathematics, language, physics, or philosophy. It is a compact
 teaching boundary for [entities, activities, and agents](entities-activities-and-agents.md),
 [information, data, and records](information-data-and-records.md), [time, identity, and relationships](time-identity-and-relationships.md), [claims, evidence, and inference](claims-evidence-and-inference.md), [measurement and uncertainty](measurement-and-uncertainty.md),
 [systems, processes, and boundaries](systems-processes-and-boundaries.md), [actions, policies, and permissions](actions-policies-and-permissions.md), [risk and decision](risk-and-decision.md),
-and [learning, assessment, and transfer](learning-assessment-and-transfer.md).
+and [learning, assessment, and transfer](learning-assessment-and-transfer.md), as
+well as [semantics and models](semantics-and-models.md), [logic, graphs, and dependencies](logic-graphs-and-dependencies.md), [causation and dependency](causation-and-dependency.md), [security properties and integrity](security-properties-and-integrity.md), and [roles, authority, and organizations](roles-authority-and-organizations.md).
 
 Each terminal concept is defined in ordinary language and connected to the
 other terminal concepts. A new node must either reuse one of those definitions
