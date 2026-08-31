@@ -22,8 +22,7 @@ sources:
 
 # How the training signal is obtained
 
-A **machine-learning paradigm** is a recurring way of organizing a [model
-training](model-training.md) activity around the source and meaning of its
+A **machine-learning paradigm** is a recurring way of organizing a [model training](model-training.md) activity around the source and meaning of its
 training signal. The paradigm describes how examples, targets, or feedback
 are obtained; it does not by itself specify a model architecture or an
 [optimization and parameter updates](optimization-and-parameter-updates.md)

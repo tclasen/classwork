@@ -37,8 +37,7 @@ the parameters should change.
 
 During training, a forward pass produces an output and an objective measures
 the result. [Gradients and backpropagation](gradients-and-backpropagation.md)
-computes how that objective changes with the parameters, while [optimization and
-parameter updates](optimization-and-parameter-updates.md) uses that information
+computes how that objective changes with the parameters, while [optimization and parameter updates](optimization-and-parameter-updates.md) uses that information
 to change them. Applying the trained network is [model inference](model-inference.md).
 
 Neural networks vary in architecture. A [Transformer attention architecture](transformer-attention-architecture.md)

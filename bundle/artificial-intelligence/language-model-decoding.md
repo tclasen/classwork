@@ -91,16 +91,14 @@ A probability or likelihood describes the model's preference under its
 training and inference conditions; it is not a truth certificate. A highly
 likely continuation can repeat a misconception, reflect bias in its data, or
 be wrong in a new context. Conversely, a true or useful statement need not be
-the model's most likely continuation. Use [probability and statistical
-inference](../science/probability-and-statistical-inference.md) to distinguish
+the model's most likely continuation. Use [probability and statistical inference](../science/probability-and-statistical-inference.md) to distinguish
 uncertainty and model assumptions from warranted conclusions, and use
 [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md)
 when checking whether a generated claim is supported.
 
 [Large language models](large-language-models.md) estimate the distributions
 that decoding uses, while [model inference](model-inference.md) names the
-larger execution activity in which decoding may occur. [Generalization and
-model evaluation](generalization-and-model-evaluation.md) explains why
+larger execution activity in which decoding may occur. [Generalization and model evaluation](generalization-and-model-evaluation.md) explains why
 generated outputs must be evaluated under the intended task and context.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

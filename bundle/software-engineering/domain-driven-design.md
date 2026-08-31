@@ -56,8 +56,7 @@ boundary and the deployment boundary are related decisions, not synonyms.
 
 Tactical design gives domain rules precise homes:
 
-- [Entities](entities.md) have identity that persists across changes, while [value
-  objects](value-objects.md) are defined by their attributes and are usually immutable.
+- [Entities](entities.md) have identity that persists across changes, while [value objects](value-objects.md) are defined by their attributes and are usually immutable.
 - An [aggregate](aggregate.md) is a consistency boundary with an [aggregate root](aggregate-root.md) through
   which outside code coordinates changes. Its invariants should be enforced at
   that boundary, keeping transactions and concurrency decisions explicit.
