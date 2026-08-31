@@ -5,11 +5,11 @@ description: ICLR 2023 paper proposing interleaved language-model reasoning and 
 resource: https://arxiv.org/abs/2210.03629
 tags: [artificial-intelligence, agents, language-models, reasoning, acting, research-paper]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: obi-2026-07-27
+    class: http://purl.obolibrary.org/obo/OBI_0000218
+    label: Investigation results report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:34:02-07:00" }
 sources:
   - id: react-paper
     resource: https://arxiv.org/abs/2210.03629

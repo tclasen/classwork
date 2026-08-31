@@ -6,11 +6,11 @@ resource: https://arxiv.org/abs/2203.02155
 authors: ["Long Ouyang", "Jeffrey Wu", "Xu Jiang", "Diogo Almeida", "Carroll Wainwright", "Pamela Mishkin", "Chong Zhang", "Sandhini Agarwal", "Katarina Slama", "Alex Ray", "John Schulman", "Jacob Hilton", "Fraser Kelton", "Luke Miller", "Maddie Simens", "Amanda Askell", "Peter Welinder", "Paul Christiano", "Jan Leike", "Ryan Lowe"]
 tags: [artificial-intelligence, language-models, instruction-tuning, human-feedback, research-paper]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: obi-2026-07-27
+    class: http://purl.obolibrary.org/obo/OBI_0000218
+    label: Investigation results report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:34:02-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155
