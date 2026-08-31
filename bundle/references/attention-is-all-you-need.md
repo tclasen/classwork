@@ -9,16 +9,21 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
 sources:
   - id: transformer-paper
     resource: https://arxiv.org/abs/1706.03762
     title: Attention Is All You Need
-    author: "vaswani-et-al/2017"
+    author: "Vaswani et al."
+    publisher: arxiv
+    publication_context: "arXiv:1706.03762; version 7"
+    license_note: "arXiv non-exclusive distribution license"
   - id: transformer-neurips-record
     resource: https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
     title: NeurIPS 2017 publication record for Attention Is All You Need
-    author: "neurips/2017"
+    author: "NeurIPS"
+    publisher: NeurIPS
+    publication_context: "Advances in Neural Information Processing Systems 30 (NeurIPS 2017)"
 ---
 
 # Publication

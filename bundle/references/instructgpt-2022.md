@@ -10,7 +10,7 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155
@@ -18,6 +18,7 @@ sources:
     author: "Long Ouyang et al."
     publisher: arxiv
     publication_context: "arXiv:2203.02155; submitted 2022-03-04"
+    license_note: "arXiv non-exclusive distribution license"
   - id: instructgpt-neurips
     resource: https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract.html
     title: "Training language models to follow instructions with human feedback"

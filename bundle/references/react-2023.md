@@ -9,16 +9,21 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T18:00:00-07:00" }
 sources:
   - id: react-paper
     resource: https://arxiv.org/abs/2210.03629
     title: "ReAct: Synergizing Reasoning and Acting in Language Models"
-    author: "yao-et-al/2023"
+    author: "Yao et al."
+    publisher: arxiv
+    publication_context: "arXiv:2210.03629; version 3"
+    license_note: "Creative Commons Attribution 4.0 International"
   - id: react-iclr-record
     resource: https://openreview.net/forum?id=WE_vluYUL-X
     title: ICLR 2023 publication record for ReAct
-    author: "openreview/iclr-2023"
+    author: "OpenReview"
+    publisher: ICLR
+    publication_context: "International Conference on Learning Representations (ICLR 2023)"
 ---
 
 # Publication
