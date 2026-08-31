@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Keep a model consistent
 
-[Domain-driven design](domain-driven-design.md) uses a bounded context as a boundary within which a particular [domain model](domain-model.md), [ubiquitous language](ubiquitous-language.md), and set of assumptions are consistent. It prevents one model from silently accumulating incompatible meanings. A bounded context may be a module, application, or service; it is a modeling boundary, not automatically a deployment boundary. Relationships between contexts belong in a [context map](context-map.md).[^source]
+[Domain-driven design](domain-driven-design.md) uses a bounded context as a boundary within which a particular [domain model](domain-model.md), [ubiquitous language](ubiquitous-language.md), and set of assumptions are consistent. It prevents one model from silently accumulating incompatible meanings. A bounded context may be a module, application, or service; it is a modeling boundary, not automatically a deployment boundary. Relationships between contexts belong in a [context map](context-map.md).[^domain-language-reference]
 
-[^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
+[^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

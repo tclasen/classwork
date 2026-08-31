@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Divide the problem domain
 
-A subdomain is a meaningful portion of a broader problem domain, identified by a capability, purpose, or coherent set of rules. [Domain-driven design](domain-driven-design.md) uses subdomains to reason about where different models and investments are needed. A subdomain is a problem-space distinction; a [bounded context](bounded-context.md) is a model and language boundary in the solution space. They may align, but are not synonyms.[^source]
+A subdomain is a meaningful portion of a broader problem domain, identified by a capability, purpose, or coherent set of rules. [Domain-driven design](domain-driven-design.md) uses subdomains to reason about where different models and investments are needed. A subdomain is a problem-space distinction; a [bounded context](bounded-context.md) is a model and language boundary in the solution space. They may align, but are not synonyms.[^domain-language-reference]
 
-[^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
+[^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

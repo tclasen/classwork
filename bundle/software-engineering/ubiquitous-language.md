@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Shared vocabulary
 
-[Ubiquitous language](domain-driven-design.md) is the deliberately shared vocabulary used by domain experts and engineers when describing a [domain model](domain-model.md). Important terms should carry the same intended meaning in conversation, requirements, tests, and implementation. It is specific to a [bounded context](bounded-context.md), so identical words may legitimately differ across contexts.[^source]
+[Ubiquitous language](domain-driven-design.md) is the deliberately shared vocabulary used by domain experts and engineers when describing a [domain model](domain-model.md). Important terms should carry the same intended meaning in conversation, requirements, tests, and implementation. It is specific to a [bounded context](bounded-context.md), so identical words may legitimately differ across contexts.[^domain-language-reference]
 
-[^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
+[^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

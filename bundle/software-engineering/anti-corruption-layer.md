@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Protect a model
 
-An anti-corruption layer translates between an external [bounded context](bounded-context.md) and a local model so foreign concepts, protocols, and assumptions do not leak inward. It can be implemented with adapters, facades, translators, or a combination. Its ownership and direction should be explicit in a [context map](context-map.md).[^source]
+An anti-corruption layer translates between an external [bounded context](bounded-context.md) and a local model so foreign concepts, protocols, and assumptions do not leak inward. It can be implemented with adapters, facades, translators, or a combination. Its ownership and direction should be explicit in a [context map](context-map.md).[^domain-language-reference]
 
-[^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
+[^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

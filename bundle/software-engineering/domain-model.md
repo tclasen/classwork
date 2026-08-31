@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Model the domain
 
-A domain model is a selective representation of the concepts, relationships, rules, and behavior that matter in a problem domain. In [domain-driven design](domain-driven-design.md), experts and engineers refine it through a [ubiquitous language](ubiquitous-language.md) and implement it inside one or more [bounded contexts](bounded-context.md). It is not a complete copy of reality or merely a database schema.[^source]
+A domain model is a selective representation of the concepts, relationships, rules, and behavior that matter in a problem domain. In [domain-driven design](domain-driven-design.md), experts and engineers refine it through a [ubiquitous language](ubiquitous-language.md) and implement it inside one or more [bounded contexts](bounded-context.md). It is not a complete copy of reality or merely a database schema.[^domain-language-reference]
 
-[^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
+[^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).

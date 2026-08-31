@@ -14,6 +14,6 @@ sources: [{ id: domain-language-reference, resource: "https://www.domainlanguage
 
 # Share intentionally
 
-A shared kernel is a small, explicitly agreed subset of a model, vocabulary, or code shared by two [bounded contexts](bounded-context.md). The teams jointly own its evolution; the benefit of avoiding translation is traded against coordination and coupling costs. It is one relationship recorded in a [context map](context-map.md).[^source]
+A shared kernel is a small, explicitly agreed subset of a model, vocabulary, or code shared by two [bounded contexts](bounded-context.md). The teams jointly own its evolution; the benefit of avoiding translation is traded against coordination and coupling costs. It is one relationship recorded in a [context map](context-map.md).[^domain-language-reference]
 
-[^source]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
+[^domain-language-reference]: Eric Evans, [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
