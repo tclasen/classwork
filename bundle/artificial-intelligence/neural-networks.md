@@ -4,14 +4,11 @@ title: Neural networks
 description: Parameterized computational models that compose layers of functions to transform inputs into task-relevant outputs.
 tags: [artificial-intelligence, machine-learning, neural-networks, model-training]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Model
+    label: Model
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T12:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-neural-networks
     resource: https://developers.google.com/machine-learning/crash-course/neural-networks

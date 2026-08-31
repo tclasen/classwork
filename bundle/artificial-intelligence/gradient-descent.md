@@ -4,11 +4,11 @@ title: Gradient descent
 description: An iterative optimization method that changes parameters in the direction that locally decreases a differentiable objective.
 tags: [artificial-intelligence, machine-learning, optimization, gradients, training]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Algorithm
+    label: Algorithm
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T12:25:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-backpropagation
     resource: https://developers.google.com/machine-learning/crash-course/neural-networks/backpropagation

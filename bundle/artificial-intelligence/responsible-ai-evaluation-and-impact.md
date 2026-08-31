@@ -4,14 +4,11 @@ title: Responsible AI evaluation and impact
 description: Evaluating AI trustworthiness, affected-party impacts, and residual risk in a stated context.
 tags: [artificial-intelligence, responsible-ai, evaluation, fairness, privacy, security, accountability, impact]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#ModelEvaluation
+    label: Model evaluation
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T19:30:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: nist-ai-rmf-1-0
     resource: https://doi.org/10.6028/NIST.AI.100-1

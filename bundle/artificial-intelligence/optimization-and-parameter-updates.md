@@ -4,14 +4,14 @@ title: Optimization and parameter updates
 description: Adjusting a model's parameters to improve a training objective while respecting computational and evaluation limits.
 tags: [artificial-intelligence, machine-learning, optimization, parameters, gradients, training]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Algorithm
+    label: Algorithm
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#HyperParameter
+    label: Hyper-parameter
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary

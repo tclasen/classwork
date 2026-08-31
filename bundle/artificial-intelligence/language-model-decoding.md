@@ -4,14 +4,11 @@ title: Language-model decoding
 description: Selecting and stopping generated token sequences from a language model's conditional predictions.
 tags: [artificial-intelligence, machine-learning, language, generation, decoding, reproducibility]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Algorithm
+    label: Algorithm
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary

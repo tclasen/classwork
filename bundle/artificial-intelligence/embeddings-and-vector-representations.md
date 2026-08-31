@@ -4,14 +4,11 @@ title: Embeddings and vector representations
 description: Learned or constructed numerical representations that place data in a task-shaped vector space for computation and comparison.
 tags: [artificial-intelligence, machine-learning, embeddings, vectors, data-representation, semantics]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Feature
+    label: Feature
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T18:22:56-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-embeddings-module
     resource: "https://developers.google.com/machine-learning/crash-course/embeddings"

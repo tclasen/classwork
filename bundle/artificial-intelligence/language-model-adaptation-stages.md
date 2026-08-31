@@ -4,14 +4,11 @@ title: Language-model adaptation stages
 description: Comparing broad unsupervised pretraining with supervised and preference-based procedures that change a language model's behavior under bounded evaluation conditions.
 tags: [artificial-intelligence, machine-learning, language-models, pretraining, fine-tuning, human-feedback, alignment]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Process
+    label: Machine-learning process
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155

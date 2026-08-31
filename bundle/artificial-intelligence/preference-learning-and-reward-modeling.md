@@ -4,14 +4,14 @@ title: Preference learning and reward modeling
 description: Turning comparative judgments about model outputs into preference-based training signals, reward models, or direct objectives with explicit limits.
 tags: [artificial-intelligence, machine-learning, language-models, preference-learning, reward-modeling, human-feedback, alignment]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Algorithm
+    label: Algorithm
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Model
+    label: Model
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155

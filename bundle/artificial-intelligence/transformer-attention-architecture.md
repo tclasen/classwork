@@ -4,14 +4,11 @@ title: Transformer attention architecture
 description: A layered sequence-model architecture that relates positions with attention and preserves order with positional information.
 tags: [artificial-intelligence, machine-learning, transformers, attention, language-models]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Model
+    label: Model
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: transformer-paper
     resource: ../references/attention-is-all-you-need.md

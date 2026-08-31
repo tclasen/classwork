@@ -4,14 +4,11 @@ title: Generalization and model evaluation
 description: Assessing how well a trained model performs beyond its training examples under stated data, metrics, and uncertainty.
 tags: [artificial-intelligence, machine-learning, evaluation, generalization, overfitting, uncertainty]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#ModelEvaluation
+    label: Model Evaluation
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-what-is-ml
     resource: https://developers.google.com/machine-learning/intro-to-ml/what-is-ml

@@ -7,11 +7,11 @@ subject:
   - ontology: spdx-3.0.1
     class: https://spdx.org/rdf/3.0.1/terms/Software/Package
     label: Package
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: swo-2023-03-05
+    class: http://www.ebi.ac.uk/swo/SWO_0000001
+    label: Software
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: python-dependency-specifiers
     resource: https://packaging.python.org/en/latest/specifications/dependency-specifiers/

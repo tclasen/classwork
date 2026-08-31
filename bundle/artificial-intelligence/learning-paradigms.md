@@ -4,14 +4,11 @@ title: Machine-learning paradigms
 description: Distinguishing supervised, unsupervised, self-supervised, and reinforcement learning by how training signals are obtained and used.
 tags: [artificial-intelligence, machine-learning, supervised-learning, unsupervised-learning, self-supervised-learning, reinforcement-learning]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Algorithm
+    label: Algorithm
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-what-is-ml
     resource: https://developers.google.com/machine-learning/intro-to-ml/what-is-ml

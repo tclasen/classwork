@@ -4,14 +4,11 @@ title: API and interface design
 description: Designing explicit, discoverable, evolvable contracts between software components and their users.
 tags: [software-engineering, api, interfaces, contracts, compatibility, design]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: swo-2023-03-05
+    class: http://www.ebi.ac.uk/swo/SWO_9000050
+    label: Software interface
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-api-design
     resource: https://docs.cloud.google.com/apis/design

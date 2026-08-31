@@ -4,11 +4,11 @@ title: Training objectives and signals
 description: Criteria and feedback values that specify what a machine-learning training activity should improve.
 tags: [artificial-intelligence, machine-learning, model-training, objective, loss, reward]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#EvaluationSpecification
+    label: Evaluation specification
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary

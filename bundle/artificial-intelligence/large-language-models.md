@@ -4,11 +4,11 @@ title: Large language models
 description: Machine-learning models trained on large text corpora to estimate and generate sequences of language tokens.
 tags: [artificial-intelligence, machine-learning, language, LLM, generative-ai]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#Model
+    label: Model
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary
