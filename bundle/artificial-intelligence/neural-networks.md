@@ -8,7 +8,7 @@ subject:
     class: http://www.w3.org/ns/mls#Model
     label: Model
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: google-neural-networks
     resource: https://developers.google.com/machine-learning/crash-course/neural-networks
@@ -24,6 +24,16 @@ a nonlinear activation, and the learned parameters determine the resulting
 mapping from inputs to outputs. The name describes a computational model, not a
 claim that the model is a biological brain or that its internal features are
 automatically interpretable.[^google-neural-networks]
+
+## One-neuron worked example
+
+Take one input $x=2$, weight parameter $w=0.5$, and bias parameter $b=0.1$.
+The neuron first forms the weighted value $z=wx+b=(0.5)(2)+0.1=1.1$.
+Using the ReLU activation $a(z)=\max(0,z)$ gives activation and output
+$\hat{y}=a(1.1)=1.1$. If the target is $y=1$, a squared loss is
+$L=(\hat{y}-y)^2=(1.1-1)^2=0.01$. This is a complete forward pass from
+input and parameters to output and loss; training uses that loss to decide how
+the parameters should change.
 
 During training, a forward pass produces an output and an objective measures
 the result. [Gradients and backpropagation](gradients-and-backpropagation.md)

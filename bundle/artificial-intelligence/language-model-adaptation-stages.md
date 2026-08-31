@@ -8,7 +8,7 @@ subject:
     class: http://www.w3.org/ns/mls#Process
     label: Machine-learning process
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155
@@ -46,13 +46,14 @@ that were actually performed.
 
 The canonical bibliographic records for the primary sources are [InstructGPT (2022)](../references/instructgpt-2022.md) and [Direct Preference Optimization (2023)](../references/dpo-2023.md).
 
-## Broad unsupervised pretraining
+## Broad self-supervised pretraining
 
-The starting point is a large-scale unsupervised language model. DPO describes
+The starting point is a large-scale self-supervised language model. DPO describes
 such models as learning broad world knowledge and some reasoning skills, while
 also noting that unsupervised training alone makes precise behavioral control
 difficult.[^dpo-arxiv] In this concept, **pretraining** names that broad,
-self-supervised or otherwise unsupervised stage; the papers used here do not
+self-supervised stage: the training target is constructed from the data itself,
+so it is often called unsupervised in older descriptions. The papers used here do not
 justify a more specific claim about its dataset, architecture, or objective.
 
 The result is a pretrained model entity. Its capabilities and tendencies are
@@ -105,7 +106,7 @@ reinforcement-learning stage.
 Across these stages, the model entity is repeatedly modified by a distinct
 training activity:
 
-* pretraining supplies broad language data and an unsupervised learning
+* pretraining supplies broad language data and a self-supervised learning
   signal;
 * supervised instruction tuning supplies demonstrations of desired responses;
 * preference-based adaptation supplies comparative judgments about candidate
@@ -119,7 +120,7 @@ environment.
 
 ```mermaid
 flowchart LR
-    D[Broad unsupervised language data] --> P[Pretraining activity]
+    D[Broad self-supervised language data] --> P[Pretraining activity]
     P --> M[Pretrained language model]
     S[Instruction demonstrations] --> I[Supervised instruction-tuning activity]
     M --> I

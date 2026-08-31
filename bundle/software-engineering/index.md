@@ -35,6 +35,6 @@
 * [Value objects](value-objects.md) - Immutable domain objects defined by their attributes rather than by persistent identity.
 * [Aggregate](aggregate.md) - A consistency boundary that groups related domain objects and protects their invariants.
 * [Aggregate root](aggregate-root.md) - The identity-bearing entry point through which external code accesses and changes an aggregate.
-* [Domain services](domain-services.md) - Stateless domain operations not naturally owned by one entity or value object.
+* [Domain services](domain-services.md) - Stateless domain operations that express meaningful behavior not naturally owned by one entity or value object.
 * [Domain events](domain-events.md) - Records of significant domain occurrences that allow other parts of a model to react to a completed change.
-* [Repositories](repositories.md) - Domain-oriented abstractions for retrieving and persisting aggregates without exposing storage details.
+* [Repositories](repositories.md) - Domain-oriented abstractions for retrieving and persisting aggregates without exposing storage details to the model.

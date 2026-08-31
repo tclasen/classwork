@@ -8,7 +8,7 @@ subject:
     class: http://www.w3.org/ns/mls#Algorithm
     label: Algorithm
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: google-backpropagation
     resource: https://developers.google.com/machine-learning/crash-course/neural-networks/backpropagation
@@ -26,7 +26,7 @@ $$
 w_{new}=w_{old}-\eta\nabla_w L
 $$
 
-where $L$ is the loss and $eta$ is the step size. The gradient describes local
+where $L$ is the loss and $\eta$ is the step size. The gradient describes local
 sensitivity; it does not guarantee a global minimum or reliable performance on
 new data.[^google-backpropagation]
 

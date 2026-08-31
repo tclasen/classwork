@@ -8,7 +8,7 @@ subject:
     class: http://www.w3.org/ns/mls#Algorithm
     label: Algorithm
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary
@@ -44,8 +44,18 @@ model and tokenizer versions, numerical implementation, hardware, context,
 and all decoding settings. A seed is therefore a control for an experiment,
 not a guarantee that every system will reproduce the result.
 
+**Logits** are the model's unnormalized real-valued scores for candidate next
+tokens; $z_i$ denotes the logit for candidate token $i$. A softmax
+transformation converts them into probabilities, for example:
+
+$$
+p_i = \frac{\exp(z_i)}{\sum_j \exp(z_j)}
+$$
+
+Each $p_i$ is nonnegative and the probabilities sum to $1$; a larger logit
+gives a larger relative probability, but is not itself a probability.
 **Temperature** changes the sharpness of the distribution before sampling. In
-one common convention, positive temperature $T$ rescales a logit $z_i$ as
+one common convention, positive temperature $T$ rescales each logit as
 $z_i/T$: lower values make high-scoring choices more dominant, while higher
 values flatten the relative preferences. Temperature does not add knowledge
 or make an unlikely token true; it changes how the existing scores are used.

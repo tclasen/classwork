@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/prov#Activity
     label: Activity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-30T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: domain-language-reference
     resource: "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf"
@@ -24,8 +24,7 @@ sources:
 **Domain-driven design (DDD)** is a software design approach for managing
 complexity by making the problem domain and its important rules explicit in a
 [domain model](domain-model.md), then aligning the design and implementation with that model. Developers
-and domain experts explore the model together and refine a [ubiquitous
-language](ubiquitous-language.md): terms whose meanings are shared in conversation,
+and domain experts explore the model together and refine a [ubiquitous language](ubiquitous-language.md): terms whose meanings are shared in conversation,
 documentation, tests, and code.[^domain-language-reference]
 
 DDD is a way of making design decisions, not a framework or a requirement to
