@@ -7,11 +7,14 @@ subject:
   - ontology: spdx-3.0.1
     class: https://spdx.org/rdf/3.0.1/terms/Software/Package
     label: Package
+  - ontology: spdx-3.0.1
+    class: https://spdx.org/rdf/3.0.1/terms/Core/Relationship
+    label: Relationship
   - ontology: swo-2023-03-05
     class: http://www.ebi.ac.uk/swo/SWO_0000001
     label: Software
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:46:25-07:00" }
 sources:
   - id: semver
     resource: https://semver.org/spec/v2.0.0.html

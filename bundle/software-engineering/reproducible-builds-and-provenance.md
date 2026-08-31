@@ -4,14 +4,11 @@ title: Reproducible builds and software provenance
 description: Making build inputs and processes inspectable so artifacts can be reproduced, traced, and verified.
 tags: [software-engineering, builds, reproducibility, provenance, supply-chain]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: spdx-3.0.1
+    class: https://spdx.org/rdf/3.0.1/terms/Build/Build
+    label: Build
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:46:25-07:00" }
 sources:
   - id: slsa-build-requirements
     resource: https://slsa.dev/spec/v1.2/build-requirements
