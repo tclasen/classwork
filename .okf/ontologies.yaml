@@ -22,6 +22,7 @@ ontologies:
   epcis-2.0.1:
     uri: https://ref.gs1.org/epcis/
     release: EPCIS 2.0.1
+    artifact_version: "2.0"
     retrieval_uri: https://ref.gs1.org/standards/epcis/epcis-ontology.ttl
     local_path: .okf/ontologies/epcis-2.0.1.ttl
     format: turtle
@@ -32,6 +33,7 @@ ontologies:
   cbv-2.0.0:
     uri: https://ref.gs1.org/cbv/
     release: CBV 2.0.0
+    artifact_version: "2.0"
     retrieval_uri: https://ref.gs1.org/standards/epcis/cbv-ontology.ttl
     local_path: .okf/ontologies/cbv-2.0.0.ttl
     format: turtle
