@@ -9,6 +9,7 @@
 * [Model training](model-training.md) - Adjusting a model using data and an objective so it performs a task under a stated evaluation procedure.
 * [Training objectives and signals](training-objectives-and-signals.md) - Criteria and feedback values that specify what a machine-learning training activity should improve.
 * [Optimization and parameter updates](optimization-and-parameter-updates.md) - Adjusting a model's parameters to improve a training objective while respecting computational and evaluation limits.
+* [Gradient descent](gradient-descent.md) - An iterative optimization method that changes parameters in the direction that locally decreases a differentiable objective.
 * [Gradients and backpropagation](gradients-and-backpropagation.md) - Computing how a training objective changes with model parameters so an optimization procedure can update them.
 * [Generalization and model evaluation](generalization-and-model-evaluation.md) - Assessing how well a trained model performs beyond its training examples under stated data, metrics, and uncertainty.
 * [Prediction tasks and model metrics](prediction-tasks-and-model-metrics.md) - Relating prediction targets and decision outputs to task-specific metrics, thresholds, ranking, calibration, and bounded evaluation claims.

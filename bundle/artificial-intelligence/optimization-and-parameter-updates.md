@@ -30,7 +30,7 @@ update are entities in the activity's provenance.
 
 The procedure repeatedly evaluates a [training objective and signal](training-objectives-and-signals.md),
 then updates parameters in a direction intended to improve that signal. For a
-loss that should decrease, gradient-based methods use information about how
+loss that should decrease, [gradient descent](gradient-descent.md) and related gradient-based methods use information about how
 the loss changes as parameters change. [Gradients and backpropagation](gradients-and-backpropagation.md)
 explains how a model's computational graph can provide that sensitivity; for a reward that should increase, the
 update rule is oriented toward improving the chosen reward. This is a
