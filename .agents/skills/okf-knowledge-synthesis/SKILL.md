@@ -96,9 +96,13 @@ Apply these rules only to Markdown under `bundle/`:
   timestamp with an explicit timezone in `generated.at`.
 - Require a non-empty `subject` array. Every entry must use an ontology key from
   `.okf/ontologies.yaml` and the canonical URI of a class present in its
-  vendored artifact. Include a useful label when available. If no approved
-  class fits, use `$okf-ontology-curation` and do not create or update the node
-  with an invented or vaguely related class.
+  vendored artifact. Include a useful label when available. Each selected
+  class must be an authoritative, industry-standard reference that strongly
+  aligns with and describes the node itself. Do not use generic fallbacks such
+  as `activity`, `event`, or `process` merely to populate `subject`. If no
+  sufficiently specific approved class fits, use
+  `$okf-ontology-curation` and do not create or update the node with an
+  invented, vaguely related, or generic class.
 - Treat `subject` as a repository-defined OKF extension for semantic
   classification, not provenance. Do not modify `.okf/SPEC.md` to define it;
   the label is optional and never replaces the canonical class URI.

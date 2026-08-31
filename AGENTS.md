@@ -30,9 +30,13 @@ populate an empty template.
 Every ontology used anywhere in the repository must be cataloged and locked in
 `.okf/ontologies.yaml`, with its exact artifact vendored under
 `.okf/ontologies/`. Every bundle concept requires at least one suitable,
-catalog-backed ontology class in its `subject` array. Never invent a class,
-silently fetch a newer ontology, or use an ontology solely because its name or
-URI is familiar.
+catalog-backed ontology class in its `subject` array. The selected class must
+be an authoritative, industry-standard reference that strongly aligns with
+and describes the concept itself; do not use a generic fallback such as
+`activity`, `event`, or `process` merely because it is available. Never invent
+a class, silently fetch a newer ontology, or use an ontology solely because
+its name or URI is familiar. If no sufficiently specific approved class fits,
+pause for ontology curation rather than weakening the classification.
 
 Portable source artifacts that belong with the bundle go under
 `bundle/references/`. Temporary downloads, extraction output, OCR, caches, and

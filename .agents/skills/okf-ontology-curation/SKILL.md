@@ -19,11 +19,20 @@ in `AGENTS.md`.
   until its catalog entry and local artifact are present and verified.
 - Runtime validation and node consumption must resolve from the catalog and
   vendored artifacts without network access or silent upgrades.
+- A class selected for a node's `subject` must be an authoritative,
+  industry-standard reference with strong semantic fit to the node. Reject
+  broad generic fallbacks such as `activity`, `event`, or `process` when they
+  merely describe the general shape of the topic rather than the topic itself.
+  If no specific approved class fits, curate an appropriate ontology or leave
+  the node awaiting an approved class; never weaken the classification just to
+  make `subject` non-empty.
 
 ## Select and approve an ontology
 
 1. Confirm that no pinned ontology supplies a semantically suitable class. Do
-   not substitute a vaguely related class or invent an identifier.
+   not substitute a vaguely related or generic class, such as `activity`,
+   `event`, or `process`, or invent an identifier. The candidate must be an
+   industry-standard term whose definition strongly matches the concept.
 2. Research authoritative candidate ontologies. Compare semantic fit, release
    stability, license and redistribution terms, maintained provenance,
    dependencies, artifact format, and pinning options.
@@ -66,7 +75,10 @@ were the ontology document.
   benefits if none does.
 - For every concept, require a non-empty `subject` array whose ontology keys
   exist in the catalog and whose class URIs exist in the corresponding vendored
-  artifacts. Labels are reader aids and never replace canonical URIs.
+  artifacts. Each class must be a strongly aligned, industry-standard
+  classification of the concept, not a generic fallback such as `activity`,
+  `event`, or `process`. Labels are reader aids and never replace canonical
+  URIs.
 - Preserve semantically useful existing classes unless the new class clearly
   supersedes or corrects them. Reconcile affected indexes, validation rules,
   and documentation in the same coherent change.
