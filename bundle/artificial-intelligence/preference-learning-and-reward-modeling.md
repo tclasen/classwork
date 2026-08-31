@@ -80,8 +80,7 @@ purpose or to welfare in the world.
 
 The [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md)
 explains the next relationship: preference-derived rewards can guide policy
-updates through interaction or sampled sequences. The [training objectives and
-signals](training-objectives-and-signals.md) concept explains why the reward is
+updates through interaction or sampled sequences. The [training objectives and signals](training-objectives-and-signals.md) concept explains why the reward is
 an objective signal, while [optimization and parameter updates](optimization-and-parameter-updates.md)
 explains how a training activity changes model parameters.
 
@@ -131,8 +130,7 @@ value. Important limits include:
   extends it to the operating system and context.
 
 Preference learning produces evidence-supported behavior, not a proof of
-truthfulness, safety, or human benefit. The [responsible AI evaluation and
-impact](responsible-ai-evaluation-and-impact.md) concept addresses affected
+truthfulness, safety, or human benefit. The [responsible AI evaluation and impact](responsible-ai-evaluation-and-impact.md) concept addresses affected
 groups, harms, privacy, security, and accountability that a preference score
 alone cannot establish.
 

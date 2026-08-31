@@ -31,8 +31,7 @@ sensitivity; it does not guarantee a global minimum or reliable performance on
 new data.[^google-backpropagation]
 
 [Gradients and backpropagation](gradients-and-backpropagation.md) supplies the
-sensitivity for a neural network's computation, while [optimization and
-parameter updates](optimization-and-parameter-updates.md) places gradient
+sensitivity for a neural network's computation, while [optimization and parameter updates](optimization-and-parameter-updates.md) places gradient
 descent among procedures that use training signals to change model parameters.
 The [model training](model-training.md) activity may use batches, regularization,
 stopping rules, or an optimizer with additional state, so gradient descent is a

@@ -65,7 +65,6 @@ in operating conditions. [Generalization and model evaluation](generalization-an
 tests the resulting model on suitable held-out or newly encountered data;
 [model inference](model-inference.md) describes how the resulting artifact is
 then applied to inputs. [Machine learning](machine-learning.md) places this
-activity in the wider family of methods, while [training objectives and
-signals](training-objectives-and-signals.md) explains what the signal means.
+activity in the wider family of methods, while [training objectives and signals](training-objectives-and-signals.md) explains what the signal means.
 
 [^google-ml-glossary]: Google for Developers, [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary).

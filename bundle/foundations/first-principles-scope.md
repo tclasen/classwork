@@ -19,11 +19,8 @@ links, and find an explanation for every concept required to understand and
 use the domain nodes. The terminal layer is not a claim about the ultimate
 foundations of mathematics, language, physics, or philosophy. It is a compact
 teaching boundary for [entities, activities, and agents](entities-activities-and-agents.md),
-[information, data, and records](information-data-and-records.md), [time, identity,
-and relationships](time-identity-and-relationships.md), [claims, evidence, and
-inference](claims-evidence-and-inference.md), [measurement and uncertainty](measurement-and-uncertainty.md),
-[systems, processes, and boundaries](systems-processes-and-boundaries.md), [actions,
-policies, and permissions](actions-policies-and-permissions.md), [risk and decision](risk-and-decision.md),
+[information, data, and records](information-data-and-records.md), [time, identity, and relationships](time-identity-and-relationships.md), [claims, evidence, and inference](claims-evidence-and-inference.md), [measurement and uncertainty](measurement-and-uncertainty.md),
+[systems, processes, and boundaries](systems-processes-and-boundaries.md), [actions, policies, and permissions](actions-policies-and-permissions.md), [risk and decision](risk-and-decision.md),
 and [learning, assessment, and transfer](learning-assessment-and-transfer.md).
 
 Each terminal concept is defined in ordinary language and connected to the

@@ -46,12 +46,10 @@ responses, monitoring, and improvement.
 Evaluation evidence can include [model-level generalization and evaluation](generalization-and-model-evaluation.md), including checks for [distribution shift](distribution-shift.md),
 results, representative observations,
 monitoring records, user feedback, incident reports, and documentation of
-assumptions or limitations. Evidence is not self-interpreting: use [claims,
-evidence, and inference](../foundations/claims-evidence-and-inference.md) and
+assumptions or limitations. Evidence is not self-interpreting: use [claims, evidence, and inference](../foundations/claims-evidence-and-inference.md) and
 [probability and statistical inference](../science/probability-and-statistical-inference.md)
 to distinguish an observation, a measure, and a conclusion. Track how inputs,
-transformations, and outputs were produced with [information provenance and
-trust](../information-systems/information-provenance-and-trust.md).
+transformations, and outputs were produced with [information provenance and trust](../information-systems/information-provenance-and-trust.md).
 
 An [assurance case](../assurance/assurance-case.md) can organize a bounded
 claim about an AI system, the argument connecting evidence to that claim,

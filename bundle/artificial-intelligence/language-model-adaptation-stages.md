@@ -84,8 +84,7 @@ feedback (RLHF).[^instructgpt-arxiv] The ranking data express relative
 preference between candidate outputs rather than a single authored answer for
 each prompt. In the procedure described by InstructGPT, a reward model is fit
 to reflect those preferences and reinforcement learning then fine-tunes the
-language model against the estimated reward.[^dpo-neurips] [Preference learning
-and reward modeling](preference-learning-and-reward-modeling.md) explains how
+language model against the estimated reward.[^dpo-neurips] [Preference learning and reward modeling](preference-learning-and-reward-modeling.md) explains how
 those judgments become a proxy reward and how RLHF differs from direct
 preference optimization.
 
@@ -96,8 +95,7 @@ classification problem on human preference data. The paper reports that this
 removes the need to fit a separate reward model or sample from the language
 model during fine-tuning.[^dpo-arxiv] DPO is therefore one preference-based
 adaptation method, not a required stage in every language-model pipeline. In
-contrast, the RLHF procedure described above uses a [reinforcement-learning
-feedback loop](reinforcement-learning-feedback-loop.md) to update the
+contrast, the RLHF procedure described above uses a [reinforcement-learning feedback loop](reinforcement-learning-feedback-loop.md) to update the
 language model against preference-derived rewards; DPO does not require that
 reinforcement-learning stage.
 

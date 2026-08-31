@@ -63,8 +63,7 @@ this activity occurs; [large language models](large-language-models.md) are one 
 how later training activities can change an existing language model using
 demonstrations or preference feedback.
 
-For sequence models, the learned architecture is a [Transformer attention
-architecture](transformer-attention-architecture.md), whose layered attention
+For sequence models, the learned architecture is a [Transformer attention architecture](transformer-attention-architecture.md), whose layered attention
 operations transform contextual representations during training and later
 inference.
 

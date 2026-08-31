@@ -40,8 +40,7 @@ The paper is the primary source for the InstructGPT adaptation procedure
 described in [language-model adaptation stages](../artificial-intelligence/language-model-adaptation-stages.md): supervised instruction tuning
 followed by reinforcement learning from human feedback, with evaluation tied
 to the reported tasks, prompts, and human preferences.[^instructgpt-arxiv]
-Its preference comparisons and reward-model stage are explained in [preference
-learning and reward modeling](../artificial-intelligence/preference-learning-and-reward-modeling.md).
+Its preference comparisons and reward-model stage are explained in [preference learning and reward modeling](../artificial-intelligence/preference-learning-and-reward-modeling.md).
 
 This record is bibliographic and citation-only. The repository does not store
 the paper PDF because its redistribution terms were not confirmed during

@@ -39,8 +39,7 @@ and [security properties and integrity](../foundations/security-properties-and-i
 The event and custody mechanism is developed in [traceability events and custody](traceability-events-and-custody.md).
 
 Provenance is not the same as a marketing story or a single “made in” field.
-It is a chain of claims whose usefulness depends on [stable identifiers and
-declared event coverage](identifiers-and-event-coverage.md), which join records
+It is a chain of claims whose usefulness depends on [stable identifiers and declared event coverage](identifiers-and-event-coverage.md), which join records
 into a coherent history and make missing intervals visible, as well as
 trustworthy clocks and locations and controls that prevent or reveal
 unauthorized alteration.
