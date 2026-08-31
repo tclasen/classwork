@@ -7,11 +7,8 @@ subject:
   - ontology: prov-o
     class: http://www.w3.org/ns/prov#SoftwareAgent
     label: Software Agent
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:43:00-07:00" }
 sources:
   - id: react-paper
     resource: ../references/react-2023.md

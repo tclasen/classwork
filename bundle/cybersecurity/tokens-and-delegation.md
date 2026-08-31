@@ -7,11 +7,8 @@ subject:
   - ontology: odrl-2.2
     class: http://www.w3.org/ns/odrl/2/Permission
     label: Permission
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:43:00-07:00" }
 sources:
   - id: oauth-rfc
     resource: https://www.rfc-editor.org/rfc/rfc6749
