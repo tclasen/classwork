@@ -4,9 +4,6 @@ title: Actions, policies, and permissions
 description: Deliberate changes and rules about which agents may perform them.
 tags: [foundations, actions, policies, permissions, authorization]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
   - ontology: odrl-2.2
     class: http://www.w3.org/ns/odrl/2/Policy
     label: Policy
@@ -14,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/odrl/2/Permission
     label: Permission
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: nist-zero-trust
     resource: https://doi.org/10.6028/NIST.SP.800-207

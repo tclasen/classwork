@@ -4,14 +4,11 @@ title: Models and causality
 description: Using abstractions, interventions, and alternative explanations to interpret scientific results.
 tags: [science, models, causality, alternatives, inference]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: eco
-    class: http://purl.obolibrary.org/obo/ECO_0000000
-    label: Evidence
+  - ontology: obi-2026-07-27
+    class: http://purl.obolibrary.org/obo/OBI_0000658
+    label: Data representational model
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 ---
 
 # Models and explanations

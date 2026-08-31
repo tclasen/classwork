@@ -7,11 +7,8 @@ subject:
   - ontology: epcis-2.0.1
     class: https://ref.gs1.org/epcis/EPCISEvent
     label: EPCIS event
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: iso-22005
     resource: https://www.iso.org/standard/36297.html

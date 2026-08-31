@@ -7,11 +7,8 @@ subject:
   - ontology: eco
     class: http://purl.obolibrary.org/obo/ECO_0000000
     label: Evidence
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 ---
 
 # Reasoning from support

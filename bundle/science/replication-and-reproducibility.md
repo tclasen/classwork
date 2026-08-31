@@ -4,14 +4,11 @@ title: Replication and reproducibility
 description: Distinguishing repeated computational work from new investigations of the same question.
 tags: [science, replication, reproducibility, methods, evidence]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: eco
-    class: http://purl.obolibrary.org/obo/ECO_0000000
-    label: Evidence
+  - ontology: obi-2026-07-27
+    class: http://purl.obolibrary.org/obo/OBI_0000066
+    label: Investigation
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
 sources:
   - id: nas-reproducibility
     resource: https://doi.org/10.17226/25303
