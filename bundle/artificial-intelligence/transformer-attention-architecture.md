@@ -21,7 +21,7 @@ sources:
 
 # What the architecture does
 
-A **Transformer** is a layered model architecture for transforming a sequence
+A **Transformer** is a layered [neural-network](neural-networks.md) architecture for transforming a sequence
 of input representations into contextual representations and, when configured
 for a task, an output sequence or other prediction. The architecture is an
 artifact (an `Entity`); running its attention and transformation operations is

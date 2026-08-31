@@ -42,7 +42,7 @@ interpretable meaning.
 
 ## Computational graphs and the chain rule
 
-A neural network can be represented as a **computational graph**: nodes carry
+A [neural network](neural-networks.md) can be represented as a **computational graph**: nodes carry
 values and edges pass the result of one operation to another. A forward pass
 starts with inputs and current parameters, applies the operations, and ends
 with a prediction and a loss. Each operation has a local derivative describing
