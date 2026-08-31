@@ -105,6 +105,22 @@ bundle links must be relative, include `.md`, resolve to an existing file and
 heading, have no leading slash, and target a directory's `index.md` rather than
 the bare directory.
 
+When authoring or revising a concept, scan the entire note for every
+independently meaningful domain term, pattern, object type, mechanism,
+notation, prerequisite, or named relationship. Search the bundle for an
+existing canonical concept; link it at its first substantive use and wherever
+the relationship materially matters. If no canonical concept exists and the
+term is required to understand the note, create one coherent child concept in
+the same change, link the parent to it in explanatory prose, and link the child
+back to the parent in explanatory prose. Add the child to the appropriate
+index. Do not leave a meaningful term merely bolded, italicized, or mentioned
+without either a definition or a justified canonical link. A detached list of
+related links does not satisfy this requirement.
+
+Every newly created supporting concept must contain a contextual backlink to
+each directly relevant parent concept, stating the relationship; a bare "see
+also" link is insufficient.
+
 Keep indexes concise and synchronized with current titles and descriptions.
 Update an existing relevant `log.md` when appropriate, using newest-first ISO
 date headings and concise linked entries. Do not create a log without a
@@ -118,6 +134,13 @@ editing. Preserve unrelated user changes and never include them in a commit.
 
 For each knowledge change, discover and reconcile before editing, review the
 affected graph afterward, and perform a second bundle-wide connection search.
+Perform a terminology-closure audit: extract every capitalized, bolded,
+italicized, or domain-specific term from the changed concept and compare it
+with the bundle. For each term, confirm that it is linked to an existing
+canonical concept, created as a new canonical concept and linked
+bidirectionally, or explicitly ruled out as ordinary language, source-specific
+wording, or insufficiently independent to warrant its own node. Treat
+unresolved meaningful terms as validation failures.
 Run repository-provided validation and relevant tests. At minimum, validate
 frontmatter, ontology catalog and artifacts, concept subjects, indexes, logs,
 internal files and heading fragments, unsplit links, MathJax pairs, Mermaid

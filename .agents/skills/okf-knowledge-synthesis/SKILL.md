@@ -60,6 +60,17 @@ procedure.
   concept already teaches it adequately.
 - Create separate supporting concepts for prerequisites, components,
   mechanisms, examples, or consequences that are independently meaningful.
+- When authoring or revising a concept, scan the entire note for every
+  independently meaningful domain term, pattern, object type, mechanism,
+  notation, prerequisite, or named relationship. Search for an existing
+  canonical concept and link it at first substantive use and wherever the
+  relationship materially matters. If none exists and the term is required to
+  understand the note, create one coherent child concept in the same change,
+  link the parent to it in explanatory prose, link the child back to the parent
+  in explanatory prose, and add the child to the appropriate index.
+- Do not leave a meaningful term merely bolded, italicized, or mentioned
+  without either a definition or a justified canonical link. A detached list
+  of related links does not satisfy this requirement.
 - Continue until every explanatory leaf is grounded in reasoning, evidence, or
   data taught inside the bundle. Citations, ontology artifacts, external
   standards, domain terms, and unexplained background do not close the chain.
@@ -113,6 +124,9 @@ Apply these rules only to Markdown under `bundle/`:
   Avoid bare path lists, generic link labels, arbitrary density, and
   context-free link sections.
 - Add contextual backlinks when the neighboring concept's readers benefit.
+  Every newly created supporting concept must contain a contextual backlink to
+  each directly relevant parent concept, stating the relationship; a bare
+  "see also" link is insufficient.
   Inspect outgoing, incoming, and relevant second-order links before and after
   editing.
 - Use standard relative Markdown links that include `.md`, have no leading
@@ -135,8 +149,14 @@ Apply these rules only to Markdown under `bundle/`:
 ## Review, validate, and commit
 
 1. Review touched concepts and their direct neighbors for terminology, claims,
-   useful outbound links, and contextual backlinks. Perform a second
-   bundle-wide link-discovery pass.
+   useful outbound links, and contextual backlinks. Perform a terminology-
+   closure audit: extract every capitalized, bolded, italicized, or
+   domain-specific term from each changed concept and confirm that it is linked
+   to an existing canonical concept, created as a new canonical concept and
+   linked bidirectionally, or explicitly ruled out as ordinary language,
+   source-specific wording, or insufficiently independent to warrant its own
+   node. Treat unresolved meaningful terms as validation failures. Perform a
+   second bundle-wide link-discovery pass.
 2. Parse every changed concept's frontmatter; confirm non-empty `type` and
    catalog-backed `subject` values. Use `$okf-ontology-curation` for hermetic
    catalog, artifact, checksum, namespace, dependency, and class validation.
