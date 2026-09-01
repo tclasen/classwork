@@ -9,7 +9,7 @@ subject:
     class: http://purl.obolibrary.org/obo/OBI_0000218
     label: Investigation results report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:34:02-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T10:47:44-07:00" }
 sources:
   - id: transformer-paper
     resource: https://arxiv.org/abs/1706.03762
@@ -21,7 +21,6 @@ sources:
   - id: transformer-neurips-record
     resource: https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
     title: NeurIPS 2017 publication record for Attention Is All You Need
-    author: "NeurIPS"
     publisher: NeurIPS
     publication_context: "Advances in Neural Information Processing Systems 30 (NeurIPS 2017)"
 ---

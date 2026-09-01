@@ -20,13 +20,12 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T19:45:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T10:47:44-07:00" }
 sources:
   - id: nist-ai-600-1
     resource: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
     canonical_url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
     title: "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile"
-    author: "NIST"
     publisher: NIST
     publication_context: "NIST AI 600-1, July 2024"
 ---

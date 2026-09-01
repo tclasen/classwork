@@ -9,7 +9,7 @@ subject:
     class: http://purl.obolibrary.org/obo/OBI_0000218
     label: Investigation results report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T14:34:02-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T10:47:44-07:00" }
 sources:
   - id: react-paper
     resource: https://arxiv.org/abs/2210.03629
@@ -21,7 +21,6 @@ sources:
   - id: react-iclr-record
     resource: https://openreview.net/forum?id=WE_vluYUL-X
     title: ICLR 2023 publication record for ReAct
-    author: "OpenReview"
     publisher: ICLR
     publication_context: "International Conference on Learning Representations (ICLR 2023)"
 ---
