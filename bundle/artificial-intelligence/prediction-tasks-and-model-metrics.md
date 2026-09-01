@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/mls#EvaluationMeasure
     label: Evaluation measure
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:15:18-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary
@@ -95,7 +95,7 @@ best.[^google-ml-metrics]
 Document the target definition, evaluation population, labels or outcome
 window, baseline, threshold or ranking cutoff, metric formula, aggregation,
 and relevant subgroups. Link the result to [generalization and model evaluation](generalization-and-model-evaluation.md), which explains held-out
-data, distribution shift, and uncertainty, and to [measurement and uncertainty](../foundations/measurement-and-uncertainty.md) when interpreting
+data, [distribution shift](distribution-shift.md), and uncertainty, and to [measurement and uncertainty](../foundations/measurement-and-uncertainty.md) when interpreting
 estimates.
 
 ## What metrics do not establish

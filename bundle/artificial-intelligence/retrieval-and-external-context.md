@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/mls#Data
     label: Data
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:15:18-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary
@@ -65,7 +65,7 @@ flowchart LR
 
 **Grounding** is using selected source material to condition part or all of a
 model output. **Retrieval-augmented generation (RAG)** is a common grounding
-pattern: an application retrieves information after model training, appends or
+pattern: an application retrieves information after [model training](model-training.md), appends or
 otherwise supplies it with the request, and asks the model to produce an
 output based on that context.[^google-ml-glossary][^google-rag-architecture] The
 retrieved records remain external entities; putting their text into a prompt

@@ -8,7 +8,7 @@ subject:
     class: http://www.w3.org/ns/mls#Process
     label: Machine-learning process
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:15:18-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155
@@ -141,7 +141,7 @@ results support the paper's tested comparisons. They do not by themselves
 establish performance for other tasks, users, model families, preference
 populations, or deployment conditions. [Generalization and model evaluation](generalization-and-model-evaluation.md)
 explains how to keep such claims tied to data, metrics, uncertainty, and
-distribution shift; [AI system evaluation and risk management](ai-system-evaluation-and-risk-management.md)
+[distribution shift](distribution-shift.md); [AI system evaluation and risk management](ai-system-evaluation-and-risk-management.md)
 extends the boundary from a model to its operating system and context.
 
 [Training objectives and signals](training-objectives-and-signals.md) explains

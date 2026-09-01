@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:15:18-07:00" }
 sources:
   - id: google-small-cls
     resource: https://google.github.io/eng-practices/review/developer/small-cls.html
@@ -53,8 +53,7 @@ left unplanned.
 Branches and pull requests provide isolation and discussion, while commits
 provide durable snapshots.[^github-writing-code] Automated checks should run before integration, and
 the repository should record enough context to reproduce what was reviewed.
-This practice is the change-management foundation for code review, continuous
-integration, and safe continuous delivery.
+This practice is the change-management foundation for [code review](code-review.md), [continuous integration](continuous-integration.md), and [safe continuous delivery](continuous-delivery-and-safe-releases.md).
 
 [^google-small-cls]: Google, [Small CLs](https://google.github.io/eng-practices/review/developer/small-cls.html).
 [^github-writing-code]: GitHub Docs, Writing code for a project.

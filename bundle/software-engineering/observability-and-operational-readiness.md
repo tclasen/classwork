@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/prov#Entity
     label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:15:18-07:00" }
 sources:
   - id: opentelemetry-primer
     resource: https://opentelemetry.io/docs/concepts/observability-primer/
@@ -66,8 +66,8 @@ drift, incidents, subgroup effects, privacy exposure, and whether mitigations
 worked; interpret them through [responsible AI evaluation and impact](../artificial-intelligence/responsible-ai-evaluation-and-impact.md).
 
 Operational readiness is a property of the system and its surrounding team,
-not a monitoring dashboard added after deployment. Connect it to [safe releases](continuous-delivery-and-safe-releases.md), incident response,
-blameless postmortems, and performance and capacity engineering.
+not a monitoring dashboard added after deployment. Connect it to [safe releases](continuous-delivery-and-safe-releases.md), [incident response and blameless postmortems](incident-response-and-blameless-postmortems.md),
+and [performance and capacity engineering](performance-and-capacity-engineering.md).
 
 [^opentelemetry-signals]: OpenTelemetry, [Signals](https://opentelemetry.io/docs/concepts/signals/).
 [^google-reliability]: Google Cloud, [Well-Architected Framework: Reliability pillar](https://docs.cloud.google.com/architecture/framework/reliability).

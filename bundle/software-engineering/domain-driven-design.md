@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/prov#Activity
     label: Activity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:15:18-07:00" }
 sources:
   - id: domain-language-reference
     resource: "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf"
@@ -38,14 +38,13 @@ Strategic design looks at the whole problem space. A [subdomain](subdomain.md) i
 meaningful area of the business or problem space; a [bounded context](bounded-context.md) is a
 part of a system within which a particular model and language are consistent.
 The same word can legitimately mean different things in different bounded
-contexts. A **context map** records how contexts relate, such as through a
-shared kernel, published language, conformist integration, or an
-anti-corruption layer that translates between models. These boundaries make
+contexts. A **[context map](context-map.md)** records how contexts relate, such as through a
+[shared kernel](shared-kernel.md), [published language](published-language.md), [conformist integration](conformist-integration.md), or an
+[anti-corruption layer](anti-corruption-layer.md) that translates between models. These boundaries make
 semantic disagreement visible instead of allowing one supposedly universal
-model to accumulate incompatible meanings. A [context map](context-map.md) makes
-those relationships explicit; its common relationships include a [shared kernel](shared-kernel.md),
-[published language](published-language.md), [conformist integration](conformist-integration.md),
-and [anti-corruption layer](anti-corruption-layer.md).
+model to accumulate incompatible meanings. A context map makes
+those relationships explicit; its common relationships include a shared kernel,
+published language, conformist integration, and anti-corruption layer.
 
 Strategic choices should follow real business capability, model differences,
 team ownership, integration constraints, and expected change. A bounded
