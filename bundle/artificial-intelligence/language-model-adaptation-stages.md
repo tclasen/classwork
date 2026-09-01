@@ -8,30 +8,26 @@ subject:
     class: http://www.w3.org/ns/mls#Process
     label: Machine-learning process
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
 sources:
   - id: instructgpt-arxiv
     resource: https://arxiv.org/abs/2203.02155
     title: "Training language models to follow instructions with human feedback"
-    author: "Ouyang et al."
     publisher: arxiv
     publication_context: "arXiv:2203.02155; submitted 2022-03-04"
   - id: instructgpt-neurips
     resource: https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract.html
     title: "Training language models to follow instructions with human feedback"
-    author: "Ouyang et al."
     publisher: NeurIPS
     publication_context: "Advances in Neural Information Processing Systems 35 (NeurIPS 2022), Main Conference Track"
   - id: dpo-arxiv
     resource: https://arxiv.org/abs/2305.18290
     title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
-    author: "Rafailov et al."
     publisher: arxiv
     publication_context: "arXiv:2305.18290; v3 revised 2024-07-29"
   - id: dpo-neurips
     resource: https://proceedings.neurips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html
     title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
-    author: "Rafailov et al."
     publisher: NeurIPS
     publication_context: "Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Main Conference Track"
 ---

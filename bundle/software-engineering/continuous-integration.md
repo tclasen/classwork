@@ -11,12 +11,11 @@ subject:
     class: http://www.w3.org/ns/prov#Plan
     label: Plan
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
 sources:
   - id: fowler-ci
     resource: https://martinfowler.com/articles/continuousIntegration.html
     title: Martin Fowler, Continuous Integration
-    author: "martin-fowler"
   - id: github-ci
     resource: https://docs.github.com/en/actions/get-started/continuous-integration
     title: GitHub Docs, Continuous integration

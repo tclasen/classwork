@@ -11,7 +11,7 @@ subject:
     class: http://www.w3.org/ns/prov#Plan
     label: Plan
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
 sources:
   - id: nist-ssdf
     resource: https://csrc.nist.gov/pubs/sp/800/218/final
@@ -20,11 +20,9 @@ sources:
   - id: cisa-secure-by-design
     resource: https://www.cisa.gov/sites/default/files/2023-04/principles_approaches_for_security-by-design-default_508_0.pdf
     title: Shifting the Balance of Cybersecurity Risk, Principles and Approaches for Secure by Design Software
-    author: "cisa-and-partners"
   - id: nist-supply-chain
     resource: https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-supply-chain-security-guidance-14
     title: NIST Software Supply Chain Security Guidance
-    author: "nist"
 ---
 
 # Treat security as a lifecycle property

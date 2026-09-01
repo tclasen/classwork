@@ -9,12 +9,11 @@ subject:
     class: http://purl.obolibrary.org/obo/OBI_0000218
     label: Investigation results report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-09-01T10:47:44-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
 sources:
   - id: react-paper
     resource: https://arxiv.org/abs/2210.03629
     title: "ReAct: Synergizing Reasoning and Acting in Language Models"
-    author: "Yao et al."
     publisher: arxiv
     publication_context: "arXiv:2210.03629; version 3"
     license_note: "Creative Commons Attribution 4.0 International"

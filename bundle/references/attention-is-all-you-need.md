@@ -9,12 +9,11 @@ subject:
     class: http://purl.obolibrary.org/obo/OBI_0000218
     label: Investigation results report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-09-01T10:47:44-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
 sources:
   - id: transformer-paper
     resource: https://arxiv.org/abs/1706.03762
     title: Attention Is All You Need
-    author: "Vaswani et al."
     publisher: arxiv
     publication_context: "arXiv:1706.03762; version 7"
     license_note: "arXiv non-exclusive distribution license"

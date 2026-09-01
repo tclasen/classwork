@@ -11,16 +11,14 @@ subject:
     class: http://www.w3.org/ns/prov#Activity
     label: Activity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
 sources:
   - id: twelve-factor-config
     resource: https://www.12factor.net/config
     title: The Twelve-Factor App, Config
-    author: "twelve-factor-community"
   - id: twelve-factor-build-release-run
     resource: https://www.12factor.net/build-release-run
     title: The Twelve-Factor App, Build, release, run
-    author: "twelve-factor-community"
 ---
 
 # Separate code, configuration, and execution
