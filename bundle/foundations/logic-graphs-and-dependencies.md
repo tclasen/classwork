@@ -4,11 +4,14 @@ title: Logic, graphs, and dependencies
 description: Basic statements, relations, paths, and transitive dependencies.
 tags: [foundations, logic, graphs, dependencies, reasoning]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: ontomathpro-v2-acb3eef1
+    class: http://ontomathpro.org/omp2#E18
+    label: Mathematical logic
+  - ontology: ontomathpro-v2-acb3eef1
+    class: http://ontomathpro.org/omp2#E3451
+    label: Graph theory
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 ---
 
 # Statements and structure

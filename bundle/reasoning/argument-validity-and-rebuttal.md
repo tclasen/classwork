@@ -7,11 +7,8 @@ subject:
   - ontology: eco
     class: http://purl.obolibrary.org/obo/ECO_0000000
     label: Evidence
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: nist-assurance-case
     resource: https://csrc.nist.gov/glossary/term/assurance_case

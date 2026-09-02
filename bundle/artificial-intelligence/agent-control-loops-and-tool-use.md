@@ -7,12 +7,6 @@ subject:
   - ontology: prov-o
     class: http://www.w3.org/ns/prov#SoftwareAgent
     label: Software Agent
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
   - ontology: odrl-2.2
     class: http://www.w3.org/ns/odrl/2/Policy
     label: Policy
@@ -20,7 +14,7 @@ subject:
     class: http://www.w3.org/ns/odrl/2/Permission
     label: Permission
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: react-paper
     resource: ../references/react-2023.md

@@ -4,14 +4,11 @@ title: Time, identity, and relationships
 description: How descriptions locate, distinguish, and connect entities across change.
 tags: [foundations, time, identity, identifiers, relationships]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: iao-2026-03-30
+    class: http://purl.obolibrary.org/obo/IAO_0020000
+    label: identifier
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: w3c-prov-dm
     resource: https://www.w3.org/TR/prov-dm/

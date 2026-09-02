@@ -29,14 +29,18 @@ populate an empty template.
 
 Every ontology used anywhere in the repository must be cataloged and locked in
 `.okf/ontologies.yaml`, with its exact artifact vendored under
-`.okf/ontologies/`. Every bundle concept requires at least one suitable,
-catalog-backed ontology class in its `subject` array. The selected class must
-be an authoritative, industry-standard reference that strongly aligns with
-and describes the concept itself; do not use a generic fallback such as
-`activity`, `event`, or `process` merely because it is available. Never invent
-a class, silently fetch a newer ontology, or use an ontology solely because
-its name or URI is familiar. If no sufficiently specific approved class fits,
-pause for ontology curation rather than weakening the classification.
+`.okf/ontologies/`. Every bundle concept must declare a `subject` array. A
+non-empty array may contain only suitable, catalog-backed ontology classes.
+Each selected class must be an authoritative, industry-standard reference that
+strongly aligns with and describes the concept itself; do not use generic
+fallbacks such as `Entity`, `Activity`, `Agent`, `Plan`, `Process`, or
+`Relationship` merely because they are available. Never invent a class,
+silently fetch a newer ontology, or use an ontology solely because its name or
+URI is familiar. After reviewing every pinned ontology, a concept for which no
+sufficiently specific class fits must use `subject: []` with a pending
+`subject_review` that records the reviewer, review time, reason, and the full
+sorted set of catalog keys checked. Reconsider every pending classification
+whenever the ontology catalog changes rather than weakening its classification.
 
 Portable source artifacts that belong with the bundle go under
 `bundle/references/`. Temporary downloads, extraction output, OCR, caches, and
@@ -126,7 +130,10 @@ standards provide provenance but do not replace explanations needed for
 understanding.
 
 Every concept is one UTF-8 Markdown file with parseable YAML frontmatter, a
-non-empty descriptive `type`, and a non-empty catalog-backed `subject` array.
+non-empty descriptive `type`, and exactly one valid classification state:
+either a non-empty catalog-backed `subject` array with no `subject_review`, or
+an empty `subject` array with a complete pending `subject_review` covering the
+current catalog.
 Preserve unknown metadata, producer-defined fields, correct content,
 uncertainty, provenance, and meaningful nuance. Record sources honestly and
 place matching footnotes at attributed claims; never invent a source or
@@ -176,9 +183,10 @@ bidirectionally, or explicitly ruled out as ordinary language, source-specific
 wording, or insufficiently independent to warrant its own node. Treat
 unresolved meaningful terms as validation failures.
 Run repository-provided validation and relevant tests. At minimum, validate
-frontmatter, ontology catalog and artifacts, concept subjects, indexes, logs,
-internal files and heading fragments, unsplit links, MathJax pairs, Mermaid
-fences, and stale graph references. Treat applicable missing links and
+frontmatter, ontology catalog and artifacts, concept subjects and pending
+subject-review dispositions against the complete current catalog, indexes,
+logs, internal files and heading fragments, unsplit links, MathJax pairs,
+Mermaid fences, and stale graph references. Treat applicable missing links and
 backlinks as validation failures until linked or explicitly ruled out.
 
 Inspect `git diff --check`, the complete scoped diff, and the staged diff. Stage

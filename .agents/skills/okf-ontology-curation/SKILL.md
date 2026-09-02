@@ -28,9 +28,10 @@ in `AGENTS.md`.
   industry-standard reference with strong semantic fit to the node. Reject
   broad generic fallbacks such as `activity`, `event`, or `process` when they
   merely describe the general shape of the topic rather than the topic itself.
-  If no specific approved class fits, curate an appropriate ontology or leave
-  the node awaiting an approved class; never weaken the classification just to
-  make `subject` non-empty.
+  If no specific approved class fits after reviewing the complete catalog,
+  represent that conclusion explicitly with `subject: []` and a pending
+  `subject_review`; never weaken the classification just to make `subject`
+  non-empty.
 
 ## Select and approve an ontology
 
@@ -75,22 +76,29 @@ were the ontology document.
 
 ## Reconcile and validate repository use
 
-- After adding an ontology, inspect every existing concept and apply its classes
-  where they materially improve semantic accuracy. Record why no existing node
-  benefits if none does.
-- For every concept, require a non-empty `subject` array whose ontology keys
-  exist in the catalog and whose class URIs exist in the corresponding vendored
-  artifacts. Each class must be a strongly aligned, industry-standard
-  classification of the concept, not a generic fallback such as `activity`,
-  `event`, or `process`. Labels are reader aids and never replace canonical
-  URIs.
+- After adding or changing an ontology, inspect every existing concept,
+  including every pending classification, and apply its classes where they
+  materially improve semantic accuracy. Refresh each still-pending review so
+  its checked keys exactly cover the updated catalog. Record why no existing
+  node benefits if none does.
+- For every concept, require exactly one classification state. A non-empty
+  `subject` array must use ontology keys that exist in the catalog and class
+  URIs present in the corresponding vendored artifacts, with no
+  `subject_review`. Each class must be a strongly aligned, industry-standard
+  classification of the concept, not a generic fallback such as `Entity`,
+  `Activity`, `Agent`, `Plan`, `Process`, or `Relationship`. Labels are reader
+  aids and never replace canonical URIs. When no suitable class exists after a
+  complete catalog review, require `subject: []` plus `subject_review` with
+  `status: pending`, reason `no-suitable-authoritative-class`, a
+  timezone-bearing reviewer event, and the full sorted catalog-key set.
 - Preserve semantically useful existing classes unless the new class clearly
   supersedes or corrects them. Reconcile affected indexes, validation rules,
   and documentation in the same coherent change.
 - Validate the catalog structure, stable keys, pins, URIs, paths, formats,
   licenses, provenance, retrieval dates, checksums, namespace/version
-  declarations, imported dependencies, artifact non-emptiness, and every
-  referenced class hermetically.
+  declarations, imported dependencies, artifact non-emptiness, every
+  referenced class, and every pending review's exact catalog coverage
+  hermetically.
 - If ontology work changes bundle concepts, finish through
   `$okf-knowledge-synthesis`, including graph review, validation, explicit
   staging, and the coherent commit.

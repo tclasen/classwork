@@ -5,10 +5,16 @@ description: Assessing how well a trained model performs beyond its training exa
 tags: [artificial-intelligence, machine-learning, evaluation, generalization, overfitting, uncertainty]
 subject:
   - ontology: mls-1.0
-    class: http://www.w3.org/ns/mls#ModelEvaluation
-    label: Model Evaluation
+    class: http://www.w3.org/ns/mls#ModelCharacteristic
+    label: Model characteristic
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#EvaluationProcedure
+    label: Evaluation procedure
+  - ontology: mls-1.0
+    class: http://www.w3.org/ns/mls#EvaluationMeasure
+    label: Evaluation measure
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: google-what-is-ml
     resource: https://developers.google.com/machine-learning/intro-to-ml/what-is-ml

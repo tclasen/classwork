@@ -3,12 +3,30 @@ type: Evaluation Concept
 title: Distribution shift
 description: A change between the conditions represented by evaluation data and the conditions in which a model is used.
 tags: [artificial-intelligence, machine-learning, evaluation, generalization, deployment, uncertainty]
-subject:
-  - ontology: mls-1.0
-    class: http://www.w3.org/ns/mls#DatasetCharacteristic
-    label: Dataset Characteristic
+subject: []
+subject_review:
+  status: pending
+  reason: no-suitable-authoritative-class
+  reviewed:
+    by: "codex/gpt-5.6"
+    at: "2026-09-02T13:51:36-07:00"
+  checked_catalog_keys:
+    - cbv-2.0.0
+    - ctdlasn-20260626-turtle
+    - eco
+    - epcis-2.0.1
+    - iao-2026-03-30
+    - mls-1.0
+    - obi-2026-07-27
+    - odrl-2.2
+    - ontomathpro-v2-acb3eef1
+    - org-0.8
+    - prov-o
+    - sosa-2017-10-19
+    - spdx-3.0.1
+    - swo-2023-03-05
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T16:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: google-ml-glossary
     resource: https://developers.google.com/machine-learning/glossary

@@ -10,8 +10,11 @@ subject:
   - ontology: odrl-2.2
     class: http://www.w3.org/ns/odrl/2/Permission
     label: Permission
+  - ontology: odrl-2.2
+    class: http://www.w3.org/ns/odrl/2/Action
+    label: Action
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T17:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: nist-zero-trust
     resource: https://doi.org/10.6028/NIST.SP.800-207

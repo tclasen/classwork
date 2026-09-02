@@ -4,14 +4,11 @@ title: Risk and decision
 description: Choosing or evaluating action under uncertainty, consequences, and criteria.
 tags: [foundations, risk, decisions, criteria, uncertainty]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
   - ontology: eco
     class: http://purl.obolibrary.org/obo/ECO_0000000
     label: Evidence
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 ---
 
 # Evaluating possible outcomes

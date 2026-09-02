@@ -3,15 +3,30 @@ type: Software Engineering Practice
 title: Software delivery metrics and feedback
 description: Using outcome-oriented delivery and reliability measures to find constraints and guide continuous improvement.
 tags: [software-engineering, metrics, feedback, delivery, improvement]
-subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+subject: []
+subject_review:
+  status: pending
+  reason: no-suitable-authoritative-class
+  reviewed:
+    by: "codex/gpt-5.6"
+    at: "2026-09-02T13:51:36-07:00"
+  checked_catalog_keys:
+    - cbv-2.0.0
+    - ctdlasn-20260626-turtle
+    - eco
+    - epcis-2.0.1
+    - iao-2026-03-30
+    - mls-1.0
+    - obi-2026-07-27
+    - odrl-2.2
+    - ontomathpro-v2-acb3eef1
+    - org-0.8
+    - prov-o
+    - sosa-2017-10-19
+    - spdx-3.0.1
+    - swo-2023-03-05
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: dora-2021
     resource: https://dora.dev/research/2021/dora-report/

@@ -46,10 +46,16 @@ understanding, source constraints, and available time when relevant. Shared
 knowledge belongs in `bundle/`; learner-specific plans belong in
 `lesson-plans/` as Obsidian-friendly Markdown.
 
+Validate the bundle and its pinned ontology classifications with:
+
+```sh
+ruby scripts/validate_bundle.rb
+```
+
 Review committed changes with `git show --stat` and `git show`. Configure Git
 LFS only for relevant large-file paths before adding them, and do not copy
-storage, validation, or publication commands until the repository provides
-those facilities.
+storage or publication commands until the repository provides those
+facilities.
 
 ## Example prompts
 

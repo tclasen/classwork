@@ -104,15 +104,20 @@ Apply these rules only to Markdown under `bundle/`:
 - Follow the pinned actor convention for `generated.by` and `verified[].by`.
   Update `generated` only for a meaningful concept change and use an ISO 8601
   timestamp with an explicit timezone in `generated.at`.
-- Require a non-empty `subject` array. Every entry must use an ontology key from
-  `.okf/ontologies.yaml` and the canonical URI of a class present in its
-  vendored artifact. Include a useful label when available. Each selected
+- Require a `subject` array in exactly one of two states. When a suitable class
+  exists, make the array non-empty, omit `subject_review`, and use only ontology
+  keys from `.okf/ontologies.yaml` and canonical class URIs present in their
+  vendored artifacts. Include useful labels when available. Each selected
   class must be an authoritative, industry-standard reference that strongly
   aligns with and describes the node itself. Do not use generic fallbacks such
-  as `activity`, `event`, or `process` merely to populate `subject`. If no
-  sufficiently specific approved class fits, use
-  `$okf-ontology-curation` and do not create or update the node with an
-  invented, vaguely related, or generic class.
+  as `Entity`, `Activity`, `Agent`, `Plan`, `Process`, or `Relationship` merely
+  to populate `subject`. If no sufficiently specific class fits after reviewing
+  the complete approved catalog, use `subject: []` and record a pending
+  `subject_review` with `status: pending`, reason
+  `no-suitable-authoritative-class`, a timezone-bearing reviewer event, and the
+  complete sorted set of catalog keys checked. Reconsider pending reviews
+  whenever the catalog changes. Use `$okf-ontology-curation` for this review;
+  never invent or select a vaguely related class to avoid a pending state.
 - Treat `subject` as a repository-defined OKF extension for semantic
   classification, not provenance. Do not modify `.okf/SPEC.md` to define it;
   the label is optional and never replaces the canonical class URI.
@@ -172,8 +177,10 @@ Apply these rules only to Markdown under `bundle/`:
    node. Treat unresolved meaningful terms as validation failures. Perform a
    second bundle-wide link-discovery pass.
 2. Parse every changed concept's frontmatter; confirm non-empty `type` and
-   catalog-backed `subject` values. Use `$okf-ontology-curation` for hermetic
-   catalog, artifact, checksum, namespace, dependency, and class validation.
+   exactly one valid `subject`/`subject_review` state. For pending reviews,
+   confirm the recorded catalog keys exactly equal the complete sorted current
+   catalog. Use `$okf-ontology-curation` for hermetic catalog, artifact,
+   checksum, namespace, dependency, class, and pending-disposition validation.
 3. Check changed indexes and logs, every internal link and fragment, split
    Markdown links, MathJax delimiter pairs, Mermaid fence balance, and
    consistency between diagrams and prose.

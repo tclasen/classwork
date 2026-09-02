@@ -3,15 +3,30 @@ type: Software Engineering Practice
 title: Configuration and environment parity
 description: Separating deploy-specific configuration from code and reducing avoidable differences between development, test, and production.
 tags: [software-engineering, configuration, environments, deployment, twelve-factor]
-subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+subject: []
+subject_review:
+  status: pending
+  reason: no-suitable-authoritative-class
+  reviewed:
+    by: "codex/gpt-5.6"
+    at: "2026-09-02T13:51:36-07:00"
+  checked_catalog_keys:
+    - cbv-2.0.0
+    - ctdlasn-20260626-turtle
+    - eco
+    - epcis-2.0.1
+    - iao-2026-03-30
+    - mls-1.0
+    - obi-2026-07-27
+    - odrl-2.2
+    - ontomathpro-v2-acb3eef1
+    - org-0.8
+    - prov-o
+    - sosa-2017-10-19
+    - spdx-3.0.1
+    - swo-2023-03-05
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:11:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:51:36-07:00" }
 sources:
   - id: twelve-factor-config
     resource: https://www.12factor.net/config
