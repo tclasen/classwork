@@ -4,11 +4,14 @@ title: Roles, authority, and organizations
 description: Agents organized into roles with responsibilities, powers, and decision rights.
 tags: [foundations, roles, authority, organizations, accountability]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Agent
-    label: Agent
+  - ontology: org-0.8
+    class: http://www.w3.org/ns/org#Organization
+    label: Organization
+  - ontology: org-0.8
+    class: http://www.w3.org/ns/org#Role
+    label: Role
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:23:01-07:00" }
 sources:
   - id: w3c-prov-dm
     resource: https://www.w3.org/TR/prov-dm/

@@ -121,3 +121,13 @@ ontologies:
     provenance: Information Artifact Ontology release 2026-03-30, Git commit 3006aedacbf813ffd1d2ac15cda10766ca9ed388
     retrieved: 2026-09-02
     sha256: c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41
+  org-0.8:
+    uri: http://www.w3.org/ns/org#
+    release: 0.8 (2014-01-16 W3C Recommendation; namespace serialization includes 2014-04-12 updates)
+    retrieval_uri: https://www.w3.org/ns/org.ttl
+    local_path: .okf/ontologies/org-0.8.ttl
+    format: turtle
+    license: PDDL 1.0
+    provenance: W3C Organization Ontology Recommendation, namespace serialization updated 2014-04-12
+    retrieved: 2026-09-02
+    sha256: 3e01f89a17475a88f8b1606ca0fae04800d34dbbf93adc6db12dc30929848729
