@@ -11,12 +11,11 @@ subject:
     class: http://www.w3.org/ns/prov#Plan
     label: Plan
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-01T17:42:25-07:00" }
 sources:
   - id: iso-29148
     resource: https://www.iso.org/standard/72089.html
     title: ISO/IEC/IEEE 29148:2018, Requirements engineering
-    author: "iso/iec/ieee-29148:2018"
 ---
 
 # Start with the problem and intended use
