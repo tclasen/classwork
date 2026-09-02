@@ -4,11 +4,11 @@ title: Probability and statistical inference
 description: Representing variation and using samples to reason about uncertain conclusions.
 tags: [science, probability, statistics, uncertainty, inference]
 subject:
-  - ontology: obi-2026-07-27
-    class: http://purl.obolibrary.org/obo/OBI_0000673
-    label: Statistical hypothesis test
+  - ontology: ontomathpro-v2-acb3eef1
+    class: http://ontomathpro.org/omp2#E21
+    label: Probability theory and mathematical statistics
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-31T13:54:32-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T09:31:52-07:00" }
 sources:
   - id: nist-confidence-intervals
     resource: https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm

@@ -101,3 +101,13 @@ ontologies:
     provenance: OBI Consortium release 2026-07-27, repository commit b29b902bc7f2a7b154d96185b3ae2865e9a9de04
     retrieved: 2026-08-31
     sha256: 8874abcca971ee26b4e4442198387916d788d14af3519e1040474908ed12b946
+  ontomathpro-v2-acb3eef1:
+    uri: http://ontomathpro.org/omp2#
+    release: 1.12.6 (Git commit acb3eef1c6a7b838fe475e23ae90b2b947b9625e; 2024-01-30)
+    retrieval_uri: https://raw.githubusercontent.com/CLLKazan/OntoMathPro/acb3eef1c6a7b838fe475e23ae90b2b947b9625e/OntoMathPro_v2.owl
+    local_path: .okf/ontologies/ontomathpro-v2-acb3eef1.owl
+    format: owl-rdfxml
+    license: Apache License 2.0
+    provenance: OntoMathPRO v2 release 1.12.6, Git commit acb3eef1c6a7b838fe475e23ae90b2b947b9625e
+    retrieved: 2026-09-02
+    sha256: 949fc956205f30e46836a52471c9b3484b3ca4bc1af7bc2dbd18ecf3b5d2fb47
