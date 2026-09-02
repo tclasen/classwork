@@ -131,3 +131,13 @@ ontologies:
     provenance: W3C Organization Ontology Recommendation, namespace serialization updated 2014-04-12
     retrieved: 2026-09-02
     sha256: 3e01f89a17475a88f8b1606ca0fae04800d34dbbf93adc6db12dc30929848729
+  sosa-2017-10-19:
+    uri: http://www.w3.org/ns/sosa/
+    release: 2017-10-19 W3C/OGC Recommendation
+    retrieval_uri: https://www.w3.org/ns/sosa/sosa.ttl
+    local_path: .okf/ontologies/sosa-2017-10-19.ttl
+    format: turtle
+    license: W3C Software and Document License; OGC Software License
+    provenance: W3C/OGC Semantic Sensor Network Ontology Recommendation SOSA artifact
+    retrieved: 2026-09-02
+    sha256: c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392

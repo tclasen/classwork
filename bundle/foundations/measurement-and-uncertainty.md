@@ -4,14 +4,11 @@ title: Measurement and uncertainty
 description: Assigning observations values while accounting for limitations and variation.
 tags: [foundations, measurement, observation, uncertainty]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Activity
-    label: Activity
+  - ontology: sosa-2017-10-19
+    class: http://www.w3.org/ns/sosa/Observation
+    label: Observation
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T13:29:38-07:00" }
 ---
 
 # From observation to value
