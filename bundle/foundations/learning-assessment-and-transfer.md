@@ -4,11 +4,11 @@ title: Learning, assessment, and transfer
 description: Changes in capability, evidence of performance, and application across contexts.
 tags: [foundations, learning, assessment, transfer, competency]
 subject:
-  - ontology: ctdlasn-20260626
+  - ontology: ctdlasn-20260626-turtle
     class: https://purl.org/ctdlasn/terms/Competency
     label: Competency
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T09:22:40-07:00" }
 sources:
   - id: how-people-learn-ii
     resource: https://www.nationalacademies.org/read/24783/chapter/2

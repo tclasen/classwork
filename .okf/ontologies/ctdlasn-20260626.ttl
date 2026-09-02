@@ -1,0 +1,1164 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix asn: <http://purl.org/ASN/schema/core/> .
+@prefix asnPublicationStatus: <http://purl.org/asn/scheme/ASNPublicationStatus/> .
+@prefix asnscheme: <http://purl.org/asn/scheme/> .
+@prefix case: <https://purl.imsglobal.org/spec/case/> .
+@prefix ceasn: <https://purl.org/ctdlasn/terms/> .
+@prefix ceterms: <https://purl.org/ctdl/terms/> .
+@prefix cs: <http://vocab.org/changeset/schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix evalCat: <https://purl.org/ctdlasn/vocabs/evalCat/> .
+@prefix gem: <http://purl.org/gem/elements/> .
+@prefix gemq: <http://purl.org/gem/qualifiers/> .
+@prefix loc: <http://www.loc.gov/loc.terms/> .
+@prefix locr: <http://www.loc.gov/loc.terms/relators/> .
+@prefix meta: <http://credreg.net/meta/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix publicationStatus: <http://purl.org/ctdlasn/vocabs/publicationStatus/> .
+@prefix qdata: <https://credreg.net/qdata/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <https://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#====================
+# CLASSES
+#====================
+asn:ProgressionLevel a rdfs:Class ;
+	rdfs:label "Progression Level"@en-US ;
+	rdfs:comment "Identifiable point along a developmental progression of competence, achievement or temporal position."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/asn/ProgressionLevel/json> ;
+	rdfs:subClassOf skos:Concept ;
+	meta:domainFor ceasn:inProgressionModel, ceterms:ctid, skos:broader, skos:definition, skos:narrower, skos:notation, skos:note, skos:prefLabel, skos:topConceptOf .
+
+asn:ProgressionModel a rdfs:Class ;
+	rdfs:label "Progression Model"@en-US ;
+	rdfs:comment "Model of identifiable points along a developmental progression including increasing levels of competence, achievement or temporal position (e.g., \"Second Quarter\")."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/asn/ProgressionModel/json> ;
+	rdfs:subClassOf skos:ConceptScheme ;
+	meta:domainFor ceasn:approximateDateCreated, ceasn:approximateDateModified, ceasn:conceptKeyword, ceasn:conceptTerm, ceasn:creator, ceasn:dateCopyrighted, ceasn:dateCreated, ceasn:dateModified, ceasn:description, ceasn:inLanguage, ceasn:license, ceasn:name, ceasn:publicationStatusType, ceasn:publisher, ceasn:publisherName, ceasn:rights, ceasn:rightsHolder, ceasn:source, ceterms:ctid, skos:hasTopConcept .
+
+ceasn:Competency a rdfs:Class ;
+	rdfs:label "Competency"@en-US ;
+	rdfs:comment "Measurable or observable knowledge, skill, or ability necessary to successful performance of a person."@en-US ;
+	dct:description "Competency is broadly defined to include assertions of academic, professional, occupational, vocational and life goals, outcomes, and standards, however labeled."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/Competency/json> ;
+	owl:equivalentClass asn:Statement ;
+	meta:domainFor asn:hasProgressionLevel, ceasn:abilityEmbodied, ceasn:alignFrom, ceasn:alignTo, ceasn:altCodedNotation, ceasn:approximateDateCreated, ceasn:approximateDateModified, ceasn:author, ceasn:broadAlignment, ceasn:codedNotation, ceasn:comment, ceasn:competencyCategory, ceasn:competencyLabel, ceasn:competencyText, ceasn:complexityLevel, ceasn:comprisedOf, ceasn:conceptKeyword, ceasn:conceptTerm, ceasn:creator, ceasn:crossSubjectReference, ceasn:dateCreated, ceasn:dateModified, ceasn:derivedFrom, ceasn:educationLevelType, ceasn:exactAlignment, ceasn:hasChild, ceasn:hasCriterionLevel, ceasn:hasRubricCriterion, ceasn:identifier, ceasn:inferredCompetency, ceasn:inLanguage, ceasn:isChildOf, ceasn:isPartOf, ceasn:isTopChildOf, ceasn:isVersionOf, ceasn:knowledgeEmbodied, ceasn:license, ceasn:listID, ceasn:localSubject, ceasn:majorAlignment, ceasn:minorAlignment, ceasn:narrowAlignment, ceasn:prerequisiteAlignment, ceasn:publicationStatusType, ceasn:shouldIndex, ceasn:skillEmbodied, ceasn:sourceDocumentation, ceasn:substantiatingCompetencyFramework, ceasn:substantiatingCredential, ceasn:substantiatingJob, ceasn:substantiatingOccupation, ceasn:substantiatingOrganization, ceasn:substantiatingResource, ceasn:substantiatingTask, ceasn:substantiatingWorkRole, ceasn:taskEmbodied, ceasn:weight, ceterms:ctid, ceterms:industryType, ceterms:instructionalProgramType, ceterms:occupationType .
+
+ceasn:CompetencyFramework a rdfs:Class ;
+	rdfs:label "Competency Framework"@en-US ;
+	rdfs:comment "Entity comprised of a logically related set of competencies."@en-US ;
+	dct:description "A competency framework serves a container object for a set of competencies."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/CompetencyFramework/json> ;
+	rdfs:subClassOf ceterms:Collection ;
+	owl:equivalentClass asn:StandardDocument ;
+	meta:domainFor asn:hasProgressionModel, ceasn:alignFrom, ceasn:alignTo, ceasn:approximateDateCreated, ceasn:approximateDateModified, ceasn:author, ceasn:codedNotation, ceasn:conceptKeyword, ceasn:conceptTerm, ceasn:creator, ceasn:dateCopyrighted, ceasn:dateCreated, ceasn:dateModified, ceasn:dateValidFrom, ceasn:dateValidUntil, ceasn:derivedFrom, ceasn:description, ceasn:educationLevelType, ceasn:hasTopChild, ceasn:identifier, ceasn:inLanguage, ceasn:license, ceasn:localSubject, ceasn:name, ceasn:publicationStatusType, ceasn:publisher, ceasn:publisherName, ceasn:repositoryDate, ceasn:rights, ceasn:rightsHolder, ceasn:source, ceasn:sourceDocumentation, ceasn:tableOfContents, ceterms:ctid, ceterms:industryType, ceterms:instructionalProgramType, ceterms:occupationType .
+
+ceasn:CriterionLevel a rdfs:Class ;
+	rdfs:label "Criterion Level"@en-US ;
+	rdfs:comment "An individual component or specific element within a criterion that defines a particular aspect or standard for evaluation."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/CriterionLevel/json> ;
+	meta:domainFor asn:hasProgressionLevel, ceasn:benchmarkLabel, ceasn:benchmarkText, ceasn:codedNotation, ceasn:feedback, ceasn:hasCriterionLevel, ceasn:listID .
+
+ceasn:ProficiencyScale a rdfs:Class ;
+	rdfs:label "Proficiency Scale"@en-US ;
+	rdfs:comment "The class of structured profiles describing discrete levels of expertise and performance mastery."@en-US ;
+	dct:description "Proficiency scales define levels of performance (what a person does) as distinct from knowledge of specific information (what a person knows) and outline tasks a person can manage and the skills necessary to progressively accomplish explicit competencies at increasing levels of complexity. Proficiency scales: (1) assist in making judgments about the kinds of tasks related to a competency that a person is able to perform; and (2) to compare the abilities of different persons with regard to achievement of those competencies at different levels."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/ProficiencyScale/json> ;
+	rdfs:subClassOf asn:EducationalFramework ;
+	owl:equivalentClass asn:ProficiencyScale .
+
+ceasn:Rubric a rdfs:Class ;
+	rdfs:label "Rubric"@en-US ;
+	rdfs:comment "A structured and systematic evaluation tool used to assess performance, quality, and/or criteria."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/Rubric/json> ;
+	owl:equivalentClass asn:Rubric ;
+	meta:domainFor asn:hasProgressionLevel, asn:hasProgressionModel, ceasn:altCodedNotation, ceasn:approximateDateCreated, ceasn:approximateDateModified, ceasn:codedNotation, ceasn:conceptKeyword, ceasn:creator, ceasn:dateCopyrighted, ceasn:dateCreated, ceasn:dateModified, ceasn:dateValidFrom, ceasn:dateValidUntil, ceasn:derivedFrom, ceasn:description, ceasn:educationLevelType, ceasn:evaluatorType, ceasn:hasCriterionCategorySet, ceasn:hasRubricCriterion, ceasn:hasRubricLevel, ceasn:hasScope, ceasn:inLanguage, ceasn:license, ceasn:name, ceasn:publicationStatusType, ceasn:publisher, ceasn:publisherName, ceasn:rights, ceterms:ctid, ceterms:industryType, ceterms:instructionalProgramType, ceterms:occupationType .
+
+ceasn:RubricCriterion a rdfs:Class ;
+	rdfs:label "Rubric Criterion"@en-US ;
+	rdfs:comment "Resource providing explicit criteria for ensuring specific and measurable evaluation."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/RubricCriterion/json> ;
+	owl:equivalentClass asn:RubricCriterion ;
+	meta:domainFor asn:hasProgressionLevel, ceasn:codedNotation, ceasn:description, ceasn:hasCriterionCategory, ceasn:hasCriterionLevel, ceasn:listID, ceasn:name, ceasn:weight, ceterms:ctid .
+
+ceasn:RubricLevel a rdfs:Class ;
+	rdfs:label "Rubric Level"@en-US ;
+	rdfs:comment "Level or quality indicator used with Rubric Criteria."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/RubricLevel/json> ;
+	meta:domainFor asn:hasProgressionLevel, ceasn:codedNotation, ceasn:description, ceasn:hasCriterionLevel, ceasn:listID, ceasn:name .
+
+skos:Concept a rdfs:Class ;
+	rdfs:label "Concept"@en-US ;
+	rdfs:comment "Term in a controlled vocabulary."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/Concept/json> ;
+	meta:domainFor ceasn:sourceDocumentation, ceterms:ctid, skos:altLabel, skos:broader, skos:broadMatch, skos:changeNote, skos:closeMatch, skos:definition, skos:exactMatch, skos:hiddenLabel, skos:inScheme, skos:narrower, skos:narrowMatch, skos:notation, skos:note, skos:prefLabel, skos:related, skos:topConceptOf .
+
+skos:ConceptScheme a rdfs:Class ;
+	rdfs:label "Concept Scheme"@en-US ;
+	rdfs:comment "A controlled vocabulary."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/ConceptScheme/json> ;
+	meta:domainFor ceasn:approximateDateCreated, ceasn:approximateDateModified, ceasn:conceptKeyword, ceasn:conceptTerm, ceasn:creator, ceasn:dateCopyrighted, ceasn:dateCreated, ceasn:dateModified, ceasn:description, ceasn:inLanguage, ceasn:license, ceasn:name, ceasn:publicationStatusType, ceasn:publisher, ceasn:publisherName, ceasn:rights, ceasn:rightsHolder, ceasn:source, ceasn:sourceDocumentation, ceterms:ctid, skos:hasTopConcept .
+
+#====================
+# PROPERTIES
+#====================
+asn:hasProgressionLevel a rdf:Property ;
+	rdfs:label "Has Progression Level"@en-US ;
+	rdfs:comment "Reference to a specific point in a progression model."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/asn/hasProgressionLevel/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:CriterionLevel, ceasn:Rubric, ceasn:RubricCriterion, ceasn:RubricLevel, ceterms:AssessmentComponent, ceterms:BasicComponent, ceterms:CocurricularComponent, ceterms:CollectionComponent, ceterms:CompetencyComponent, ceterms:CourseComponent, ceterms:CredentialComponent, ceterms:ExtracurricularComponent, ceterms:JobComponent, ceterms:MultiComponent, ceterms:WorkExperienceComponent ;
+	schema:rangeIncludes asn:ProgressionLevel .
+
+asn:hasProgressionModel a rdf:Property ;
+	rdfs:label "Has Progression Model"@en-US ;
+	rdfs:comment "Reference to a progression model used."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/asn/hasProgressionModel/json> ;
+	schema:domainIncludes ceasn:CompetencyFramework, ceasn:Rubric, ceterms:Pathway, ceterms:QualificationsFramework ;
+	schema:rangeIncludes asn:ProgressionModel .
+
+ceasn:abilityEmbodied a rdf:Property ;
+	rdfs:label "Ability Embodied"@en-US ;
+	rdfs:comment "Enduring attributes of the individual that influence performance are embodied either directly or indirectly in this resource."@en-US ;
+	vann:usageNote "The abilityEmbodied property may referenced a defined ability in an ontology such as O*NET or an existing competency defined in a competency framework."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/abilityEmbodied/json> ;
+	schema:domainIncludes ceasn:Competency, ceterms:Job, ceterms:Occupation, ceterms:Task, ceterms:WorkRole ;
+	schema:rangeIncludes ceasn:Competency .
+
+ceasn:alignFrom a rdf:Property ;
+	rdfs:label "Align From"@en-US ;
+	rdfs:comment "A competency framework or competency from which this competency framework or competency is aligned."@en-US ;
+	dct:description "An alignment is an assertion of some degree of equivalency between the subject and the object of the assertion."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/alignFrom/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework ;
+	schema:rangeIncludes ceasn:Competency, ceasn:CompetencyFramework ;
+	owl:equivalentProperty asn:alignFrom .
+
+ceasn:alignTo a rdf:Property ;
+	rdfs:label "Align To"@en-US ;
+	rdfs:comment "A competency framework or competency to which this competency framework or competency is aligned."@en-US ;
+	dct:description "An alignment is an assertion of some degree of equivalency between the subject and the object of the assertion."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/alignTo/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework ;
+	schema:rangeIncludes ceasn:Competency, ceasn:CompetencyFramework ;
+	owl:equivalentProperty asn:alignTo .
+
+ceasn:altCodedNotation a rdf:Property ;
+	rdfs:label "Alternative Coded Notation"@en-US ;
+	rdfs:comment "An alphanumeric notation or ID code identifying this competency in common use among end-users."@en-US ;
+	dct:description "Unlike the codedNotation property, the value for the altCodedNotation property need not be an official identifier created by the promulgating agency. It must be an identifier in common use among end-users of the competency. This property should be seldom used and only with a clear demonstration of need (i.e., in common use). For example, in the Common Core State Standards (Math) in the U.S., the official codedNotation of \"CCSS.Math.Content.1.NBT.C.4\" is abbreviated in common use by end-users to the unofficial altCodedNotation of \"1.NBT.4\"."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/altCodedNotation/json> ;
+	rdfs:subPropertyOf dct:identifier ;
+	schema:domainIncludes ceasn:Competency, ceasn:Rubric ;
+	schema:rangeIncludes xsd:string ;
+	owl:equivalentProperty asn:altStatementNotation .
+
+ceasn:approximateDateCreated a rdf:Property ;
+	rdfs:label "Approximate Date Created"@en-US ;
+	rdfs:comment "Approximate date of creation of this resource."@en-US ;
+	dct:description "The value should be in ISO 8601 date format; specifically YYYY or YYY-MM."@en-US ;
+	vann:usageNote "Values may be just a year (e.g. 2026) or a year and a month (e.g. (2026-05).  If the full date, i.e. year, month and day, are known use ceasn:dateCreated."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/approximateDateCreated/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes schema:Date .
+
+ceasn:approximateDateModified a rdf:Property ;
+	rdfs:label "Approximate Date Modified"@en-US ;
+	rdfs:comment "Approximate date on which this resource was most recently modified in some way."@en-US ;
+	dct:description "The value should be in ISO 8601 date format; specifically YYYY or YYYY-MM."@en-US ;
+	vann:usageNote "Values may be just a year (e.g. 2026) or a year and a month (e.g. (2026-05).  If the full date, i.e. year, month and day, are known use ceasn:dateModified."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/approximateDateModified/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:Occupation, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:Task, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes schema:Date .
+
+ceasn:author a rdf:Property ;
+	rdfs:label "Author"@en-US ;
+	rdfs:comment "A person or organization chiefly responsible for the intellectual or artistic content of this competency framework or competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/author/json> ;
+	rdfs:subPropertyOf dct:contributor ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceterms:AlignmentMap, ceterms:QualificationsFramework ;
+	schema:rangeIncludes xsd:string ;
+	owl:equivalentProperty locr:aut .
+
+ceasn:benchmarkLabel a rdf:Property ;
+	rdfs:label "Benchmark Label"@en-US ;
+	rdfs:comment "Label for the level achieved as defined by the Rubric Criterion."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/benchmarkLabel/json> ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes rdf:langString .
+
+ceasn:benchmarkText a rdf:Property ;
+	rdfs:label "Benchmark Text"@en-US ;
+	rdfs:comment "Description of the level achieved as defined by the Rubric Criterion."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/benchmarkText/json> ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes rdf:langString .
+
+ceasn:broadAlignment a rdf:Property ;
+	rdfs:label "Broad Alignment"@en-US ;
+	rdfs:comment "The referenced competency covers all of the relevant concepts in this competency as well as relevant concepts not found in this competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/broadAlignment/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:broadAlignment .
+
+ceasn:codedNotation a rdf:Property ;
+	rdfs:label "Coded Notation"@en-US ;
+	rdfs:comment "An alphanumeric notation or ID code as defined by the promulgating body to identify this resource."@en-US ;
+	dct:description "This property should be used only for codes created by the promulgating body. For alternative competency notations in common use in the community of practice, but not endorsed by the promulgating body, the altCodedNotation property can be used (sparingly on clear evidence of common use and need)."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/codedNotation/json> ;
+	rdfs:subPropertyOf dct:identifier ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:CriterionLevel, ceasn:Rubric, ceasn:RubricCriterion, ceasn:RubricLevel ;
+	schema:rangeIncludes xsd:string ;
+	owl:equivalentProperty asn:statementNotation, <https://purl.imsglobal.org/spec/case/v1p0/humanCodingScheme>, ceterms:codedNotation .
+
+ceasn:comment a rdf:Property ;
+	rdfs:label "Comment"@en-US ;
+	rdfs:comment "Supplemental text provided by the promulgating body that clarifies the nature, scope or use of this resource."@en-US ;
+	dct:description "Use this property when the text provides useful context for this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/comment/json> ;
+	schema:domainIncludes ceasn:Competency, ceterms:Industry, ceterms:Job, ceterms:Occupation, ceterms:Task, ceterms:WorkRole, qdata:Observation ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty asn:comment, <https://purl.imsglobal.org/spec/case/v1p0/notes> .
+
+ceasn:competencyCategory a rdf:Property ;
+	rdfs:label "Competency Category"@en-US ;
+	rdfs:comment "The textual label identifying the category of the competency as designated by the promulgating body."@en-US ;
+	dct:description "This property points to a class, not to instances of that class. For example, where two competencies in a competency framework have been identified respectively by the promulgating agency as \"Strand: Renaissance\" and \"Strand: Social history\", the statementLabel for both these competencies is \"Strand\"."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/competencyCategory/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty asn:statementLabel, <https://purl.imsglobal.org/spec/case/v1p0/CFItemType> .
+
+ceasn:competencyLabel a rdf:Property ;
+	rdfs:label "Competency Label"@en-US ;
+	rdfs:comment "Short identifying phrase or name applied to a competency by the creator of the competency framework."@en-US ;
+	vann:usageNote "Where such a label is the sole expression of the competency, enter the text as competencyText as opposed to competencyLabel."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/competencyLabel/json> ;
+	rdfs:subPropertyOf ceasn:name, schema:name ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes rdf:langString .
+
+ceasn:competencyText a rdf:Property ;
+	rdfs:label "Competency Text"@en-US ;
+	rdfs:comment "The text of the competency."@en-US ;
+	vann:usageNote "This property should be used to provide the actual text of the competency statement. To provide information about the competency other than the text itself, use the comment property."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/competencyText/json> ;
+	rdfs:subPropertyOf dct:description ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty <https://purl.imsglobal.org/spec/case/v1p0/fullStatement> .
+
+ceasn:complexityLevel a rdf:Property ;
+	rdfs:label "Complexity Level"@en-US ;
+	rdfs:comment "The expected performance level of a learner or professional as defined by a competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/complexityLevel/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes skos:Concept ;
+	owl:equivalentProperty asn:complexityLevel .
+
+ceasn:comprisedOf a rdf:Property ;
+	rdfs:label "Comprised Of"@en-US ;
+	rdfs:comment "This competency includes, comprehends or encompasses, in whole or in part, the meaning, nature or importance of the referenced competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/comprisedOf/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:comprisedOf .
+
+ceasn:conceptKeyword a rdf:Property ;
+	rdfs:label "Concept Keyword"@en-US ;
+	rdfs:comment "A word or phrase used by the promulgating agency to refine and differentiate individual resources contextually."@en-US ;
+	vann:usageNote "This property should be used judiciously and in moderation. This property should be used only if an appropriate term does not exist in a controlled vocabulary."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/conceptKeyword/json> ;
+	rdfs:subPropertyOf dct:subject ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, skos:ConceptScheme ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty asn:conceptKeyword, ceterms:keyword .
+
+ceasn:conceptTerm a rdf:Property ;
+	rdfs:label "Concept Term"@en-US ;
+	rdfs:comment "A term drawn from a controlled vocabulary used by the promulgating agency to refine and differentiate individual resources contextually."@en-US ;
+	vann:usageNote "Note: Topic terms can include relevant people, places, things, and events."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/conceptTerm/json> ;
+	rdfs:subPropertyOf dct:subject ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, skos:ConceptScheme ;
+	schema:rangeIncludes skos:Concept ;
+	owl:equivalentProperty asn:conceptTerm, ceterms:subject .
+
+ceasn:creator a rdf:Property ;
+	rdfs:label "Creator"@en-US ;
+	rdfs:comment "An entity primarily responsible for making this resource."@en-US ;
+	dct:description "The creator property is used with non-canonical statements created by a third party."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/creator/json> ;
+	rdfs:subPropertyOf dct:contributor ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:QualificationsFramework, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes ceterms:CredentialOrganization, ceterms:Organization, ceterms:QACredentialOrganization ;
+	owl:equivalentProperty dct:creator .
+
+ceasn:crossSubjectReference a rdf:Property ;
+	rdfs:label "Cross-Subject Reference"@en-US ;
+	rdfs:comment "A relationship between this competency and a competency in a separate competency framework."@en-US ;
+	dct:description "An interdisciplinary statement reference."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/crossSubjectReference/json> ;
+	rdfs:subPropertyOf dct:relation ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:crossSubjectReference .
+
+ceasn:dateCopyrighted a rdf:Property ;
+	rdfs:label "Date Copyrighted"@en-US ;
+	rdfs:comment "Date of a statement of copyright for this resource, such as ©2017."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/dateCopyrighted/json> ;
+	rdfs:subPropertyOf dct:date ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:string ;
+	owl:equivalentProperty dct:dateCopyrighted .
+
+ceasn:dateCreated a rdf:Property ;
+	rdfs:label "Date Created"@en-US ;
+	rdfs:comment "Date of creation of this resource."@en-US ;
+	dct:description "The dateCreated property is used for non-canonical statements created by a third party."@en-US ;
+	vann:usageNote "Values should be a full date, i.e. year, month and day; if the day or month are not known use ceasn:approximateDateCreated instead."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/dateCreated/json> ;
+	rdfs:subPropertyOf dct:date ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:date ;
+	owl:equivalentProperty dct:created .
+
+ceasn:dateModified a rdf:Property ;
+	rdfs:label "Date Modified"@en-US ;
+	rdfs:comment "The date on which this resource was most recently modified in some way."@en-US ;
+	vann:usageNote "Values should be a full date, i.e. year, month and day; if the day or month are not known use ceasn:approximateDateModified instead."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/dateModified/json> ;
+	rdfs:subPropertyOf dct:date ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:Occupation, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:Task, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:dateTime ;
+	owl:equivalentProperty dct:modified, schema:dateModified .
+
+ceasn:dateValidFrom a rdf:Property ;
+	rdfs:label "Date Valid From"@en-US ;
+	rdfs:comment "Beginning date of validity of this resource."@en-US ;
+	vann:usageNote "Where the resource is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/dateValidFrom/json> ;
+	rdfs:subPropertyOf dct:valid ;
+	schema:domainIncludes ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:QualificationsFramework ;
+	schema:rangeIncludes xsd:dateTime ;
+	owl:equivalentProperty schema:startDate .
+
+ceasn:dateValidUntil a rdf:Property ;
+	rdfs:label "Date Valid Until"@en-US ;
+	rdfs:comment "End date of validity of this resource."@en-US ;
+	vann:usageNote "Where the resource is valid for a given period of time, use both the dateValidFrom and dateValidUntil properties."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/dateValidUntil/json> ;
+	rdfs:subPropertyOf dct:valid ;
+	schema:domainIncludes ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:QualificationsFramework ;
+	schema:rangeIncludes xsd:dateTime ;
+	owl:equivalentProperty schema:endDate .
+
+ceasn:derivedFrom a rdf:Property ;
+	rdfs:label "Derived From"@en-US ;
+	rdfs:comment "The entity being described has been modified, extended or refined from the referenced resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/derivedFrom/json> ;
+	rdfs:subPropertyOf dc:relation ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:FinancialAssistanceProfile, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, ceterms:TransferValueProfile, qdata:Metric ;
+	schema:rangeIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:FinancialAssistanceProfile, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, ceterms:TransferValueProfile, qdata:Metric ;
+	owl:equivalentProperty asn:derivedFrom .
+
+ceasn:description a rdf:Property ;
+	rdfs:label "Description"@en-US ;
+	rdfs:comment "A short description of this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/description/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceasn:Rubric, ceasn:RubricCriterion, ceasn:RubricLevel, skos:ConceptScheme ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty dct:description, schema:description .
+
+ceasn:educationLevelType a rdf:Property ;
+	rdfs:label "Education Level Type"@en-US ;
+	rdfs:comment "A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context."@en-US ;
+	dct:description "Best practice is to use terms from the http://purl.org/ctdl/terms/AudienceLevel concept scheme."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/educationLevelType/json> ;
+	rdfs:subPropertyOf dct:audience ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric ;
+	schema:rangeIncludes skos:Concept ;
+	meta:targetScheme ceterms:AudienceLevel ;
+	owl:equivalentProperty <https://purl.imsglobal.org/spec/case/v1p0/vocab#educationLevel>, ceterms:audienceLevelType, dct:educationLevel .
+
+ceasn:evaluatorType a rdf:Property ;
+	rdfs:label "Evaluator Type"@en-US ;
+	rdfs:comment "Type of evaluator; select from an existing enumeration of such types."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/evaluatorType/json> ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes skos:Concept ;
+	meta:targetScheme ceasn:EvaluatorCategory .
+
+ceasn:exactAlignment a rdf:Property ;
+	rdfs:label "Exact Alignment"@en-US ;
+	rdfs:comment "The relevant concepts in this competency and the referenced competency are coextensive."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/exactAlignment/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:exactAlignment .
+
+ceasn:feedback a rdf:Property ;
+	rdfs:label "Feedback"@en-US ;
+	rdfs:comment "Predefined feedback text for the benefit of the subject being evaluated."@en-US ;
+	dct:description "This may include guidance and suggestions for improvement or development."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/feedback/json> ;
+	schema:domainIncludes ceasn:CriterionLevel ;
+	schema:rangeIncludes rdf:langString .
+
+ceasn:hasChild a rdf:Property ;
+	rdfs:label "Has Child"@en-US ;
+	rdfs:comment "The referenced resource is lower in some arbitrary hierarchy than this resource."@en-US ;
+	dct:description "This property identifies a child node in the downward path in the chain of resources in a taxon path."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasChild/json> ;
+	rdfs:subPropertyOf dc:relation ;
+	schema:domainIncludes ceasn:Competency, ceterms:AssessmentComponent, ceterms:BasicComponent, ceterms:CocurricularComponent, ceterms:CollectionComponent, ceterms:CompetencyComponent, ceterms:CourseComponent, ceterms:CredentialComponent, ceterms:ExtracurricularComponent, ceterms:JobComponent, ceterms:MultiComponent, ceterms:Task, ceterms:WorkExperienceComponent ;
+	schema:rangeIncludes ceasn:Competency, ceterms:AssessmentComponent, ceterms:BasicComponent, ceterms:CocurricularComponent, ceterms:CollectionComponent, ceterms:CompetencyComponent, ceterms:CourseComponent, ceterms:CredentialComponent, ceterms:ExtracurricularComponent, ceterms:JobComponent, ceterms:MultiComponent, ceterms:Task, ceterms:WorkExperienceComponent ;
+	owl:equivalentProperty gemq:hasChild ;
+	owl:inverseOf ceasn:isChildOf .
+
+ceasn:hasCriterionCategory a rdf:Property ;
+	rdfs:label "Has Criterion Category"@en-US ;
+	rdfs:comment "Indicates a Concept for clustering logical sets of Rubric Criteria."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasCriterionCategory/json> ;
+	schema:domainIncludes ceasn:RubricCriterion ;
+	schema:rangeIncludes skos:Concept .
+
+ceasn:hasCriterionCategorySet a rdf:Property ;
+	rdfs:label "Has Criterion Category Set"@en-US ;
+	rdfs:comment "Indicates the Concept Scheme for clustering logical sets of Rubric Criteria."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasCriterionCategorySet/json> ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes skos:ConceptScheme .
+
+ceasn:hasCriterionLevel a rdf:Property ;
+	rdfs:label "Has Criterion Level"@en-US ;
+	rdfs:comment "Criterion Level for this resource."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasCriterionLevel/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:CriterionLevel, ceasn:RubricCriterion, ceasn:RubricLevel ;
+	schema:rangeIncludes ceasn:CriterionLevel .
+
+ceasn:hasRubricCriterion a rdf:Property ;
+	rdfs:label "Has Rubric Criterion"@en-US ;
+	rdfs:comment "Explicit criterion for ensuring specific and measurable evaluation."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasRubricCriterion/json> ;
+	rdfs:subPropertyOf asn:hasCriterion ;
+	schema:domainIncludes ceasn:Competency, ceasn:Rubric ;
+	schema:rangeIncludes ceasn:RubricCriterion .
+
+ceasn:hasRubricLevel a rdf:Property ;
+	rdfs:label "Has Rubric Level"@en-US ;
+	rdfs:comment "Resource describing a level or quality indicator used with Rubric Criteria."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasRubricLevel/json> ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes ceasn:RubricLevel .
+
+ceasn:hasScope a rdf:Property ;
+	rdfs:label "Has Scope"@en-US ;
+	rdfs:comment "Description of what the rubric's creator intended to assess or evaluate."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasScope/json> ;
+	schema:domainIncludes ceasn:Rubric ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty asn:hasScope .
+
+ceasn:hasTopChild a rdf:Property ;
+	rdfs:label "Has Top Child"@en-US ;
+	rdfs:comment "Top-level child competency of a competency framework."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/hasTopChild/json> ;
+	schema:domainIncludes ceasn:CompetencyFramework ;
+	schema:rangeIncludes ceasn:Competency .
+
+ceasn:identifier a rdf:Property ;
+	rdfs:label "Identifier"@en-US ;
+	rdfs:comment "An alternative URI by which this competency framework or competency is identified."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/identifier/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework ;
+	schema:rangeIncludes xsd:anyURI ;
+	owl:equivalentProperty asn:identifier .
+
+ceasn:inferredCompetency a rdf:Property ;
+	rdfs:label "Inferred Competency"@en-US ;
+	rdfs:comment "Competency deduced or arrive at by reasoning on the competency being described."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/inferredCompetency/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency .
+
+ceasn:inLanguage a rdf:Property ;
+	rdfs:label "In Language"@en-US ;
+	rdfs:comment "The primary language used in or by this resource."@en-US ;
+	vann:usageNote "This is the language the text is primarily written in, even if it makes use of other languages. For example, a competency for teaching spanish to english-speaking students would primarily be in english, because that is the language used to convey the material."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/inLanguage/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:language ;
+	owl:equivalentProperty <https://purl.imsglobal.org/spec/case/v1p0/language>, dct:language .
+
+ceasn:inProgressionModel a rdf:Property ;
+	rdfs:label "In Progression Model"@en-US ;
+	rdfs:comment "Progression Model to which this Progression Level belongs."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/inProgressionModel/json> ;
+	rdfs:subPropertyOf skos:inScheme ;
+	schema:domainIncludes asn:ProgressionLevel ;
+	schema:rangeIncludes asn:ProgressionModel .
+
+ceasn:isChildOf a rdf:Property ;
+	rdfs:label "Is Child Of"@en-US ;
+	rdfs:comment "The referenced resource is higher in some arbitrary hierarchy than this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/isChildOf/json> ;
+	rdfs:subPropertyOf dc:relation ;
+	schema:domainIncludes ceasn:Competency, ceterms:AssessmentComponent, ceterms:BasicComponent, ceterms:CocurricularComponent, ceterms:CollectionComponent, ceterms:CompetencyComponent, ceterms:CourseComponent, ceterms:CredentialComponent, ceterms:ExtracurricularComponent, ceterms:JobComponent, ceterms:MultiComponent, ceterms:Task, ceterms:WorkExperienceComponent ;
+	schema:rangeIncludes ceasn:Competency, ceterms:AssessmentComponent, ceterms:BasicComponent, ceterms:CocurricularComponent, ceterms:CollectionComponent, ceterms:CompetencyComponent, ceterms:CourseComponent, ceterms:CredentialComponent, ceterms:ExtracurricularComponent, ceterms:JobComponent, ceterms:MultiComponent, ceterms:Pathway, ceterms:Task, ceterms:WorkExperienceComponent ;
+	owl:equivalentProperty gemq:isChildOf ;
+	owl:inverseOf ceasn:hasChild .
+
+ceasn:isPartOf a rdf:Property ;
+	rdfs:label "Is Part Of"@en-US ;
+	rdfs:comment "Competency framework that this competency is a part of."@en-US ;
+	vann:usageNote "This property does not indicate whether or not this statement is a top-level statement in the referenced competency framework; only that it is in some way a part of that framework. To indicate that this statement is a top-level statement, use both this property and the isChildOf property."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/isPartOf/json> ;
+	rdfs:subPropertyOf dc:relation ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:CompetencyFramework ;
+	owl:equivalentProperty dct:isPartOf .
+
+ceasn:isTopChildOf a rdf:Property ;
+	rdfs:label "Is Top Child Of"@en-US ;
+	rdfs:comment "Indicates that this competency is at the top of some arbitrary hierarchy."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/isTopChildOf/json> ;
+	rdfs:subPropertyOf ceasn:isChildOf ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:CompetencyFramework .
+
+ceasn:isVersionOf a rdf:Property ;
+	rdfs:label "Is Version Of"@en-US ;
+	rdfs:comment "A related competency of which this competency is a version, edition, or adaptation."@en-US ;
+	dct:description "Changes in version imply substantive changes in content rather than differences in format."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/isVersionOf/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty dct:isVersionOf .
+
+ceasn:knowledgeEmbodied a rdf:Property ;
+	rdfs:label "Knowledge Embodied"@en-US ;
+	rdfs:comment "Body of information embodied either directly or indirectly in this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/knowledgeEmbodied/json> ;
+	schema:domainIncludes ceasn:Competency, ceterms:Job, ceterms:Occupation, ceterms:Task, ceterms:WorkRole ;
+	schema:rangeIncludes ceasn:Competency .
+
+ceasn:license a rdf:Property ;
+	rdfs:label "License"@en-US ;
+	rdfs:comment "A legal document giving official permission to do something with this resource."@en-US ;
+	dct:description "Value must be the URI to a license document (e.g., Creative Commons license or bespoke license)."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/license/json> ;
+	rdfs:subPropertyOf dct:rights ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:Collection, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, qdata:DataSetDistribution, qdata:DataSetProfile, qdata:DataSetService, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:anyURI ;
+	owl:equivalentProperty dct:license .
+
+ceasn:listID a rdf:Property ;
+	rdfs:label "List ID"@en-US ;
+	rdfs:comment "An alphanumeric string indicating the relative position of a resource in an ordered list of resources."@en-US ;
+	dct:description "Examples of such strings include: such as \"A\", \"B\", or \"a\", \"b\", or \"I\", \"II\", or \"1\", \"2\"."@en-US ;
+	vann:usageNote "Punctuation accompanying alphanumeric strings should not be included."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/listID/json> ;
+	rdfs:subPropertyOf asn:listID ;
+	schema:domainIncludes ceasn:Competency, ceasn:CriterionLevel, ceasn:RubricCriterion, ceasn:RubricLevel, ceterms:StructuredStatement, ceterms:Task ;
+	schema:rangeIncludes xsd:string ;
+	owl:equivalentProperty <https://purl.imsglobal.org/spec/case/v1p0/listEnumeration> .
+
+ceasn:localSubject a rdf:Property ;
+	rdfs:label "Local Subject"@en-US ;
+	rdfs:comment "The text string denoting the subject of the competency framework or competency as designated by the promulgating agency."@en-US ;
+	vann:usageNote "The localSubject property and subject property may or may not point to the same subject. If so, enter the text string for the subject as the value of this property and the  URI for that subject in the subject property."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/localSubject/json> ;
+	rdfs:subPropertyOf dct:subject ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty asn:localSubject .
+
+ceasn:majorAlignment a rdf:Property ;
+	rdfs:label "Major Alignment"@en-US ;
+	rdfs:comment "Major overlap of relevant concepts between this competency and the referenced competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/majorAlignment/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:majorAlignment .
+
+ceasn:minorAlignment a rdf:Property ;
+	rdfs:label "Minor Alignment"@en-US ;
+	rdfs:comment "Minor overlap of relevant concepts between this competency and the referenced competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/minorAlignment/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:minorAlignment .
+
+ceasn:name a rdf:Property ;
+	rdfs:label "Name"@en-US ;
+	rdfs:comment "The name or title of this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/name/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceasn:Rubric, ceasn:RubricCriterion, ceasn:RubricLevel, skos:ConceptScheme ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty dc:title, schema:name .
+
+ceasn:narrowAlignment a rdf:Property ;
+	rdfs:label "Narrow Alignment"@en-US ;
+	rdfs:comment "This competency covers all of the relevant concepts in the referenced competency as well as relevant concepts not found in the referenced competency."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/narrowAlignment/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:narrowAlignment .
+
+ceasn:prerequisiteAlignment a rdf:Property ;
+	rdfs:label "Prerequisite Alignment"@en-US ;
+	rdfs:comment "The referenced resource is a prerequisite to this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/prerequisiteAlignment/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:prerequisiteAlignment .
+
+ceasn:publicationStatusType a rdf:Property ;
+	rdfs:label "Publication Status Type"@en-US ;
+	rdfs:comment "The publication status of the resource."@en-US ;
+	vann:usageNote "With competencies that originate as part of a competency framework that includes an applicable publication status, it is not necessary to include that status on every competency in the framework."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/publicationStatusType/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:RegulatoryInformation, ceterms:TransferAgreement, qdata:DataSetProfile, skos:ConceptScheme ;
+	schema:rangeIncludes skos:Concept ;
+	meta:targetScheme ceasn:PublicationStatus ;
+	owl:equivalentProperty asn:publicationStatus .
+
+ceasn:publisher a rdf:Property ;
+	rdfs:label "Publisher"@en-US ;
+	rdfs:comment "An agent responsible for making this resource available."@en-US ;
+	dct:description "Also referred to as the promulgating agency of the entity."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/publisher/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:QualificationsFramework, qdata:Metric, skos:ConceptScheme ;
+	schema:rangeIncludes ceterms:CredentialOrganization, ceterms:Organization, ceterms:QACredentialOrganization ;
+	owl:equivalentProperty dct:publisher .
+
+ceasn:publisherName a rdf:Property ;
+	rdfs:label "Publisher Name"@en-US ;
+	rdfs:comment "Name of an agent responsible for making this resource available."@en-US ;
+	dct:description "Also referred to as the promulgating agency of the entity."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/publisherName/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:QualificationsFramework, skos:ConceptScheme ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty dc:publisher .
+
+ceasn:repositoryDate a rdf:Property ;
+	rdfs:label "Repository Date"@en-US ;
+	rdfs:comment "The date this competency framework was added to the repository."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/repositoryDate/json> ;
+	schema:domainIncludes ceasn:CompetencyFramework ;
+	schema:rangeIncludes xsd:date ;
+	owl:equivalentProperty asn:repositoryDate .
+
+ceasn:rights a rdf:Property ;
+	rdfs:label "Rights"@en-US ;
+	rdfs:comment "Information about rights held in and over this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/rights/json> ;
+	rdfs:subPropertyOf dc:rights ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AlignmentMap, ceterms:PriorLearningPolicy, ceterms:QualificationsFramework, ceterms:TransferAgreement, qdata:DataSetDistribution, qdata:DataSetProfile, qdata:DataSetService, skos:ConceptScheme ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty dct:rights .
+
+ceasn:rightsHolder a rdf:Property ;
+	rdfs:label "Rights Holder"@en-US ;
+	rdfs:comment "An agent owning or managing rights over this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/rightsHolder/json> ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, ceterms:PriorLearningPolicy, ceterms:TransferAgreement, skos:ConceptScheme ;
+	schema:rangeIncludes ceterms:CredentialOrganization, ceterms:Organization, ceterms:QACredentialOrganization ;
+	owl:equivalentProperty dct:rightsHolder .
+
+ceasn:shouldIndex a rdf:Property ;
+	rdfs:label "Should Index"@en-US ;
+	rdfs:comment "Indicates whether correlators should or should not assign the competency during correlation."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/shouldIndex/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes xsd:boolean ;
+	owl:equivalentProperty asn:indexingStatus .
+
+ceasn:skillEmbodied a rdf:Property ;
+	rdfs:label "Skill Embodied"@en-US ;
+	rdfs:comment "Ability to apply knowledge and use know-how to complete tasks and solve problems including types or categories of developed proficiency or dexterity in mental operations and physical processes is embodied either directly or indirectly in this resource."@en-US ;
+	vann:usageNote "The skillEmbodied property may reference a defined skill in an ontology such as O*NET or an existing competency defined in a competency framework."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/skillEmbodied/json> ;
+	schema:domainIncludes ceasn:Competency, ceterms:Job, ceterms:Occupation, ceterms:Task, ceterms:WorkRole ;
+	schema:rangeIncludes ceasn:Competency ;
+	owl:equivalentProperty asn:skillEmbodied .
+
+ceasn:source a rdf:Property ;
+	rdfs:label "Source"@en-US ;
+	rdfs:comment "The original competency framework which this resource is based on or derived from."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/source/json> ;
+	rdfs:subPropertyOf dct:relation ;
+	schema:domainIncludes asn:ProgressionModel, ceasn:CompetencyFramework, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:anyURI ;
+	owl:equivalentProperty dct:source .
+
+ceasn:sourceDocumentation a rdf:Property ;
+	rdfs:label "Source Documentation"@en-US ;
+	rdfs:comment "Human-readable information resource other than a competency framework from which this resource was generated or identified by humans or machines."@en-US ;
+	dct:description "The intended use case for this is when documentation is analyzed in order to find and describe entities such as competencies and concepts."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/sourceDocumentation/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceterms:AlignmentMap, ceterms:QualificationsFramework, skos:Concept, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:anyURI .
+
+ceasn:substantiatingCompetencyFramework a rdf:Property ;
+	rdfs:label "Substantiating Competency Framework"@en-US ;
+	rdfs:comment "Aspects of the referenced Competency Framework provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingCompetencyFramework/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:CompetencyFramework .
+
+ceasn:substantiatingCredential a rdf:Property ;
+	rdfs:label "Substantiating Credential"@en-US ;
+	rdfs:comment "Aspects of the referenced Credential provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingCredential/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceterms:AcademicCertificate, ceterms:ApprenticeshipCertificate, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:BasicTechnicalCertificate, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:CertificateOfParticipation, ceterms:Certification, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:GeneralEducationLevel1Certificate, ceterms:GeneralEducationLevel2Certificate, ceterms:HigherEducationLevel1Certificate, ceterms:HigherEducationLevel2Certificate, ceterms:JourneymanCertificate, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:PostBaccalaureateCertificate, ceterms:PostMasterCertificate, ceterms:PreApprenticeshipCertificate, ceterms:ProfessionalCertificate, ceterms:ProfessionalDoctorate, ceterms:ProficiencyCertificate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondaryEducationCertificate, ceterms:SecondarySchoolDiploma, ceterms:TechnicalLevel1Certificate, ceterms:TechnicalLevel2Certificate, ceterms:TechnicalLevel3Certificate, ceterms:WorkBasedLearningCertificate .
+
+ceasn:substantiatingJob a rdf:Property ;
+	rdfs:label "Substantiating Job"@en-US ;
+	rdfs:comment "Aspects of the referenced Job provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingJob/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceterms:Job .
+
+ceasn:substantiatingOccupation a rdf:Property ;
+	rdfs:label "Substantiating Occupation"@en-US ;
+	rdfs:comment "Aspects of the referenced Occupation provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingOccupation/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceterms:Occupation .
+
+ceasn:substantiatingOrganization a rdf:Property ;
+	rdfs:label "Substantiating Organization"@en-US ;
+	rdfs:comment "Aspects of the referenced Organization provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingOrganization/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceterms:CredentialOrganization, ceterms:Organization, ceterms:QACredentialOrganization .
+
+ceasn:substantiatingResource a rdf:Property ;
+	rdfs:label "Substantiating Resource"@en-US ;
+	rdfs:comment "Aspects of the referenced resource provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingResource/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes xsd:anyURI .
+
+ceasn:substantiatingTask a rdf:Property ;
+	rdfs:label "Substantiating Task"@en-US ;
+	rdfs:comment "Aspects of the referenced Task provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingTask/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceterms:Task .
+
+ceasn:substantiatingWorkRole a rdf:Property ;
+	rdfs:label "Substantiating Work Role"@en-US ;
+	rdfs:comment "Aspects of the referenced Work Role provide some justification that the resource being described is useful."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/substantiatingWorkRole/json> ;
+	rdfs:subPropertyOf ceasn:substantiatingResource ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceterms:WorkRole .
+
+ceasn:tableOfContents a rdf:Property ;
+	rdfs:label "Table of Contents"@en-US ;
+	rdfs:comment "A list of sub-units of this resource."@en-US ;
+	dct:description "The table of contents is a \"manifest\", or a hierarchic, ordered, syntactic representation of the sections of this resource; for example, the competencies that are part of a competency framework."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/tableOfContents/json> ;
+	schema:domainIncludes ceasn:CompetencyFramework, ceterms:PriorLearningPolicy, ceterms:TransferAgreement ;
+	schema:rangeIncludes rdf:langString ;
+	owl:equivalentProperty dct:tableOfContents .
+
+ceasn:taskEmbodied a rdf:Property ;
+	rdfs:label "Task Embodied"@en-US ;
+	rdfs:comment "Specifically defined piece of work embodied either directly or indirectly in this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/taskEmbodied/json> ;
+	schema:domainIncludes ceasn:Competency ;
+	schema:rangeIncludes ceasn:Competency, ceasn:Task .
+
+ceasn:weight a rdf:Property ;
+	rdfs:label "Weight"@en-US ;
+	rdfs:comment "An asserted measurement of the weight, degree, percent, or strength of a recommendation, requirement, or comparison."@en-US ;
+	dct:description "Best practice is to assign a decimal value weight between 0 and 1 that indicates the strength of the assertion, with 0 being weakest and 1 being strongest."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/weight/json> ;
+	schema:domainIncludes ceasn:Competency, ceasn:RubricCriterion ;
+	schema:rangeIncludes xsd:float ;
+	owl:equivalentProperty asn:weight .
+
+ceterms:ctid a rdf:Property ;
+	rdfs:label "CTID"@en-US ;
+	rdfs:comment "Globally unique Credential Transparency Identifier (CTID) by which the creator, owner or provider of a resource recognizes it in transactions with the external environment (e.g., in verifiable claims involving the resource)."@en-US ;
+	dct:description "The CTID is the equivalent of a version identifier for the resource. Different versions of a resource are considered distinct expressions and each must be assigned its own CTID. Each version of a resource can have only one CTID assigned. However, a single version of a resource may have distinct identifier values for both the ctid property and the credentialId property. In such a case both identifiers will be recognized by the resource creator/owner/provider in transactions with the external environment."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceterms/ctid/json> ;
+	rdfs:subPropertyOf ceterms:credentialId ;
+	schema:domainIncludes asn:ProgressionLevel, asn:ProgressionModel, ceasn:Competency, ceasn:CompetencyFramework, ceasn:CrtiterionLevel, ceasn:Rubric, ceasn:RubricCriterion, ceterms:AcademicCertificate, ceterms:AccreditAction, ceterms:AdvancedStandingAction, ceterms:AlignmentMap, ceterms:ApprenticeshipCertificate, ceterms:ApproveAction, ceterms:AssessmentComponent, ceterms:AssessmentProfile, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:BasicComponent, ceterms:BasicTechnicalCertificate, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:CertificateOfParticipation, ceterms:Certification, ceterms:CocurricularComponent, ceterms:Collection, ceterms:CollectionComponent, ceterms:CompetencyComponent, ceterms:ConditionManifest, ceterms:CostManifest, ceterms:Course, ceterms:CourseComponent, ceterms:Credential, ceterms:CredentialComponent, ceterms:CredentialingAction, ceterms:CredentialOrganization, ceterms:CredentialType, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:ExtracurricularComponent, ceterms:FinancialAssistanceProfile, ceterms:GeneralEducationDevelopment, ceterms:GeneralEducationLevel1Certificate, ceterms:GeneralEducationLevel2Certificate, ceterms:HigherEducationLevel1Certificate, ceterms:HigherEducationLevel2Certificate, ceterms:Industry, ceterms:Job, ceterms:JobComponent, ceterms:JourneymanCertificate, ceterms:LearningOpportunityProfile, ceterms:LearningProgram, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:MultiComponent, ceterms:Occupation, ceterms:OfferAction, ceterms:OpenBadge, ceterms:Organization, ceterms:Pathway, ceterms:PathwaySet, ceterms:PostBaccalaureateCertificate, ceterms:PostMasterCertificate, ceterms:PreApprenticeshipCertificate, ceterms:PriorLearningPolicy, ceterms:ProcessProfile, ceterms:ProfessionalCertificate, ceterms:ProfessionalDoctorate, ceterms:ProficiencyCertificate, ceterms:QACredentialOrganization, ceterms:QualificationsFramework, ceterms:QualityAssuranceCredential, ceterms:RecognizeAction, ceterms:RegistrationAction, ceterms:RegulateAction, ceterms:RegulatoryInformation, ceterms:RenewAction, ceterms:ResearchDoctorate, ceterms:RevokeAction, ceterms:RightsAction, ceterms:ScheduledOffering, ceterms:SecondaryEducationCertificate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:SupportService, ceterms:Task, ceterms:TechnicalLevel1Certificate, ceterms:TechnicalLevel2Certificate, ceterms:TechnicalLevel3Certificate, ceterms:TransferAgreement, ceterms:TransferIntermediary, ceterms:TransferValueProfile, ceterms:VerificationServiceProfile, ceterms:WorkBasedLearningCertificate, ceterms:WorkExperienceComponent, ceterms:WorkforceDemandAction, ceterms:WorkRole, qdata:DataSetProfile, qdata:Metric, skos:Concept, skos:ConceptScheme ;
+	schema:rangeIncludes xsd:string .
+
+ceterms:industryType a rdf:Property ;
+	rdfs:label "Industry Type"@en-US ;
+	rdfs:comment "Type of industry; select from an existing enumeration of such types such as the SIC, NAICS, and ISIC classifications."@en-US ;
+	vann:usageNote "Best practice in identifying industries for U.S. resources is to provide the NAICS code using the ceterms:naics property. Other resources may use the ceterms:industrytype property and any framework of the class ceterms:IndustryClassification."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceterms/industryType/json> ;
+	rdfs:subPropertyOf ceterms:credentialAlignment ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AcademicCertificate, ceterms:ApprenticeshipCertificate, ceterms:AssessmentProfile, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:BasicTechnicalCertificate, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:CertificateOfParticipation, ceterms:Certification, ceterms:Collection, ceterms:Course, ceterms:Credential, ceterms:CredentialOrganization, ceterms:CredentialType, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:GeneralEducationLevel1Certificate, ceterms:GeneralEducationLevel2Certificate, ceterms:HigherEducationLevel1Certificate, ceterms:HigherEducationLevel2Certificate, ceterms:Industry, ceterms:Job, ceterms:JobComponent, ceterms:JourneymanCertificate, ceterms:LearningOpportunityProfile, ceterms:LearningProgram, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:Occupation, ceterms:OpenBadge, ceterms:Organization, ceterms:Pathway, ceterms:PostBaccalaureateCertificate, ceterms:PostMasterCertificate, ceterms:PreApprenticeshipCertificate, ceterms:ProfessionalCertificate, ceterms:ProfessionalDoctorate, ceterms:ProficiencyCertificate, ceterms:QACredentialOrganization, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondaryEducationCertificate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:TechnicalLevel1Certificate, ceterms:TechnicalLevel2Certificate, ceterms:TechnicalLevel3Certificate, ceterms:WorkBasedLearningCertificate ;
+	schema:rangeIncludes ceterms:CredentialAlignmentObject ;
+	meta:targetScheme ceterms:IndustryClassification .
+
+ceterms:instructionalProgramType a rdf:Property ;
+	rdfs:label "Instructional Program Type"@en-US ;
+	rdfs:comment "Type of instructional program; select from an existing enumeration of such types."@en-US ;
+	vann:usageNote "For U.S. credentials, best practice is to use a framework such as the CIP (Classification of Instructional Programs). Other credentials may use any framework of the class CTDL InstructionalProgramClassification."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceterms/instructionalProgramType/json> ;
+	rdfs:subPropertyOf ceterms:credentialAlignment ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AcademicCertificate, ceterms:ApprenticeshipCertificate, ceterms:AssessmentProfile, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:BasicTechnicalCertificate, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:CertificateOfParticipation, ceterms:Certification, ceterms:Collection, ceterms:Course, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:GeneralEducationLevel1Certificate, ceterms:GeneralEducationLevel2Certificate, ceterms:HigherEducationLevel1Certificate, ceterms:HigherEducationLevel2Certificate, ceterms:JourneymanCertificate, ceterms:LearningOpportunityProfile, ceterms:LearningProgram, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:OpenBadge, ceterms:Pathway, ceterms:PostBaccalaureateCertificate, ceterms:PostMasterCertificate, ceterms:PreApprenticeshipCertificate, ceterms:ProfessionalCertificate, ceterms:ProfessionalDoctorate, ceterms:ProficiencyCertificate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondaryEducationCertificate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:TechnicalLevel1Certificate, ceterms:TechnicalLevel2Certificate, ceterms:TechnicalLevel3Certificate, ceterms:WorkBasedLearningCertificate, qdata:DataSetProfile ;
+	schema:rangeIncludes ceterms:CredentialAlignmentObject, skos:Concept ;
+	meta:targetScheme ceterms:InstructionalProgramClassification .
+
+ceterms:occupationType a rdf:Property ;
+	rdfs:label "Occupation Type"@en-US ;
+	rdfs:comment "Type of occupation; select from an existing enumeration of such types."@en-US ;
+	vann:usageNote "For U.S. resources, best practice is to identify an occupation using a framework such as the ONet. Other resources may use any framework of the class ceterms:OccupationClassification, such as the EU's ESCO, ISCO-08, and SOC 2010."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceterms/occupationType/json> ;
+	rdfs:subPropertyOf ceterms:credentialAlignment ;
+	schema:domainIncludes ceasn:Competency, ceasn:CompetencyFramework, ceasn:Rubric, ceterms:AcademicCertificate, ceterms:ApprenticeshipCertificate, ceterms:AssessmentProfile, ceterms:AssociateDegree, ceterms:AssociateOfAppliedArtsDegree, ceterms:AssociateOfAppliedScienceDegree, ceterms:AssociateOfArtsDegree, ceterms:AssociateOfScienceDegree, ceterms:BachelorDegree, ceterms:BachelorOfArtsDegree, ceterms:BachelorOfScienceDegree, ceterms:Badge, ceterms:BasicTechnicalCertificate, ceterms:Certificate, ceterms:CertificateOfCompletion, ceterms:CertificateOfParticipation, ceterms:Certification, ceterms:Collection, ceterms:Course, ceterms:Credential, ceterms:Degree, ceterms:DigitalBadge, ceterms:Diploma, ceterms:DoctoralDegree, ceterms:GeneralEducationDevelopment, ceterms:GeneralEducationLevel1Certificate, ceterms:GeneralEducationLevel2Certificate, ceterms:HigherEducationLevel1Certificate, ceterms:HigherEducationLevel2Certificate, ceterms:Job, ceterms:JobComponent, ceterms:JourneymanCertificate, ceterms:LearningOpportunityProfile, ceterms:LearningProgram, ceterms:License, ceterms:MasterCertificate, ceterms:MasterDegree, ceterms:MasterOfArtsDegree, ceterms:MasterOfScienceDegree, ceterms:MicroCredential, ceterms:Occupation, ceterms:OpenBadge, ceterms:Pathway, ceterms:PostBaccalaureateCertificate, ceterms:PostMasterCertificate, ceterms:PreApprenticeshipCertificate, ceterms:ProfessionalCertificate, ceterms:ProfessionalDoctorate, ceterms:ProficiencyCertificate, ceterms:QualityAssuranceCredential, ceterms:ResearchDoctorate, ceterms:SecondaryEducationCertificate, ceterms:SecondarySchoolDiploma, ceterms:SpecialistDegree, ceterms:SupportService, ceterms:TechnicalLevel1Certificate, ceterms:TechnicalLevel2Certificate, ceterms:TechnicalLevel3Certificate, ceterms:WorkBasedLearningCertificate ;
+	schema:rangeIncludes ceterms:CredentialAlignmentObject ;
+	meta:targetScheme ceterms:OccupationClassification ;
+	owl:equivalentProperty schema:occupationalCategory .
+
+skos:altLabel a rdf:Property ;
+	rdfs:label "Alternative Label"@en-US ;
+	rdfs:comment "Non-preferred label for the concept used to relate a concept synonym to the preferred label."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/altLabel/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes rdf:langString .
+
+skos:broader a rdf:Property ;
+	rdfs:label "Broader"@en-US ;
+	rdfs:comment "Concept that is broader in some way than this concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/broader/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes asn:ProgressionLevel, skos:Concept .
+
+skos:broadMatch a rdf:Property ;
+	rdfs:label "Broad Match"@en-US ;
+	rdfs:comment "Assertion indicates that the referenced concept is broader in some way than this concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/broadMatch/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes skos:Concept .
+
+skos:changeNote a rdf:Property ;
+	rdfs:label "Change Note"@en-US ;
+	rdfs:comment "Text describing a significant change to the concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/changeNote/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes rdf:langString .
+
+skos:closeMatch a rdf:Property ;
+	rdfs:label "Close Match"@en-US ;
+	rdfs:comment "Assertion indicates that two concepts are sufficiently similar that they can be used interchangeably."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/closeMatch/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes skos:Concept .
+
+skos:definition a rdf:Property ;
+	rdfs:label "Definition"@en-US ;
+	rdfs:comment "Supplies a complete explanation of the intended meaning of a concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/definition/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes rdf:langString .
+
+skos:exactMatch a rdf:Property ;
+	rdfs:label "Exact Match"@en-US ;
+	rdfs:comment "Indicates semantic similarity denoting an even higher degree of closeness than skos:closeMatch."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/exactMatch/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes skos:Concept .
+
+skos:hasTopConcept a rdf:Property ;
+	rdfs:label "Has Top Concept"@en-US ;
+	rdfs:comment "Concept of the scheme at the top of a hierarchy of narrower concepts."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/hasTopConcept/json> ;
+	schema:domainIncludes asn:ProgressionModel, skos:ConceptScheme ;
+	schema:rangeIncludes asn:ProgressionLevel, skos:Concept .
+
+skos:hiddenLabel a rdf:Property ;
+	rdfs:label "Hidden Label"@en-US ;
+	rdfs:comment "Label not intended for public presentation but to assist applications in disambiguating searcher intent - e.g., hidden labels can be used for common misspelling or a colloquial expression."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/hiddenLabel/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes rdf:langString .
+
+skos:inScheme a rdf:Property ;
+	rdfs:label "In Scheme"@en-US ;
+	rdfs:comment "Concept scheme to which this concept belongs."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/inScheme/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes skos:ConceptScheme .
+
+skos:narrower a rdf:Property ;
+	rdfs:label "Narrower"@en-US ;
+	rdfs:comment "Concept that is narrower in some way than this concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/narrower/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes asn:ProgressionLevel, skos:Concept .
+
+skos:narrowMatch a rdf:Property ;
+	rdfs:label "Narrow Match"@en-US ;
+	rdfs:comment "Assertion indicates that the referenced concept is narrower in some way than this concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/narrowMatch/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes skos:Concept .
+
+skos:notation a rdf:Property ;
+	rdfs:label "Notation"@en-US ;
+	rdfs:comment "Alphanumeric notation or ID code as defined by the promulgating body to identify this resource."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/notation/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes xsd:string .
+
+skos:note a rdf:Property ;
+	rdfs:label "Note"@en-US ;
+	rdfs:comment "Annotations to the concept for purposes of general documentation."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/note/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes rdf:langString .
+
+skos:prefLabel a rdf:Property ;
+	rdfs:label "Preferred Label"@en-US ;
+	rdfs:comment "Preferred language-tagged label representing this concept."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/prefLabel/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes rdf:langString .
+
+skos:related a rdf:Property ;
+	rdfs:label "Related"@en-US ;
+	rdfs:comment "Assertion indicating an associative, non-hierarchical relationship between the two concepts where neither is broader nor narrower than the other."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/related/json> ;
+	schema:domainIncludes skos:Concept ;
+	schema:rangeIncludes skos:Concept .
+
+skos:topConceptOf a rdf:Property ;
+	rdfs:label "Top Concept Of"@en-US ;
+	rdfs:comment "Concept scheme for which this concept is a top node in a hierarchy of concepts."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/skos/topConceptOf/json> ;
+	schema:domainIncludes asn:ProgressionLevel, skos:Concept ;
+	schema:rangeIncludes asn:ProgressionModel, skos:ConceptScheme .
+
+#====================
+# CONCEPT SCHEMES
+#====================
+ceasn:EvaluatorCategory a skos:ConceptScheme ;
+	rdfs:label "Evaluator Category"@en-US ;
+	rdfs:comment "Category of agents that perform evaluation."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/EvaluatorCategory/json> ;
+	meta:hasConcept evalCat:Authority, evalCat:Automated, evalCat:External, evalCat:Peer, evalCat:Self ;
+	skos:hasTopConcept evalCat:Authority, evalCat:Automated, evalCat:External, evalCat:Peer, evalCat:Self .
+
+ceasn:PublicationStatus a skos:ConceptScheme ;
+	rdfs:label "Publication Status Concept Scheme"@en-US ;
+	rdfs:comment "Describes the various publication statuses of competency frameworks and statements."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/ceasn/PublicationStatus/json> ;
+	owl:equivalentClass asnscheme:ASNPublicationStatus ;
+	meta:hasConcept publicationStatus:Deprecated, publicationStatus:Draft, publicationStatus:Published ;
+	skos:hasTopConcept publicationStatus:Deprecated, publicationStatus:Draft, publicationStatus:Published .
+
+#====================
+# CONCEPTS
+#====================
+evalCat:Authority a skos:Concept ;
+	skos:prefLabel "Authority"@en-US ;
+	skos:definition "Evaluator is an agent with authority over the person,  group, or thing being evaluated in the relevant context."@en-US ;
+	dct:description "Examples include teachers, supervisors, managers, or others with positions over the person or group being evaluated."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/evalCat/Authority/json> ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:topConceptOf ceasn:EvaluatorCategory .
+
+evalCat:Automated a skos:Concept ;
+	skos:prefLabel "Automated"@en-US ;
+	skos:definition "Evaluator is an automated agent or process."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/evalCat/Automated/json> ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:topConceptOf ceasn:EvaluatorCategory .
+
+evalCat:External a skos:Concept ;
+	skos:prefLabel "External"@en-US ;
+	skos:definition "Evaluator is an agent who is outside the context of the person, group, or thing being evaluated."@en-US ;
+	dct:description "Evaluator is typically independent of the person, group, or thing being evaluated."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/evalCat/External/json> ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:topConceptOf ceasn:EvaluatorCategory .
+
+evalCat:Peer a skos:Concept ;
+	skos:prefLabel "Peer"@en-US ;
+	skos:definition "Evaluator is one or more peers of the person, group, or thing being evaluated."@en-US ;
+	dct:description "Peers may be people taking the same course or in similar job roles."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/evalCat/Peer/json> ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:topConceptOf ceasn:EvaluatorCategory .
+
+evalCat:Self a skos:Concept ;
+	skos:prefLabel "Self"@en-US ;
+	skos:definition "Evaluator is the person or group being evaluated."@en-US ;
+	vs:term_status vs:unstable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/evalCat/Self/json> ;
+	skos:inScheme ceasn:EvaluatorCategory ;
+	skos:topConceptOf ceasn:EvaluatorCategory .
+
+publicationStatus:Deprecated a skos:Concept ;
+	skos:prefLabel "Deprecated"@en-US ;
+	skos:definition "Status assigned to a document/statement by the promulgating agency asserting that the document/statement has been superseded or its use otherwise disfavored."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/publicationStatus/Deprecated/json> ;
+	owl:equivalentClass asnPublicationStatus:Deprecated ;
+	skos:inScheme ceasn:PublicationStatus ;
+	skos:topConceptOf ceasn:PublicationStatus .
+
+publicationStatus:Draft a skos:Concept ;
+	skos:prefLabel "Draft"@en-US ;
+	skos:definition "A status assigned to all documents/statements during development."@en-US ;
+	vann:usageNote "Draft documents and statements should not be displayed to anyone other than their owners and relevant administrators."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/publicationStatus/Draft/json> ;
+	owl:equivalentClass asnPublicationStatus:Draft ;
+	skos:inScheme ceasn:PublicationStatus ;
+	skos:topConceptOf ceasn:PublicationStatus .
+
+publicationStatus:Published a skos:Concept ;
+	skos:prefLabel "Published"@en-US ;
+	skos:definition "Status assigned to all documents that have been published."@en-US ;
+	vs:term_status vs:stable ;
+	meta:changeHistory <https://credreg.net/ctdlasn/termhistory/publicationStatus/Published/json> ;
+	owl:equivalentClass asnPublicationStatus:Published ;
+	skos:inScheme ceasn:PublicationStatus ;
+	skos:topConceptOf ceasn:PublicationStatus .
+

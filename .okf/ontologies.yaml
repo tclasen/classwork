@@ -41,16 +41,16 @@ ontologies:
     provenance: GS1 CBV normative ontology artifact
     retrieved: 2026-08-29
     sha256: 9d41ff84c2b298ca0247ac72a26dc4ad92ca30efc5d34e3f67c65a13a72ca289
-  ctdlasn-20260626:
+  ctdlasn-20260626-turtle:
     uri: https://purl.org/ctdlasn/terms/
     release: 20260626
-    retrieval_uri: https://credreg.net/ctdlasn/mapping?download=all&format=json&profileID=
-    local_path: .okf/ontologies/ctdlasn-20260626.json
-    format: json-schema-description
-    license: Credential Engine terms of use
-    provenance: Credential Engine CTDL-ASN raw schema serialization
-    retrieved: 2026-08-29
-    sha256: eb26a70f675faf0bb788d1b2e34d9d3885a23cc4c0d0ecc38d6c094e40581948
+    retrieval_uri: https://credreg.net/ctdlasn/schema/encoding/turtle?releaseID=20260626
+    local_path: .okf/ontologies/ctdlasn-20260626.ttl
+    format: turtle
+    license: Creative Commons Attribution 4.0 International
+    provenance: Credential Engine CTDL-ASN full schema Turtle encoding, release 20260626 (2026-06-26)
+    retrieved: 2026-09-02
+    sha256: 5bb2e150625b9d8f2435cd2028467f9e6234fe63125de6d3793752ac1ad08915
   spdx-3.0.1:
     uri: https://spdx.org/rdf/3.0.1/
     release: 3.0.1
