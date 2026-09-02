@@ -111,3 +111,13 @@ ontologies:
     provenance: OntoMathPRO v2 release 1.12.6, Git commit acb3eef1c6a7b838fe475e23ae90b2b947b9625e
     retrieved: 2026-09-02
     sha256: 949fc956205f30e46836a52471c9b3484b3ca4bc1af7bc2dbd18ecf3b5d2fb47
+  iao-2026-03-30:
+    uri: http://purl.obolibrary.org/obo/iao.owl
+    release: 2026-03-30 (Git commit 3006aedacbf813ffd1d2ac15cda10766ca9ed388)
+    retrieval_uri: https://raw.githubusercontent.com/information-artifact-ontology/IAO/3006aedacbf813ffd1d2ac15cda10766ca9ed388/iao.owl
+    local_path: .okf/ontologies/iao-2026-03-30.owl
+    format: owl-rdfxml
+    license: Creative Commons Attribution 4.0 International
+    provenance: Information Artifact Ontology release 2026-03-30, Git commit 3006aedacbf813ffd1d2ac15cda10766ca9ed388
+    retrieved: 2026-09-02
+    sha256: c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41

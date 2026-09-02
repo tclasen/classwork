@@ -4,11 +4,11 @@ title: Information, data, and records
 description: Representations that can be stored, interpreted, transformed, and checked.
 tags: [foundations, information, data, records]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: iao-2026-03-30
+    class: http://purl.obolibrary.org/obo/IAO_0000030
+    label: information content entity
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-08-29T00:00:00-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T09:45:03-07:00" }
 sources:
   - id: w3c-prov-dm
     resource: https://www.w3.org/TR/prov-dm/

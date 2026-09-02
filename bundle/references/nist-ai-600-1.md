@@ -16,11 +16,11 @@ artifact_retrieved: 2026-08-29
 license_note: "NIST technical-series publication; attribution is requested, and third-party material may have separate rights."
 tags: [artificial-intelligence, risk-management, generative-ai, standards, guidance]
 subject:
-  - ontology: prov-o
-    class: http://www.w3.org/ns/prov#Entity
-    label: Entity
+  - ontology: iao-2026-03-30
+    class: http://purl.obolibrary.org/obo/IAO_0000088
+    label: report
 status: stable
-generated: { by: "codex/gpt-5.6", at: "2026-09-01T11:20:12-07:00" }
+generated: { by: "codex/gpt-5.6", at: "2026-09-02T09:45:03-07:00" }
 sources:
   - id: nist-ai-600-1
     resource: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
