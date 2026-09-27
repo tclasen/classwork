@@ -90,6 +90,9 @@ focuses on its repeatable control mechanism. An LLM may be one component, and
 tools may include retrieval, computation, APIs, or actuators. The loop should
 therefore preserve the distinction between a model's generated proposal, an
 authorized activity, an observed result, and a justified final claim.
+[AI coding agents](ai-coding-agents.md) apply this loop to codebase changes:
+they add a bounded task, inspectable diff, and relevant software checks to the
+plan–act–observe–verify cycle.
 [Retrieval and external context](retrieval-and-external-context.md) explains
 the indexing, ranking, context, memory, and provenance boundaries when one of
 those tools retrieves information.

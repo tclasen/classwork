@@ -39,6 +39,9 @@ human approval. [Agent control loops and tool use](agent-control-loops-and-tool-
 develops these transitions and their controls. [ReAct](../references/react-2023.md) is one research pattern
 that interleaves language-model reasoning with task-specific actions and
 external observations.[^react-paper]
+An [AI coding agent](ai-coding-agents.md) is a software-focused application of
+this general model, with additional attention to bounded code changes and
+reviewing the resulting diff and checks.
 The pattern makes clear that an agent is larger than its model: it also needs
 an environment, an action interface, an objective, and controls.
 [Retrieval and external context](retrieval-and-external-context.md) distinguishes

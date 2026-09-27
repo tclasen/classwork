@@ -39,6 +39,7 @@
 
 * [Agents](agents.md) - Goal-directed systems that observe context, select actions, and act within an environment under constraints.
 * [Agent control loops and tool use](agent-control-loops-and-tool-use.md) - Coordinating plans, model calls, tool actions, observations, verification, retries, and human approval within an agent boundary.
+* [AI coding agents](ai-coding-agents.md) - Using language-model agents to understand a codebase, make bounded software changes, and verify the result under human direction.
 
 ## Evaluation
 
