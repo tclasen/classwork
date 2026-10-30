@@ -23,7 +23,7 @@ namespace; everything outside it supports the repository.
 | Path | Purpose |
 | --- | --- |
 | `.okf/SPEC.md` | Pinned OKF specification |
-| `AGENTS.md` | Durable teaching and graph-synthesis instructions |
+| `AGENTS.md` | Agent entry point loading the complete operating contract and OKF procedures |
 | `bundle/` | Canonical concepts, indexes, logs, and source artifacts |
 | `bundle/index.md` | OKF version declaration and top-level map |
 | `lesson-plans/` | Local learner-specific plans outside the bundle |
@@ -36,7 +36,7 @@ initialize it according to [the agent instructions](./AGENTS.md).
 Before building a substantial graph, replace the generic title and define the
 domain or program, scope and exclusions, learner audiences, source standards,
 review roles, publication process, and verified setup or validation commands.
-Keep workflow rules in `AGENTS.md`; keep this README about what the repository
+Keep workflow rules in the contract loaded by `AGENTS.md`; keep this README about what the repository
 teaches and how people use it.
 
 Open the root as an Obsidian vault to browse indexes, links, and backlinks, or
