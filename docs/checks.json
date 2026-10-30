@@ -1,0 +1,37 @@
+{
+  "task": "CF-KNOWLEDGE-2026-10-30",
+  "project": "classwork",
+  "status": "PASS local checks; independent review/integration pending",
+  "preserved_baseline_files": 136,
+  "new_local_markdown_links_checked": 1,
+  "source_contract_preserved": true,
+  "commands": [
+    {
+      "command": [
+        "ruby",
+        ".okf/scripts/ontology-custody.rb",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "PASS custody/catalog coverage: 14 artifacts, 106 concepts (semantic checks separate)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "ruby",
+        ".okf/scripts/test-ontology-custody.rb"
+      ],
+      "exit": 0,
+      "stdout": "Run options: --seed 40373\n\n# Running:\n\n...PASS custody/catalog coverage: 1 artifacts, 1 concepts (semantic checks separate)\nPASS custody/catalog coverage: 1 artifacts, 1 concepts (semantic checks separate)\n.....\n\nFinished in 0.053886s, 148.4616 runs/s, 259.8077 assertions/s.\n\n8 runs, 14 assertions, 0 failures, 0 errors, 0 skips\n",
+      "stderr": "FAIL custody/catalog coverage: generated ontology inventory is missing or stale; regenerate after authorized source changes\n"
+    }
+  ],
+  "application_or_proof_replay": "NOT RUN; no application/data/bundle/proof change",
+  "observed_benefit": "UNMEASURED",
+  "mode_tabletop": {
+    "configure_request": "instruction/helper edits only; no product, graph, research or maintenance launched",
+    "finish_started": "freeze authorized inventory once; no new backlog; specific decision for new prerequisite",
+    "hypothesis_storage": "approval does not establish truth",
+    "custody_pass": "does not establish RDF semantics or graph acceptance"
+  }
+}

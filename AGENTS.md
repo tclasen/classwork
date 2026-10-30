@@ -25,3 +25,10 @@ Preserve unrelated user changes, credentials, permission settings, and
 operational configuration. Bundle edits require the pinned `.okf/SPEC.md` and
 the full domain procedures; preserve the exclusive `bundle/` boundary, locked
 ontologies, source provenance, and ignored local lesson plans.
+
+Operating revision: **CROSS-FACTORY-2026-10-30 revision 2**. Section 35 of the linked
+contract supplies the controlling task-proportionate stages, explicit execution
+modes, claim-status discipline and generated ontology-custody checks. Read that
+section before selecting stages or accepting catalog/concept changes. Existing
+workers adopt at their next affected action boundary; preserve explicit review
+gates and do not activate graph maintenance merely by loading instructions.

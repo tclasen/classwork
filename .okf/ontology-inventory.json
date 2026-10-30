@@ -1,0 +1,2591 @@
+{
+  "schema": 1,
+  "generated_by": ".okf/scripts/ontology-custody.rb",
+  "scope": "custody and catalog coverage only; semantic verification remains separate",
+  "catalog_sha256": "eec030d86e268e43aa150cce7849d0cb3a815086566cc8a065dd387f6aca911e",
+  "artifacts": [
+    {
+      "key": "cbv-2.0.0",
+      "metadata": {
+        "uri": "https://ref.gs1.org/cbv/",
+        "release": "CBV 2.0.0",
+        "artifact_version": "2.0",
+        "retrieval_uri": "https://ref.gs1.org/standards/epcis/cbv-ontology.ttl",
+        "local_path": ".okf/ontologies/cbv-2.0.0.ttl",
+        "format": "turtle",
+        "license": "GS1 CBV standard terms; redistribution requires GS1 terms review",
+        "provenance": "GS1 CBV normative ontology artifact",
+        "retrieved": "2026-08-29",
+        "sha256": "9d41ff84c2b298ca0247ac72a26dc4ad92ca30efc5d34e3f67c65a13a72ca289"
+      },
+      "bytes": 69079,
+      "sha256": "9d41ff84c2b298ca0247ac72a26dc4ad92ca30efc5d34e3f67c65a13a72ca289"
+    },
+    {
+      "key": "ctdlasn-20260626-turtle",
+      "metadata": {
+        "uri": "https://purl.org/ctdlasn/terms/",
+        "release": 20260626,
+        "retrieval_uri": "https://credreg.net/ctdlasn/schema/encoding/turtle?releaseID=20260626",
+        "local_path": ".okf/ontologies/ctdlasn-20260626.ttl",
+        "format": "turtle",
+        "license": "Creative Commons Attribution 4.0 International",
+        "provenance": "Credential Engine CTDL-ASN full schema Turtle encoding, release 20260626 (2026-06-26)",
+        "retrieved": "2026-09-02",
+        "sha256": "5bb2e150625b9d8f2435cd2028467f9e6234fe63125de6d3793752ac1ad08915"
+      },
+      "bytes": 85163,
+      "sha256": "5bb2e150625b9d8f2435cd2028467f9e6234fe63125de6d3793752ac1ad08915"
+    },
+    {
+      "key": "eco",
+      "metadata": {
+        "uri": "http://purl.obolibrary.org/obo/eco.owl",
+        "release": "2026-07-10",
+        "retrieval_uri": "https://raw.githubusercontent.com/evidenceontology/evidenceontology/6bbc0730de4f3d04a5a1347946cd231e40fde4bd/eco.owl",
+        "local_path": ".okf/ontologies/eco.owl",
+        "format": "owl-rdfxml",
+        "license": "CC0",
+        "provenance": "Evidence & Conclusion Ontology Git commit 6bbc0730de4f3d04a5a1347946cd231e40fde4bd",
+        "retrieved": "2026-08-29",
+        "sha256": "3cd12afd4668455a8d441fcff70592be234e1547d0443ac0631fadf5c95ead2c"
+      },
+      "bytes": 6316746,
+      "sha256": "3cd12afd4668455a8d441fcff70592be234e1547d0443ac0631fadf5c95ead2c"
+    },
+    {
+      "key": "epcis-2.0.1",
+      "metadata": {
+        "uri": "https://ref.gs1.org/epcis/",
+        "release": "EPCIS 2.0.1",
+        "artifact_version": "2.0",
+        "retrieval_uri": "https://ref.gs1.org/standards/epcis/epcis-ontology.ttl",
+        "local_path": ".okf/ontologies/epcis-2.0.1.ttl",
+        "format": "turtle",
+        "license": "GS1 EPCIS standard terms; redistribution requires GS1 terms review",
+        "provenance": "GS1 EPCIS normative ontology artifact",
+        "retrieved": "2026-08-29",
+        "sha256": "64a6bdebfb6a52f01c0fef38f8d58185b5c93bf281b5af136e91947b6b3b10d5"
+      },
+      "bytes": 60469,
+      "sha256": "64a6bdebfb6a52f01c0fef38f8d58185b5c93bf281b5af136e91947b6b3b10d5"
+    },
+    {
+      "key": "iao-2026-03-30",
+      "metadata": {
+        "uri": "http://purl.obolibrary.org/obo/iao.owl",
+        "release": "2026-03-30 (Git commit 3006aedacbf813ffd1d2ac15cda10766ca9ed388)",
+        "retrieval_uri": "https://raw.githubusercontent.com/information-artifact-ontology/IAO/3006aedacbf813ffd1d2ac15cda10766ca9ed388/iao.owl",
+        "local_path": ".okf/ontologies/iao-2026-03-30.owl",
+        "format": "owl-rdfxml",
+        "license": "Creative Commons Attribution 4.0 International",
+        "provenance": "Information Artifact Ontology release 2026-03-30, Git commit 3006aedacbf813ffd1d2ac15cda10766ca9ed388",
+        "retrieved": "2026-09-02",
+        "sha256": "c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41"
+      },
+      "bytes": 609839,
+      "sha256": "c27ff2964a2ad8165bc365698b628aae95108411384aa4450e6e1b1e82bf0f41"
+    },
+    {
+      "key": "mls-1.0",
+      "metadata": {
+        "uri": "http://www.w3.org/ns/mls#",
+        "release": "1.0 (2016-03 ontology; master commit 4e1d90292509ed2a2ec52efc955e40e17fa92281)",
+        "retrieval_uri": "https://raw.githubusercontent.com/ML-Schema/core/4e1d90292509ed2a2ec52efc955e40e17fa92281/MLSchema.ttl",
+        "local_path": ".okf/ontologies/mls-1.0.ttl",
+        "format": "turtle",
+        "license": "Creative Commons Attribution 4.0 International",
+        "provenance": "W3C Machine Learning Schema Community Group repository, commit 4e1d90292509ed2a2ec52efc955e40e17fa92281",
+        "retrieved": "2026-08-31",
+        "sha256": "5eb9572cde53e362f74113b9292f07a9d9ad115d811341489fa00dba4dd0f35e"
+      },
+      "bytes": 43855,
+      "sha256": "5eb9572cde53e362f74113b9292f07a9d9ad115d811341489fa00dba4dd0f35e"
+    },
+    {
+      "key": "obi-2026-07-27",
+      "metadata": {
+        "uri": "http://purl.obolibrary.org/obo/obi.owl",
+        "release": "2026-07-27 (master commit b29b902bc7f2a7b154d96185b3ae2865e9a9de04)",
+        "retrieval_uri": "https://raw.githubusercontent.com/obi-ontology/obi/b29b902bc7f2a7b154d96185b3ae2865e9a9de04/obi.owl",
+        "local_path": ".okf/ontologies/obi-master.owl",
+        "format": "owl-rdfxml",
+        "license": "Creative Commons Attribution 4.0 International",
+        "provenance": "OBI Consortium release 2026-07-27, repository commit b29b902bc7f2a7b154d96185b3ae2865e9a9de04",
+        "retrieved": "2026-08-31",
+        "sha256": "8874abcca971ee26b4e4442198387916d788d14af3519e1040474908ed12b946"
+      },
+      "bytes": 9980280,
+      "sha256": "8874abcca971ee26b4e4442198387916d788d14af3519e1040474908ed12b946"
+    },
+    {
+      "key": "odrl-2.2",
+      "metadata": {
+        "uri": "http://www.w3.org/ns/odrl/2/",
+        "release": "2.2 (2018-02-15 Recommendation; 2017-09-16 vocabulary)",
+        "retrieval_uri": "https://www.w3.org/ns/odrl/2/ODRL22.ttl",
+        "local_path": ".okf/ontologies/odrl-2.2.ttl",
+        "format": "turtle",
+        "license": "W3C document and software licenses",
+        "provenance": "W3C ODRL Version 2.2 ontology",
+        "retrieved": "2026-08-29",
+        "sha256": "7895765e80d86d1d0349d945a28b8a2479f03169572345080a5b3e561ef31457"
+      },
+      "bytes": 91012,
+      "sha256": "7895765e80d86d1d0349d945a28b8a2479f03169572345080a5b3e561ef31457"
+    },
+    {
+      "key": "ontomathpro-v2-acb3eef1",
+      "metadata": {
+        "uri": "http://ontomathpro.org/omp2#",
+        "release": "1.12.6 (Git commit acb3eef1c6a7b838fe475e23ae90b2b947b9625e; 2024-01-30)",
+        "retrieval_uri": "https://raw.githubusercontent.com/CLLKazan/OntoMathPro/acb3eef1c6a7b838fe475e23ae90b2b947b9625e/OntoMathPro_v2.owl",
+        "local_path": ".okf/ontologies/ontomathpro-v2-acb3eef1.owl",
+        "format": "owl-rdfxml",
+        "license": "Apache License 2.0",
+        "provenance": "OntoMathPRO v2 release 1.12.6, Git commit acb3eef1c6a7b838fe475e23ae90b2b947b9625e",
+        "retrieved": "2026-09-02",
+        "sha256": "949fc956205f30e46836a52471c9b3484b3ca4bc1af7bc2dbd18ecf3b5d2fb47"
+      },
+      "bytes": 3649141,
+      "sha256": "949fc956205f30e46836a52471c9b3484b3ca4bc1af7bc2dbd18ecf3b5d2fb47"
+    },
+    {
+      "key": "org-0.8",
+      "metadata": {
+        "uri": "http://www.w3.org/ns/org#",
+        "release": "0.8 (2014-01-16 W3C Recommendation; namespace serialization includes 2014-04-12 updates)",
+        "retrieval_uri": "https://www.w3.org/ns/org.ttl",
+        "local_path": ".okf/ontologies/org-0.8.ttl",
+        "format": "turtle",
+        "license": "PDDL 1.0",
+        "provenance": "W3C Organization Ontology Recommendation, namespace serialization updated 2014-04-12",
+        "retrieved": "2026-09-02",
+        "sha256": "3e01f89a17475a88f8b1606ca0fae04800d34dbbf93adc6db12dc30929848729"
+      },
+      "bytes": 84162,
+      "sha256": "3e01f89a17475a88f8b1606ca0fae04800d34dbbf93adc6db12dc30929848729"
+    },
+    {
+      "key": "prov-o",
+      "metadata": {
+        "uri": "http://www.w3.org/ns/prov#",
+        "release": "2013-04-30",
+        "retrieval_uri": "http://www.w3.org/ns/prov.owl",
+        "local_path": ".okf/ontologies/prov.owl",
+        "format": "owl-rdfxml",
+        "license": "W3C document and software licenses",
+        "provenance": "W3C PROV-O Recommendation",
+        "retrieved": "2026-08-29",
+        "sha256": "f3215f125851de00b16ccba68f12f1aee02328969e9e0bc73a00cd60fc0a498c"
+      },
+      "bytes": 170917,
+      "sha256": "f3215f125851de00b16ccba68f12f1aee02328969e9e0bc73a00cd60fc0a498c"
+    },
+    {
+      "key": "sosa-2017-10-19",
+      "metadata": {
+        "uri": "http://www.w3.org/ns/sosa/",
+        "release": "2017-10-19 W3C/OGC Recommendation",
+        "retrieval_uri": "https://www.w3.org/ns/sosa/sosa.ttl",
+        "local_path": ".okf/ontologies/sosa-2017-10-19.ttl",
+        "format": "turtle",
+        "license": "W3C Software and Document License; OGC Software License",
+        "provenance": "W3C/OGC Semantic Sensor Network Ontology Recommendation SOSA artifact",
+        "retrieved": "2026-09-02",
+        "sha256": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392"
+      },
+      "bytes": 27326,
+      "sha256": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392"
+    },
+    {
+      "key": "spdx-3.0.1",
+      "metadata": {
+        "uri": "https://spdx.org/rdf/3.0.1/",
+        "release": "3.0.1",
+        "retrieval_uri": "https://spdx.org/rdf/3.0.1/spdx-model.ttl",
+        "local_path": ".okf/ontologies/spdx-3.0.1.ttl",
+        "format": "turtle",
+        "license": "SPDX specification license",
+        "provenance": "SPDX 3.0.1 RDF model",
+        "retrieved": "2026-08-29",
+        "sha256": "30ebb4af2d70a9809044ef46f44cc3dc5125226d70f818a50ed2e1d5f404c593"
+      },
+      "bytes": 182034,
+      "sha256": "30ebb4af2d70a9809044ef46f44cc3dc5125226d70f818a50ed2e1d5f404c593"
+    },
+    {
+      "key": "swo-2023-03-05",
+      "metadata": {
+        "uri": "http://www.ebi.ac.uk/swo/swo.owl",
+        "release": "2023-03-05 (master commit 839b92db3bcd8e86b2e8e4bad9ff6e9c0263c2db)",
+        "retrieval_uri": "https://raw.githubusercontent.com/allysonlister/swo/839b92db3bcd8e86b2e8e4bad9ff6e9c0263c2db/swo.owl",
+        "local_path": ".okf/ontologies/swo-master.owl",
+        "format": "owl-rdfxml",
+        "license": "Creative Commons Attribution 4.0 International",
+        "provenance": "EMBL-EBI Software Ontology release 2023-03-05, repository commit 839b92db3bcd8e86b2e8e4bad9ff6e9c0263c2db",
+        "retrieved": "2026-08-31",
+        "sha256": "a2136461c6bf4a76c42caf6f96da3910a2d334d555a372639f16f6dbef1e4545"
+      },
+      "bytes": 3132540,
+      "sha256": "a2136461c6bf4a76c42caf6f96da3910a2d334d555a372639f16f6dbef1e4545"
+    }
+  ],
+  "concepts": [
+    {
+      "path": "bundle/artificial-intelligence/agent-control-loops-and-tool-use.md",
+      "sha256": "5fb113d5b7792df91515e638c81ab9772aa857c4ce0750d5a57ce0ecb1fd0e2c",
+      "subject": [
+        {
+          "ontology": "prov-o",
+          "class": "http://www.w3.org/ns/prov#SoftwareAgent",
+          "label": "Software Agent"
+        },
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Policy",
+          "label": "Policy"
+        },
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Permission",
+          "label": "Permission"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/agents.md",
+      "sha256": "3a9bcf9cc21fa113508bf389ca18a416c31ba86190ec16c7fe0cc21f73380490",
+      "subject": [
+        {
+          "ontology": "prov-o",
+          "class": "http://www.w3.org/ns/prov#SoftwareAgent",
+          "label": "Software Agent"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/ai-coding-agents.md",
+      "sha256": "d6f386811b6f73d5d5c8f567b020fe529e5c85d3c891be348dbb687884fd7dba",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-6",
+          "at": "2026-09-27T13:55:04-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/artificial-intelligence/ai-system-evaluation-and-risk-management.md",
+      "sha256": "f78f91899d1b710b535b1dc470bd254516896f5cacb387e9761b1b1a16559377",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/artificial-intelligence/artificial-intelligence.md",
+      "sha256": "484c0dc439972d40e053de7457bd096ff05a3e42cc5086b40cf8ef46cae8f45b",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/artificial-intelligence/calibration.md",
+      "sha256": "898c3c1066b112e1a0f723295a418ca3188020803634bab7efcf6e4745d3337b",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#ModelCharacteristic",
+          "label": "Model characteristic"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/distribution-shift.md",
+      "sha256": "d1ae6966061e4dcb10a44e6d6767a5c2f29406d053f4f841853e420f441b4649",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/artificial-intelligence/embeddings-and-vector-representations.md",
+      "sha256": "9d93bd0b238fb14e183685b61b853d29f1e39ee001fd711dcce272b9665461ac",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Feature",
+          "label": "Feature"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/generalization-and-model-evaluation.md",
+      "sha256": "4a7c7d356d0d3caab1d5c536215869e20703f7a476049127cdf6e9bb3b0cb4e7",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#ModelCharacteristic",
+          "label": "Model characteristic"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#EvaluationProcedure",
+          "label": "Evaluation procedure"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#EvaluationMeasure",
+          "label": "Evaluation measure"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/gradient-descent.md",
+      "sha256": "58ab891dc24ec232c828506a7cebca55aca703d38158783af02ce9d20f560dbd",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/gradients-and-backpropagation.md",
+      "sha256": "cfb5387a2ee91d240a202697c6f90c456caade709ed03cdc3d7d076384b38d35",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/language-model-adaptation-stages.md",
+      "sha256": "7b8aa67fd12b9963b9171246ddc88fb07d4dcfc35a51703f0d4ffd504ea24829",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0002587",
+          "label": "Machine learning"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/language-model-decoding.md",
+      "sha256": "c6e26ecf29fd714fb03df3d3a0968ab3f7a1346473cab0451f3da330abddb5c5",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/large-language-models.md",
+      "sha256": "64cff9945c6596517b9fe3f2624b3d3fab94cab14c42b0c529cd3a8734c48043",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Model",
+          "label": "Model"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/learning-paradigms.md",
+      "sha256": "7365f89e5192385a10d47dcb7e6936ae794d3e049c713a0e6832f9e6824c505a",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0002587",
+          "label": "Machine learning"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/machine-learning.md",
+      "sha256": "4c6d64796536ed40bb0d50490e05ecdc413f06f682456b09ba22ccdcb734d464",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0002587",
+          "label": "Machine learning"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/model-inference.md",
+      "sha256": "60d44f8934d91ac7dc7a3a0e05a9e4210c2accf31ddf0bca4de35c0c10808a12",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/artificial-intelligence/model-training.md",
+      "sha256": "fbb2fe282eaef4b6e70f8d279739d08d88ffc1a2ec73ec3f27e7f60b5ed60650",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0002587",
+          "label": "Machine learning"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/neural-networks.md",
+      "sha256": "3bee07e37d93ba96a09655b23643de49f6d633436409acf312338df239fcd4b5",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Model",
+          "label": "Model"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/optimization-and-parameter-updates.md",
+      "sha256": "e6741117d3076b40935dda31cc6f83f22cbc40e7eb29e8707b77cfc43d6e635a",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#HyperParameter",
+          "label": "Hyper-parameter"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/prediction-tasks-and-model-metrics.md",
+      "sha256": "2795f02509b3e5d79095856ae2e54b88c146ff350a61a0521fb780ea961931f8",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Task",
+          "label": "Task"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#EvaluationMeasure",
+          "label": "Evaluation measure"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/preference-learning-and-reward-modeling.md",
+      "sha256": "51867f8bac8381132fa19b255bf495f8f79563362686a97ce590404738b547be",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Model",
+          "label": "Model"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/reinforcement-learning-feedback-loop.md",
+      "sha256": "5a8bad56d6d9c71c967e5dadcb0445cb022e4722e59fff739167dff41e07df3a",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Run",
+          "label": "Run"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/responsible-ai-evaluation-and-impact.md",
+      "sha256": "eb7a87bf7b76bda58752b1d0f773c236806f1378c279a295b34ffd73010600eb",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/artificial-intelligence/retrieval-and-external-context.md",
+      "sha256": "cf907ed5075281e442900fe672dc846d0c5d94183e2244698fa40e3aa4c91953",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Data",
+          "label": "Data"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/tokenization-and-language-sequences.md",
+      "sha256": "3a285b51e36c62882ba63d2fed65f79240688643938a61ac5988e17511fafabf",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Data",
+          "label": "Data"
+        },
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Algorithm",
+          "label": "Algorithm"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/training-objectives-and-signals.md",
+      "sha256": "57d7f089db7224f4909f6c260a893386a0dd2399f15f16cc0fe6206eb81e828f",
+      "subject": [
+        {
+          "ontology": "iao-2026-03-30",
+          "class": "http://purl.obolibrary.org/obo/IAO_0000005",
+          "label": "Objective specification"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/artificial-intelligence/transformer-attention-architecture.md",
+      "sha256": "0440d0bb40281f47b49a47c690b6870513213a147bd10bd20dd219857e417ef3",
+      "subject": [
+        {
+          "ontology": "mls-1.0",
+          "class": "http://www.w3.org/ns/mls#Model",
+          "label": "Model"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/assurance/assurance-case.md",
+      "sha256": "d69a1e357d2a1bcd327bb2948f4e4eabc61c7a739bbbb5b23463ae734237a497",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/assurance/requirements-risk-and-review.md",
+      "sha256": "eae3581960f862fbd7964f5cb168db89e32f599ce77315dfca6a33e9b9ccecdf",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/cybersecurity/access-policy-and-enforcement.md",
+      "sha256": "3ade6149a71c302b9b20fd7ad4e39d7eb3377aa7800aaf404a1a62d9490406f3",
+      "subject": [
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Policy",
+          "label": "Policy"
+        },
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Permission",
+          "label": "Permission"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/cybersecurity/digital-identity-and-authorization.md",
+      "sha256": "3e613680a9789d22554c111744acb5c0ed9f380edd1eb13114185b5bc4794648",
+      "subject": [
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Policy",
+          "label": "Policy"
+        },
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Permission",
+          "label": "Permission"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/cybersecurity/identity-binding-and-authentication.md",
+      "sha256": "80c24576b50c6c3ebcdb7151bfca6d57bdacbb8420fa43fa31f28e0fa56e2d66",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/cybersecurity/tokens-and-delegation.md",
+      "sha256": "cf0c79486059d08b7bbe8def224b62f3e90220d8ed86e0afc907431bb9154e38",
+      "subject": [
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Permission",
+          "label": "Permission"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/education/competency-and-prerequisite-structure.md",
+      "sha256": "8a3ea1854460927289c466ffcfba3490b663bdd39f823868af6d34f700953671",
+      "subject": [
+        {
+          "ontology": "ctdlasn-20260626-turtle",
+          "class": "https://purl.org/ctdlasn/terms/Competency",
+          "label": "Competency"
+        },
+        {
+          "ontology": "ctdlasn-20260626-turtle",
+          "class": "https://purl.org/ctdlasn/terms/CompetencyFramework",
+          "label": "Competency Framework"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/ethics/moral-agency-and-responsibility.md",
+      "sha256": "eb85d1ec983d44102fb8392ca15ac1962f32f48e2f4d5044ecd2054d7592d711",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/ethics/norms-agency-and-control.md",
+      "sha256": "15fae15f813cf0143a5b00c85aafae3a746d0adef47e13e81b76befc83a1395e",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/ethics/shared-responsibility-and-excuses.md",
+      "sha256": "a1173dad8ee4e49cf7a7a2b5289594c68d141e092c43449335e7d43d1db603b8",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/actions-policies-and-permissions.md",
+      "sha256": "4adb24bb2d499d7a258d075ca071d9b68e984a50413fbce8c5a3469275d9deb4",
+      "subject": [
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Policy",
+          "label": "Policy"
+        },
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Permission",
+          "label": "Permission"
+        },
+        {
+          "ontology": "odrl-2.2",
+          "class": "http://www.w3.org/ns/odrl/2/Action",
+          "label": "Action"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/causation-and-dependency.md",
+      "sha256": "5fb2d6d89fb33a34cf2fe78ed3df215d629183d5163adafeadea3df2858fa6eb",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/claims-evidence-and-inference.md",
+      "sha256": "7a8c8b731a6ce452e2471768c78c2cc496717fd5e772b6959824ad1321c77a06",
+      "subject": [
+        {
+          "ontology": "eco",
+          "class": "http://purl.obolibrary.org/obo/ECO_0000000",
+          "label": "Evidence"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/entities-activities-and-agents.md",
+      "sha256": "6409ab317b3e4c2b739c4bb1940185c56657d3cf4b10482bd38d353015b5f062",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/first-principles-scope.md",
+      "sha256": "98094c53f3a32a59cc51c74f24e0863abb50a957bc4f67a0cc9bb0ada21072d5",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/information-data-and-records.md",
+      "sha256": "5c056c972be43460150d4921e2f40d0e18d91146c21cbee70eefc36701b138c7",
+      "subject": [
+        {
+          "ontology": "iao-2026-03-30",
+          "class": "http://purl.obolibrary.org/obo/IAO_0000030",
+          "label": "information content entity"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/learning-assessment-and-transfer.md",
+      "sha256": "3168c448cd14277e1ebca0983c4441f1e8e39bdf1a550e9663fe75e0aeeca4df",
+      "subject": [
+        {
+          "ontology": "ctdlasn-20260626-turtle",
+          "class": "https://purl.org/ctdlasn/terms/Competency",
+          "label": "Competency"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/logic-graphs-and-dependencies.md",
+      "sha256": "1b92461ac8473c11dc6f2cbe53ff2806d9d2c13ff219c6d4930a0e74269a1f64",
+      "subject": [
+        {
+          "ontology": "ontomathpro-v2-acb3eef1",
+          "class": "http://ontomathpro.org/omp2#E18",
+          "label": "Mathematical logic"
+        },
+        {
+          "ontology": "ontomathpro-v2-acb3eef1",
+          "class": "http://ontomathpro.org/omp2#E3451",
+          "label": "Graph theory"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/measurement-and-uncertainty.md",
+      "sha256": "efa72b709c5567732bf3050f8ff659e38746c16819b88f9a19369d01fcf66d36",
+      "subject": [
+        {
+          "ontology": "sosa-2017-10-19",
+          "class": "http://www.w3.org/ns/sosa/Observation",
+          "label": "Observation"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/risk-and-decision.md",
+      "sha256": "4c0969787b25f290fe8cf136dabe120a966791d646c93ce0d1f306123559f47d",
+      "subject": [
+        {
+          "ontology": "eco",
+          "class": "http://purl.obolibrary.org/obo/ECO_0000000",
+          "label": "Evidence"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/roles-authority-and-organizations.md",
+      "sha256": "40cf1b4ef74c3a3eced0adb690a63756b3983e3249fbda21d4a24da01092ab12",
+      "subject": [
+        {
+          "ontology": "org-0.8",
+          "class": "http://www.w3.org/ns/org#Organization",
+          "label": "Organization"
+        },
+        {
+          "ontology": "org-0.8",
+          "class": "http://www.w3.org/ns/org#Role",
+          "label": "Role"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/foundations/security-properties-and-integrity.md",
+      "sha256": "f090e5b05ba9790231d3b71aa06e5e0c7f70c9b232e3fa013aa698464d68742d",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/semantics-and-models.md",
+      "sha256": "e340290414078af471183501b0c5ab2a35298a8d8d9e670343cdd891ede884af",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/systems-processes-and-boundaries.md",
+      "sha256": "e22be792220c1f6c4bb605571f9c883de104568e278ec7acf8dfedd4251431ab",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/foundations/time-identity-and-relationships.md",
+      "sha256": "3a390084ee1e6db26bb4ceb68e9a5498976594a08f1bab569813265fc66e3fb5",
+      "subject": [
+        {
+          "ontology": "iao-2026-03-30",
+          "class": "http://purl.obolibrary.org/obo/IAO_0020000",
+          "label": "identifier"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/information-systems/information-provenance-and-trust.md",
+      "sha256": "f79a41250ea4292cd85454360be52433abc8edfa25e5e79d1c6b8f4e32f46ea8",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/reasoning/argument-validity-and-rebuttal.md",
+      "sha256": "5956f730cd1d1c0a0a2960df0ae3395b80b3afd51654569cf77bfb15a34ebb5b",
+      "subject": [
+        {
+          "ontology": "eco",
+          "class": "http://purl.obolibrary.org/obo/ECO_0000000",
+          "label": "Evidence"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/references/attention-is-all-you-need.md",
+      "sha256": "38b5c8ef6ce12311b68d9a36b8ec693fa1454a9890f29a9623f45a48e6015b0d",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000218",
+          "label": "Investigation results report"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/references/dpo-2023.md",
+      "sha256": "3d43ba98c79b6743d060853ef115d555fc6eb8bf5f2c5a59f22ef308a313cbc4",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000218",
+          "label": "Investigation results report"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/references/instructgpt-2022.md",
+      "sha256": "0487875f3e1a3f7a5030d2b766c6575a4b976ac3b6c849aa27a141219d249d75",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000218",
+          "label": "Investigation results report"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/references/nist-ai-600-1.md",
+      "sha256": "b335325e848c8604cf0646c38d81812e037c8a76ae1bf7c8118ce8ff907cf78d",
+      "subject": [
+        {
+          "ontology": "iao-2026-03-30",
+          "class": "http://purl.obolibrary.org/obo/IAO_0000088",
+          "label": "report"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/references/react-2023.md",
+      "sha256": "9658e586ba8ee5ca47fb6fcad20f38e235c0a7891e957519d7d90648410325d9",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000218",
+          "label": "Investigation results report"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/science/evidence-and-scientific-claims.md",
+      "sha256": "e9a3e63ff612758869f26c5c7fb57e086a76ffa00f22d8457e8dcfd147244967",
+      "subject": [
+        {
+          "ontology": "eco",
+          "class": "http://purl.obolibrary.org/obo/ECO_0000000",
+          "label": "Evidence"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/science/models-and-causality.md",
+      "sha256": "aa85fae9bb63bca843f3624ad44575bf6448d6264ac162a7af8e031e8d8c90f5",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000658",
+          "label": "Data representational model"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/science/observation-measurement-and-study-design.md",
+      "sha256": "eb40f50742c9304af6e2d445c5d7f440bca80282628ea71b77545f9d898cfec8",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000066",
+          "label": "Investigation"
+        },
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000471",
+          "label": "Study design execution"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/science/probability-and-statistical-inference.md",
+      "sha256": "d64ebe55c707c621ff89ebcf878bef73253cbecc923eda8947d0768b617b79e9",
+      "subject": [
+        {
+          "ontology": "ontomathpro-v2-acb3eef1",
+          "class": "http://ontomathpro.org/omp2#E21",
+          "label": "Probability theory and mathematical statistics"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/science/replication-and-reproducibility.md",
+      "sha256": "367871501f4b75e4093ca10c7ad8b2cd73c21cfe60b3ffc96b245fc578cc6159",
+      "subject": [
+        {
+          "ontology": "obi-2026-07-27",
+          "class": "http://purl.obolibrary.org/obo/OBI_0000066",
+          "label": "Investigation"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/software-engineering/accessibility-as-an-engineering-requirement.md",
+      "sha256": "224d7b3815fc5db8e56dfbbb90f2f01fb134fca2f7dd51915c174dba33cd5a17",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/aggregate-root.md",
+      "sha256": "e250bee5fa15b079bef426131261e0161f0b4865794712eb4a3438df303ba710",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/aggregate.md",
+      "sha256": "738b15638b3ed017aac6ac1d46f148aa5c3eeb10a621fa2d9cee011b36e666a5",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/anti-corruption-layer.md",
+      "sha256": "316ef1ff4204b6b578deab6bf0b9990a7dfcece44cc050fa64f8fb7c309e96ac",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/api-and-interface-design.md",
+      "sha256": "9b6c9d0ac84d58e4f87cf6ad690f92d76b4c877f01e7c1aa2b71b8d64ab9f096",
+      "subject": [
+        {
+          "ontology": "swo-2023-03-05",
+          "class": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "label": "Software interface"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/software-engineering/architecture-documentation-and-decisions.md",
+      "sha256": "205b64c4e7b829550a791baf5c663f49434afc72d404080aa007d9ed2834d999",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/automated-testing-and-test-strategy.md",
+      "sha256": "b418d8f6ad3f8d019ff6728af015c8d17d666195d0edbd649a4fc5d0542d5e2a",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/bounded-context.md",
+      "sha256": "7106b007b29a14baa40a4a504de68087390fbbd6b681c7a5346f7efa41b4828d",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/code-review.md",
+      "sha256": "a32d8f5f12e68865d87753c361b9ffd3c1da40ee63bcb354fdfb43be825e1776",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/configuration-and-environment-parity.md",
+      "sha256": "90d70ebf2051d0df87c1a43eb73c40604cc9878cf37f231b02a954bd46333096",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/conformist-integration.md",
+      "sha256": "681992f5d599c181a94969448243700d28c24f03a2d3c3d8cae71b8067c7b71b",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/context-map.md",
+      "sha256": "f8298ada22f91b05a2d27c3f4a90b2b8af2f0eb221b0f17bfa0b0166ca82f70e",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/continuous-delivery-and-safe-releases.md",
+      "sha256": "5220b94ea14678f11b108bac89ab275c6299b88f5470bc1e556266a7699364fb",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/continuous-integration.md",
+      "sha256": "a0b97732a4d147c1ffadc56f22fdcc671a187c4e6b9b14897ad7604129e3f5d4",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/domain-driven-design.md",
+      "sha256": "66dcba229e322cb11192fd67b92d9bbb64aab950dd7dcc1535bc72d0fdff6fc9",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/domain-events.md",
+      "sha256": "59d7b4150dc282e9ac1e9049c80f7d404fb832bbeea51dca524a94794258d2a7",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/domain-model.md",
+      "sha256": "e68c5ce259eb6e1a1bf9ec912bafb0464168f976886a1b983b08824774391045",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/domain-services.md",
+      "sha256": "d83019542b7d99cb67f9d35939856a9896883bc4a7937b354d4c56a1fb7d83fe",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/entities.md",
+      "sha256": "1d81ffcf77901c34a1a06b168b4f17afe5afcf4b74080169fbb59b908999801f",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/incident-response-and-blameless-postmortems.md",
+      "sha256": "34c145dbbbcec6fb6ce6099dd1e25e7b7a60a9e2582c3e6f7b7637bcce27de14",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/maintainable-code-and-refactoring.md",
+      "sha256": "146af18277f3d776f8a6c3736c4a112c142b062a4592260858b9e20dd91fe17a",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/observability-and-operational-readiness.md",
+      "sha256": "68965907d82ad3fd98458cadf4179093a39a258f0570e7e21ddb17e579b27f32",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/packages-interfaces-and-environments.md",
+      "sha256": "ce22899dc983e59b8255299c720a39d1f9daeffbd19d1862c8a31661bf741576",
+      "subject": [
+        {
+          "ontology": "spdx-3.0.1",
+          "class": "https://spdx.org/rdf/3.0.1/terms/Software/Package",
+          "label": "Package"
+        },
+        {
+          "ontology": "swo-2023-03-05",
+          "class": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "label": "Software interface"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/software-engineering/performance-and-capacity-engineering.md",
+      "sha256": "df04b11682af53a1e9eeba512dbcc2dbe0daa593ec452587ffb9aa0dc1d80082",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/published-language.md",
+      "sha256": "880489b406459b3761a50523693a743c8e40b2675eaeffe92690948ce3938bc7",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/repositories.md",
+      "sha256": "bd82b5f09c13d6a0617ddb53a27f89fbf15f291eb6ba0ddbac3dd7e5748273d8",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/reproducible-builds-and-provenance.md",
+      "sha256": "6219a7a95ceadfca8f01ee09bf4a5b9a3d2559dc58bb631ac37a71d426ebd5fd",
+      "subject": [
+        {
+          "ontology": "spdx-3.0.1",
+          "class": "https://spdx.org/rdf/3.0.1/terms/Build/Build",
+          "label": "Build"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/software-engineering/requirements-engineering-and-acceptance.md",
+      "sha256": "9ec306ee89e4bd83a6ae3c0f2b6d6ae5fea0e634a0758058af06d57fc6d5adc2",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/secure-software-development.md",
+      "sha256": "2b321079463944265e1662aba699c0003858a9052f4b8cbcdad802cb54b6949c",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/shared-kernel.md",
+      "sha256": "458a342fc12dc325f924f727e5c3a82a8d57dc0595fc48261485ef1b456ef882",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/software-delivery-metrics-and-feedback.md",
+      "sha256": "f2c00f069f8e895852ff4d10a9d77ef1b49f99ae4675668a677ea948d0a4c3af",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/software-dependency-and-compatibility.md",
+      "sha256": "92fbb8020c64f3828ececf8ddacb72ba17751680feb02f977713d73f4b5f5b0c",
+      "subject": [
+        {
+          "ontology": "spdx-3.0.1",
+          "class": "https://spdx.org/rdf/3.0.1/terms/Software/Package",
+          "label": "Package"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/software-engineering/subdomain.md",
+      "sha256": "f770a78531aa89a5bd39429ee1a4c35fa81ccc57eddda80ac2de7c7d923873ca",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/threat-modeling.md",
+      "sha256": "fc5c67c5db2e73b79065a2fb7758e48cd8d720894e473ee8bb0477936bf90e31",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/ubiquitous-language.md",
+      "sha256": "aa9e08f8a1e4aa62b5840ca9ede6fc58f5a309e4a295ffa0a7f3c38a69019b0c",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/value-objects.md",
+      "sha256": "3901946a4413941cd1da57cd0ee68ec4ce50f763eeb6781fcb97398f57cae009",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/version-control-and-small-reversible-changes.md",
+      "sha256": "d2e50a97870ed26041895780a17e5a4827648969a39349c1fdc93b891f6d880e",
+      "subject": [
+
+      ],
+      "subject_review": {
+        "status": "pending",
+        "reason": "no-suitable-authoritative-class",
+        "reviewed": {
+          "by": "codex/gpt-5.6",
+          "at": "2026-09-02T13:51:36-07:00"
+        },
+        "checked_catalog_keys": [
+          "cbv-2.0.0",
+          "ctdlasn-20260626-turtle",
+          "eco",
+          "epcis-2.0.1",
+          "iao-2026-03-30",
+          "mls-1.0",
+          "obi-2026-07-27",
+          "odrl-2.2",
+          "ontomathpro-v2-acb3eef1",
+          "org-0.8",
+          "prov-o",
+          "sosa-2017-10-19",
+          "spdx-3.0.1",
+          "swo-2023-03-05"
+        ]
+      }
+    },
+    {
+      "path": "bundle/software-engineering/version-resolution-and-locks.md",
+      "sha256": "bd9a5e69593e630227eba4a21e640886e6338945c2a2daca05246c8906efccc1",
+      "subject": [
+        {
+          "ontology": "spdx-3.0.1",
+          "class": "https://spdx.org/rdf/3.0.1/terms/Software/Package",
+          "label": "Package"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/supply-chains/identifiers-and-event-coverage.md",
+      "sha256": "611acf1640c1ca1dff8ba8d13f52c0a26ef95584e0bd06d56aac4d90914b8445",
+      "subject": [
+        {
+          "ontology": "epcis-2.0.1",
+          "class": "https://ref.gs1.org/epcis/EPCISEvent",
+          "label": "EPCIS event"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/supply-chains/product-provenance.md",
+      "sha256": "10fe79924c2eb2acd0681819457ee8033742cd24f50812ce43a4b137417e7ca3",
+      "subject": [
+        {
+          "ontology": "epcis-2.0.1",
+          "class": "https://ref.gs1.org/epcis/EPCISEvent",
+          "label": "EPCIS event"
+        }
+      ],
+      "subject_review": null
+    },
+    {
+      "path": "bundle/supply-chains/traceability-events-and-custody.md",
+      "sha256": "6bd439a4dab5c5605b4a3db6284dd0a99a2cdb1e255c31df81b87bf02a296e77",
+      "subject": [
+        {
+          "ontology": "epcis-2.0.1",
+          "class": "https://ref.gs1.org/epcis/EPCISEvent",
+          "label": "EPCIS event"
+        }
+      ],
+      "subject_review": null
+    }
+  ]
+}
