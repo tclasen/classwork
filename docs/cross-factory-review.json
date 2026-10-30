@@ -1,0 +1,20 @@
+{
+  "task": "CF-KNOWLEDGE-2026-10-30",
+  "stage": "independent exact-candidate review",
+  "reviewer": "/root/review_knowledge",
+  "verdict": "APPROVE",
+  "candidate": "0759fe5b855a9a7a832b685d589638ad5bd1ab3a",
+  "checks": [
+    "Reviewed entire scoped source changes and generated inventory via exact regeneration check.",
+    "ruby .okf/scripts/ontology-custody.rb --check: PASS 14 artifacts,106 concepts.",
+    "ruby .okf/scripts/test-ontology-custody.rb: PASS 8 tests/14 assertions; expected stale-view negative writes FAIL diagnostic while suite exits0.",
+    "Exact seven allowed changed paths, git diff --check, clean tracked tree at review observation.",
+    "Preserved source sections1\u201326 exact against base e030852f4e7e72dceff8e8ba6168a2150ba6626e; no bundle or ontology artifact changes."
+  ],
+  "limits": [
+    "Checks are intentionally partial byte/metadata custody and URI occurrence; no RDF parse, actual import closure, suitable class verification, logical consistency or redistribution permission is certified.",
+    "New direct routine knowledge work exception explicitly yields to consequential/explicit independent review and all domain verification/delivery gates."
+  ],
+  "integration_owner": "/root/integrate_knowledge",
+  "scope": "Bounded operating instructions and supporting custody controls only; no product/graph/runtime/deployment activation."
+}
