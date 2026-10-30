@@ -41,7 +41,7 @@ contract. Software version/release and demonstration procedures apply when an
 approved deliverable requires them; a scoped instruction diff and command
 results are suitable evidence for this reset, not an application video.
 
-Operating-instruction revision: RESET requirements revision 1. New assignments
+Operating-instruction revision: CROSS-FACTORY-2026-10-30 revision 2. New assignments
 must load this entry point; active work must reload at its next boundary before
 acting under changed rules. A stricter explicit stop/reload direction takes
 precedence. Explicitly bounded worker assignments, including prepare-only
@@ -1371,3 +1371,59 @@ policy in conversation memory or README. Keep README examples short and
 focused on user goals. When explicitly adapting the template to a real project,
 replace generic descriptions with its actual domain, audience, scope, source
 standards, and verified setup instructions.
+
+
+## 35. Proportionate execution and custody checks — revision 2
+
+This scoped amendment governs conflicting mandatory stage/delegation language in
+the preserved 26-section source for routine knowledge work only. The user-facing
+agent may directly query, teach, inspect, and perform a small, clearly bounded
+source-grounded knowledge edit with all applicable discovery, graph closure,
+provenance, validation and coherent delivery obligations. Combine compatible
+administrative intake, preparation and handoff in that coherent change; do not
+create a separate worker or record merely for each administrative step. Use fresh
+workers where specialist or independent context helps. Ontology changes, acceptance
+machinery, migrations, substantial research and consequential changes require
+review independent of the implementer. Explicit task review gates remain binding;
+this instruction/tooling change requires fresh independent review. Do not weaken
+any required knowledge, ontology, security or integration check.
+
+Record one execution mode in the task's existing authoritative record or brief:
+`inspect`, `configure`, `execute`, `finish-started`, or `idle`, together with the
+source of authority, scope/exclusions, owner, required acceptance and stop condition.
+Configuration and reading instructions do not activate knowledge work. An explicit
+request authorizes its clear bounded intent without a redundant interview. For
+`finish-started`, freeze the list of already-started items once, preserve unrelated
+work, maintain status only in the existing task record, finish only that list and
+return to idle. A new prerequisite needs a specific scope decision; continue
+independent authorized items. Do not infer maintenance or a new backlog task.
+
+Before accepting any catalog or concept change, run
+`ruby .okf/scripts/ontology-custody.rb --check`. After an authorized catalog/concept
+change, regenerate the derived `.okf/ontology-inventory.json` with
+`ruby .okf/scripts/ontology-custody.rb --write-inventory`, then run `--check`.
+The catalog and concept files remain authoritative; never hand-edit the inventory.
+Generation must not change retrieval or reviewed dates. Run
+`ruby .okf/scripts/test-ontology-custody.rb` when changing this checker.
+
+The checker enforces catalog custody metadata, local bytes/checksums, declared
+dependency keys, known subject ontology keys, and exact pending-review catalog
+coverage. URI occurrence in an artifact is only a mechanical cross-reference
+check, not proof that it denotes a suitable class. Turtle syntax, actual transitive
+import closure, namespace/version semantics, licensing permission and semantic fit
+still require the full section 31 procedure; unsupported checks must remain explicit,
+never silently treated as passed. No new ontology is approved by this amendment.
+
+For each consequential claim distinguish source assertion, synthesis/inference,
+hypothesis and independently verified result. Bind verification to the exact
+statement, assumptions, source edition and evidence candidate; approval to retain
+a hypothesis does not establish its truth. A computation or source quotation is
+not a proof. Preserve attributed disagreements and uncertainty without asserting
+incompatible claims as a single established conclusion. Use existing sources and
+prose rather than inventing a new ontology or mandatory concept metadata schema.
+
+Authority, implementation evidence and remaining evaluation are in the
+[cross-factory implementation record](docs/cross-factory-2026-10-30.md). New
+assignments load revision 2; existing workers reload at their next affected action
+boundary, checking current ownership first. Historical task-only prepare limits
+remain history and do not constrain this separately authorized bounded update.
