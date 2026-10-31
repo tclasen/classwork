@@ -26,7 +26,9 @@ operational configuration. Bundle edits require the pinned `.okf/SPEC.md` and
 the full domain procedures; preserve the exclusive `bundle/` boundary, locked
 ontologies, source provenance, and ignored local lesson plans.
 
-Operating revision: **CROSS-FACTORY-2026-10-30 revision 2**. Section 35 of the linked
+Operating revision: **DARK-FACTORY-2026-10-31**. Read the controlling section 36
+in full at startup before selecting work. Preserve all current pauses until a
+separate start/resume instruction. Section 35 of the linked
 contract supplies the controlling task-proportionate stages, explicit execution
 modes, claim-status discipline and generated ontology-custody checks. Read that
 section before selecting stages or accepting catalog/concept changes. Existing
