@@ -1,7 +1,8 @@
-# AI Education and Knowledge Graph Template
+# Classwork knowledge graph
 
-This domain-neutral repository supports AI-assisted learning and an
-evidence-based knowledge graph under the repository-pinned
+This repository supports AI-assisted learning through a connected knowledge
+graph covering software engineering, artificial intelligence, reasoning,
+assurance, and their foundations. It uses the repository-pinned
 [Open Knowledge Format (OKF) v0.2 specification](./.okf/SPEC.md), keeping its
 concepts, relationships, sources, and navigation portable and reviewable.
 
@@ -12,12 +13,13 @@ It supports two complementary activities:
 - **Knowledge graph synthesis:** research, create, connect, reconcile, and
   validate canonical concepts from trustworthy sources.
 
-The template prescribes no subject, curriculum, learner level, or source type;
-define them when adapting it.
+Browse the [knowledge bundle](bundle/index.md) for the current subject map.
+The graph includes canonical concepts and source references; it does not prescribe
+a curriculum or learner level.
 
 ## Repository model
 
-After initialization, `bundle/` is the complete OKF bundle and concept
+`bundle/` is the complete OKF bundle and concept
 namespace; everything outside it supports the repository.
 
 | Path | Purpose |
@@ -28,16 +30,17 @@ namespace; everything outside it supports the repository.
 | `bundle/index.md` | OKF version declaration and top-level map |
 | `lesson-plans/` | Local learner-specific plans outside the bundle |
 
-If `bundle/` or `lesson-plans/` is absent, the first graph or lesson request may
-initialize it according to [the agent instructions](./AGENTS.md).
+The knowledge bundle is initialized. Learner-specific lesson plans may be created
+locally under `lesson-plans/`; that directory is ignored by Git.
 
-## Adapt and use
+## Browse and learn
 
-Before building a substantial graph, replace the generic title and define the
-domain or program, scope and exclusions, learner audiences, source standards,
-review roles, publication process, and verified setup or validation commands.
-Keep workflow rules in the contract loaded by `AGENTS.md`; keep this README about what the repository
-teaches and how people use it.
+Use the [software engineering map](bundle/software-engineering/index.md) for
+requirements, delivery, operations, and domain modeling; the
+[artificial intelligence map](bundle/artificial-intelligence/index.md) for model
+foundations and agents; or the [assurance map](bundle/assurance/index.md) for claims,
+arguments, evidence, and review. The [root map](bundle/index.md) connects these
+subjects to reasoning, science, ethics, and other supporting material.
 
 Open the root as an Obsidian vault to browse indexes, links, and backlinks, or
 with an AI coding or research agent to learn from or extend the bundle. No
@@ -46,8 +49,18 @@ understanding, source constraints, and available time when relevant. Shared
 knowledge belongs in `bundle/`; learner-specific plans belong in
 `lesson-plans/` as Obsidian-friendly Markdown.
 
-The repository does not include validation scripts. Bundle changes still
-require the checks defined in [the agent instructions](./AGENTS.md).
+## Integrity checks
+
+Run the existing custody check from the repository root:
+
+```sh
+ruby .okf/scripts/ontology-custody.rb --check
+```
+
+It checks catalog custody, artifact checksums, concept classification references,
+and generated inventory freshness. It does not establish semantic class suitability,
+logical consistency, source correctness, or licensing permission. Bundle changes
+also require the checks defined in [the operating contract](OPERATING_CONTRACT.md).
 
 Review committed changes with `git show --stat` and `git show`. Configure Git
 LFS only for relevant large-file paths before adding them, and do not copy
@@ -56,7 +69,7 @@ facilities.
 
 ## Example prompts
 
-- **Initialize:** `Initialize the knowledge graph for [subject], aimed at [learner audience].`
+- **Browse:** `Show how the existing concepts connect requirements engineering to assurance cases.`
 - **Lesson plan:** `Create a [duration] lesson plan that helps me learn [topic] from my current level.`
 - **Explain:** `Explain [concept] using the bundle's prerequisites and give me a short check for understanding.`
 - **Synthesize:** `Expand the graph to cover [topic], using authoritative sources and connecting it to existing concepts.`
